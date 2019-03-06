@@ -6,7 +6,6 @@ export default function HelloWorld() {
       <Head>
         <title>elrincóndevictor</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet"></link>
       </Head>
 
@@ -50,13 +49,12 @@ export default function HelloWorld() {
           color: #1d1d1d;
           font-size: 16px;
           letter-spacing: 0.2px;
-          line-height: 1.8;
+          line-height: 2;
         }
 
         @media screen and (min-width: 768px) {
           header {
             padding: 3rem;
-            margin-bottom: 36px;
           }
 
           .header-inner {
@@ -70,7 +68,6 @@ export default function HelloWorld() {
 
           p {
             font-size: 21px;
-            line-height: 2;
           }
         }
 
