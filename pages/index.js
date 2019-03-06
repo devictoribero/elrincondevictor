@@ -5,15 +5,14 @@ export default function HelloWorld() {
     <div className="page">
       <Head>
         <title>elrincóndevictor</title>
+        <link rel="canonical" href="http://www.elrincondevictor.com"/>
+        <meta name="description" content="Desarrollador web especializado en front-end y metodologías ágiles. Amante de la comunicación y la interacción humanda."/>
+        
       </Head>
 
       <header>
         <div className="header-inner">
-          <h1>
-            Senior<br/>
-            human being<br/>
-            at life.
-          </h1>
+          <h1 lang="en">Senior<br/>human being<br/>at life.</h1>
           <p>Soy desarrollador front-end 👨‍💻 y me gusta conectar con el alma de las personas ❤️.</p>
           <p>Hago deporte 🏋️, amo el yoga 🧘, practico meditación 🙏, viajo siempre que puedo 🛫 y me cuestiono todo acerca de la vida.</p>
         </div>

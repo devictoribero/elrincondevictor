@@ -18,6 +18,9 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135694564-1"></script>
+     
         </body>
       </html>
     );
