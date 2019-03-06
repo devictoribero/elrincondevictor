@@ -3,13 +3,6 @@ import Head from 'next/head'
 export default function HelloWorld() {
   return (
     <div className="page">
-      <Head>
-        <title>elrincóndevictor</title>
-        <link rel="canonical" href="http://www.elrincondevictor.com"/>
-        <meta name="description" content="Desarrollador web especializado en front-end y metodologías ágiles. Amante de la comunicación y la interacción humanda."/>
-        
-      </Head>
-
       <header>
         <div className="header-inner">
           <h1 lang="en">Senior<br/>human being<br/>at life.</h1>
