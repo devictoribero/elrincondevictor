@@ -5,8 +5,6 @@ export default function HelloWorld() {
     <div className="page">
       <Head>
         <title>elrincóndevictor</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet"></link>
       </Head>
 
       <header>
