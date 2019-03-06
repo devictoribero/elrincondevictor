@@ -1,5 +1,3 @@
-import Head from 'next/head'
-
 export default function HelloWorld() {
   return (
     <div className="page">
@@ -9,8 +7,35 @@ export default function HelloWorld() {
           <p>Soy desarrollador front-end 👨‍💻 y me gusta conectar con el alma de las personas ❤️.</p>
           <p>Hago deporte 🏋️, amo el yoga 🧘, practico meditación 🙏, viajo siempre que puedo 🛫 y me cuestiono todo acerca de la vida.</p>
         </div>
+
+        <nav className='social'>
+          <a
+            className='social-link'
+            target='_blank'
+            href="https://twitter.com/JS_TUREEY">
+            Twitter
+          </a>
+          <a
+            className='social-link'
+            target='_blank'
+            href="https://github.com/tureey">
+            Github
+          </a>
+          <a
+            className='social-link'
+            target='_blank'
+            href="https://www.linkedin.com/in/victorribero/">
+            Linkedin
+          </a>
+          <a
+            className='social-link'
+            target='_blank'
+            href="https://medium.com/@victorriberoguasch">
+            Medium
+          </a>
+        </nav>
       </header>
-    
+
       <style jsx>{`
         header {
           min-height: 100vh;
@@ -40,6 +65,41 @@ export default function HelloWorld() {
           font-size: 16px;
           letter-spacing: 0.2px;
           line-height: 2;
+        }
+
+        .social {
+          display: flex;
+          padding: 2rem 0;
+          flex-wrap: wrap;
+        }
+
+        .social-link {
+          position: relative;
+          display: block;
+          margin: 0 0.75rem 0.75rem 0;
+          color: #1d1d1d;
+          font-weight: bold;
+          font-family: 'Poppins', sans-serif;
+          text-decoration: none;
+          border-bottom: 1px dashed #1d1d1d;
+        }
+
+        .social-link:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -0.1rem;
+          width: 0;
+          height: 50%;
+          z-index: -1;
+          transition: 0.3s ease width;
+          transform:skewX(150deg);
+        }
+
+        .social-link:hover:after {
+          width: 100%;
+          background: #ffed5e;
         }
 
         @media screen and (min-width: 768px) {
@@ -79,8 +139,6 @@ export default function HelloWorld() {
       <style global jsx>{`
         body {
           margin: 0;
-        }
-        * {
           font-family: 'Poppins',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
         }
       `}</style>
