@@ -11,7 +11,7 @@ export default function HelloWorld() {
         <nav className='social'>
           <a
             className='social-link'
-            rel="nofollow"
+            rel="nofollow noopener noreferrer"
             target='_blank'
             href="https://twitter.com/JS_TUREEY">
             Twitter
@@ -19,14 +19,14 @@ export default function HelloWorld() {
           <a
             className='social-link'
             target='_blank'
-            rel="nofollow"
+            rel="nofollow noopener noreferrer"
             href="https://github.com/tureey">
             Github
           </a>
           <a
             className='social-link'
             target='_blank'
-            rel="nofollow"
+            rel="nofollow noopener noreferrer"
             href="https://www.linkedin.com/in/victorribero/">
             Linkedin
           </a>
