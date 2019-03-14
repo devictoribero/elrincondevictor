@@ -1,18 +1,18 @@
 export const DEFAULT_SEO = {
-  title: 'El rincón de victor',
-  description: 'Desarrollador web especializado en front-end y metodologías ágiles. Amante de la comunicación y la interacción humana.',
+  title: 'El rincón de victor | Lee acerca de cómo ser productivo y tener un estilo de vida saludable',
+  description: 'Desarrollador web especializado en front-end y metodologías ágiles. Amante de la comunicación, una vida equilibrada y la interacción.',
   lang: 'es',
   openGraph: {
     type: 'website',
     locale: 'es_ES',
     url: 'https://www.elrincondevictor.com',
     title: 'El rincón de victor',
-    description: 'Desarrollador web especializado en front-end y metodologías ágiles. Amante de la comunicación y la interacción humana.',
+    description: 'Desarrollador web especializado en frontend y metodologías ágiles. Amante de la comunicación y la interacción humana.',
     image:
-      'https://hdwallpaperfx.com/wp-content/uploads/2015/10/Apple-imac-Desk-Setup.jpg',
+      'https://miro.medium.com/fit/c/240/240/1*sUWLvWsqCBmCVWeDbqIFVw.jpeg',
     site_name: 'Elrincondevictor.com',
-    imageWidth: 1200,
-    imageHeight: 1200
+    imageWidth: 240,
+    imageHeight: 240
   },
   twitter: {
     handle: '@JS_TUREEY',
