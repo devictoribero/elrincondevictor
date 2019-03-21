@@ -84,6 +84,13 @@ export default class MyApp extends App {
           <link key="canonical" rel="canonical" href="http://www.elrincondevictor.com"/>
         </Head>
         <Component {...pageProps} />
+
+        <style global jsx>{`
+          body {
+            margin: 0;
+            font-family: 'Poppins',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+          }
+        `}</style>
       </Container>
     );
   }

@@ -1,4 +1,4 @@
-export default function HelloWorld() {
+export default function Page() {
   return (
     <div className="page">
       <header>
@@ -137,13 +137,6 @@ export default function HelloWorld() {
             width: 600px;
             margin-top: 0;
           }
-        }
-      `}</style>
-
-      <style global jsx>{`
-        body {
-          margin: 0;
-          font-family: 'Poppins',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
         }
       `}</style>
     </div>
