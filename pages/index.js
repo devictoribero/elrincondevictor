@@ -1,3 +1,5 @@
+import {socials} from '../config/social'
+
 export default function Page() {
   return (
     <div className="page">
@@ -9,34 +11,16 @@ export default function Page() {
         </div>
 
         <nav className='social'>
-          <a
-            className='social-link'
-            rel="nofollow noopener noreferrer"
-            target='_blank'
-            href="https://twitter.com/JS_TUREEY">
-            Twitter
-          </a>
-          <a
-            className='social-link'
-            target='_blank'
-            rel="nofollow noopener noreferrer"
-            href="https://github.com/tureey">
-            Github
-          </a>
-          <a
-            className='social-link'
-            target='_blank'
-            rel="nofollow noopener noreferrer"
-            href="https://www.linkedin.com/in/victorribero/">
-            Linkedin
-          </a>
-          <a
-            className='social-link'
-            target='_blank'
-            rel="nofollow"
-            href="https://medium.com/@victorriberoguasch">
-            Medium
-          </a>
+          {socials.map(({name, link}) => (
+            <a
+              key={name}
+              className='social-link'
+              rel="nofollow noopener noreferrer"
+              target='_blank'
+              href={link}>
+              {name}
+              </a>
+          ))}
         </nav>
       </header>
 
@@ -93,9 +77,9 @@ export default function Page() {
           position: absolute;
           left: 0;
           right: 0;
-          bottom: -0.1rem;
+          bottom: 0.5rem;
           width: 0;
-          height: 50%;
+          height: 10px;
           z-index: -1;
           transition: 0.3s ease width;
           transform:skewX(150deg);

@@ -90,6 +90,21 @@ export default class MyApp extends App {
             margin: 0;
             font-family: 'Poppins',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
           }
+
+          .overlay:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.25);
+          }
+
+          .overlay.isPrimary:after {
+            background-image: linear-gradient(rgba(233,185,73,0.2 ),rgba(249,218,139,0.8));
+          }
         `}</style>
       </Container>
     );

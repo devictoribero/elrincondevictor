@@ -5,7 +5,10 @@ export default function PostPreview({
 }) {
   return (
     <article className={className}>
-      <img src={imgSrc}/>
+      <figure className='overlay'>
+        <img src={imgSrc} alt="" role="presentation"/>
+      </figure>
+
       <div>
         <h2>
           <Link href={`/blog/${slug}`}>
@@ -20,33 +23,21 @@ export default function PostPreview({
       
 
       <style jsx>{`
-        article {
-          position: relative;
-          margin-bottom: 32px;
-          box-shadow: 0px 5px 15px 0px rgba(130,136,147,0.15)
-        }
-
         img {
           width: 100%;
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px;
+          border-radius: 3px;
           position: relative;
           object-fit: cover;
+          display: block;
         }
 
-        img:after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          background: rgba(1,1,1,1);
+        figure {
+          position: relative;
+          margin: 0;
         }
 
         div {
-          padding: 30px;
+          padding: 15px 0;
         }
 
         h2 {
@@ -62,7 +53,7 @@ export default function PostPreview({
 
         p {
           font-size: 18px;
-          margin: 8px 0 24px;
+          margin: 8px 0 16px;
           line-height: 1.75;
           color: #625D52;
         }
@@ -78,7 +69,7 @@ export default function PostPreview({
         }
 
         .readMore {
-          color: #7BB026;
+          color: #B44D12;
         }
 
         .readMore:after {
