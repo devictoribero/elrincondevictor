@@ -30,7 +30,7 @@ export default function Blog() {
   return (
     <div className="page">
       <Head>
-        <title key="title">Bienvenido al rincón de Victor · Namasté🙏</title>
+        <title key="title">Elrincondevictor · Bienvenido a mi mente</title>
         <meta
           key="description"
           name="description"

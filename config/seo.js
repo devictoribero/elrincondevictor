@@ -1,5 +1,5 @@
 export const DEFAULT_SEO = {
-  title: 'El rincón de victor | Lee acerca de cómo ser productivo y tener un estilo de vida saludable',
+  title: 'El rincón de victor | Comparto mi filosofía de vida y estilo de vida saludable.',
   description: 'Desarrollador web especializado en front-end y metodologías ágiles. Amante de la comunicación, una vida equilibrada y la interacción.',
   lang: 'es',
   openGraph: {
