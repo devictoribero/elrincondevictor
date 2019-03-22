@@ -1,4 +1,4 @@
-{
+export const personalInformation = {
   "@context": "http://schema.org",
   "@type": "Person",
   "name": "Victor Ribero",

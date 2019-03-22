@@ -1,5 +1,6 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { Fragment } from 'react';
+import {personalInformation} from '../config/schema.org';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -47,8 +48,7 @@ export default class MyDocument extends Document {
               <script dangerouslySetInnerHTML={this.setGoogleTags()} />
             </Fragment>
           )}
-
-          <script type="application/ld+json" src="/static/files/schema_org.json"></script>
+          <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: `personalInformation`}} />
         </body>
       </html>
     );
