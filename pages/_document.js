@@ -11,25 +11,6 @@ export default class MyDocument extends Document {
     return { ...initialProps, isProduction };
   }
 
-  // Function will be called below to inject
-  // script contents onto page
-  setGoogleTags() {
-    return {
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-135694564-1');
-      `
-    };
-  }
-  
-  setSchema() {
-    return {
-      __html: JSON.stringify(person)
-    }
-  }
-
   render() {
     const { isProduction } = this.props;
 
@@ -59,5 +40,25 @@ export default class MyDocument extends Document {
         </body>
       </html>
     );
+  }
+
+  // Function will be called below to inject
+  // script contents onto page
+  setGoogleTags() {
+    return {
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-135694564-1');
+      `
+    };
+  }
+  
+  // Sets schema for personal information schema.org
+  setSchema() {
+    return {
+      __html: JSON.stringify(person)
+    }
   }
 }
