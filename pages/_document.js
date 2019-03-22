@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
               <script dangerouslySetInnerHTML={this.setGoogleTags()} />
             </Fragment>
           )}
-          <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: `personalInformation`}} />
+          <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: `${personalInformation}`}} />
         </body>
       </html>
     );
