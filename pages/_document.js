@@ -47,6 +47,8 @@ export default class MyDocument extends Document {
               <script dangerouslySetInnerHTML={this.setGoogleTags()} />
             </Fragment>
           )}
+
+          <script type="application/ld+json" src="config/schema.org.json"></script>
         </body>
       </html>
     );

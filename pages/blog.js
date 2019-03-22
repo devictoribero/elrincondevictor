@@ -53,6 +53,7 @@ export default function Blog() {
         <span>Sígueme en:
           {socials.map(({name, link}) => (
             <a
+              key={name}
               className='link social'
               rel="nofollow noopener noreferrer"
               target='_blank'
