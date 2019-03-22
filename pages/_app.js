@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Router from 'next/router';
 import { DEFAULT_SEO } from '../config/seo';
 import { trackPageView } from '../helpers/trackPageView';
+import {palette} from '../config/palette';
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -86,6 +87,31 @@ export default class MyApp extends App {
         <Component {...pageProps} />
 
         <style global jsx>{`
+
+          :root {
+            --grey-900: ${palette.grey["900"]};
+            --grey-800: ${palette.grey["800"]};
+            --grey-700: ${palette.grey["700"]};
+            --grey-600: ${palette.grey["600"]};
+            --grey-500: ${palette.grey["500"]};
+            --grey-400: ${palette.grey["400"]};
+            --grey-300: ${palette.grey["300"]};
+            --grey-200: ${palette.grey["200"]};
+            --grey-100: ${palette.grey["100"]};
+            --grey-000: ${palette.grey["000"]};
+
+            --primary-900: ${palette.primary["900"]};
+            --primary-800: ${palette.primary["800"]};
+            --primary-700: ${palette.primary["700"]};
+            --primary-600: ${palette.primary["600"]};
+            --primary-500: ${palette.primary["500"]};
+            --primary-400: ${palette.primary["400"]};
+            --primary-300: ${palette.primary["300"]};
+            --primary-200: ${palette.primary["200"]};
+            --primary-100: ${palette.primary["100"]};
+            --primary-000: ${palette.primary["000"]};
+          }
+
           body {
             margin: 0 auto;
             font-family: 'Poppins',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
