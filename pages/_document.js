@@ -1,6 +1,6 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { Fragment } from 'react';
-import {personalInformation} from '../config/schema.org';
+import { person } from '../config/schema.org';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -23,9 +23,16 @@ export default class MyDocument extends Document {
       `
     };
   }
+  
+  setSchema() {
+    return {
+      __html: JSON.stringify(person)
+    }
+  }
 
   render() {
     const { isProduction } = this.props;
+
     return (
       <html lang="es">
         <Head>
@@ -48,7 +55,7 @@ export default class MyDocument extends Document {
               <script dangerouslySetInnerHTML={this.setGoogleTags()} />
             </Fragment>
           )}
-          <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: `${personalInformation}`}} />
+          <script type='application/ld+json' dangerouslySetInnerHTML={this.setSchema()} />
         </body>
       </html>
     );

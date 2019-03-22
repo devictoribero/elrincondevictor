@@ -17,6 +17,7 @@ export default function MainNavigation() {
 
         {socialLinks.map(({name, link}) => (
           <a
+            key={name}
             className='link social'
             rel="nofollow noopener noreferrer"
             target='_blank'

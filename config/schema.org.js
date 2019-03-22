@@ -1,4 +1,4 @@
-export const personalInformation = {
+export const person = {
   "@context": "http://schema.org",
   "@type": "Person",
   "name": "Victor Ribero",
