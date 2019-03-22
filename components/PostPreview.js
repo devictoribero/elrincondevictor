@@ -29,6 +29,11 @@ export default function PostPreview({
       
 
       <style jsx>{`
+        figure {
+          position: relative;
+          margin: 0;
+        }
+
         img {
           width: 100%;
           border-radius: 3px;
@@ -37,45 +42,47 @@ export default function PostPreview({
           display: block;
         }
 
-        figure {
-          position: relative;
-          margin: 0;
-        }
-
         div {
           padding: 15px 0;
         }
 
         h2 {
           margin: 0;
-          color: #423D33;
+          color: var(--grey-900);
           font-size: 22px;
           font-weight: bold;
         }
 
-        .titleLink {
+        h2 > a {
           display: block;
+        }
+
+        h2 > a:visited {
+          color: var(--grey-800);
         }
 
         p {
           font-size: 18px;
           margin: 8px 0 16px;
           line-height: 1.75;
-          color: #625D52;
+          color: var(--grey-700);
         }
 
         a {
+          transition: color 0.35 ease;
           text-decoration: none;
-          color: initial;
         }
-        
-        a:hover,
-        a:focus {
+
+        a:hover, a:focus {
           text-decoration: underline;
         }
 
         .readMore {
-          color: #B44D12;
+          color: var(--primary-700);
+        }
+
+        .readMore:visited {
+          color: var(--primary-900);
         }
 
         .readMore:after {

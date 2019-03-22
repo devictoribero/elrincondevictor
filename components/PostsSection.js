@@ -12,7 +12,7 @@ export default function PostsSection({title, posts}) {
         h1 {
           position: relative;
           margin: 0 0 16px 0;
-          color: #27241D;
+          color: var(--grey-900);
         }
 
         h1:after {
@@ -20,7 +20,7 @@ export default function PostsSection({title, posts}) {
           position: absolute;
           height: 2px;
           width: 50px;
-          background: #27241D;
+          background: var(--grey-900);
           top: 51%;
           margin-left: 10px;
         }

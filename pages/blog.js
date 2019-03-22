@@ -74,9 +74,9 @@ export default function Blog() {
         }
 
         p {
+          margin-top: 1rem;
           color: var(--primary-900);
           font-size: 1.5rem;
-          margin-top: 1rem;
           line-height: 1.75;
         }
 

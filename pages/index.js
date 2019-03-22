@@ -33,7 +33,7 @@ export default function Page() {
         
         h1, p {
           margin: 0;
-          font-family: 'Poppins', sans-serif;
+          font-family: var(--font-family-main);
         }
 
         h1 {
