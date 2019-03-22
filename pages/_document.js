@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
             </Fragment>
           )}
 
-          <script type="application/ld+json" src="config/schema.org.json"></script>
+          <script type="application/ld+json" src="/static/files/schema_org.json"></script>
         </body>
       </html>
     );
