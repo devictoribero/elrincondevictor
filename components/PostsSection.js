@@ -5,14 +5,7 @@ export default function PostsSection({title, posts}) {
     <section>
       <h1>{title}</h1>
       <div>
-        {posts.map(({title, description, slug, imgSrc}) => (
-          <PostPreview
-            key={slug}
-            title={title}
-            description={description}
-            imgSrc={imgSrc}
-          />
-        ))}
+        {posts.map(post => <PostPreview key={post.slug} {...post}/>)}
       </div>
 
       <style jsx>{`

@@ -87,8 +87,13 @@ export default class MyApp extends App {
 
         <style global jsx>{`
           body {
-            margin: 0;
+            margin: 0 auto;
             font-family: 'Poppins',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+          }
+
+          .container {
+            max-width: 1400px;
+            margin: 0 auto;
           }
 
           .overlay:after {
