@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Router from 'next/router';
 import { DEFAULT_SEO } from '../config/seo';
 import { trackPageView } from '../helpers/trackPageView';
-import {palette} from '../config/palette';
+import {palette, fonts} from '../config/theme';
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -110,11 +110,13 @@ export default class MyApp extends App {
             --primary-200: ${palette.primary["200"]};
             --primary-100: ${palette.primary["100"]};
             --primary-000: ${palette.primary["000"]};
+
+            --font-family-main: ${fonts.main}
           }
 
           body {
             margin: 0 auto;
-            font-family: 'Poppins',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+            font-family: var(--font-family-main);
           }
 
           .container {

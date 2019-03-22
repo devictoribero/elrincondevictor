@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import MainNavigation from '../components/MainNavigation'
+import Footer from '../components/Footer';
 import PostsSection from '../components/PostsSection'
-import {socials} from '../config/social'
 
 const posts = [
 {
@@ -48,52 +48,9 @@ export default function Blog() {
         <PostsSection title='Destacados' posts={posts}/>
       </main>   
 
-      <footer>
-        <span>Copyright 2019 · Todos los derechos reservados</span>
-        <span>Sígueme en:
-          {socials.map(({name, link}) => (
-            <a
-              key={name}
-              className='link social'
-              rel="nofollow noopener noreferrer"
-              target='_blank'
-              href={link}>
-              {name}
-              </a>
-          ))}
-        </span>
-      </footer>
+      <Footer/>
 
       <style jsx>{`
-        footer {
-          padding: 50px 30px;
-          text-align: center;
-          color: #625D52;
-          display: flex; 
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-
-        footer a {
-          padding: 5px;
-          color: #B44D12;
-        }
-
-        footer a:visited {
-          color: #8D2B0B;
-        }
-
-        @media screen and (min-width: 768px) {
-          footer {
-            padding: 50px;
-          }
-        }
-
-        span {
-          display: block;
-          font-size: 12px;
-        }
-
         header {
           padding: 50px 30px;
           position: relative;
@@ -113,11 +70,11 @@ export default function Blog() {
 
         h1 {
           margin: 0;
-          color: #B44D12;
+          color: var(--primary-800);
         }
 
         p {
-          color: #8D2B0B;
+          color: var(--primary-900);
           font-size: 1.5rem;
           margin-top: 1rem;
           line-height: 1.75;

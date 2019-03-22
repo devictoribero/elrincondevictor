@@ -24,3 +24,7 @@ export const palette = {
     "000": 'hsl(49, 100%, 96%)',
   }
 }
+
+export const fonts = {
+  main: '"Poppins",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;'
+}
