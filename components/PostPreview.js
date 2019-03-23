@@ -13,7 +13,6 @@ export default function PostPreview({
         <h2>
           <Link href={link}>
             <a
-              className="titleLink"
               rel="nofollow noopener noreferrer"
               target='_blank'>{title}</a>
           </Link>
@@ -55,6 +54,7 @@ export default function PostPreview({
 
         h2 > a {
           display: block;
+          color: var(--grey-900);
         }
 
         h2 > a:visited {
@@ -78,10 +78,6 @@ export default function PostPreview({
         }
 
         .readMore {
-          color: var(--primary-700);
-        }
-
-        .readMore:visited {
           color: var(--primary-900);
         }
 

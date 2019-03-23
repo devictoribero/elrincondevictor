@@ -119,9 +119,8 @@ export default class MyApp extends App {
             font-family: var(--font-family-main);
           }
 
-          .container {
-            max-width: 1400px;
-            margin: 0 auto;
+          *:focus {
+            outline: 2px dashed;
           }
 
           .overlay:after {
