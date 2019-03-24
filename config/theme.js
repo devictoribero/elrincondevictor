@@ -26,5 +26,6 @@ export const palette = {
 }
 
 export const fonts = {
-  main: '"Poppins",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;'
+  main: '"Poppins",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;',
+  alter: 'medium-content-slab-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;'
 }

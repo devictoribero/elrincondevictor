@@ -53,7 +53,6 @@ export default function PostPreview({
         }
 
         h2 > a {
-          display: block;
           color: var(--grey-900);
         }
 

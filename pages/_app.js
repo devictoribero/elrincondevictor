@@ -112,6 +112,7 @@ export default class MyApp extends App {
             --primary-000: ${palette.primary["000"]};
 
             --font-family-main: ${fonts.main}
+            --font-family-alter: ${fonts.alter}
           }
 
           body {
