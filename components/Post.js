@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {post} from '../config/post-example';
+import PostHeader from './PostHeader'
 
 export default function Post({post}) {
   return (
@@ -14,27 +14,20 @@ export default function Post({post}) {
       </Head>
 
       <main>
-        <article dangerouslySetInnerHTML={{ __html: post.bodyHtml }}></article>
+        <article>
+          <PostHeader post={post} />
+          <div dangerouslySetInnerHTML={{ __html: post.bodyHtml }}></div>
+        </article>
       </main>   
 
       <style jsx global>{`
-        main { padding: 50px 30px; }
+        main { padding: 0 30px; }
 
         article {
           max-width: 700px;
         }
 
-        article > h1 {
-          color: transparent;
-          -webkit-text-stroke: 1px var(--grey-600);
-          text-shadow: 2px 2px var(--primary-400);
-          font-size: 36px;
-          line-height: 1.5;
-          letter-spacing: 0.5px;
-          margin: 0 0 2rem 0;
-        }
-
-        article > p {
+        article p {
           font-size: 18px;
           color: var(--grey-900);
           line-height: 1.75;
@@ -45,6 +38,7 @@ export default function Post({post}) {
         article em {
           font-family: var(--font-family-alter);
           letter-spacing: 0.25px;
+          font-size: 19px;
         }
 
         article strong { color: black; }
@@ -62,7 +56,9 @@ export default function Post({post}) {
           margin-bottom: 1.25rem;
         }
 
-        article > blockquote {
+        article blockquote { margin: 0; }
+
+        article blockquote > p {
           color: var(--primary-900);
           font-size: 27px;
           font-family: var(--font-family-alter);
@@ -73,15 +69,8 @@ export default function Post({post}) {
           padding: 1.5rem 2rem;
         }
 
-        article > blockquote > p { margin: 0; }
-
         @media screen and (min-width: 768px) {
-          main { padding: 50px; }
-
-          article > h1 {
-            text-shadow: 4px 3px var(--primary-400);
-            font-size: 50px;
-          }
+          main { padding: 0 50px; }
         }
       `}</style>
     </div>
