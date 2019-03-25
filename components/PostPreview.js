@@ -92,7 +92,7 @@ export default function PostPreview({
 
         @media screen and (min-width: 767px) {
           img {
-            height: 200px;
+            height: 175px;
           }
         }
       `}</style>

@@ -39,9 +39,11 @@ export default function Blog() {
       </Head>
 
       <MainNavigation/>
-      <header role="banner">
-        <h1>Comparto mi filosofía de vida en este, mi rincón.</h1>
-        <p>Productividad, reflexiones y un estilo de vida sostenible y equilibrado son algunos de los temas de los que escribo.</p>
+      <header role="banner" className="container-wrapper">
+        <div className="container">
+          <h1>Comparto mi filosofía de vida en este, mi rincón.</h1>
+          <p>Productividad, reflexiones y un estilo de vida sostenible y equilibrado son algunos de los temas de los que escribo.</p>
+        </div>
       </header>
 
       <main>
@@ -52,19 +54,20 @@ export default function Blog() {
 
       <style jsx>{`
         header {
-          padding: 50px 30px;
           position: relative;
           background-image: linear-gradient(rgba(233,185,73,0),rgba(249,218,139,1));
+          padding-top: 50px;
+          padding-bottom: 50px;
         }
 
         header:after {
           content: "";
           position: absolute;
-          bottom: -200px;
+          bottom: -180px;
           left: 0;
           right: 0;
           background: rgba(249,218,139,1);
-          height: 200px;
+          height: 180px;
           z-index: -1;
         }
 
@@ -81,10 +84,6 @@ export default function Blog() {
         }
 
         @media screen and (min-width: 768px) {
-          header {
-            padding: 50px;
-          }
-
           h1 {
             width: 500px;
           }

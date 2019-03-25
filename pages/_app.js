@@ -131,15 +131,15 @@ export default class MyApp extends App {
           }
 
           @media screen and (min-width: 768px) {
-            .container { width: 750px; }
+            .container { max-width: 750px; }
           }
 
           @media screen and (min-width: 992px) {
-            .container { width: 970px; }
+            .container { max-width: 970px; }
           }
 
           @media screen and (min-width: 1200px) {
-            .container { width: 1170px; }
+            .container { max-width: 1170px; }
           }
 
           *:focus {

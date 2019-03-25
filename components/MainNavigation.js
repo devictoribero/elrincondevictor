@@ -6,7 +6,7 @@ const socialLinks = socials.filter(social => social.name !== 'Medium');
 export default function MainNavigation() {
   return (
     <nav className="container-wrapper" aria-label="Main navigation">
-      <div className="container">
+      <div className="container inner-nav">
         <Link href="/">
           <a className="logo">Elrincondevictor</a>
         </Link>
@@ -30,7 +30,7 @@ export default function MainNavigation() {
       </div>
 
       <style jsx>{`
-        div {
+        .inner-nav {
           display: flex;
           justify-content: space-between;
           min-height: 125px;
