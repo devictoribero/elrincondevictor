@@ -80,10 +80,6 @@ export default function Blog() {
           line-height: 1.75;
         }
 
-        main {
-          padding: 50px 30px;
-        }
-
         @media screen and (min-width: 768px) {
           header {
             padding: 50px;
@@ -95,10 +91,6 @@ export default function Blog() {
 
           p {
             width: 600px;
-          }
-
-          main {
-            padding: 50px;
           }
         }
       `}</style>

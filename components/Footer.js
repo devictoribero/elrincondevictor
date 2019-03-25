@@ -3,7 +3,7 @@ import {socials} from '../config/social'
 export default function Footer() {
   return (
     <footer className="container-wrapper">
-      <div className="container">
+      <div className="container footer-inner">
         <span>Copyright 2019 · Todos los derechos reservados</span>
         <span>Sígueme en:
           {socials.map(({name, link}) => (
@@ -20,7 +20,11 @@ export default function Footer() {
       </div>
 
       <style jsx>{`
-        .container {
+        footer {
+          margin-top: 50px;
+        }
+
+        .footer-inner {
           display: flex;
           min-height: 75px;
           align-items: center;
@@ -37,12 +41,6 @@ export default function Footer() {
 
         footer a:visited {
           color: var(--primary-900);
-        }
-
-        @media screen and (min-width: 768px) {
-          footer {
-            padding: 50px;
-          }
         }
 
         span {

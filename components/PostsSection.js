@@ -2,10 +2,12 @@ import PostPreview from './PostPreview'
 
 export default function PostsSection({title, posts}) {
   return (
-    <section>
-      <h1>{title}</h1>
-      <div>
-        {posts.map(post => <PostPreview key={post.slug} {...post}/>)}
+    <section className="container-wrapper">
+      <div className="container">
+        <h1>{title}</h1>
+        <div className="content">
+          {posts.map(post => <PostPreview key={post.slug} {...post}/>)}
+        </div>
       </div>
 
       <style jsx>{`
@@ -25,7 +27,7 @@ export default function PostsSection({title, posts}) {
           margin-left: 10px;
         }
 
-        div {
+        .content {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           grid-gap: 1.5rem;

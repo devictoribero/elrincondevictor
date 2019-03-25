@@ -5,13 +5,13 @@ const socialLinks = socials.filter(social => social.name !== 'Medium');
 
 export default function MainNavigation() {
   return (
-    <div className="container-wrapper">
+    <nav className="container-wrapper" aria-label="Main navigation">
       <div className="container">
         <Link href="/">
           <a className="logo">Elrincondevictor</a>
         </Link>
 
-        <nav>
+        <div>
           <Link href="/blog">
             <a className="blog">Mi blog</a>
           </Link>
@@ -26,7 +26,7 @@ export default function MainNavigation() {
               {name}
               </a>
           ))}
-        </nav>
+        </div>
       </div>
 
       <style jsx>{`
@@ -47,14 +47,14 @@ export default function MainNavigation() {
           text-decoration: none;
         }
 
-        nav > a {
+        nav a {
           position: relative;
           padding: 0.5rem;
           font-size: 18px;
           color: var(--grey-800);
         }
 
-        nav > a:after {
+        nav a:after {
           content: '';
           position: absolute;
           left: 0;
@@ -67,28 +67,28 @@ export default function MainNavigation() {
           transform: skewX(150deg);
         }
 
-        nav > a:hover:after,
-        nav > a:focus:after {
+        nav a:hover:after,
+        nav a:focus:after {
           width: 100%;
           background: var(--primary-300);
         }
 
-        nav > .blog {
+        nav .blog {
           font-weight: bold;
         }
 
-        nav > .social {
+        nav .social {
           display: none;
           font-size: 14px;
           margin-left: 0.5rem;
         }
 
         @media screen and (min-width: 768px) {
-          nav > .social {
+          nav .social {
             display: inline;
           }
         }
       `}</style>
-    </div>
+    </nav>
   )
 }

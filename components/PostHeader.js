@@ -1,6 +1,6 @@
 export default function Post({post}) {
   return (
-    <header role="banner">
+    <header>
       <figure>
         <img src={'https://cdn-images-1.medium.com/max/2400/1*7gKayn-ihEADJ9jOhdMHMQ.jpeg'} alt="" role="presentation"/>
       </figure>
