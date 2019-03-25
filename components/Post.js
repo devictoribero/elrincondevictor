@@ -3,7 +3,7 @@ import PostHeader from './PostHeader'
 
 export default function Post({post}) {
   return (
-    <div className="page">
+    <div className="page container-wrapper">
       <Head>
         <title key="title">Elrincondevictor · Bienvenido a mi mente</title>
         <meta
@@ -13,7 +13,7 @@ export default function Post({post}) {
         />
       </Head>
 
-      <main>
+      <main className='container'>
         <article>
           <PostHeader post={post} />
           <div dangerouslySetInnerHTML={{ __html: post.bodyHtml }}></div>
@@ -21,8 +21,6 @@ export default function Post({post}) {
       </main>   
 
       <style jsx global>{`
-        main { padding: 0 30px; }
-
         article {
           max-width: 700px;
         }
@@ -67,10 +65,6 @@ export default function Post({post}) {
           position: relative;
           margin: 2rem 0;
           padding: 1.5rem 2rem;
-        }
-
-        @media screen and (min-width: 768px) {
-          main { padding: 0 50px; }
         }
       `}</style>
     </div>

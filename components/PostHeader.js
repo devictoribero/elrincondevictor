@@ -20,7 +20,7 @@ export default function Post({post}) {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,1));
+          background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
         }
 
         img {
@@ -38,7 +38,7 @@ export default function Post({post}) {
           font-size: 36px;
           line-height: 1.5;
           letter-spacing: 0.5px;
-          margin: -3rem 0 2rem 0;
+          margin: -5rem 0 2rem 0;
         }
 
         @media screen and (min-width: 768px) {

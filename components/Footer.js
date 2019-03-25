@@ -2,28 +2,31 @@ import {socials} from '../config/social'
 
 export default function Footer() {
   return (
-    <footer>
-      <span>Copyright 2019 · Todos los derechos reservados</span>
-      <span>Sígueme en:
-        {socials.map(({name, link}) => (
-          <a
-            key={name}
-            className='link social'
-            rel="nofollow noopener noreferrer"
-            target='_blank'
-            href={link}>
-            {name}
-          </a>
-        ))}
-      </span>
+    <footer className="container-wrapper">
+      <div className="container">
+        <span>Copyright 2019 · Todos los derechos reservados</span>
+        <span>Sígueme en:
+          {socials.map(({name, link}) => (
+            <a
+              key={name}
+              className='link social'
+              rel="nofollow noopener noreferrer"
+              target='_blank'
+              href={link}>
+              {name}
+            </a>
+          ))}
+        </span>
+      </div>
 
       <style jsx>{`
-        footer {
-          padding: 50px 30px;
-          text-align: center;
-          color: var(--grey-600);
-          display: flex; 
+        .container {
+          display: flex;
+          min-height: 75px;
+          align-items: center;
+          align-content: center;
           justify-content: space-between;
+          color: var(--grey-600);
           flex-wrap: wrap;
         }
 

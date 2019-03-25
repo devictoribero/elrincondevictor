@@ -5,35 +5,36 @@ const socialLinks = socials.filter(social => social.name !== 'Medium');
 
 export default function MainNavigation() {
   return (
-    <div>
-      <Link href="/">
-        <a className="logo">Elrincondevictor</a>
-      </Link>
-
-      <nav>
-        <Link href="/blog">
-          <a className="blog">Mi blog</a>
+    <div className="container-wrapper">
+      <div className="container">
+        <Link href="/">
+          <a className="logo">Elrincondevictor</a>
         </Link>
 
-        {socialLinks.map(({name, link}) => (
-          <a
-            key={name}
-            className='social'
-            rel="nofollow noopener noreferrer"
-            target='_blank'
-            href={link}>
-            {name}
-            </a>
-        ))}
-      </nav>
+        <nav>
+          <Link href="/blog">
+            <a className="blog">Mi blog</a>
+          </Link>
+
+          {socialLinks.map(({name, link}) => (
+            <a
+              key={name}
+              className='social'
+              rel="nofollow noopener noreferrer"
+              target='_blank'
+              href={link}>
+              {name}
+              </a>
+          ))}
+        </nav>
+      </div>
 
       <style jsx>{`
         div {
           display: flex;
           justify-content: space-between;
-          min-height: 75px;
-          padding: 30px;
-          align-items: baseline;
+          min-height: 125px;
+          align-items: center;
           box-sizing: border-box;
         }
 
@@ -83,10 +84,6 @@ export default function MainNavigation() {
         }
 
         @media screen and (min-width: 768px) {
-          div {
-            padding: 50px;
-          }
-
           nav > .social {
             display: inline;
           }

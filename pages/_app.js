@@ -120,6 +120,28 @@ export default class MyApp extends App {
             font-family: var(--font-family-main);
           }
 
+          .container-wrapper {
+            padding: 0 25px;
+          }
+
+          .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+          }
+
+          @media screen and (min-width: 768px) {
+            .container { width: 750px; }
+          }
+
+          @media screen and (min-width: 992px) {
+            .container { width: 970px; }
+          }
+
+          @media screen and (min-width: 1200px) {
+            .container { width: 1170px; }
+          }
+
           *:focus {
             outline: 2px dashed;
           }
