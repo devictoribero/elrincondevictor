@@ -15,7 +15,7 @@ export default function Post({post}) {
       <figure>
         <img src={'https://cdn-images-1.medium.com/max/2400/1*7gKayn-ihEADJ9jOhdMHMQ.jpeg'} alt="" role="presentation"/>
       </figure>
-      <h1>{post.title}</h1>
+      <h1>{post.meta_title}</h1>
 
       <PublicationDetails
         day={day}

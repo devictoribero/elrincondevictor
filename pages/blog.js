@@ -34,7 +34,7 @@ export default function Blog() {
         <meta
           key="description"
           name="description"
-          content="Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida equilibrada."
+          content="Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida saludable y equilibrada."
         />
       </Head>
 

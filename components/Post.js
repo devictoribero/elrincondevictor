@@ -5,7 +5,7 @@ export default function Post({post}) {
   return (
     <div className="page container-wrapper">
       <Head>
-        <title key="title">Elrincondevictor · Bienvenido a mi mente</title>
+        <title key="title">{`${post.meta_title} | Elrincondevictor`}</title>
         <meta
           key="description"
           name="description"
@@ -23,6 +23,11 @@ export default function Post({post}) {
       <style jsx global>{`
         article {
           max-width: 700px;
+        }
+
+        article h2 {
+          margin: 2.5rem 0 0.5rem;
+          color: var(--grey-900);
         }
 
         article p {
@@ -65,6 +70,15 @@ export default function Post({post}) {
           position: relative;
           margin: 2rem 0;
           padding: 1.5rem 2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+          article h2 { font-size: 27px; }
+          
+          article em { font-size: 21px; }
+          
+          article p,
+          article li { font-size: 21px; }
         }
       `}</style>
     </div>
