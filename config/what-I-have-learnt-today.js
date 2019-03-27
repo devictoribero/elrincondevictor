@@ -1,6 +1,10 @@
 export const whatIhaveLearntToday = [
   {
     date: "2019-03-27",
+    data: ['Gracias a <a href="https://twitter.com/csswizardry/status/836960832789565440">este tweet</a>, he aprendido como funcionan los attributos <em>sizes</em> and <em>srcset</em> para cargar imágenes de manera óptima.']
+  },
+  {
+    date: "2019-03-26",
     data: ['La aplicación/servicio <a href="https://jfrog.com/artifactory/">Artifactory</a> es de una empresa llamada jfrog. Ésta, es la competencia de npm.']
   },
   {
