@@ -2,7 +2,7 @@ import Head from 'next/head';
 import MainNavigation from '../components/MainNavigation'
 import Post from '../components/Post';
 import Footer from '../components/Footer';
-import {post1} from '../config/post-example';
+import {post3} from '../config/post-example';
 
 export default function Page({post}) {
   return (
@@ -28,5 +28,5 @@ export default function Page({post}) {
 }
 
 Page.getInitialProps = async ({ req }) => {
-  return { post: post1 };
+  return { post: post3 };
 };

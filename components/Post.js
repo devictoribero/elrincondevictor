@@ -1,7 +1,22 @@
 import Head from 'next/head';
 import PostHeader from './PostHeader'
 
+function isExternalLink(link) {
+  return link.search('elrincondevictor') === -1
+}
+
 export default function Post({post}) {
+  if(process.browser) {
+    const links = document.querySelectorAll('article a');
+    for(let i = 0, length = links.length; i < length; i++) {
+      let link = links[i];
+      if(isExternalLink(link.getAttribute('href'))) {
+        link.setAttribute('rel', 'nofollow noopener');
+        link.setAttribute('target', '_blank');
+      }
+    }
+  }
+
   return (
     <div className="page container-wrapper">
       <Head>
@@ -22,28 +37,27 @@ export default function Post({post}) {
 
       <style jsx global>{`
         article {
+          font-size: 18px;
+          color: var(--grey-900);
           max-width: 700px;
         }
 
         article h2 {
           margin: 2.5rem 0 0.5rem;
-          color: var(--grey-900);
+        }
+
+        article p,
+        article li {
+          hyphens: auto;
         }
 
         article p {
-          font-size: 18px;
-          color: var(--grey-900);
           line-height: 1.75;
           letter-spacing: 0.2px;
           margin: 0 0 2rem 0;
         }
 
-        article em {
-          font-family: var(--font-family-alter);
-          letter-spacing: 0.25px;
-          font-size: 19px;
-        }
-
+        article em { color: var(--grey-700); }
         article strong { color: black; }
 
         article ul,
@@ -52,11 +66,13 @@ export default function Post({post}) {
         }
 
         article li {
-          font-size: 18px;
-          color: var(--grey-900);
           line-height: 1.75;
           letter-spacing: 0.2px;
           margin-bottom: 1.25rem;
+        }
+
+        article a {
+          color: var(--primary-800);
         }
 
         article blockquote { margin: 0; }
@@ -75,10 +91,10 @@ export default function Post({post}) {
         @media screen and (min-width: 768px) {
           article h2 { font-size: 27px; }
           
-          article em { font-size: 21px; }
-          
           article p,
-          article li { font-size: 21px; }
+          article em,
+          article a,
+          article li { font-size: 20px; }
         }
       `}</style>
     </div>

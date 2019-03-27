@@ -1,6 +1,10 @@
 export const whatIhaveLearntToday = [
   {
     date: "2019-03-27",
+    data: ['He aprendido que después de hacer <em>fork</em> de un <em>repositorio</em>, para contribuir a éste desde el tuyo, <a href="https://help.github.com/en/articles/configuring-a-remote-for-a-fork">se ha de configurar un <em>remote</em></a> que apunte al <em>upstream</em> del repositorio original.']
+  },
+  {
+    date: "2019-03-27",
     data: ['Gracias a <a href="https://twitter.com/csswizardry/status/836960832789565440">este tweet</a>, he aprendido como funcionan los attributos <em>sizes</em> and <em>srcset</em> para cargar imágenes de manera óptima.']
   },
   {
