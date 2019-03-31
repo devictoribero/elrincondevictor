@@ -28,5 +28,6 @@ export default function Page({post}) {
 }
 
 Page.getInitialProps = async ({ req }) => {
+  console.log(req)
   return { post: post3 };
 };

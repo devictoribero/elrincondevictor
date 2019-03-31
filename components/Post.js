@@ -31,7 +31,7 @@ export default function Post({post}) {
       <main className='container'>
         <article>
           <PostHeader post={post} />
-          <div dangerouslySetInnerHTML={{ __html: post.bodyHtml }}></div>
+          <div dangerouslySetInnerHTML={{ __html: '<a href="link">adada</>' }}></div>
         </article>
       </main>   
 
