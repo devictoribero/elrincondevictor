@@ -1,21 +1,17 @@
-import {months} from '../helpers/months';
+import {months} from '../../helpers/months';
 
-export default function Post({post}) {
-  const publicationDate = new Date(post.date);
+export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
+  const publicationDate = new Date();
   const day = publicationDate.getDate();
   const month = months[publicationDate.getMonth()];
   const year = publicationDate.getFullYear();
-  const author = {
-    name: 'Victor Ribero',
-    img_src: 'https://avatars0.githubusercontent.com/u/16169890?s=400&v=4'
-  }
 
   return (
     <header>
       <figure>
         <img src={'https://cdn-images-1.medium.com/max/2400/1*7gKayn-ihEADJ9jOhdMHMQ.jpeg'} alt="" role="presentation"/>
       </figure>
-      <h1>{post.meta_title}</h1>
+      <h1>{title}</h1>
 
       <PublicationDetails
         day={day}

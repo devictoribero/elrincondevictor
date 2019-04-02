@@ -1,7 +1,6 @@
-
 const fs = require('fs')
 const {resolve} = require('path')
-const ReactMarkdown = require('react-markdown')
+const matter = require('gray-matter')
 
 const CONTENT_DIR = './content'
 const INPUT_PATH = resolve(CONTENT_DIR)
@@ -10,11 +9,11 @@ const OUTPUT_FILE_NAME = 'index.json'
 const ENCODING = 'utf-8'
 
 const list = getContentList(INPUT_PATH)
-const indexFileContent = getIndexContent(INPUT_PATH, list)
+const indexContent = getIndexContent(INPUT_PATH, list)
 
 fs.writeFile(
   `${OUTPUT_PATH}/${OUTPUT_FILE_NAME}`,
-  indexFileContent,
+  indexContent,
   ENCODING,
   err => {
     if (err) throw err
@@ -50,7 +49,7 @@ function getIndexContent(dir, list) {
 
   for (var i = 0; i < list.length; i++) {
     const file = fs.readFileSync(`${dir}/${list[i]}`, ENCODING)
-    const content = ReactMarkdown(file)
+    const content = matter(file)
     fileContent.list.push(content.data)
   }
 

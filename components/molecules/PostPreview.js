@@ -1,28 +1,23 @@
 import Link from 'next/link'
 
-export default function PostPreview({
-  title, description, imgSrc, slug, link
+export function PostPreview({
+  title, description, img_src, slug, link
 }) {
   return (
     <article>
       <figure className='overlay'>
-        <img src={imgSrc} alt="" role="presentation"/>
+        <img src={img_src} alt="" role="presentation"/>
       </figure>
 
       <div>
         <h2>
-          <Link href={link}>
-            <a
-              rel="nofollow noopener noreferrer"
-              target='_blank'>{title}</a>
+          <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`}>
+            <a>{title}</a>
           </Link>
         </h2>
         <p>{description}</p>
-        <Link href={link}>
-          <a
-            className="readMore"
-            rel="nofollow noopener noreferrer"
-            target='_blank'>Leer más</a>
+        <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`}>
+          <a className="readMore">Leer más</a>
         </Link>
       </div>
       

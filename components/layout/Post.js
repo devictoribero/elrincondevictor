@@ -1,37 +1,32 @@
 import Head from 'next/head';
-import PostHeader from './PostHeader'
+import ReactMarkdown from 'react-markdown'
+import {PostHeader} from '../molecules/PostHeader'
 
-function isExternalLink(link) {
-  return link.search('elrincondevictor') === -1
-}
-
-export default function Post({post}) {
-  if(process.browser) {
-    const links = document.querySelectorAll('article a');
-    for(let i = 0, length = links.length; i < length; i++) {
-      let link = links[i];
-      if(isExternalLink(link.getAttribute('href'))) {
-        link.setAttribute('rel', 'nofollow noopener');
-        link.setAttribute('target', '_blank');
-      }
-    }
-  }
-
+export function Post({post: {content, data}}) {
   return (
-    <div className="page container-wrapper">
+    <div className='page container-wrapper'>
       <Head>
-        <title key="title">{`${post.meta_title} | Elrincondevictor`}</title>
+        <title key='title'>{`${data.title} | Elrincondevictor`}</title>
         <meta
-          key="description"
-          name="description"
-          content="Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida equilibrada."
+          key='description'
+          name='description'
+          content='Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida equilibrada.'
         />
       </Head>
 
       <main className='container'>
         <article>
-          <PostHeader post={post} />
-          <div dangerouslySetInnerHTML={{ __html: '<a href="link">adada</>' }}></div>
+          <PostHeader
+            title={data.title}
+            post={data}
+            author={{
+              name: 'Victor Ribero',
+              img_src: 'https://avatars0.githubusercontent.com/u/16169890?s=400&v=4'
+            }}/>
+          <ReactMarkdown
+            source={content}
+            escapeHtml={false}
+            renderers={{ link: CustomPostLink }} />
         </article>
       </main>   
 
@@ -49,6 +44,13 @@ export default function Post({post}) {
         article p,
         article li {
           hyphens: auto;
+        }
+
+        /* Article images */
+        article p > img {
+          max-width: 100%;
+          display: block;
+          margin: 0 auto;
         }
 
         article p {
@@ -98,5 +100,18 @@ export default function Post({post}) {
         }
       `}</style>
     </div>
+  )
+}
+
+function CustomPostLink({href, children}) {
+  const isExternal = href.match('elrincondevictor') === null
+  return (
+    <a
+      href={href}
+      target={isExternal && '_blank'}
+      rel={isExternal && 'nofollow noopener noreferrer'}
+    >
+      {children}
+    </a>
   )
 }

@@ -1,6 +1,6 @@
-import PostPreview from './PostPreview'
+import {PostPreview} from './PostPreview'
 
-export default function PostsSection({title, posts}) {
+export function PostsSection({title, posts}) {
   return (
     <section className="container-wrapper">
       <div className="container">

@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import {socials} from '../config/social'
+import {socials} from '../../config/social'
 
 const socialLinks = socials.filter(social => social.name !== 'Medium');
 
-export default function MainNavigation() {
+export function MainNavigation() {
   return (
-    <nav className="container-wrapper" aria-label="Main navigation">
-      <div className="container inner-nav">
+    <nav className="container-wrapper MainNavigation" aria-label="Navegador principal">
+      <div className="container MainNavigation-inner">
         <Link href="/">
           <a className="logo">Elrincondevictor</a>
         </Link>
@@ -29,8 +29,8 @@ export default function MainNavigation() {
         </div>
       </div>
 
-      <style jsx>{`
-        .inner-nav {
+      <style global jsx>{`
+        .MainNavigation-inner {
           display: flex;
           justify-content: space-between;
           min-height: 125px;
@@ -43,18 +43,18 @@ export default function MainNavigation() {
           color: #1d1d1d;
         }
 
-        a {
+        .MainNavigation a {
           text-decoration: none;
         }
 
-        nav a {
+        .MainNavigation a {
           position: relative;
           padding: 0.5rem;
           font-size: 18px;
           color: var(--grey-800);
         }
 
-        nav a:after {
+        .MainNavigation a:after {
           content: '';
           position: absolute;
           left: 0;
@@ -67,24 +67,24 @@ export default function MainNavigation() {
           transform: skewX(150deg);
         }
 
-        nav a:hover:after,
-        nav a:focus:after {
+        .MainNavigation a:hover:after,
+        .MainNavigation a:focus:after {
           width: 100%;
           background: var(--primary-300);
         }
 
-        nav .blog {
+        .MainNavigation .blog {
           font-weight: bold;
         }
 
-        nav .social {
+        .MainNavigation .social {
           display: none;
           font-size: 14px;
           margin-left: 0.5rem;
         }
 
         @media screen and (min-width: 768px) {
-          nav .social {
+          .MainNavigation .social {
             display: inline;
           }
         }

@@ -1,13 +1,9 @@
 ---
-meta_title: 6 sencillos pasos para organizar tu semana
-meta_descripcion: ¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana
-meta_img_src: https://oddslifenetstorage.blob.core.windows.net/esportsinsider/2017/02/34013677_l.jpg
-date: 2019-03-13
-page: post
-paths:
-  - /custom-post
-  - /custom-post-alias
-  - /subpath/custom-post-alias
+title: 6 sencillos pasos para organizar tu semana
+slug: 6-sencillos-pasos-para-organizar-tu-semana
+description: ¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana
+img_src: https://oddslifenetstorage.blob.core.windows.net/esportsinsider/2017/02/34013677_l.jpg
+createdAt: 2019-03-13
 ---
 
 Desde siempre, cómo gestionar nuestro tiempo ha sido una tarea pendiente por falta de motivación, vagancia, conformismo, inexistencia de metas y pensar que disponemos de una infinidad de tiempo.

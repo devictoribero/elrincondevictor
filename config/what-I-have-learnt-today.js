@@ -1,6 +1,10 @@
 export const whatIhaveLearntToday = [
   {
-    date: "2019-03-27",
+    date: "2019-03-29",
+    data: ['He conocido una librería de Javascript que se llama <a href="https://www.npmjs.com/package/mocha.parallel">Mocha Parallel</a> que sirve para ejecutar tests en paralelo.']
+  },
+  {
+    date: "2019-03-28",
     data: ['He aprendido que después de hacer <em>fork</em> de un <em>repositorio</em>, para contribuir a éste desde el tuyo, <a href="https://help.github.com/en/articles/configuring-a-remote-for-a-fork">se ha de configurar un <em>remote</em></a> que apunte al <em>upstream</em> del repositorio original.']
   },
   {

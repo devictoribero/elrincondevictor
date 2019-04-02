@@ -1,9 +1,9 @@
-import {socials} from '../config/social'
+import {socials} from '../../config/social'
 
-export default function Footer() {
+export function MainFooter() {
   return (
-    <footer className="container-wrapper">
-      <div className="container footer-inner">
+    <footer className="container-wrapper MainFooter">
+      <div className="container MainFooter-inner">
         <span>Copyright 2019 · Todos los derechos reservados</span>
         <span>Sígueme en:
           {socials.map(({name, link}) => (
@@ -19,12 +19,12 @@ export default function Footer() {
         </span>
       </div>
 
-      <style jsx>{`
-        footer {
+      <style global jsx>{`
+        .MainFooter {
           margin-top: 50px;
         }
 
-        .footer-inner {
+        .MainFooter .MainFooter-inner {
           display: flex;
           min-height: 75px;
           align-items: center;
@@ -34,16 +34,16 @@ export default function Footer() {
           flex-wrap: wrap;
         }
 
-        footer a {
+        .MainFooter a {
           padding: 5px;
           color: var(--primary-800);
         }
 
-        footer a:visited {
+        .MainFooter a:visited {
           color: var(--primary-900);
         }
 
-        span {
+        .MainFooter-inner > span {
           display: block;
           font-size: 12px;
         }
