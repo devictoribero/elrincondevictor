@@ -1,4 +1,4 @@
-const blogIndex = require('../content/index.json')
+const blogIndex = require('./content/index.json')
 
 const staticRoutes = {
   '/': {page: '/'},

@@ -1,8 +1,6 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { Fragment } from 'react';
 import { person } from '../config/schema.org';
-import {MainNavigation} from '../components/layout/MainNavigation'
-import {MainFooter} from '../components/layout/MainFooter';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -22,9 +20,7 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet"></link>
         </Head>
         <body>
-          <MainNavigation/>
           <Main />
-          <MainFooter/>
           <NextScript />
 
           {/* We only want to add the scripts if in production */}

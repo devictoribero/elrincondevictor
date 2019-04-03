@@ -19,7 +19,7 @@ export function MainFooter() {
         </span>
       </div>
 
-      <style global jsx>{`
+      <style jsx>{`
         .MainFooter {
           margin-top: 50px;
         }

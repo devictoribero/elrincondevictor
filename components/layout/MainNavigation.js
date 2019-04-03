@@ -29,7 +29,7 @@ export function MainNavigation() {
         </div>
       </div>
 
-      <style global jsx>{`
+      <style jsx>{`
         .MainNavigation-inner {
           display: flex;
           justify-content: space-between;

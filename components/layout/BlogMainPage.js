@@ -27,20 +27,13 @@ export function BlogMainPage({list}) {
       <style jsx>{`
         header {
           position: relative;
-          background-image: linear-gradient(rgba(233,185,73,0),rgba(249,218,139,1));
+          background: url('/static/img/home-header.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
           padding-top: 50px;
           padding-bottom: 50px;
-        }
-
-        header:after {
-          content: "";
-          position: absolute;
-          bottom: -180px;
-          left: 0;
-          right: 0;
-          background: rgba(249,218,139,1);
-          height: 180px;
-          z-index: -1;
+          margin-bottom: 32px;
         }
 
         h1 {

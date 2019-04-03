@@ -11,12 +11,12 @@ export function PostPreview({
 
       <div>
         <h2>
-          <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`}>
+          <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
             <a>{title}</a>
           </Link>
         </h2>
         <p>{description}</p>
-        <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`}>
+        <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
           <a className="readMore">Leer más</a>
         </Link>
       </div>

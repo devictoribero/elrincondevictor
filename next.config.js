@@ -1,6 +1,4 @@
-const withPlugins = require('next-compose-plugins')
-const FilterWarningsPlugin = require('webpack-filter-warnings-plugin')
-const routes = require('./config/routes')
+const routes = require('./routes')
 
 const nextConfig = {
   exportPathMap: () => routes,
