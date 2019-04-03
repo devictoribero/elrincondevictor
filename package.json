@@ -6,10 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "npm run generate && next build",
-    "export": "next build && next export -o dist",
-    "now-build": "next build && next export -o dist",
-    "deploy:stagging": "npx now --target staging",
-    "deploy:production": "npx now --target production",
+    "export": "npm run build && next export -o dist",
     "generate": "node ./bin/generate-content.js "
   },
   "repository": {
