@@ -8,6 +8,7 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 .next/
+dist/
 
 # dotenv environment variables file
 .env
