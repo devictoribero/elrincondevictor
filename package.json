@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
+    "generate": "node ./bin/generate-content.js",
     "build": "npm run generate && next build",
-    "export": "npm run build && next export -o dist",
-    "generate": "node ./bin/generate-content.js "
+    "export": "next export -o dist",
+    "deploy": "npm run build && npm run export"
   },
   "repository": {
     "type": "git",
