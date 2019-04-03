@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet"></link>
+          <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" as="font" type="font/woff2" crossOrigin="true"></link>
         </Head>
         <body>
           <Main />

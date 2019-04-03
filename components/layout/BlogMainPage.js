@@ -38,12 +38,12 @@ export function BlogMainPage({list}) {
 
         h1 {
           margin: 0;
-          color: var(--primary-800);
+          color: var(--grey-700);
         }
 
         p {
           margin-top: 1rem;
-          color: var(--primary-900);
+          color: var(--grey-600);
           font-size: 1.5rem;
           line-height: 1.75;
         }

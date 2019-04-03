@@ -1,40 +1,27 @@
-import {socials} from '../config/social'
+import {Layout} from '../components/layout/Layout';
+import {socials} from '../config/social';
 
 export default function Page() {
   return (
-    <div className="page">
-      <header>
-        <div className="header-inner">
+    <Layout>
+      <header className="container-wrapper">
+        <div className="container">
           <h1 lang="en">Senior<br/>human being<br/>at life.</h1>
           <p>Soy desarrollador front-end 👨‍💻 y me gusta conectar con el alma de las personas ❤️.</p>
           <p>Hago deporte 🏋️, amo el yoga 🧘, practico meditación 🙏, viajo siempre que puedo 🛫 y me cuestiono todo acerca de la vida.</p>
         </div>
-
-        <nav className='social'>
-          {socials.map(({name, link}) => (
-            <a
-              key={name}
-              className='social-link'
-              rel="nofollow noopener noreferrer"
-              target='_blank'
-              href={link}>
-              {name}
-              </a>
-          ))}
-        </nav>
       </header>
 
       <style jsx>{`
         header {
-          min-height: 100vh;
-          padding: 1.5rem;
+          min-height: calc(100vh - 250px);
           box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
         
-        h1, p {
-          margin: 0;
-          font-family: var(--font-family-main);
-        }
+        h1, p { margin: 0; }
 
         h1 {
           margin-bottom: 24px;
@@ -55,74 +42,18 @@ export default function Page() {
           line-height: 2;
         }
 
-        .social {
-          display: flex;
-          padding: 2rem 0;
-          flex-wrap: wrap;
-        }
-
-        .social-link {
-          position: relative;
-          display: block;
-          margin: 0 0.75rem 0.75rem 0;
-          color: #1d1d1d;
-          font-weight: bold;
-          font-family: 'Poppins', sans-serif;
-          text-decoration: none;
-          border-bottom: 1px dashed #1d1d1d;
-        }
-
-        .social-link:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0.5rem;
-          width: 0;
-          height: 10px;
-          z-index: -1;
-          transition: 0.3s ease width;
-          transform:skewX(150deg);
-        }
-
-        .social-link:hover:after {
-          width: 100%;
-          background: #ffed5e;
-        }
-
         @media screen and (min-width: 768px) {
-          header {
-            padding: 3rem;
-          }
-
-          .header-inner {
-            width: 600px;
-            margin-top: 5rem;
-          }
-
           h1 {
             margin-bottom: 36px;
+            width: 600px;
           }
 
           p {
             font-size: 21px;
-          }
-        }
-
-        @media screen and (min-width: 1024px) {
-          header {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 10%;
-          }
-
-          .header-inner {
             width: 600px;
-            margin-top: 0;
           }
         }
       `}</style>
-    </div>
+    </Layout>
   )
 }

@@ -18,10 +18,11 @@ export function Post({post: {content, data}}) {
         <article>
           <PostHeader
             title={data.title}
+            imgSrc={data.img_src}
             post={data}
             author={{
               name: 'Victor Ribero',
-              img_src: 'https://avatars0.githubusercontent.com/u/16169890?s=400&v=4'
+              imgSrc: 'https://avatars0.githubusercontent.com/u/16169890?s=400&v=4'
             }}/>
           <ReactMarkdown
             source={content}
@@ -34,7 +35,8 @@ export function Post({post: {content, data}}) {
         article {
           font-size: 18px;
           color: var(--grey-900);
-          max-width: 700px;
+          max-width: 800px;
+          font-weight: 300;
         }
 
         article h2 {
@@ -46,7 +48,6 @@ export function Post({post: {content, data}}) {
           hyphens: auto;
         }
 
-        /* Article images */
         article p > img {
           max-width: 100%;
           display: block;
@@ -59,8 +60,14 @@ export function Post({post: {content, data}}) {
           margin: 0 0 2rem 0;
         }
 
-        article em { color: var(--grey-700); }
-        article strong { color: black; }
+        article em {
+          color: var(--grey-700);
+        }
+
+        article strong {
+          color: black;
+          font-weight: 500;
+        }
 
         article ul,
         article ol {

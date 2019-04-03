@@ -9,7 +9,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
   return (
     <header>
       <figure>
-        <img src={'https://cdn-images-1.medium.com/max/2400/1*7gKayn-ihEADJ9jOhdMHMQ.jpeg'} alt="" role="presentation"/>
+        <img src={imgSrc} alt="" role="presentation"/>
       </figure>
       <h1>{title}</h1>
 
@@ -37,7 +37,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+          background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,1));
         }
 
         figure img {
@@ -79,7 +79,7 @@ function PublicationDetails({day, month, year, author}) {
   return (
     <span>
       <img
-        src={author.img_src}
+        src={author.imgSrc}
         alt={`Fotografía de ${author.name}, el autor de este artículo.`}/>
       {author.name},
       <time>{day} {month} del {year}</time>.
