@@ -38,7 +38,7 @@ export function BlogMainPage({list}) {
 
         h1 {
           margin: 0;
-          color: var(--grey-700);
+          color: var(--grey-800);
         }
 
         p {
