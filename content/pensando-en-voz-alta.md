@@ -2,7 +2,7 @@
 title: Voy a pensar en voz alta ¿Te apuntas?
 slug: pensando-en-voz-alta
 description: Pensando en voz alta ¿Por qué no soy feliz aunque me dedique a lo que me gusta?
-img_src: https://www.tah-heetch.com/wp-content/uploads/2018/11/ketamine-may-be-a-depression-treatment-over-antidepressants-time.jpg
+img_src: /static/img/pensando-en-voz-alta.jpg
 createdAt: 2019-02-15
 ---
 
@@ -58,4 +58,4 @@ Me acerco hacia donde están mis padres hablando de algo que no logro descifrar.
 
 **Y tú, ¿Qué piensas?**
 
-Namasté 🙏
+**Namasté** 🙏

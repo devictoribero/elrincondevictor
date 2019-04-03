@@ -2,7 +2,7 @@
 title: 6 sencillos pasos para organizar tu semana
 slug: 6-sencillos-pasos-para-organizar-tu-semana
 description: ¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana
-img_src: https://oddslifenetstorage.blob.core.windows.net/esportsinsider/2017/02/34013677_l.jpg
+img_src: /static/img/6-sencillos-pasos-para-organizar-tu-semana.jpg
 createdAt: 2019-03-13
 ---
 
@@ -36,7 +36,7 @@ A continuación, vamos a hacer un ejercicio práctico con el que veremos como ap
 ## 1- Asignar las horas de trabajo
 Dependiendo del sector en el que trabajes y de lo permisible que sea tu empresa, podrás tener más o menos flexibilidad a la hora de decidir tu horario laboral. En caso de que tu empresa no te de facilidades para poder elegir un horario, no tendrás que dedicar mucho tiempo a este paso porque el horario será el que ellos te impongan.
 
-![](/static/img/6-sencillos-pasos-para-organizar-tu-semana-1.png)
+![""](/static/img/6-sencillos-pasos-para-organizar-tu-semana-1.png)
 
 ## 2- Pensar en el número de horas que queremos dormir
 
@@ -44,7 +44,7 @@ Una vez realizado el paso anterior, sabrás a que hora tienes que empezar a trab
 
 Dependiendo de cual sea tu rutina y cuanto ejercicio mental y físico hagas a lo largo del día, necesitarás más o menos horas de descanso. En mi caso, con 7 horas y media tengo más que suficiente.
 
-![](/static/img/6-sencillos-pasos-para-organizar-tu-semana-2.png)
+![""](/static/img/6-sencillos-pasos-para-organizar-tu-semana-2.png)
 
 ## 3- Diseñar una rutina matutina
 
@@ -93,4 +93,4 @@ Organizo mi tiempo de tal manera que cada día tengo ratos libres para los impre
 
 Una vez terminada la planificación de la semana con estos 6 sencillos pasos dependerá de nosotros saber gestionar el tiempo disponible para tener vida social, conseguir nuestras metas, resolver los imprevistos y lograr paz mental.
 
-Namasté 🙏
+**Namasté** 🙏
