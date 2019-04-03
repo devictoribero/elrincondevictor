@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown'
 import {PostHeader} from '../molecules/PostHeader'
+import {CustomPostLink, CustomPostImg} from '../../helpers/renders';
 
 export function Post({post: {content, data}}) {
   return (
@@ -27,7 +28,10 @@ export function Post({post: {content, data}}) {
           <ReactMarkdown
             source={content}
             escapeHtml={false}
-            renderers={{ link: CustomPostLink }} />
+            renderers={{
+              link: CustomPostLink,
+              image: CustomPostImg,
+            }} />
         </article>
       </main>   
 
@@ -107,18 +111,5 @@ export function Post({post: {content, data}}) {
         }
       `}</style>
     </div>
-  )
-}
-
-function CustomPostLink({href, children}) {
-  const isExternal = href.match('elrincondevictor') === null
-  return (
-    <a
-      href={href}
-      target={isExternal && '_blank'}
-      rel={isExternal && 'nofollow noopener noreferrer'}
-    >
-      {children}
-    </a>
   )
 }
