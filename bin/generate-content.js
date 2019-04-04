@@ -7,18 +7,20 @@ const INPUT_PATH = resolve(CONTENT_DIR)
 const OUTPUT_PATH = resolve(CONTENT_DIR)
 const ENCODING = 'utf-8'
 
-const list = getContent(INPUT_PATH)
-const indexContent = getIndexContent(INPUT_PATH, list)
+const postsFileName = getPostsFileName(INPUT_PATH)
+const indexContent = getIndexContent(INPUT_PATH, postsFileName)
 
-module.exports = {
-  generateContent: function(fileName) {
-    fs.writeFile(
-      `${OUTPUT_PATH}/${fileName}.json`,
-      indexContent,
-      ENCODING,
-      afterWriteFile
-    )
-  }
+const content = ['index']
+content.map(generateContent)
+
+
+function generateContent(fileName) {
+  fs.writeFile(
+    `${OUTPUT_PATH}/${fileName}.json`,
+    indexContent,
+    ENCODING,
+    afterWriteFile
+  )
 }
 
 /**
@@ -26,11 +28,11 @@ module.exports = {
  * @param {String} dir
  * @returns {Array}
  */
-function getContent(dir) {
+function getPostsFileName(directory) {
   try {
-    const files = fs.readdirSync(dir)
-    const mdFiles = files.filter(file => file.split('.')[1] === 'md')
-    return mdFiles
+    const files = fs.readdirSync(directory);
+    const mdFiles = files.filter(file => file.split('.')[1] === 'md');
+    return mdFiles;
   } catch (err) {
     throw err
   }
@@ -39,17 +41,17 @@ function getContent(dir) {
 /**
  * Get an array of files and return the index content
  * @param {String} dir
- * @param {Array} list
+ * @param {Array} postsFileName
  * @returns {String}
  */
-function getIndexContent(dir, list) {
+function getIndexContent(dir, postsFileName) {
   const fileContent = {
     featured: [],
     list: [],
   }
 
-  for (var i = 0; i < list.length; i++) {
-    const file = fs.readFileSync(`${dir}/${list[i]}`, ENCODING)
+  for (var i = 0; i < postsFileName.length; i++) {
+    const file = fs.readFileSync(`${dir}/${postsFileName[i]}`, ENCODING)
     const content = matter(file)
 
     fileContent.list.push(content.data)
@@ -75,6 +77,6 @@ function orderByUpdatedDateDesc(postA, postB) {
 }
 
 function afterWriteFile(error){
-  if (err) throw err
+  if (error) throw error
   console.log('The index was succesfully created!')
 }
