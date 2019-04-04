@@ -8,7 +8,7 @@ const OUTPUT_PATH = resolve(CONTENT_DIR)
 const OUTPUT_FILE_NAME = 'index.json'
 const ENCODING = 'utf-8'
 
-const list = getContentList(INPUT_PATH)
+const list = getContent(INPUT_PATH)
 const indexContent = getIndexContent(INPUT_PATH, list)
 
 fs.writeFile(
@@ -26,7 +26,7 @@ fs.writeFile(
  * @param {String} dir
  * @returns {Array}
  */
-function getContentList(dir) {
+function getContent(dir) {
   try {
     const files = fs.readdirSync(dir)
     const mdFiles = files.filter(file => file.split('.')[1] === 'md')
@@ -44,16 +44,22 @@ function getContentList(dir) {
  */
 function getIndexContent(dir, list) {
   const fileContent = {
-    list: []
+    featured: [],
+    list: [],
   }
 
   for (var i = 0; i < list.length; i++) {
     const file = fs.readFileSync(`${dir}/${list[i]}`, ENCODING)
     const content = matter(file)
+
     fileContent.list.push(content.data)
+    if(content.data.isFeatured) {
+      fileContent.featured.push(content.data)
+    }
   }
 
   fileContent.list.sort(orderByUpdatedDateDesc)
+  fileContent.featured.sort(orderByUpdatedDateDesc)
 
   return JSON.stringify(fileContent)
 }

@@ -4,6 +4,9 @@ slug: pensando-en-voz-alta
 description: Pensando en voz alta ¿Por qué no soy feliz aunque me dedique a lo que me gusta?
 img_src: /static/img/pensando-en-voz-alta.jpg
 createdAt: 2019-02-15
+updatedAt: null
+tags: [reflexiones]
+isFeatured: true
 ---
 
 Hola, me digo a mi mismo.

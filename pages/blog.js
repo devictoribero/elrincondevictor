@@ -7,8 +7,8 @@ import {Post} from '../components/layout/Post';
 export default function Blog({data, error}) {
   if (!data) return <Error statusCode={404} />
 
-  if(data.list){
-    return <Layout><BlogMainPage list={data.list}/></Layout>;
+  if(data.featured){
+    return <Layout><BlogMainPage featured={data.featured}/></Layout>;
   }
 
   if(data.document){
@@ -32,8 +32,8 @@ Blog.getInitialProps = async ({query}) => {
       return {data};
     }
     
-    const {list} = await require(`../content/index.json`)
-    data.list = list;
+    const {featured} = await require(`../content/index.json`)
+    data.featured = featured;
     return {data};
 
   } catch (error) {

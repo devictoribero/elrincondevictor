@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import {PostsSection} from '../molecules/PostsSection'
 
-export function BlogMainPage({list}) {
+export function BlogMainPage({featured}) {
   return (
     <div className="page">
       <Head>
@@ -21,7 +21,7 @@ export function BlogMainPage({list}) {
       </header>
 
       <main>
-        <PostsSection title='Destacados' posts={list}/>
+        <PostsSection title='Destacados' posts={featured}/>
       </main>   
 
       <style jsx>{`

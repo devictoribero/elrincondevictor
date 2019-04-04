@@ -4,6 +4,9 @@ slug: planifica-tus-metas-para-tener-un-equilibrio-mental
 description: Aprende cuánto afecta a tu equilibrio mental y estado de ánimo una mala preparación de las distintas tareas de nuestra vida.
 img_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg
 createdAt: 2019-02-27
+updatedAt: null
+tags: [productividad, paz interior]
+isFeatured: true
 ---
 
 ## ¿Por qué deberías invertir en tu equilibrio mental? 
