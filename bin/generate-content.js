@@ -5,21 +5,21 @@ const matter = require('gray-matter')
 const CONTENT_DIR = './content'
 const INPUT_PATH = resolve(CONTENT_DIR)
 const OUTPUT_PATH = resolve(CONTENT_DIR)
-const OUTPUT_FILE_NAME = 'index.json'
 const ENCODING = 'utf-8'
 
 const list = getContent(INPUT_PATH)
 const indexContent = getIndexContent(INPUT_PATH, list)
 
-fs.writeFile(
-  `${OUTPUT_PATH}/${OUTPUT_FILE_NAME}`,
-  indexContent,
-  ENCODING,
-  err => {
-    if (err) throw err
-    console.log('The index was succesfully created!')
+module.exports = {
+  generateContent: function(fileName) {
+    fs.writeFile(
+      `${OUTPUT_PATH}/${fileName}.json`,
+      indexContent,
+      ENCODING,
+      afterWriteFile
+    )
   }
-)
+}
 
 /**
  * Read directory and return an array of files
@@ -72,4 +72,9 @@ function getIndexContent(dir, list) {
  */
 function orderByUpdatedDateDesc(postA, postB) {
   return +new Date(postA.updatedDate) < +new Date(postB.updatedDate)
+}
+
+function afterWriteFile(error){
+  if (err) throw err
+  console.log('The index was succesfully created!')
 }
