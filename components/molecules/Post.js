@@ -81,13 +81,18 @@ export function Article({data, content}) {
 
         article blockquote > p {
           color: var(--primary-900);
-          font-size: 23px;
-          font-family: var(--font-family-alter);
-          font-style: italic;
           line-height: 2;
           position: relative;
           margin: 3rem 0;
           padding: 1.5rem 2rem;
+        }
+
+        article hr {
+          background: linear-gradient(to right, var(--primary-000), var(--primary-200));
+          margin: 3rem 0;
+          height: 5px;
+          border: none;
+          border-radius: 54px;
         }
 
         @media screen and (min-width: 768px) {
