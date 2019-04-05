@@ -57,7 +57,7 @@ export function PostPreview({
 
         p {
           font-size: 18px;
-          margin: 8px 0 16px;
+          margin: 8px 0 8px;
           line-height: 1.75;
           color: var(--grey-700);
         }
