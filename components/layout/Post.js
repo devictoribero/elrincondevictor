@@ -42,6 +42,11 @@ export function Post({post: {content, data}, related}) {
       
 
       <style jsx>{`
+        aside {
+          padding: 30px;
+          background: var(--primary-000)
+        }
+
         @media screen and (min-width: 1024px) {
           .postpagelayout {
             display: grid;

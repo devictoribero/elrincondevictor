@@ -25,7 +25,6 @@ export function BlogArticle({data, content}) {
         article {
           font-size: 18px;
           color: var(--grey-900);
-          max-width: 800px;
           font-weight: 300;
         }
 

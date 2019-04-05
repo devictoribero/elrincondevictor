@@ -7,7 +7,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
   const year = publicationDate.getFullYear();
 
   return (
-    <header>
+    <header className='PostHeader'>
       <figure>
         <img src={imgSrc} alt="" role="presentation"/>
       </figure>
@@ -19,18 +19,18 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
         year={year}
         author={author}/>
 
-      <style jsx global>{`
-        header {
+      <style jsx>{`
+        .PostHeader {
           margin-bottom: 3rem;
         }
 
-        figure {
+        .PostHeader > figure {
           margin: 0;
           position: relative;
           z-index: -1;
         }
 
-        figure:after {
+        .PostHeader > figure:after {
           content: "";
           position: absolute;
           top: 0;
@@ -40,7 +40,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,1));
         }
 
-        figure img {
+        .PostHeader img {
           display: block;
           width: 100%;
           height: 200px;
@@ -59,7 +59,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
         }
 
         @media screen and (min-width: 768px) {
-          figure img {
+          .PostHeader img {
             height: 300px;
           }
 

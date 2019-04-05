@@ -49,11 +49,15 @@ export function PostSectionTitle({heading, children}) {
           content: "";
           position: absolute;
           height: 2px;
-          width: 50px;
+          width: 30px;
           background: var(--grey-900);
           top: 51%;
           margin-left: 10px;
         }
+
+        h1 { font-size: 27px; }
+        h2 { font-size: 21px; }
+        h3 { font-size: 18px; }
       `}</style>
     </header>
   )
