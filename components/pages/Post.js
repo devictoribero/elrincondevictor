@@ -2,7 +2,7 @@ import Head from 'next/head';
 import {Article} from '../molecules/Post';
 import {PostLayout} from '../layout/PostLayout';
 import {PostPreview} from '../molecules/PostPreview';
-import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
+import {PostSectionTitle} from '../molecules/PostsSection';
 
 export function Post({post: {content, data}, related}) {
   let relatedPosts;
@@ -22,6 +22,7 @@ export function Post({post: {content, data}, related}) {
           name='description'
           content='Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida equilibrada.'
         />
+        <link key="canonical" rel="canonical" href={`http://www.elrincondevictor.com/blog/${slug}`}/>
       </Head>
 
       <div className='container-wrapper'>
