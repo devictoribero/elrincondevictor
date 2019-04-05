@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export function PostPreview({
-  title, description, img_src, slug, link
+  title, description, img_src, slug
 }) {
   return (
     <article>

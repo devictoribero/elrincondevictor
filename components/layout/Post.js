@@ -2,8 +2,13 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown'
 import {PostHeader} from '../molecules/PostHeader'
 import {CustomPostLink, CustomPostImg} from '../../helpers/renders';
+import {PostPreview} from '../molecules/PostPreview';
+import {PostsSection} from '../molecules/PostsSection';
 
-export function Post({post: {content, data}}) {
+export function Post({post: {content, data}, related}) {
+  const {posts} = related;
+  const hasRelatedPosts = related && posts && posts.length > 0;
+
   return (
     <div className='page container-wrapper'>
       <Head>
@@ -33,6 +38,16 @@ export function Post({post: {content, data}}) {
               image: CustomPostImg,
             }} />
         </article>
+        <div>
+          <aside>
+            {hasRelatedPosts && (
+              <PostsSection
+                title='Contenido relacionado'
+                posts={posts}
+              />)
+            }
+          </aside>
+        </div>
       </main>   
 
       <style jsx global>{`
