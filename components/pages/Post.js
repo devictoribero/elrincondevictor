@@ -41,6 +41,8 @@ export function Post({post: {content, data}, related}) {
         aside {
           padding: 30px;
           background: var(--primary-000);
+          position: sticky;
+          top: 50px;
         }
       `}</style>
     </div>
