@@ -5,7 +5,7 @@ export const person = {
   "email": "mailto:victor.ribero3@gmail.com",
   "image": "https://avatars0.githubusercontent.com/u/16169890?s=400&v=4",
   "jobTitle": "Web developer",
-  "url": "http://www.elrincondevictor.com",
+  "url": "https://www.elrincondevictor.com",
   "birthPlace": "Barcelona, Spain",
   "birthDate": "1992.12.18",
   "gender": "male",

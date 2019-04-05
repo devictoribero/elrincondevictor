@@ -82,7 +82,7 @@ export default class MyApp extends App {
             property="og:locale"
             content={DEFAULT_SEO.openGraph.locale}
           />
-          <link key="canonical" rel="canonical" href="http://www.elrincondevictor.com"/>
+          <link key="canonical" rel="canonical" href="https://www.elrincondevictor.com"/>
         </Head>
         <Component {...pageProps} />
 

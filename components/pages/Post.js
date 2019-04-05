@@ -22,7 +22,7 @@ export function Post({post: {content, data}, related}) {
           name='description'
           content='Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida equilibrada.'
         />
-        <link key="canonical" rel="canonical" href={`http://www.elrincondevictor.com/blog/${slug}`}/>
+        <link key="canonical" rel="canonical" href={`https://www.elrincondevictor.com/blog/${slug}`}/>
       </Head>
 
       <div className='container-wrapper'>
