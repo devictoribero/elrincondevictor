@@ -73,16 +73,20 @@ export function Article({data, content}) {
           color: var(--primary-800);
         }
 
-        article blockquote { margin: 0; }
+        article blockquote {
+          background: linear-gradient(to right, var(--primary-000), var(--primary-100));
+          border-radius: 5px;
+          margin: 0;
+        }
 
         article blockquote > p {
           color: var(--primary-900);
-          font-size: 27px;
+          font-size: 23px;
           font-family: var(--font-family-alter);
           font-style: italic;
-          line-height: 1.5;
+          line-height: 2;
           position: relative;
-          margin: 2rem 0;
+          margin: 3rem 0;
           padding: 1.5rem 2rem;
         }
 

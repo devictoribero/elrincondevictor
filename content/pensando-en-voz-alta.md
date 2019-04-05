@@ -3,6 +3,7 @@ title: Voy a pensar en voz alta ¿Te apuntas?
 slug: pensando-en-voz-alta
 description: Pensando en voz alta ¿Por qué no soy feliz aunque me dedique a lo que me gusta?
 img_src: /static/img/pensando-en-voz-alta.jpg
+img_preview_src: /static/img/pensando-en-voz-alta-preview.jpg
 createdAt: 2019-02-15
 updatedAt: null
 tags: [reflexiones]

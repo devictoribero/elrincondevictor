@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
 export function PostPreview({
-  title, description, img_src, slug
+  title, description, img_preview_src, slug
 }) {
   return (
     <article>
       <figure className='overlay'>
-        <img src={img_src} alt="" role="presentation"/>
+        <img src={img_preview_src} alt="" role="presentation"/>
       </figure>
 
       <div>

@@ -3,6 +3,7 @@ title: 6 sencillos pasos para organizar tu semana
 slug: 6-sencillos-pasos-para-organizar-tu-semana
 description: ¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana
 img_src: /static/img/6-sencillos-pasos-para-organizar-tu-semana.jpg
+img_preview_src: /static/img/6-sencillos-pasos-para-organizar-tu-semana-preview.jpg
 createdAt: 2019-03-13
 updatedAt: null
 tags: [productividad]

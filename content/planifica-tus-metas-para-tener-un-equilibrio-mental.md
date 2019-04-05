@@ -3,6 +3,7 @@ title: 4 tipos de tareas que hemos de planificar para un equilibrio mental
 slug: planifica-tus-metas-para-tener-un-equilibrio-mental
 description: Aprende cuánto afecta a tu equilibrio mental y estado de ánimo una mala preparación de las distintas tareas de nuestra vida.
 img_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg
+img_preview_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental-preview.jpg
 createdAt: 2019-02-27
 updatedAt: null
 tags: [productividad, paz interior]
