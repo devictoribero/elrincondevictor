@@ -1,0 +1,1 @@
+Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Ribero](https://twitter.com/JS_TUREEY)
