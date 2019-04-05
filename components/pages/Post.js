@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import {Article} from '../molecules/Post';
 import {PostLayout} from '../layout/PostLayout';
+import {PostPreview} from '../molecules/PostPreview';
 import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
 
 export function Post({post: {content, data}, related}) {
@@ -30,7 +31,8 @@ export function Post({post: {content, data}, related}) {
             complementary={
               hasRelatedPosts && (
                 <aside>
-                  <PostsSection title={<RelatedPostsTitle/>} posts={relatedPosts}/>
+                  <RelatedPostsTitle/>
+                  <PostPreview {...relatedPosts[0]}/>
                 </aside>
               )}
           />
@@ -39,8 +41,6 @@ export function Post({post: {content, data}, related}) {
 
       <style jsx>{`
         aside {
-          padding: 30px;
-          background: var(--primary-000);
           position: sticky;
           top: 50px;
         }
