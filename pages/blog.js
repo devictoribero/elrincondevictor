@@ -1,8 +1,8 @@
 import matter from 'gray-matter';
 import Error from './_error'
 import {Layout} from '../components/layout/Layout';
-import {BlogMainPage} from '../components/layout/BlogMainPage';
-import {Post} from '../components/layout/Post';
+import {BlogMainPage} from '../components/pages/BlogMainPage';
+import {Post} from '../components/pages/Post';
 
 export default function Blog({data, related, error}) {
   if (!data) return <Error statusCode={404} />
@@ -31,10 +31,12 @@ Blog.getInitialProps = async ({query}) => {
       data.document = document;
 
       // Get related posts if exist
-      const {posts} = await require(`../content/${document.data.tags[0]}.json`)
-      const relatedPosts = posts.filter(post=> post.slug !== document.data.slug)
-      data.related = { posts: relatedPosts };
-
+      try {
+        const {posts} = await require(`../content/${document.data.tags[0]}.json`)
+        const relatedPosts = posts.filter(post=> post.slug !== document.data.slug)
+        data.related = { posts: relatedPosts };
+      } catch(e) { console.error('we could not provide related posts')}
+      
       return { data };
     }
     

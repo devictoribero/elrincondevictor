@@ -1,8 +1,8 @@
 import ReactMarkdown from 'react-markdown'
-import {PostHeader} from '../molecules/PostHeader'
+import {PostHeader} from './PostHeader'
 import {CustomPostLink, CustomPostImg} from '../../helpers/renders';
 
-export function BlogArticle({data, content}) {
+export function Article({data, content}) {
   return (
     <article>
       <PostHeader
