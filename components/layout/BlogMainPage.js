@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import {PostsSection} from '../molecules/PostsSection'
+import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
 
 export function BlogMainPage({featured}) {
   return (
@@ -20,8 +20,12 @@ export function BlogMainPage({featured}) {
         </div>
       </header>
 
-      <main>
-        <PostsSection title='Destacados' posts={featured}/>
+      <main className="container-wrapper">
+        <div className="container">
+          <PostsSection
+            title={<PostSectionTitle heading='h1'>Destacados</PostSectionTitle>}
+            posts={featured}/>  
+        </div>
       </main>   
 
       <style jsx>{`

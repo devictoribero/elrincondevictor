@@ -2,8 +2,7 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown'
 import {PostHeader} from '../molecules/PostHeader'
 import {CustomPostLink, CustomPostImg} from '../../helpers/renders';
-import {PostPreview} from '../molecules/PostPreview';
-import {PostsSection} from '../molecules/PostsSection';
+import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
 
 export function Post({post: {content, data}, related}) {
   const {posts} = related;
@@ -42,10 +41,9 @@ export function Post({post: {content, data}, related}) {
           <aside>
             {hasRelatedPosts && (
               <PostsSection
-                title='Contenido relacionado'
-                posts={posts}
-              />)
-            }
+              title={<PostSectionTitle heading='h2'>Artículos relacionados</PostSectionTitle>}
+                posts={posts}/>
+            )}
           </aside>
         </div>
       </main>   
