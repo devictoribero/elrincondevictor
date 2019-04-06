@@ -3,6 +3,7 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 # 📋 Funcionalidades a hacer
 - ~Añadir Post relacionado~
 - ~Añadir Post aleatorio~
+- Añadir compartir artículo en redes sociales
 - Añadir Post anterior y siguiente
 - Añadir apartado: ¿De dónde aprendo?
 - Añadir apartado: cosas que he aprendido
