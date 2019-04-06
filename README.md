@@ -1,6 +1,7 @@
 Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Ribero](https://twitter.com/JS_TUREEY).
 
 # 📋 Funcionalidades a hacer
+- Añadir Post aleatorio
 - Añadir Post anterior y siguiente
 - Añadir apartado: ¿De dónde aprendo?
 - Añadir apartado: cosas que he aprendido
