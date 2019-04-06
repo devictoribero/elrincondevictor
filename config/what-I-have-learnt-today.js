@@ -1,5 +1,9 @@
 export const whatIhaveLearntToday = [
   {
+    date: "2019-04-06",
+    data: ['Podemos añadir filtros en nuestro correo electrónico para verlos en la bandeja de entreada. Por ejemplo, haciendo: <code>victor.ribero3+elrincondevictor@gmail.com</code> para saber que me contactan de <a href="https:/www.elrincondevictor.com">mi página web </a>']
+  },
+  {
     date: "2019-04-04",
     data: ['Como exportar/importar módulos en node con module.exports y require']
   },
@@ -21,10 +25,10 @@ export const whatIhaveLearntToday = [
   },
   {
     date: "2019-03-23",
-    data: ['<p>Una extensión<a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en">para ver errores de accesibilidad</a>.</p>']
+    data: ['Una extensión<a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en">para ver errores de accesibilidad</a>.']
   },
   {
     date: "2019-03-22",
-    data: ['<p><a href="https://www.ticbeat.com/tecnologias/que-es-schemaorg/">Schema.org</a>, una manera de estructurar el contenido para los crawlers. Tener mejor SEO es uno de los beneficios.</p>']
+    data: ['<a href="https://www.ticbeat.com/tecnologias/que-es-schemaorg/">Schema.org</a>, una manera de estructurar el contenido para los crawlers. Tener mejor SEO es uno de los beneficios.']
   }
 ]
