@@ -55,7 +55,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           font-size: 36px;
           line-height: 1.5;
           letter-spacing: 0.5px;
-          margin: -5rem 0 0;
+          margin: -3rem 0 0;
         }
 
         @media screen and (min-width: 768px) {
@@ -67,7 +67,6 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
             text-shadow: 4px 3px var(--primary-400);
             font-size: 50px;
             line-height: 1.25;
-            margin: -7rem 0 0 0;
           }
         }
       `}</style>
