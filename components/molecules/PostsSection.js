@@ -38,6 +38,8 @@ export function PostSectionTitle({heading, children}) {
         h1, h2, h3, h4, h5, h6 {
           position: relative;
           margin: 0;
+          font-variant: all-small-caps;
+          font-weight: 600;
         }
 
         h1:after,
@@ -55,9 +57,9 @@ export function PostSectionTitle({heading, children}) {
           margin-left: 10px;
         }
 
-        h1 { font-size: 27px; }
-        h2 { font-size: 21px; }
-        h3 { font-size: 18px; }
+        h1 { font-size: 23px; }
+        h2 { font-size: 18px; }
+        h3 { font-size: 16px; }
       `}</style>
     </header>
   )
