@@ -8,12 +8,25 @@ import {Post} from '../components/pages/Post';
 export default function Blog({data, error}) {
   if (!data) return <Error statusCode={404} />
 
-  if(data.featured){
-    return <Layout><BlogMainPage featured={data.featured} randomPost={data.randomPost}/></Layout>;
+  if(!data.isPostPage){
+    return (
+      <Layout>
+        <BlogMainPage featured={data.featured} randomPost={data.randomPost}/>
+      </Layout>
+    );
   }
 
-  if(data.document){
-    return <Layout><Post post={data.document} related={data.related} randomPost={data.randomPost}/></Layout>;
+  if(data.isPostPage){
+    return (
+      <Layout>
+        <Post
+          previous={data.previous}
+          post={data.document}
+          next={data.next}
+          related={data.related}
+          randomPost={data.randomPost}/>
+      </Layout>
+    );
   }
 
   return null;
@@ -24,36 +37,51 @@ Blog.getInitialProps = async ({query}) => {
   const {slug} = query
 
   try {
-    let data = {};
-
+    const {featured, list} = await require(`../content/index.json`);
+    let data = {
+      isPostPage: false,
+      featured,
+      randomPost: randomElement(list)
+    }
+    
     if(slug) {
-      const content = await require(`../content/${slug}.md`)
-      const document = matter(content.default)
-      data.document = document;
-      data.related = {};
+      let currentPostIndex;
+      list.map((post,i) => {
+        if(post.slug === slug) {
+          currentPostIndex = i
+        }
+      })
+
+      data = {
+        ...data,
+        isPostPage: true,
+        document: await getPost({slug}),
+        previous: list[currentPostIndex - 1],
+        next: list[currentPostIndex + 1],
+      }
 
       // Get related posts if exist
       try {
-        const {posts} = await require(`../content/${document.data.tags[0]}.json`)
-        const relatedPosts = posts.filter(post=> post.slug !== document.data.slug)
-        data.related.posts = relatedPosts;
-      } catch(e) { console.error('we could not provide related posts')}
-
-      const {list} = await require(`../content/index.json`)
-      const randomPost = randomElement(list);
-      data.randomPost  = randomPost;
-      
-      return { data };
+        const {posts} = await require(`../content/${data.document.data.tags[0]}.json`)
+        const relatedPosts = posts.filter(post=> post.slug !== data.document.data.slug)
+        data = {
+          ...data,
+          related: {
+            posts: relatedPosts,
+          }
+        }
+      } catch(e) {console.error('we could not provide related posts')}
     }
     
-    const {featured, list} = await require(`../content/index.json`)
-    const randomPost = randomElement(list);
-    data.featured = featured;
-    data.randomPost = randomPost;
     return {data};
 
   } catch (error) {
     console.log(error)
     return {error}
   }
+}
+
+async function getPost({slug}) {
+  const content = await require(`../content/${slug}.md`)
+  return matter(content.default)
 }

@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
 
 export function BlogMainPage({featured, randomPost}) {
-  console.log(randomPost)
   return (
     <div className="page">
       <Head>

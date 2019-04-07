@@ -16,7 +16,6 @@ const allPosts = getPostsArrayFromFileNames(postsFileName).sort(orderByUpdatedDa
 const content = ['index', 'productividad']
 content.map(generateContent)
 
-
 function generateContent(fileName) {
   fs.writeFile(
     `${OUTPUT_PATH}/${fileName}.json`,

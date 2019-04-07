@@ -1,7 +1,7 @@
-export function PostLayout({article, complementary}) {
+export function PostLayout({main, complementary}) {
   return(
     <div className='PostLayout'>
-      <main>{article}</main>   
+      <main>{main}</main>   
       <div>{complementary}</div>
 
       <style jsx>{`

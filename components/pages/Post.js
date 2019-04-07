@@ -1,11 +1,19 @@
 import Head from 'next/head';
-import Link from 'next/link'
+import Link from 'next/link';
+import {Fragment} from 'react';
 import {Article} from '../molecules/Post';
 import {PostLayout} from '../layout/PostLayout';
 import {PostPreview} from '../molecules/PostPreview';
 import {PostSectionTitle} from '../molecules/PostsSection';
 
-export function Post({post: {content, data}, related, randomPost}) {
+export function Post({
+  previous,
+  post: {content, data},
+  next,
+  related,
+  randomPost
+}) {
+  
   let relatedPosts;
   let hasRelatedPosts = false;
   if(related) {
@@ -29,10 +37,15 @@ export function Post({post: {content, data}, related, randomPost}) {
       <div className='container-wrapper'>
         <div className='container'>
           <PostLayout
-            article={<Article data={data} content={content}/>}
+            main={(
+              <Fragment>
+                <Article data={data} content={content}/>
+                <PreviousNextArticles previous={previous} next={next}/>
+              </Fragment>
+            )}
             complementary={(
               <aside>
-                {<RandomPost post={randomPost} />}
+                <RandomPost post={randomPost} />
                 {hasRelatedPosts && <RelatedPosts post={relatedPosts[0]}/>}
               </aside>
             )}
@@ -49,23 +62,15 @@ export function Post({post: {content, data}, related, randomPost}) {
     </div>
   )
 }
-function RelatedPostsTitle(){
-  return(
-    <PostSectionTitle heading='h2'>Artículos relacionados</PostSectionTitle>
-  )
-}
 
-function RandomPost({post}){
-  const {slug} = post;
-
+function ComplementarySection({ title, children }){
   return(
     <div>
       <header>
-        <PostSectionTitle heading='h2'>¿No sabes que leer?</PostSectionTitle>
+        <PostSectionTitle heading='h2'>{title}</PostSectionTitle>
       </header>
-      <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
-        <a><span>🎲</span>Prueba suerte</a>
-      </Link>
+
+      {children}
 
       <style jsx>{`
         header {
@@ -77,7 +82,22 @@ function RandomPost({post}){
           font-size: 21px;
           margin: 0;
         }
+      `}</style>
+    </div>
+  )
+}
+function RandomPost({post}){
+  const {slug} = post;
 
+  return(
+    <div>
+      <ComplementarySection title='¿No sabes que leer?'>
+        <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
+          <a><span>🎲</span>Prueba suerte</a>
+        </Link>
+      </ComplementarySection>
+
+      <style jsx>{`
         a {
           display: inline-flex;
           justify-content: center;
@@ -117,8 +137,35 @@ function RandomPost({post}){
 function RelatedPosts({post}){
   return(
     <div>
-      <RelatedPostsTitle/>
-      <PostPreview {...post}/>
+      <ComplementarySection title='Artículos relacionados'>
+        <PostPreview {...post}/>
+      </ComplementarySection>
+
+      <style jsx>{`
+        div {
+          margin-top: 34px;
+        }
+      `}</style>
+    </div>
+  )
+}
+
+function PreviousNextArticles({previous, next}){
+  return(
+    <div>
+      {previous && (
+        <a>
+          <span>👈</span>
+          {previous.title}
+        </a>
+      )}
+
+      {next && (
+        <a>
+          <span>👉</span>
+          {next.title}
+        </a>
+      )}
 
       <style jsx>{`
         div {
