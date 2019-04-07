@@ -154,22 +154,48 @@ function PreviousNextArticles({previous, next}){
   return(
     <div>
       {previous && (
-        <a>
-          <span>👈</span>
-          {previous.title}
-        </a>
+        <Link href={`/blog?slug=${previous.slug}`} as={`/blog/${previous.slug}`} prefetch>
+          <a><span>👈🏻</span>{previous.title}</a>
+        </Link>
       )}
 
       {next && (
-        <a>
-          <span>👉</span>
-          {next.title}
-        </a>
+        <Link href={`/blog?slug=${next.slug}`} as={`/blog/${next.slug}`} prefetch>
+          <a><span>👉🏻</span>{next.title}</a>
+        </Link>
       )}
 
       <style jsx>{`
         div {
-          margin-top: 34px;
+          display: flex;
+          justify-content: center;
+        }
+
+        a {
+          text-decoration: none;
+          display: block;
+          cursor: pointer;
+          text-align: center;
+          padding: 10px;
+          transition: all 0.25s ease;
+          max-width: 250px;
+          color: var(--primary-900);
+          line-height: 1.5;
+        }
+
+        a:hover {background: var(--primary-000);}
+
+        a:hover:nth-child(1) {
+          transform: translateX(-25px);
+        }
+
+        a:hover:nth-child(2) {
+          transform: translateX(25px);
+        }
+
+        span {
+          display: block;
+          font-size: 35px;
         }
       `}</style>
     </div>

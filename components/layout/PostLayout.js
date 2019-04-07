@@ -5,6 +5,10 @@ export function PostLayout({main, complementary}) {
       <div>{complementary}</div>
 
       <style jsx>{`
+          main {
+            margin-bottom: 75px;
+          }
+
           @media screen and (min-width: 1024px) {
             .PostLayout {
               display: grid;

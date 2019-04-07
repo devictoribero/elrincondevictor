@@ -50,7 +50,7 @@ Blog.getInitialProps = async ({query}) => {
         if(post.slug === slug) {
           currentPostIndex = i
         }
-      })
+      });
 
       data = {
         ...data,
