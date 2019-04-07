@@ -1,4 +1,6 @@
 ---
+author_name: Victor Ribero
+author_img_src: /static/img/victor-ribero-avatar.jpg
 title: Voy a pensar en voz alta ¿Te apuntas?
 slug: pensando-en-voz-alta
 description: Pensando en voz alta ¿Por qué no soy feliz aunque me dedique a lo que me gusta?

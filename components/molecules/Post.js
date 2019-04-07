@@ -8,10 +8,12 @@ export function Article({data, content}) {
       <PostHeader
         title={data.title}
         imgSrc={data.img_src}
-        post={data}
+        createdAt={data.createdAt}
+        authorName={data.author_name}
+        authorImgSrc={data.author_img_src}
         author={{
-          name: 'Victor Ribero',
-          imgSrc: 'https://avatars0.githubusercontent.com/u/16169890?s=400&v=4'
+          name: data.author_name,
+          imgSrc: data.author_img_src
         }}/>
       <ReactMarkdown
         source={content}

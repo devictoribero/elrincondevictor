@@ -1,4 +1,6 @@
 ---
+author_name: Victor Ribero
+author_img_src: /static/img/victor-ribero-avatar.jpg
 title: 6 sencillos pasos para organizar tu semana
 slug: 6-sencillos-pasos-para-organizar-tu-semana
 description: ¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana
