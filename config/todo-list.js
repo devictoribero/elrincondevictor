@@ -1,8 +1,5 @@
 export const tasksTodoList = [
   'Escribir un post del blog',
-  'Decidir que pijamas donar y ordenar el resto.',
-  'Decidir que ropa deportiva donar y ordenar el resto.',
-  'Decidir que jerseys donar y ordenar el resto.',
   'Decidir que calzado donar y ordenar el resto.',
   'Decidir que camisetas donar y ordenar el resto.',
   'Decidir que camisas donar y ordenar el resto.',
