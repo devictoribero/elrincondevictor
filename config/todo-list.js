@@ -15,7 +15,6 @@ export const tasksTodoList = [
 
 export const featuresTodoList = [
   'Añadir compartir artículo en redes sociales',
-  'Añadir Post anterior y siguiente',
   'Añadir apartado: ¿De dónde aprendo?',
   'Añadir apartado: cosas que he aprendido',
   'Progressive Web App (APP)',

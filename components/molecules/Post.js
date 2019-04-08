@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import {PostHeader} from './PostHeader'
 import {CustomPostLink, CustomPostImg} from '../../helpers/renders';
+import {SharePostInSocial} from '../atoms/SharePostInSocial';
 
 export function Article({data, content}) {
   return (
@@ -15,6 +16,7 @@ export function Article({data, content}) {
           name: data.author_name,
           imgSrc: data.author_img_src
         }}/>
+
       <ReactMarkdown
         source={content}
         escapeHtml={false}
@@ -23,11 +25,16 @@ export function Article({data, content}) {
           image: CustomPostImg,
         }} />
 
+      <SharePostInSocial
+        social='twitter'
+        share={getSharePostText({title: data.title, slug: data.slug})}/>
+
       <style jsx global>{`
         article {
           font-size: 18px;
           color: var(--grey-900);
           font-weight: 300;
+          margin-bottom: 24px;
         }
 
         article h2 {
@@ -108,4 +115,13 @@ export function Article({data, content}) {
       `}</style>
     </article>
   )
+}
+
+function getSharePostText({title, slug}) {
+  return `Acabo de leer el artículo '${title}' de @JS_TUREEY ¡Y os lo recomiendo, es la caña! `
+    +`Link del artículo👉: ${getPostUrl({slug})}`;
+}
+
+function getPostUrl({slug}) {
+  return `https://www.elrincondevictor.com/blog/${slug}`;
 }

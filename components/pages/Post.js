@@ -41,6 +41,7 @@ export function Post({
               <Fragment>
                 <Article data={data} content={content}/>
                 <PreviousNextArticles previous={previous} next={next}/>
+
               </Fragment>
             )}
             complementary={(
@@ -155,13 +156,13 @@ function PreviousNextArticles({previous, next}){
     <div>
       {previous && (
         <Link href={`/blog?slug=${previous.slug}`} as={`/blog/${previous.slug}`} prefetch>
-          <a><span>👈🏻</span>{previous.title}</a>
+          <a className="left"><span>👈🏻</span>{previous.title}</a>
         </Link>
       )}
 
       {next && (
         <Link href={`/blog?slug=${next.slug}`} as={`/blog/${next.slug}`} prefetch>
-          <a><span>👉🏻</span>{next.title}</a>
+          <a className="right"><span>👉🏻</span>{next.title}</a>
         </Link>
       )}
 
@@ -185,11 +186,11 @@ function PreviousNextArticles({previous, next}){
 
         a:hover {background: var(--primary-000);}
 
-        a:hover:nth-child(1) {
+        a:hover.left {
           transform: translateX(-25px);
         }
 
-        a:hover:nth-child(2) {
+        a:hover.right {
           transform: translateX(25px);
         }
 

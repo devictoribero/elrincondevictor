@@ -111,8 +111,11 @@ export default class MyApp extends App {
             --primary-100: ${palette.primary["100"]};
             --primary-000: ${palette.primary["000"]};
 
-            --font-family-main: ${fonts.main}
-            --font-family-alter: ${fonts.alter}
+            --social-twitter: ${palette.social.twitter['default']};
+            --social-twitter-dark: ${palette.social.twitter['dark']};
+
+            --font-family-main: ${fonts.main};
+            --font-family-alter: ${fonts.alter};
           }
 
           body {

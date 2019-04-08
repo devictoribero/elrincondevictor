@@ -22,8 +22,14 @@ export const palette = {
     "200": 'hsl(48, 95%, 76%)',
     "100": 'hsl(48, 100%, 88%)',
     "000": 'hsl(49, 100%, 96%)',
-  }
-}
+  },
+  social: {
+    twitter: {
+      default: '#1b95e0',
+      dark: '#006dbf',
+    },
+  },
+};
 
 export const fonts = {
   main: '"Poppins",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;',
