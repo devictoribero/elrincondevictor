@@ -104,6 +104,13 @@ export function Article({data, content}) {
           border-radius: 54px;
         }
 
+        article code {
+          padding: 0 0.5rem;
+          background: linear-gradient(to right, var(--primary-000), var(--primary-200));
+          border-radius: 3px;
+          hyphens: auto;
+        }
+
         @media screen and (min-width: 768px) {
           article h2 { font-size: 27px; }
           

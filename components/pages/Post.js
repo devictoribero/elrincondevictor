@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import {Fragment} from 'react';
+import {randomElement} from '../../helpers/random';
 import {Article} from '../molecules/Post';
 import {PostLayout} from '../layout/PostLayout';
 import {PostPreview} from '../molecules/PostPreview';
 import {PostSectionTitle} from '../molecules/PostsSection';
+import {whatIhaveLearntToday} from '../../config/what-I-have-learnt-today';
 
 export function Post({
   previous,
@@ -41,25 +43,18 @@ export function Post({
               <Fragment>
                 <Article data={data} content={content}/>
                 <PreviousNextArticles previous={previous} next={next}/>
-
               </Fragment>
             )}
             complementary={(
               <aside>
                 <RandomPost post={randomPost} />
                 {hasRelatedPosts && <RelatedPosts post={relatedPosts[0]}/>}
+                <WhatIHaveLearnt elements={whatIhaveLearntToday}/>
               </aside>
             )}
           />
         </div>
       </div>
-
-      <style jsx>{`
-        aside {
-          position: sticky;
-          top: 50px;
-        }
-      `}</style>
     </div>
   )
 }
@@ -67,13 +62,15 @@ export function Post({
 function ComplementarySection({ title, children }){
   return(
     <div>
-      <header>
-        <PostSectionTitle heading='h2'>{title}</PostSectionTitle>
-      </header>
+      <PostSectionTitle heading='h2'>{title}</PostSectionTitle>
 
       {children}
 
       <style jsx>{`
+        div {
+          margin-bottom: 34px;
+        }
+
         header {
           margin: 0 0 16px 0;
           color: var(--grey-900);
@@ -91,12 +88,10 @@ function RandomPost({post}){
   const {slug} = post;
 
   return(
-    <div>
       <ComplementarySection title='¿No sabes que leer?'>
         <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
           <a><span>🎲</span>Prueba suerte</a>
         </Link>
-      </ComplementarySection>
 
       <style jsx>{`
         a {
@@ -131,23 +126,21 @@ function RandomPost({post}){
           }
         }
       `}</style>
-    </div>
+    </ComplementarySection>
   )
 }
 
 function RelatedPosts({post}){
   return(
-    <div>
-      <ComplementarySection title='Artículos relacionados'>
-        <PostPreview {...post}/>
-      </ComplementarySection>
+    <ComplementarySection title='Artículos relacionados'>
+      <PostPreview {...post}/>
 
       <style jsx>{`
         div {
-          margin-top: 34px;
+          margin-bottom: 34px;
         }
       `}</style>
-    </div>
+    </ComplementarySection>
   )
 }
 
@@ -201,4 +194,50 @@ function PreviousNextArticles({previous, next}){
       `}</style>
     </div>
   )
+}
+
+function WhatIHaveLearnt({elements}) {
+  const element = randomElement(elements)
+  return(
+    <ComplementarySection title='¿Que he aprendido hoy?'>
+      <ul className='complementaryBar' dangerouslySetInnerHTML={getThingsLearnt({element})}>
+      </ul>
+
+      <style global jsx>{`
+        div {
+          margin-top: 34px;
+        }
+        
+        .complementaryBar { margin: 0; padding: 0; }
+
+        .complementaryBar code {
+          background: linear-gradient(to right, var(--primary-000), var(--primary-100));
+          border-radius: 3px;
+          hyphens: auto;
+          font-size: 16px;
+        }
+
+        .complementaryBar  li {
+          list-style: none;
+          line-height: 1.5;
+          color: var(--grey-800);
+          font-size: 16px;
+        }
+
+        .complementaryBar a {
+          color: var(--primary-800);
+        }
+      `}</style>
+    </ComplementarySection>
+  )
+}
+
+function getThingsLearnt({element}){
+  let __html;
+
+  element.data.map((el, i) => {
+    __html = `<li>${el}</li>`
+  })
+
+  return {__html};
 }
