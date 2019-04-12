@@ -105,10 +105,11 @@ export function Article({data, content}) {
         }
 
         article code {
-          padding: 0 0.5rem;
-          background: linear-gradient(to right, var(--primary-000), var(--primary-200));
+          background: linear-gradient(to right, var(--primary-000), var(--primary-100));
           border-radius: 3px;
+          padding: 2px 4px;
           hyphens: auto;
+          font-size: 18px;
         }
 
         @media screen and (min-width: 768px) {

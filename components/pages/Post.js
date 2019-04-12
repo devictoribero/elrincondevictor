@@ -205,7 +205,7 @@ function WhatIHaveLearnt({elements}) {
 
       <style global jsx>{`
         div {
-          margin-top: 34px;
+          margin-bottom: 34px;
         }
         
         .complementaryBar { margin: 0; padding: 0; }
@@ -213,15 +213,18 @@ function WhatIHaveLearnt({elements}) {
         .complementaryBar code {
           background: linear-gradient(to right, var(--primary-000), var(--primary-100));
           border-radius: 3px;
+          padding: 2px 4px;
           hyphens: auto;
           font-size: 16px;
         }
 
-        .complementaryBar  li {
+        .complementaryBar li {
           list-style: none;
           line-height: 1.5;
           color: var(--grey-800);
-          font-size: 16px;
+          font-size: 18px;
+          font-weight: 300;
+          margin-bottom: 16px;
         }
 
         .complementaryBar a {
