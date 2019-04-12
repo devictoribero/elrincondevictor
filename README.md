@@ -28,3 +28,9 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - [Money Well Spent: A Strategic Plan for Smart Philanthropy](https://www.amazon.com/Money-Well-Spent-Strategic-Philanthropy/dp/B00ZY95SSG)
 - [The compound effect](https://www.amazon.com/Compound-Effect-Darren-Hardy/dp/159315724X)
 - [Billion Dollar Whale: The Man Who Fooled Wall Street, Hollywood, and the World](https://www.amazon.com/Billion-Dollar-Whale-Fooled-Hollywood/dp/031643650X)
+- [Deep Work: Rules for Focused Success in a Distracted World](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692)
+- [The Essays of Warren Buffett: Lessons for Corporate America](https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1611637589)
+- [Think and Grow Rich](https://www.amazon.com/Complete-Reprint-Bestselling-Classic-Analysis/dp/1604502673)
+- []()
+
+- [The Four Steps to the Epiphany](https://www.amazon.com/gp/product/0989200507)
