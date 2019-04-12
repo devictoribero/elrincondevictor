@@ -31,6 +31,4 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - [Deep Work: Rules for Focused Success in a Distracted World](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692)
 - [The Essays of Warren Buffett: Lessons for Corporate America](https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1611637589)
 - [Think and Grow Rich](https://www.amazon.com/Complete-Reprint-Bestselling-Classic-Analysis/dp/1604502673)
-- []()
-
 - [The Four Steps to the Epiphany](https://www.amazon.com/gp/product/0989200507)
