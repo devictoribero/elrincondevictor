@@ -25,7 +25,7 @@ export const whatIhaveLearntToday = [
   },
   {
     date: "2019-03-23",
-    data: ['Preocuparnos por la accesibilidad es importante. La extensión <a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en">Accessibility Insights for Web</a> ejecuta un test de la página donde nos encontremos y genera un reporte de todo las mejoras posibles.']
+    data: ['Preocuparnos por la accesibilidad es importante. La extensión <a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en">Accessibility Insights for Web</a> ejecuta un test de la página donde nos encontremos y genera un reporte de todas las mejoras posibles.']
   },
   {
     date: "2019-03-22",
