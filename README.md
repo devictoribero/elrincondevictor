@@ -16,7 +16,7 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - Como reducir el estrés
 - Yoga para desarrolladores
 
-# 🧐 Conceptos que he escuchado y quiero entender que es
+# 🧐 Conceptos que he escuchado y quiero entender que son
 - Satori and kensho
 - Set point (nombrado por Vishen Lakhiani en una de sus charlas)
 - Temporal discounting
