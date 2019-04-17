@@ -39,9 +39,9 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - 📥🤓⭐ ~[The Software Craftsman: Professionalism, Pragmatism, Pride](https://www.amazon.es/Software-Craftsman-Professionalism-Pragmatism-Robert-ebook/dp/B00QXAGIDO)~
 - 📥🤓⭐ ~[Working Effectively with Legacy Code](https://www.amazon.es/Working-Effectively-Legacy-Code-EFFECT-ebook/dp/B005OYHF0A)~
 - 📥🤓⭐ ~[The Pragmatic Programmer](https://www.amazon.es/Pragmatic-Programmer-Journeyman-Master-ebook/dp/B003GCTQAE)~
-- 📥🤓 ~[Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript](https://www.amazon.es/Effective-JavaScript-Specific-Software-Development/dp/0321812182)~
-- 📥🤓 ~[JavaScript: The Good Parts: Working with the Shallow Grain of JavaScript](https://www.amazon.es/JavaScript-Parts-Working-Shallow-Grain/dp/0596517742)~
-- 📥📖 ~[Refactoring: Improving the Design of Existing Code](https://www.amazon.es/Refactoring-Improving-Existing-Addison-wesley-Signature/dp/0134757599)~
+- 📥🤓 [Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript](https://www.amazon.es/Effective-JavaScript-Specific-Software-Development/dp/0321812182)
+- 📥🤓 [JavaScript: The Good Parts: Working with the Shallow Grain of JavaScript](https://www.amazon.es/JavaScript-Parts-Working-Shallow-Grain/dp/0596517742)
+- 📥📖 [Refactoring: Improving the Design of Existing Code](https://www.amazon.es/Refactoring-Improving-Existing-Addison-wesley-Signature/dp/0134757599)
 
 
 ### Productividad
