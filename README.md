@@ -25,6 +25,10 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - Reverse proxy
 
 # 📚 Libros
+Los libros que tengo en posesión, algunos son en formato físico y otros en formato digital. De todas maneras, desde hace unos meses los tengo en formato digital pues intento llevar una vida minimalista en todo lo que pueda.
+
+El formato digital me aporta me ahorro un económico pues en formato Kindle son más baratos y me ahorro un montón de espacio.
+
 ## Leyenda
 - 📥 : En posesión
 - 📖 : Leyendo
