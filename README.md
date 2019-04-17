@@ -37,5 +37,5 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - 📥 [The Essays of Warren Buffett: Lessons for Corporate America](https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1611637589)
 - 📥 [Think and Grow Rich](https://www.amazon.com/Complete-Reprint-Bestselling-Classic-Analysis/dp/1604502673)
 - 📥 [Deep Work: Rules for Focused Success in a Distracted World](https://www.amazon.es/Deep-Work-Focused-Success-Distracted/dp/0349411905)
-- 📥 (Rich Dad's Increase Your Financial IQ)[https://www.amazon.es/Rich-Dads-Increase-Your-Financial/dp/1612680666]
+- 📥 [Rich Dad's Increase Your Financial IQ](https://www.amazon.es/Rich-Dads-Increase-Your-Financial/dp/1612680666)
 - [The Four Steps to the Epiphany](https://www.amazon.com/gp/product/0989200507)
