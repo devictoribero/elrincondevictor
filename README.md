@@ -34,11 +34,11 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 ## Lista
 
 ### Técnicos
-- 📥🤓⭐ ~[Clean Code: A Handbook of Agile Software Craftsmanship ](https://www.amazon.es/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM)~
-- 📥🤓⭐ ~[Clean Architecture: A Craftsman's Guide to Software Structure and Design](https://www.amazon.es/Clean-Architecture-Craftsmans-Software-Structure-ebook/dp/B075LRM681)~
-- 📥🤓⭐ ~[The Software Craftsman: Professionalism, Pragmatism, Pride](https://www.amazon.es/Software-Craftsman-Professionalism-Pragmatism-Robert-ebook/dp/B00QXAGIDO)~
-- 📥🤓⭐ ~[Working Effectively with Legacy Code](https://www.amazon.es/Working-Effectively-Legacy-Code-EFFECT-ebook/dp/B005OYHF0A)~
-- 📥🤓⭐ ~[The Pragmatic Programmer](https://www.amazon.es/Pragmatic-Programmer-Journeyman-Master-ebook/dp/B003GCTQAE)~
+- 📥🤓⭐ [Clean Code: A Handbook of Agile Software Craftsmanship ](https://www.amazon.es/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM)
+- 📥🤓⭐ [Clean Architecture: A Craftsman's Guide to Software Structure and Design](https://www.amazon.es/Clean-Architecture-Craftsmans-Software-Structure-ebook/dp/B075LRM681)
+- 📥🤓⭐ [The Software Craftsman: Professionalism, Pragmatism, Pride](https://www.amazon.es/Software-Craftsman-Professionalism-Pragmatism-Robert-ebook/dp/B00QXAGIDO)
+- 📥🤓⭐ [Working Effectively with Legacy Code](https://www.amazon.es/Working-Effectively-Legacy-Code-EFFECT-ebook/dp/B005OYHF0A)
+- 📥🤓⭐ [The Pragmatic Programmer](https://www.amazon.es/Pragmatic-Programmer-Journeyman-Master-ebook/dp/B003GCTQAE)
 - 📥🤓 [Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript](https://www.amazon.es/Effective-JavaScript-Specific-Software-Development/dp/0321812182)
 - 📥🤓 [JavaScript: The Good Parts: Working with the Shallow Grain of JavaScript](https://www.amazon.es/JavaScript-Parts-Working-Shallow-Grain/dp/0596517742)
 - 📥📖 [Refactoring: Improving the Design of Existing Code](https://www.amazon.es/Refactoring-Improving-Existing-Addison-wesley-Signature/dp/0134757599)
@@ -54,7 +54,7 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 
 ### Inteligencia financiera e inversiones
 
-- 📥🤓⭐ ~[The intelligent investor](https://www.amazon.com/Intelligent-Investor-Collins-Business-Essentials-ebook/dp/B000FC12C8)~
+- 📥🤓⭐ [The intelligent investor](https://www.amazon.com/Intelligent-Investor-Collins-Business-Essentials-ebook/dp/B000FC12C8)
 - 📥 [Rich Dad Poor Dad](https://www.amazon.com/Robert-Kiyosaki-Rich-Poor-%E3%80%902018%E3%80%91/dp/B07HK8X8V5/)
 - 📥 [Think and Grow Rich](https://www.amazon.com/Complete-Reprint-Bestselling-Classic-Analysis/dp/1604502673)
 - 📥 [Money Well Spent: A Strategic Plan for Smart Philanthropy](https://www.amazon.com/Money-Well-Spent-Strategic-Philanthropy/dp/B00ZY95SSG)
@@ -66,18 +66,18 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 
 #### Comunicación
 
-- 📥🤓 ~[Cómo ganar amigos e influir sobre las personas](https://www.amazon.es/dp/B07DWF6W94)~
+- 📥🤓 [Cómo ganar amigos e influir sobre las personas](https://www.amazon.es/dp/B07DWF6W94)
 
 #### Mentalidad
 
-- 📥🤓⭐ ~[Soft Skills: The software developer's life manual](https://www.amazon.es/Soft-Skills-software-developers-manual/dp/1617292397)~
-- 📥🤓 ~[Find Your Why](https://www.amazon.es/Find-Your-Why-Simon-Sinek/dp/0143111728)~
+- 📥🤓⭐ [Soft Skills: The software developer's life manual](https://www.amazon.es/Soft-Skills-software-developers-manual/dp/1617292397)
+- 📥🤓 [Find Your Why](https://www.amazon.es/Find-Your-Why-Simon-Sinek/dp/0143111728)
 - 📥 [21 Lessons for the 21st Century](https://www.amazon.com/Lessons-21st-Century-Yuval-Harari-ebook/dp/B0767FS76G)
 - [Dear Millennial,: A Compass To Defining Your Unique Purpose, Pursuing A Life Of Fulfillment, And Building A Legacy](https://www.amazon.com/dp/B075VNBSGP)
 
 ### Emprendimiento
-- 📥🤓⭐ ~[Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration](https://www.amazon.es/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0593070100)~
-- 📥🤓 ~[From zero to one](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296)~
+- 📥🤓⭐ [Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration](https://www.amazon.es/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0593070100)
+- 📥🤓 [From zero to one](https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296)
 - [The Four Steps to the Epiphany](https://www.amazon.com/gp/product/0989200507)
 
 
