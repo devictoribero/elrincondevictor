@@ -17,6 +17,9 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - Yoga para desarrolladores
 
 # 🧐 Conceptos que he escuchado y quiero entender que son
+- Intrinsic and extrinsic motivation
+- Homeostasis
+- Lizard brain
 - Satori and kensho
 - Set point (nombrado por Vishen Lakhiani en una de sus charlas)
 - Temporal discounting
