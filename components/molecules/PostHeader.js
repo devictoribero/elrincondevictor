@@ -37,7 +37,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,1));
+          background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5) 69%, white)
         }
 
         .PostHeader img {
