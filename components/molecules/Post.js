@@ -27,7 +27,7 @@ export function Article({data, content}) {
 
       <SharePostInSocial
         social='twitter'
-        share={getSharePostText({title: data.title, slug: data.slug})}/>
+        textToShare={getSharePostText({title: data.title, slug: data.slug})}/>
 
       <style jsx global>{`
         article {

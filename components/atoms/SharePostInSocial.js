@@ -1,14 +1,16 @@
-export function SharePostInSocial({social, share}) {
-  if(!social || !share) return null;
+import PropTypes from 'prop-types'
+
+export function SharePostInSocial({social, textToShare}) {
+  if(!social || !textToShare) return null;
 
   if(social === 'twitter'){
     return(
       <a
         target='_blank'
         rel="nofollow noopener noreferrer"
-        href={`https://twitter.com/intent/tweet?text=${share}`}
+        href={`https://twitter.com/intent/tweet?text=${textToShare}`}
         data-size="large">
-        Compartir en Twitter
+        Compartir en {capitalize(social)}
 
         <style jsx>{`
           a {
@@ -36,3 +38,10 @@ export function SharePostInSocial({social, share}) {
 
   return null;
 }
+
+SharePostInSocial.propTypes = {
+  social: PropTypes.oneOf(['twitter']).isRequired,
+  textToShare: PropTypes.string.isRequired,
+}
+
+const capitalize = string = string.charAt(0).toUpperCase() + string.slice(1)
