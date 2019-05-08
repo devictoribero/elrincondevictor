@@ -126,7 +126,7 @@ export function Article({data, content}) {
 }
 
 function getSharePostText({title, slug}) {
-  return `Acabo de leer el artículo '${title}' de @JS_TUREEY ¡Y os lo recomiendo, es la caña! `
+  return `Acabo de leer el artículo '${title}' de @victorException ¡Y os lo recomiendo, es la caña! `
     +`Link del artículo👉: ${getPostUrl({slug})}`;
 }
 

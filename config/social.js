@@ -1,7 +1,7 @@
 export const socials = [
   {
     name: 'Twitter',
-    link: 'https://twitter.com/JS_TUREEY'
+    link: 'https://twitter.com/victorException'
   },
   {
     name: 'Github',
