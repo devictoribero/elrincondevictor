@@ -88,7 +88,6 @@ export function PostPreview({
         @media screen and (min-width: 767px) {
           img {
             height: 175px;
-            border-radius: 100px 100px 100px 0;
           }
         }
       `}</style>
