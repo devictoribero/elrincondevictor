@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import {capitalize} from '../../helpers/functions'
 
 export function SharePostInSocial({social, textToShare}) {
   if(!social || !textToShare) return null;
@@ -43,5 +44,3 @@ SharePostInSocial.propTypes = {
   social: PropTypes.oneOf(['twitter']).isRequired,
   textToShare: PropTypes.string.isRequired,
 }
-
-const capitalize = string = string.charAt(0).toUpperCase() + string.slice(1)
