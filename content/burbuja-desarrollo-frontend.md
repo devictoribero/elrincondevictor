@@ -1,14 +1,28 @@
-
+---
+author_name: Victor Ribero
+author_img_src: /static/img/victor-ribero-avatar.jpg
+title: La burbuja del desarrollo frontend
+slug: burbuja-desarrollo-frontend
+description: En el desarrollo frontend hay demasiado que abarcar, una alta autoexigencia y un ritmo no sostenible. Estas cosas han de cambiar. ¡Descúbre como!
+img_src: /static/img/pensando-en-voz-alta.jpg
+img_preview_src: /static/img/pensando-en-voz-alta-preview.jpg
+createdAt: 2019-05-19
+updatedAt: null
+tags: [technical]
+isFeatured: true
+---
 Llevo casi 4 años en esta profesión y aunque no es mucho tiempo, ha sido suficiente para darme cuenta de varias cosas que me preocupan seriamente de nuestro sector y que nos incumben a todos.
 
-Este artículo tiene el objetivo de concienciar a la gente acerca del ritmo frénetico e insostenible al que se expone el desarrollo
+*Este artículo tiene el objetivo de concienciar a la gente acerca del ritmo frénetico e insostenible al que se expone el desarrollo
 frontend, la autoexigencia que nos estamos impartiendo sin ser concientes del daño que nos estamos haciendo, hacer ver que
 necesitamos un cambio de mentalidad, entender que está bien el hecho de no saber hacerlo todo y lo más importante, que tomemos
-acción. Parece obvio pero, nada cambia sin cambiar nada.
+acción. Parece obvio pero, nada cambia sin cambiar nada.*
 
-## En desarrollo frontend hay demasiado que abarcar
+## En el desarrollo frontend hay demasiado que abarcar
 
-El primer problema que tenemos los frontend developers es que hay demasiado que abarcar. El aumento de responsabilidad que se está trasladando a nuestro rol y el ritmo frenético que ha habido y sigue habiendo con Javascript son los dos motivos principales. Pregunté a la comunidad acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y la siguiente es la que resultó:
+El primer problema que tenemos los frontend developers es que hay demasiado que abarcar. El número de responsabilidades que se están trasladando a nuestro rol y el ritmo frenético que ha habido y sigue habiendo con Javascript son los dos motivos principales.
+
+Pregunté a la comunidad acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y la siguiente lista es la que resultó:
 
 - Jerarquía de contenidos.
 - Html semántico.
@@ -61,7 +75,7 @@ Aunque todas estas mejoras son algo bueno, estamos obviando una parte muy negati
 - Falta de confianza en uno mismo (síndrome del impostor).
 - No valorar el proceso de aprendizaje.
 
-Es un poco estresante ver cada dos por tres en los distintos medios de nuevas librerias, nuevas funcionalidades, conceptos nuevos, metodologías nuevas, nuevos nombres... Esto, envía un mensaje a nuestro subconsciente de: **¿Aún no lo conoces? ¡Ponte ya!** Y esto, es malo de narices, porque aunque sea muy poco a poco, nos afecta e influye a nuestra felicidad y paz interior.
+Es un poco estresante ver cada dos por tres en los distintos medios de nuevas librerias, nuevas funcionalidades, conceptos nuevos, metodologías nuevas, nuevos nombres... Esto, envía un mensaje a nuestro subconsciente de: **¿Aún no lo conoces? ¡Ponte ya!** Y esto, es malo de narices porque aunque sea muy poco a poco, nos afecta e influye a nuestra felicidad y paz interior.
 
 > Linkedin y Twitter son redes sociales de postureo profesional entre otras muchas cosas. No todo el mundo se ha leído el artículo que está compartiendo. Así que no te castigues a ti mismo/a por no leerlo.
 
@@ -101,13 +115,13 @@ Dedicamos muchas horas a nuestro hobbie y profesión pero olvidamos muchos otros
 
 Estas actividades nos aportan distintos tipos de excitación mental. Ayudan a conocernos mejor, probablemente a ampliar nuestra círculo de amistades y por ende, además de ayudarnos a desconectar, nos aportan felicidad.
 
-Si tuviéramos un ritmo de vida sosteniblw a largo plazo y una vida equilibrada, este ritmo tan frenético nos afectaría psicológicamente en menor medida. Ayudaría también, entender que cada uno de nosotros vive una vida distinta. Esto supone contextos y obligaciones distintas con todo lo que conlleva. Teniendo esto en cuenta, no podemos pretender aprender igual de rápido que otra persona que quizás dispone de 3 horas más que nosotros así que, aceptémoslo y vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar.
+Si tuviéramos un ritmo de vida sostenible a largo plazo y una vida equilibrada, este ritmo tan frenético nos afectaría psicológicamente en menor medida. Ayudaría también, entender que cada uno de nosotros vive una vida distinta y que por tanto, tiene contextos y obligaciones distintas con todo lo que conlleva. Teniendo esto en cuenta, no podemos pretender aprender igual de rápido que otra persona que quizás dispone de 3 horas más que nosotros así que, aceptémoslo y vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar.
 
 ## Síndrome del impostor
 
 *El síndrome del impostor es un fenómeno psicológico en el que la gente es incapaz de internalizar sus logros y sufre un miedo persistente de ser descubierto como un fraude.*
 
-¿Crees que fulanito sabe 100 veces más que tu? ¿Que tu también deberías saber todo eso? ¿Que todos tus compañeros saben más? ¿Que no mereces estar ahí? Estos son pensamientos que en el mundo del desarrollo se dan mucho independientmenete del tiempo que uno lleve trabajando aunque es más común en la gente que lleva poco tiempo.
+*¿Crees que fulanito sabe 100 veces más que tu? ¿Que tu también deberías saber todo eso? ¿Que todos tus compañeros saben más? ¿Que no mereces estar ahí?* Estos son pensamientos que en el mundo del desarrollo se dan mucho independientmenete del tiempo que uno lleve trabajando, aunque es más común en la gente que lleva poco tiempo.
 
 > Si algo he aprendido, es que si somos el primero de la clase, estamos en la equivocada. Es mejor ser el último porque tendremos más gente de la que aprender.
 
@@ -139,7 +153,7 @@ Aplicando la Ley de Pareto, la lista comentada al inicio de este artículo podr�
 - Comandos básicos de NPM.
 - Metodologías ágiles.
 
-Como podemos ver, la lista se ha reducido bastante. Se podría reducir incluso más, pero creo que las cosas a quitar serían las que dan unas buenas bases el día de mañana, como la programación orientada a objetos, SOLID, los patrones de diseño, el testing y la performance. Podría quedar tal que así:
+Como podemos ver, la lista se ha reducido bastante. Hay elementos en la lista que aportan muchísimo, pero que no son críticos para una persona que acaba de empezar, pues debería tener otros objetivos en mente. Para una persona que se quiere adentrar en el mundo del desarrollo, una lista válida podría ser:
 
 - Html semántico.
 - CSS.
@@ -151,8 +165,6 @@ Como podemos ver, la lista se ha reducido bastante. Se podría reducir incluso m
 - Testing (unitario, integración, aceptación, etc...) tanto visual como de lógica.
 - Comandos básicos de NPM.
 - Metodologías ágiles.
-
-Creo que esta debería ser la lista de conocimientos a adquirir que debería tener toda persona que quiere aprender a desarrollar frontend de manera práctica hoy en día.
 
 La Ley Pareto en este caso, no solo se puede aprender a alto nivel como acabamos de hacer, sino que también se puede hacer para algunas de las cosas porque por ejemplo, en el caso de CSS, tenemos mil cosas a aprender. **¿Cómo aplicaríamos la Ley de Pareto para aprender CSS?**
 
