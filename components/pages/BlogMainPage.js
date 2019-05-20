@@ -57,19 +57,21 @@ function Header({randomPost}){
           color: var(--grey-800);
           line-height: 1.5;
           font-family: var(--font-family-alter);
+          margin-bottom: 2rem;
         }
 
         p {
-          margin-top: 1rem;
+          margin: 1rem 0;
           color: var(--grey-700);
           font-size: 1.5rem;
-          line-height: 1.75;
+          line-height: 1.6;
         }
 
         a {
           display: inline-flex;
           justify-content: center;
           align-items: center;
+          margin-top: 2rem;
           padding: 10px 30px;
           border-radius: 3px;
           color: var(--primary-600);
@@ -93,6 +95,11 @@ function Header({randomPost}){
         }
 
         @media screen and (min-width: 768px) {
+          header {
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
+
           h1 {
             width: 500px;
           }

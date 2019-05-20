@@ -2,7 +2,8 @@ import {socials} from '../../config/social'
 
 export function MainFooter() {
   return (
-    <footer className="container-wrapper container main-footer">
+    <footer className="container-wrapper main-footer">
+    <div className="container">
       {socials.map(({name, link}) => (
         <a
           key={name}
@@ -13,6 +14,8 @@ export function MainFooter() {
           {name}
         </a>
       ))}
+
+    </div>
 
       <style jsx>{`
         .main-footer {
