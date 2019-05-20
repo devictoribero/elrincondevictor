@@ -5,21 +5,21 @@ const socialLinks = socials.filter(social => social.name !== 'Medium');
 
 export function MainNavigation() {
   return (
-    <nav className="container-wrapper MainNavigation" aria-label="Navegador principal">
-      <div className="container MainNavigation-inner">
+    <nav className="container-wrapper" aria-label="Navegador principal">
+      <div className="container main-navigation__inner">
         <Link href="/">
-          <a className="logo">Elrincondevictor</a>
+          <a className="link logo">Elrincondevictor</a>
         </Link>
 
         <div>
           <Link href="/blog">
-            <a className="blog">Mi blog</a>
+            <a className="link blog">Mi blog</a>
           </Link>
 
           {socialLinks.map(({name, link}) => (
             <a
               key={name}
-              className='social'
+              className='link social'
               rel="nofollow noopener noreferrer"
               target='_blank'
               href={link}>
@@ -30,7 +30,7 @@ export function MainNavigation() {
       </div>
 
       <style jsx>{`
-        .MainNavigation-inner {
+        .main-navigation__inner {
           display: flex;
           justify-content: space-between;
           min-height: 125px;
@@ -43,18 +43,18 @@ export function MainNavigation() {
           color: #1d1d1d;
         }
 
-        .MainNavigation a {
+        .link {
           text-decoration: none;
         }
 
-        .MainNavigation a {
+        .link {
           position: relative;
           padding: 0.5rem;
           font-size: 18px;
           color: var(--grey-800);
         }
 
-        .MainNavigation a:after {
+        .link:after {
           content: '';
           position: absolute;
           left: 0;
@@ -67,24 +67,24 @@ export function MainNavigation() {
           transform: skewX(150deg);
         }
 
-        .MainNavigation a:hover:after,
-        .MainNavigation a:focus:after {
+        .link:hover:after,
+        .link:focus:after {
           width: 100%;
           background: var(--primary-300);
         }
 
-        .MainNavigation .blog {
+        .blog {
           font-weight: bold;
         }
 
-        .MainNavigation .social {
+        .social {
           display: none;
           font-size: 14px;
           margin-left: 0.5rem;
         }
 
         @media screen and (min-width: 768px) {
-          .MainNavigation .social {
+          .social {
             display: inline;
           }
         }

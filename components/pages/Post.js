@@ -146,45 +146,48 @@ function RelatedPosts({post}){
 
 function PreviousNextArticles({previous, next}){
   return(
-    <div>
+    <ul>
       {previous && (
-        <Link href={`/blog?slug=${previous.slug}`} as={`/blog/${previous.slug}`} prefetch>
-          <a className="left"><span>👈🏻</span>{previous.title}</a>
-        </Link>
+        <li>
+          <Link href={`/blog?slug=${previous.slug}`} as={`/blog/${previous.slug}`} prefetch>
+            <a className="left">← {previous.title}</a>
+          </Link>
+        </li>
       )}
 
       {next && (
-        <Link href={`/blog?slug=${next.slug}`} as={`/blog/${next.slug}`} prefetch>
-          <a className="right"><span>👉🏻</span>{next.title}</a>
-        </Link>
+        <li>
+          <Link href={`/blog?slug=${next.slug}`} as={`/blog/${next.slug}`} prefetch>
+            <a className="right">{next.title} →</a>
+          </Link>
+        </li>
       )}
 
       <style jsx>{`
-        div {
-          display: flex;
-          justify-content: center;
+        ul {
+         display: flex;
+         flex-direction: column; 
+         margin: 0;
+         padding: 0;
+        }
+
+        li {
+          list-style: none;
+          margin-bottom: 1rem;
         }
 
         a {
           text-decoration: none;
-          display: block;
           cursor: pointer;
-          text-align: center;
-          padding: 10px;
           transition: all 0.25s ease;
-          max-width: 250px;
           color: var(--primary-900);
           line-height: 1.5;
+          box-shadow: 0 1px 0 0 currentColor;
+          font-size: 18px;
         }
 
-        a:hover {background: var(--primary-000);}
-
-        a:hover.left {
-          transform: translateX(-25px);
-        }
-
-        a:hover.right {
-          transform: translateX(25px);
+        a:hover, a:active {
+          box-shadow: none;
         }
 
         span {
@@ -192,7 +195,7 @@ function PreviousNextArticles({previous, next}){
           font-size: 35px;
         }
       `}</style>
-    </div>
+    </ul>
   )
 }
 
@@ -204,10 +207,6 @@ function WhatIHaveLearnt({elements}) {
       </ul>
 
       <style global jsx>{`
-        div {
-          margin-bottom: 34px;
-        }
-        
         .complementaryBar { margin: 0; padding: 0; }
 
         .complementaryBar code {
