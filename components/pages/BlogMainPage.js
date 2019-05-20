@@ -37,7 +37,8 @@ function Header({randomPost}){
     <header role="banner" className="container-wrapper">
       <div className="container">
         <h1>Comparto mi filosofía de vida en este, mi rincón.</h1>
-        <p>Productividad, reflexiones y un estilo de vida sostenible y equilibrado son algunos de los temas de los que escribo.</p>
+        <p>Soy desarrollador front-end 👨‍💻 y me gusta conectar con el alma de las personas ❤️.</p>
+        <p>Hago deporte 🏋️, amo el yoga 🧘, practico meditación 🙏, viajo siempre que puedo 🛫 y me cuestiono todo acerca de la vida.</p>
         <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
           <a><span>🎲</span>Leer algún artículo</a>
         </Link>
@@ -46,12 +47,8 @@ function Header({randomPost}){
       <style jsx>{`
         header {
           position: relative;
-          background: url('/static/img/home-header.png');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          padding-top: 50px;
-          padding-bottom: 50px;
+          padding-top: 25px;
+          padding-bottom: 25px;
           margin-bottom: 32px;
         }
 
@@ -59,6 +56,7 @@ function Header({randomPost}){
           margin: 0;
           color: var(--grey-800);
           line-height: 1.5;
+          font-family: var(--font-family-alter);
         }
 
         p {

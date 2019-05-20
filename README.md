@@ -15,6 +15,9 @@ Esta es la [página personal](https://elrincondevictor.com/blog/) de [Victor Rib
 - Problema en la construcción de equipos
 - Como reducir el estrés
 - Yoga para desarrolladores
+- Intersection Observer (lazy images)
+- Intersection Observer con Hooks (para lazy images)
+
 
 # 🧐 Conceptos que he escuchado y quiero entender que son
 - Intrinsic and extrinsic motivation
@@ -56,7 +59,7 @@ El formato digital me aporta me ahorro un económico pues en formato Kindle son 
 - 📥 [Principles: Life and Work](https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021/)
 - 📥 [the 4-hour workweek](https://www.amazon.com/4-Hour-Work-Week-Escape-Anywhere-ebook/dp/B006X0M2TS)
 - 📥 [Deep Work: Rules for Focused Success in a Distracted World](https://www.amazon.es/Deep-Work-Focused-Success-Distracted/dp/0349411905)
-- 📥 [Rich Dad's Increase Your Financial IQ](https://www.amazon.es/Rich-Dads-Increase-Your-Financial/dp/1612680666)
+
 
 
 ### Inteligencia financiera e inversiones
@@ -67,7 +70,8 @@ El formato digital me aporta me ahorro un económico pues en formato Kindle son 
 - 📥 [Money Well Spent: A Strategic Plan for Smart Philanthropy](https://www.amazon.com/Money-Well-Spent-Strategic-Philanthropy/dp/B00ZY95SSG)
 - 📥 [Billion Dollar Whale: The Man Who Fooled Wall Street, Hollywood, and the World](https://www.amazon.com/Billion-Dollar-Whale-Fooled-Hollywood/dp/031643650X)
 - 📥 [The Essays of Warren Buffett: Lessons for Corporate America](https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1611637589)
-- [The compound effect](https://www.amazon.com/Compound-Effect-Darren-Hardy/dp/159315724X)
+- 📥📖 [Rich Dad's Increase Your Financial IQ](https://www.amazon.es/Rich-Dads-Increase-Your-Financial/dp/1612680666)
+- 📥[The compound effect](https://www.amazon.com/Compound-Effect-Darren-Hardy/dp/159315724X)
 
 ### Desarrollo personal
 
@@ -90,5 +94,5 @@ El formato digital me aporta me ahorro un económico pues en formato Kindle son 
 
 ### Otros
 - 📥 [Sapiens: A Brief History of Humankind](https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari-ebook/dp/B00K7ED54M)
-- [Homo Deus: A Brief History of Tomorrow](https://www.amazon.com/Homo-Deus-Brief-History-Tomorrow-ebook/dp/B01BBQ33VE)
+- 📥📖[Homo Deus: A Brief History of Tomorrow](https://www.amazon.com/Homo-Deus-Brief-History-Tomorrow-ebook/dp/B01BBQ33VE)
 
