@@ -10,21 +10,17 @@ export function BookSection({id, title, books}) {
 
       {books.map(book => (
         <article key={book.title}>
+          <h3><a href={book.link}>{book.title}</a></h3>
           {/* Alternative text empty because it's not a semantic image */}
           <a tabIndex='-1' href={book.link}><img src={book.img_src} alt=""/></a>
-          <h3><a href={book.link}>{book.title}</a></h3>
-          <span className="author">
-            Escrito por <a href="">{book.author.name}</a>
-          </span>
-          <span className="genre">{getGenreText(book.genre)}</span>
+          {book.review.text.map(p => <p>{p}</p>)}
         </article>
       ))}  
 
       <style jsx>{`
         section {
           display: grid;
-          padding: 0;
-          margin-top: 2rem;
+          padding: 3rem 0;
         }
 
         section:not(:last-of-type) {
@@ -32,20 +28,23 @@ export function BookSection({id, title, books}) {
         }
 
         article {
+          max-width: 800px;
           box-sizing: border-box;
-          padding: 0.5rem 0;
         }
 
-        header { margin-bottom: 1rem; }
+        article:not(:last-of-type) {
+          margin-bottom: 2rem;
+        }
+
+        header {
+          position: sticky;
+          top: 0;
+          padding: 15px 0;
+          margin-bottom: 1rem;
+          background: white;
+        }
+
         h2 { margin: 0; }
-
-        img {
-          float: left;
-          height: 100px;
-          margin-right: 10px;
-          margin-bottom: 10px;
-          border-radius: 3px;
-        }
 
         h3 {
           font-size: 1.25rem;
@@ -56,6 +55,19 @@ export function BookSection({id, title, books}) {
 
         h3 > a {
           text-decoration: none;
+          color: var(--grey-900);
+        }
+
+        img {
+          float: left;
+          height: 200px;
+          margin: 10px 15px 0 ;
+          border-radius: 3px;
+        }
+
+        p {
+          line-height: 1.75;
+          font-size: 18px;
           color: var(--grey-900);
         }
 
