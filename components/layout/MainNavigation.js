@@ -16,6 +16,10 @@ export function MainNavigation() {
             <a className="link blog">Mi blog</a>
           </Link>
 
+          <Link href="/libros">
+            <a className="link blog">Libros</a>
+          </Link>
+
           {socialLinks.map(({name, link}) => (
             <a
               key={name}

@@ -83,7 +83,7 @@ export default class MyApp extends App {
             content={DEFAULT_SEO.openGraph.locale}
           />
           <link key="canonical" rel="canonical" href="https://www.elrincondevictor.com"/>
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:900&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap" rel="stylesheet"></link>
         </Head>
         <Component {...pageProps} />
 

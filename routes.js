@@ -2,7 +2,8 @@ const blogIndex = require('./content/index.json')
 
 const staticRoutes = {
   '/': {page: '/'},
-  '/blog': {page: '/blog'}
+  '/blog': {page: '/blog'},
+  '/libros': {page: '/libros'}
 }
 
 function withBlogRoutes(staticRoutes = {}) {
