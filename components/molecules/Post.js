@@ -79,14 +79,14 @@ export function Article({data, content}) {
 
         article ul,
         article ol {
-          margin: 1rem 0 2rem 0;
+          margin: 0.5rem 0 2rem 0;
           padding-left: 1.5rem;
         }
 
         article li {
           line-height: 1.75;
           letter-spacing: 0.2px;
-          margin-bottom: 0.75rem;
+          margin-bottom: 0.5rem;
         }
 
         article a {

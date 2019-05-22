@@ -1,7 +1,4 @@
 import Link from 'next/link'
-import {socials} from '../../config/social'
-
-const socialLinks = socials.filter(social => social.name !== 'Medium');
 
 export function MainNavigation() {
   return (
@@ -13,23 +10,12 @@ export function MainNavigation() {
 
         <div>
           <Link href="/blog">
-            <a className="link blog">Mi blog</a>
+            <a className="link">Blog</a>
           </Link>
 
           <Link href="/libros">
-            <a className="link blog">Libros</a>
+            <a className="link">Libros</a>
           </Link>
-
-          {socialLinks.map(({name, link}) => (
-            <a
-              key={name}
-              className='link social'
-              rel="nofollow noopener noreferrer"
-              target='_blank'
-              href={link}>
-              {name}
-              </a>
-          ))}
         </div>
       </div>
 
@@ -42,23 +28,15 @@ export function MainNavigation() {
           box-sizing: border-box;
         }
 
-        .logo {
-          font-size: 18px;
-          color: #1d1d1d;
-        }
-
-        .link {
+        a {
           text-decoration: none;
-        }
-
-        .link {
           position: relative;
-          padding: 0.5rem;
+          padding: 0.5rem 0;
           font-size: 18px;
           color: var(--grey-800);
         }
 
-        .link:after {
+        a:after {
           content: '';
           position: absolute;
           left: 0;
@@ -71,27 +49,16 @@ export function MainNavigation() {
           transform: skewX(150deg);
         }
 
-        .link:hover:after,
-        .link:focus:after {
+        a:hover:after,
+        a:focus:after {
           width: 100%;
           background: var(--primary-300);
         }
 
-        .blog {
-          font-weight: bold;
+        a:not(.logo):not(last-of-type) {
+          padding: 0.5rem;
         }
 
-        .social {
-          display: none;
-          font-size: 14px;
-          margin-left: 0.5rem;
-        }
-
-        @media screen and (min-width: 768px) {
-          .social {
-            display: inline;
-          }
-        }
       `}</style>
     </nav>
   )
