@@ -12,7 +12,7 @@ tags: [technical]
 isFeatured: true
 ---
 
-*El objetivo de este artículo es concienciar a la gente del mundo del desarrollo frontend que nos estamos autoexigiendo demasiado intentando solucionar el problema de exceso de contenido y que deberíamos adoptar otra mentalidad. Ser honestos y trabajar en equipo. Dejar de lado los prejuicios y entender, que está bien no saberlo todo. Todos vivimos en contextos totalmente distintos.*
+*El objetivo de este artículo es concienciar a la gente de la alta auto-exigencia, del bombardeo de contenido y el ritmo insostenible que hay en la comunidad de desarrollo frontend. La urgencia de cambiar las cosas y adoptar una actitud "me-first" que garantize un bienestar personal.*
 
 <hr>
 

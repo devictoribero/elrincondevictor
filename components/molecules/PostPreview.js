@@ -40,6 +40,7 @@ export function PostPreview({
         }
 
         h2 > a {
+          line-height: 1.5;
           color: var(--grey-900);
         }
 
