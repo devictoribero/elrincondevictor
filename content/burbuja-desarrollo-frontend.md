@@ -73,7 +73,7 @@ Y como podemos ver, tenemos un problema. Con tantas cosas "que debemos aprender"
 
 La rápida y constante evolución del desarrollo frontend es una arma de doble filo 🔪. Es tan afilada que hasta tiene su propio nombre: [fatiga Javascript](https://medium.com/@sergiodxa/sobre-el-ecosistema-y-la-fatiga-de-javascript-73027048413f).
 
-Si bien es cierto que estamos contentos por el incremento de nuevas funcionalidades🆕 , herramientas 🛠️ y librerías 📚 que enriquecen el ecosistema, eso también significa que las hemos de entender, interiorizar y saber usar para poder estar en este sector.
+Si bien es cierto que estamos contentos por el incremento de nuevas funcionalidades 🆕, herramientas 🛠️ y librerías 📚 que enriquecen el ecosistema, eso también significa que las hemos de entender, interiorizar y saber usar para poder estar en este sector.
 
 Aunque todas estas mejoras son algo bueno, estamos pasando por alto una parte muy negativa. La satisfacción instantánea la cual la sociedad nos está sometiendo junto a la sensación de obligatoriedad de estar "a la última" en nuestra profesión, hace que seamos muy críticos con nosotros mismos 🧐.
 
