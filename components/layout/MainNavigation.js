@@ -5,17 +5,12 @@ export function MainNavigation() {
     <nav className="container-wrapper" aria-label="Navegador principal">
       <div className="container main-navigation__inner">
         <Link href="/">
-          <a className="link logo">Elrincondevictor</a>
+          <a className="logo">Elrincondevictor</a>
         </Link>
 
         <div>
-          <Link href="/blog">
-            <a className="link">Blog</a>
-          </Link>
-
-          <Link href="/libros">
-            <a className="link">Libros</a>
-          </Link>
+          <Link href="/blog"><a>Blog</a></Link>
+          <Link href="/libros"><a>Libros</a></Link>
         </div>
       </div>
 
@@ -55,10 +50,9 @@ export function MainNavigation() {
           background: var(--primary-300);
         }
 
-        a:not(.logo):not(last-of-type) {
-          padding: 0.5rem;
+        a:not(.logo):last-of-type {
+          margin-left: 1rem;
         }
-
       `}</style>
     </nav>
   )
