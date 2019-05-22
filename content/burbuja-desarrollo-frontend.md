@@ -71,7 +71,7 @@ Y como podemos ver, tenemos un problema. Con tantas cosas "que debemos aprender"
 
 *¿Cuántos de vosotros os habéis planteado saber casi todo de la lista anterior? ¿Y cuántos creéis que deberíais saberlo casi todo?*
 
-La rápida y constante evolución del desarrollo frontend es una arma de doble filo. Si bien es cierto que estamos contentos por el incremento de nuevas funcionalidades, herramientas y librerías que enriquecen el ecosistema, eso también significa que las hemos de entender, interiorizar y saber usar para poder estar en este sector.
+La rápida y constante evolución del desarrollo frontend es una arma de doble filo. Es tan afilada que hasta tiene su propio nombre: [fatiga Javascript](https://medium.com/@sergiodxa/sobre-el-ecosistema-y-la-fatiga-de-javascript-73027048413f). Si bien es cierto que estamos contentos por el incremento de nuevas funcionalidades, herramientas y librerías que enriquecen el ecosistema, eso también significa que las hemos de entender, interiorizar y saber usar para poder estar en este sector.
 
 Aunque todas estas mejoras son algo bueno, estamos pasando por alto una parte muy negativa. La satisfacción instantánea la cual la sociedad nos está sometiendo junto a la sensación de obligatoriedad de estar "a la última" en nuestra profesión, hace que seamos muy críticos con nosotros mismos.
 
@@ -119,25 +119,29 @@ Como [mi amigo Ignacio comenta en su podcast](http://wecodesignpodcast.com/2019/
 
 Estas actividades nos aportan distintos tipos de excitación mental. Ayudan a conocernos mejor, probablemente a ampliar nuestra círculo de amistades y por ende, además de ayudarnos a desconectar, nos aportan felicidad.
 
-Deberíamos entender que cada uno de nosotros vive una vida distinta y que por tanto, tiene contextos y obligaciones distintas. Eso significa que algunos tienen más tiempo que otras personas para sus actividades y que por eso, no debemos compararnos. Aceptémoslo y vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar.
+Deberíamos entender que cada uno de nosotros vive una vida distinta y que por tanto, tiene diferentes contextos y obligaciones. Eso significa que algunos tienen más tiempo que otros para sus actividades y que por eso, no debemos compararnos. Vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar.
 
 ## Síndrome del impostor
 *El síndrome del impostor es un fenómeno psicológico en el que la gente es incapaz de internalizar sus logros y sufre un miedo persistente de ser descubierto como un fraude.*
 
-*¿Crees que fulanito sabe 100 veces más que tu? ¿Que tu deber es también saberlo? ¿Que todos tus compañeros saben más? ¿Que no mereces estar ahí?* Estos son pensamientos que en el mundo del desarrollo se dan mucho independientemente del tiempo que uno lleve trabajando, aunque es más común en la gente que lleva poco tiempo.
+¿Crees que fulanito sabe 100 veces más que tu? ¿Que tu deber es también saberlo? ¿Que todos tus compañeros saben más? ¿Que no mereces estar ahí? Estos son pensamientos que en el mundo del desarrollo se dan mucho independientemente del tiempo que uno lleve trabajando, aunque es más común en la gente que lleva poco tiempo.
 
-> Si algo he aprendido, es que si somos el primero de la clase, estamos en la equivocada. Es mejor ser el último porque tendremos más gente de la que aprender.
+El [síndrome del impostor](https://www.lambdatres.com/2018/01/sindrome-del-impostor-como-supera-trabajador/) es un problema real que hemos de combatir si nos queremos evitar problemas psicológicos mayores y precisamente, el panorama actual del desarrollo frontend no ayuda en absoluto, sino todo lo contrario.
 
-El síndrome del impostor es un problema real que hemos de combatir si nos queremos evitar problemas psicológicos mayores y precisamente, el panorama actual del desarrollo frontend no ayuda en absoluto, sino todo lo contrario. El fuerte ritmo de recursos compartidos en la red y nuevas funcionalidades o herramientas, crean una fuerte corriente que parece ser que todos hemos de seguir porque si no, nos quedamos fuera del panorama. Aunque tampoco es que las ofertas de trabajo con miles de requisitos ayuden. ¿Te ha pasado alguna vez que vas andando por el metro, y quieres andar más despacio pero hay tanta gente a nuestro alrededor andando mucho más rápido que es imposible ir al ritmo que queremos? Pues con esto pasa lo mismo.
+El fuerte ritmo de recursos compartidos en la red crean una fuerte corriente que parece ser que todos hemos de seguir porque si no, nos quedamos fuera del panorama.
+
+Aunque tampoco es que las ofertas de trabajo con miles de requisitos ayuden. ¿Te ha pasado alguna vez que vas andando por el metro, y quieres andar más despacio pero hay tanta gente a nuestro alrededor andando mucho más rápido que es imposible ir al ritmo que queremos? Pues con esto pasa lo mismo.
 
 
 ## Solución: Aplicar la Ley de Pareto
 
 *La ley pareto dice que el 20% de nuestro esfuerzo consigue un 80% del resultado. (los porcentajes varían según la actividad)*
 
-No solo es una posible solución si no que, lo propongo como filosofía de vida para todo. ¿Para qué invertir un 80% de nuestras energías con tal de aprender el 20% restante de los conocimientos un tema?
+La gran cantidad de temario a aprender es el principal problema pero quizás otro, es que nadie nos ha enseñado a ser prácticos o sabemos como estudiamos mejor.
 
-Aplicando la Ley de Pareto, la lista comentada al inicio de este artículo podría quedar tal que así:
+La [ley de Pareto](https://economiatic.com/ley-de-pareto/) se basa en el pragmatismo en cualquier aspecto de la vida. ¿Para qué invertir un 80% de nuestras energías con tal de aprender el 20% restante de los conocimientos un tema?
+
+Si aplicamos la ley de Pareto a la lista que hemos mencionado al principio de este artículo, quedaría tal que así:
 - Html semántico.
 - Accesibilidad.
 - CSS.
@@ -155,7 +159,7 @@ Aplicando la Ley de Pareto, la lista comentada al inicio de este artículo podr�
 - Comandos básicos de NPM.
 - Metodologías ágiles.
 
-Como podemos ver, la lista se ha reducido bastante. Hay elementos en la lista que aportan muchísimo, pero que no son críticos para una persona que acaba de empezar, pues debería tener otros objetivos en mente. Para una persona que se quiere adentrar en el mundo del desarrollo, una lista válida podría ser:
+Como podemos ver, la lista se ha reducido bastante. Siendo honesto, hay elementos en la lista que aunque aportan muchísimo, no deberían ser del interés de una persona que acaba de empezar en el sector, pues debería tener otros objetivos en mente. Para una persona que se quiere adentrar en el mundo del desarrollo, una lista válida podría ser:
 
 - Html semántico.
 - CSS.
@@ -171,35 +175,39 @@ Como podemos ver, la lista se ha reducido bastante. Hay elementos en la lista qu
 La Ley Pareto en este caso, no solo se puede aprender a alto nivel como acabamos de hacer, sino que también se puede hacer para algunas de las cosas por ejemplo, en el caso de <code>css</code>, tenemos mil cosas a aprender. **¿Cómo aplicaríamos la Ley de Pareto para aprender <code>css</code>?**
 
 Podemos decir que el 20% de los conocimientos que aportan un 80% de valor desde mi punto de vista serían:
-- Conocer los selectores más usados.
-- Entender que los selectores van de derecha a izquierda (realmente no es así, pero nuestro cerebro es como lo entiende).
-- Especificidad.
-- Flex y Grid.
-- Mediaqueries (mobile-first)
-- BEM
 
-Aprendiendo estos conocimientos, tendríamos unas muy buenas base de CSS y las habríamos conseguido de manera práctica y rápida. Claro que podemos aprender más metodologías de <code>css</code> como <code>oocss</code>, <code>smacss</code> o <code>suitcss</code>. Incluso adentrarnos en el mundo de <code>@support</code>, animaciones, transiciones que aunque son muy interesantes y útiles para muchas cosas, no los definiría como unos conocimientos que vayan a servirte en el día a día en la mayoría de casos.
+1. Conocer los selectores más usados.
+2. Entender que los selectores van de derecha a izquierda (realmente no es así, pero nuestro cerebro es como lo entiende).
+3. Especificidad.
+4. Flex y Grid.
+5. Mediaqueries (mobile-first)
+6. BEM
+
+Aprendiendo estos conocimientos, tendríamos unas muy buenas base de CSS y las habríamos conseguido de manera práctica y rápida.
+
+Y **solamente en caso de necesitarlo**, me adentraría en el mundo de <code>@support</code>, animaciones complejas o transiciones porque aunque son muy interesantes y útiles para muchas cosas, no creo que vayan a servirte en el día a día en la mayoría de casos.
 
 
 ## Solución: Cambio de mentalidad
-Otra solución en la que creo firmemente para combatir tanto este ritmo frenético como el síndrome del impostor es un cambio de mentalidad tanto con nosotros mismos como con los demás.
+Otra solución en la que creo firmemente para combatir tanto este ritmo frenético y al síndrome del impostor es un cambio de mentalidad tanto con nosotros mismos como con los demás.
 
-Algo que me gusta mucho de nuestro sector es que a diferencia de los otros, hay una mentalidad de compartir conocimiento pero esto no significa que no se pueda mejorar. ¿Pepito tiene que hacer X tarea de <code>css</code> y tu sabes más que él? Sentaros juntos. Me da igual que el te diga que no, lo agradecerá. O quizás te llevas una sorpresa y el que aprende alguna cosa eres tú.
+Algo que me gusta mucho de nuestro sector es que a diferencia de los otros, hay una mentalidad de compartir conocimiento pero esto no significa que no se pueda mejorar (y no hablo en las redes sociales, si no cara a cara).
 
-Algunas cosas que podemos hacer para combatir este ritmo frenético son:
-- Tener empatía.
-- Ayudar a los compañeros sin que lo pidan.
-- Entender que cada persona tiene un balance de vida/trabajo distinto al nuestro porque cada uno vive en contextos y situaciones distintas.
-- No sorprenderse cuando alguien no sabe algo, eso no ayuda.
+¿Como actuarías si Pepito que trabaja en tu equipo tiene que hacer unas animaciones con <code>css</code> para las nuevas páginas y tu sabes de esto? Te recomiendo que te sientes con el y adoptes el rol de mentor en esta tarea. Sentaros juntos. Quizás te dice que no es necesario, pero te tiene que dar igual porque lo va a agradecer. O quizás te llevas una sorpresa y el que aprende alguna cosa eres tú 😏.
+
+Algunas cosas que podemos hacer para combatir este ritmo frenético y su vez, mejorar la comunidad son:
+- Tener personalidad y saber diferenciar entre: Qué debemos aprender, que quieren que aprendamos y que nos gustaría aprender.
 - Compartir conocimiento (Talleres o charlas en horario laboral de conocimientos que se necesiten en breves).
 - Ser práctico e intentar aplicar la Ley Pareto para localizar qué aprender y cómo hacerlo.
-- Tener personalidad y saber diferenciar entre: Qué debemos aprender, que quieren que aprendamos y que nos gustaría aprender.
+- Ayudar a los compañeros sin que lo pidan.
+- Tener empatía.
+- No sorprenderse cuando alguien no sabe algo, eso no ayuda.
 - Aprende los conocimiento de ingeniería de software que puedas aprender en distintos lenguajes y/o frameworks.
 - Aprende de manera constante para aplicar el [efecto compuesto](https://www.elclubdeinversion.com/el-efecto-compuesto/).
 - Aprende a medida que necesites.
 
 <hr>
 
-Para terminar, me gustaría que reflexionemos acerca de cuál es la responsabilidad de todos nosotros y cómo podríamos terminar con esta burbuja de exigencias, auto-exigencias y explotación laboral. ¿Cómo podrá acabar esto?
+Para terminar, creo que deberíamos reflexionar sobre lo leído y empezar a practicar un ritmo de vida que nos aporte bienestar tanto en el ámbito personal como en el profesional, para así terminar con esta burbuja de presión a nosotros mismos y exceso de exigencias en las ofertas laborales. ¿Y tu, que piensas?
 
 **Namasté** 🙏
