@@ -14,7 +14,7 @@ export default function Page() {
             <li><a href="#technical">Libros de contenido técnico</a>👨‍💻</li>
             <li><a href="#productivity">Libros de productividad</a>🤓</li>
             <li><a href="#personal_development">Libros de desarrollo personal</a>🧘</li>
-            <li><a href="#finances">Libros de finanzas</a>🤑</li>
+            <li><a href="#finances">Libros de inversiones y finanzas</a>🤑</li>
             <li><a href="#entrepreneurship">Libros de emprendimiento</a>💼</li>
             <li><a href="#soft_skills">Libros de soft skills</a>❤️</li>
           </ol>

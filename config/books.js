@@ -110,7 +110,24 @@ export const books = [
     genre: 'finances'
   },
 
-  /* SOFT SKILLS */  
+  /* SOFT SKILLS */
+  {
+    title: 'Inteligencia emocional',
+    img_src: '/static/img/book-inteligencia-emocional.jpg',
+    review: {
+      rate: 5,
+      text: [
+        '"Inteligencia emocional" es un libro lento e intenso de leer no apto apra impacientes. Daniel Goleman revoluciona los tradicionales conceptos de inteligencia, afirmando que existe una que es mucho más efectiva.',
+        'Este libro nos intenta explicar la importancia de dotar de inteligencia a la emoción y de la importancia de ello. Con algunos ejemplos a lo largo del libro, nos escenifica situaciones en las cuales la inteligencia emocional nos puede ser de gran utilidad.'
+      ]
+    },
+    author: {
+      name: 'Daniel Goleman',
+      url: 'https://twitter.com/DanielGolemanEI'
+    },
+    link: '/path/to/amazon',
+    genre: 'soft_skills'
+  },
   {
     title: 'Soft Skills: The software developer\'s life manual',
     img_src: '/static/img/book-soft-skills.jpg',
@@ -130,26 +147,6 @@ export const books = [
     genre: 'soft_skills'
   },
   {
-    title: 'Find Your Why',
-    img_src: '/static/img/book-find-your-why.jpg',
-    review: {
-      rate: 5,
-      text: [
-        'Simon Sinek, uno de los mejores líderes de hoy en día, nos acompaña a lo largo del libro en la búsqueda de "Nuestro por qué".',
-        '"Find your why" es un libro de auto-ayuda que nos propone ejercicios, quebraderos de cabeza y problemáticas para que nosotros mismos nos descubramos poco a poco.',
-        'Spoiler Alert: Para algunos ejercicios se necesita de un amigo o compañero que entienda la importancia de dar una opinión sincera.'
-      ]
-    },
-    author: {
-      name: 'Simon Sinek',
-      url: 'https://twitter.com/simonsinek'
-    },
-    link: '/path/to/amazon',
-    genre: 'soft_skills'
-  },
-
-  /* DESARROLLO PERSONAL */
-  {
     title: 'Cómo ganar amigos e influir sobre las personas',
     img_src: '/static/img/book-como-ganar-amigos.jpg',
     review: {
@@ -165,25 +162,11 @@ export const books = [
       url: undefined
     },
     link: '/path/to/amazon',
-    genre: 'personal_development'
+    genre: 'soft_skills'
   },
-  {
-    title: 'Inteligencia emocional',
-    img_src: '/static/img/book-inteligencia-emocional.jpg',
-    review: {
-      rate: 5,
-      text: [
-        '"Inteligencia emocional" es un libro lento e intenso de leer no apto apra impacientes. Daniel Goleman revoluciona los tradicionales conceptos de inteligencia, afirmando que existe una que es mucho más efectiva.',
-        'Este libro nos intenta explicar la importancia de dotar de inteligencia a la emoción y de la importancia de ello. Con algunos ejemplos a lo largo del libro, nos escenifica situaciones en las cuales la inteligencia emocional nos puede ser de gran utilidad.'
-      ]
-    },
-    author: {
-      name: 'Daniel Goleman',
-      url: 'https://twitter.com/DanielGolemanEI'
-    },
-    link: '/path/to/amazon',
-    genre: 'personal_development'
-  },
+  
+
+  /* DESARROLLO PERSONAL */
   {
     title: 'El elemento: Descubrir tu pasión lo cambia todo',
     img_src: '/static/img/book-el-elemento.jpg',
@@ -198,6 +181,24 @@ export const books = [
     author: {
       name: 'Sir Ken Robinson',
       url: 'https://twitter.com/sirkenrobinson'
+    },
+    link: '/path/to/amazon',
+    genre: 'personal_development'
+  },
+  {
+    title: 'Find Your Why',
+    img_src: '/static/img/book-find-your-why.jpg',
+    review: {
+      rate: 5,
+      text: [
+        'Simon Sinek, uno de los mejores líderes de hoy en día, nos acompaña a lo largo del libro en la búsqueda de "Nuestro por qué".',
+        '"Find your why" es un libro de auto-ayuda que nos propone ejercicios, quebraderos de cabeza y problemáticas para que nosotros mismos nos descubramos poco a poco.',
+        'Spoiler Alert: Para algunos ejercicios se necesita de un amigo o compañero que entienda la importancia de dar una opinión sincera.'
+      ]
+    },
+    author: {
+      name: 'Simon Sinek',
+      url: 'https://twitter.com/simonsinek'
     },
     link: '/path/to/amazon',
     genre: 'personal_development'

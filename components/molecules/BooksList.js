@@ -13,11 +13,11 @@ export function BooksList({books}){
   return(
     <main className="container-wrapper">
       <BookSection id="technical" title="👨‍💻 Libros para ser un buen ingeniero de software" books={tech}/>
-      <BookSection id="productivity" title="🤓 Libros para ser un buen ingeniero de software" books={productivity}/>
-      <BookSection id="personal_development" title="🤓 Libros para ser un buen ingeniero de software" books={personalDevelopment}/>
-      <BookSection id="finances" title="🤑 Libros para ser un buen ingeniero de software" books={finances}/>
-      <BookSection id="entrepreneurship" title="💼 Libros para ser un buen ingeniero de software" books={entrepreneurship}/>
-      <BookSection id="soft_skills" title="❤️ Libros para ser un buen ingeniero de software" books={softSkills}/>
+      <BookSection id="productivity" title="🤓 Libros que te ayudarán a conseguir todos tus objetivos" books={productivity}/>
+      <BookSection id="personal_development" title="❤️ Libros que contribuirán a descubrirte a ti mismo y tu pasión" books={personalDevelopment}/>
+      <BookSection id="soft_skills" title="☯️ Libros para entender la importancia de las emociones" books={softSkills}/>
+      <BookSection id="entrepreneurship" title="💼 Libros para saber ejecutar tus proyectos" books={entrepreneurship}/>
+      <BookSection id="finances" title="🤑 Libros te enseñan como funciona el juego del dinero" books={finances}/>
     </main>
   )
 

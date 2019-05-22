@@ -42,7 +42,7 @@ export function BookSection({id, title, books}) {
         h3 {
           font-size: 1.25rem;
           font-weight: 500;
-          margin: 0 0 0.5rem 0;
+          margin: 0;
           letter-spacing: 0.5px;
           line-height: 1.5;
         }
