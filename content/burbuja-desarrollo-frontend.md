@@ -20,11 +20,11 @@ Llevo casi 4 años en esta profesión y aunque no es mucho tiempo, ha sido sufic
 
 ## En desarrollo frontend hay demasiado que abarcar
 
-El primer problema que tenemos los desarrolladores frontend es que hay demasiado que abarcar. El aumento de responsabilidad que se está trasladando a nuestro rol y el ritmo frenético que tiene el ecosistema Javascript son los dos motivos principales.
+El primer problema que tenemos los desarrolladores frontend 👨‍💻 es que hay demasiado que abarcar. El aumento de responsabilidad que se está trasladando a nuestro rol y el ritmo frenético que tiene el ecosistema Javascript son los dos motivos principales.
 
-Tal es así, que ha surgido una especialización dentro de nuestro rol, como la de UX Engineer, que es una posición que está más enfocada a conocimientos de diseño, experiencia de usuario y sus implementaciones.
+Tal es así, que ya ha surgido una especialización dentro de nuestro rol nommbrada UX Engineer, que es una posición que está más enfocada a conocimientos de diseño, experiencia de usuario y sus implementaciones.
 
-¿Qué es ser un desarrollador frontend en 2019? Pregunté a la comunidad acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y resultó la siguiente lista:
+¿Qué es ser un desarrollador frontend en 2019 🤔? Pregunté a la comunidad acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y resultó la siguiente lista 📃:
 - Jerarquía de contenidos.
 - Html semántico.
 - SEO.
@@ -71,9 +71,11 @@ Y como podemos ver, tenemos un problema. Con tantas cosas "que debemos aprender"
 
 *¿Cuántos de vosotros os habéis planteado saber casi todo de la lista anterior? ¿Y cuántos creéis que deberíais saberlo casi todo?*
 
-La rápida y constante evolución del desarrollo frontend es una arma de doble filo. Es tan afilada que hasta tiene su propio nombre: [fatiga Javascript](https://medium.com/@sergiodxa/sobre-el-ecosistema-y-la-fatiga-de-javascript-73027048413f). Si bien es cierto que estamos contentos por el incremento de nuevas funcionalidades, herramientas y librerías que enriquecen el ecosistema, eso también significa que las hemos de entender, interiorizar y saber usar para poder estar en este sector.
+La rápida y constante evolución del desarrollo frontend es una arma de doble filo 🔪. Es tan afilada que hasta tiene su propio nombre: [fatiga Javascript](https://medium.com/@sergiodxa/sobre-el-ecosistema-y-la-fatiga-de-javascript-73027048413f).
 
-Aunque todas estas mejoras son algo bueno, estamos pasando por alto una parte muy negativa. La satisfacción instantánea la cual la sociedad nos está sometiendo junto a la sensación de obligatoriedad de estar "a la última" en nuestra profesión, hace que seamos muy críticos con nosotros mismos.
+Si bien es cierto que estamos contentos por el incremento de nuevas funcionalidades🆕 , herramientas 🛠️ y librerías 📚 que enriquecen el ecosistema, eso también significa que las hemos de entender, interiorizar y saber usar para poder estar en este sector.
+
+Aunque todas estas mejoras son algo bueno, estamos pasando por alto una parte muy negativa. La satisfacción instantánea la cual la sociedad nos está sometiendo junto a la sensación de obligatoriedad de estar "a la última" en nuestra profesión, hace que seamos muy críticos con nosotros mismos 🧐.
 
 Las personas que llevan más años en el sector se ven menos afectadas pero, los que acaban de empezar y tienen tanto que aprender... Están altamente expuestos a:
 - Estrés.
@@ -81,7 +83,7 @@ Las personas que llevan más años en el sector se ven menos afectadas pero, los
 - Falta de confianza en uno mismo (síndrome del impostor).
 - No valorar el proceso de aprendizaje.
 
-Es estresante ver cada dos por tres en Twitter o Linkedin de nuevas librerías, nuevas funcionalidades, conceptos nuevos, metodologías nuevas, nuevos nombres... Esto, envía un mensaje a nuestro subconsciente de: **¿Aún no lo conoces? ¡Ponte ya!** Y esto, es malo de narices porque aunque sea muy poco a poco, afecta e influye a nuestra felicidad y paz interior.
+Es estresante ver cada dos por tres en Twitter o Linkedin de nuevas librerías, nuevas funcionalidades, conceptos nuevos, metodologías nuevas, nuevos nombres... Esto, envía un mensaje a nuestro subconsciente de: **¿Aún no lo conoces 😱? ¡Ponte ya!** Y esto, es malo de narices porque aunque sea muy poco a poco, afecta e influye a nuestra felicidad y paz interior.
 
 **Linkedin y Twitter, entre otras cosas, son redes sociales de postureo profesional. No todo el mundo se ha leído el artículo que está compartiendo. Así que no te castigues a ti mismo por no leerlo.**
 
