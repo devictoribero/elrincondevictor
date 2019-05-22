@@ -1,7 +1,7 @@
 export const whatIhaveLearntToday = [
   {
     date: "2019-04-06",
-    data: ['Podemos añadir filtros en nuestro correo electrónico para verlos en la bandeja de entrada. Por ejemplo: <code>victor.ribero3+miweb@gmail.com</code> para saber que me contactan de <a href="https:/www.elrincondevictor.com">elrincondevictor.com</a>.']
+    data: ['Podemos añadir filtros en nuestro correo electrónico para verlos en la bandeja de entrada. Por ejemplo: <code>victor.ribero3+miweb@gmail.com</code> para saber que me contactan de <a href="https://www.elrincondevictor.com">elrincondevictor.com</a>.']
   },
   {
     date: "2019-04-04",

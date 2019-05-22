@@ -100,7 +100,8 @@ Y a diferencia de otros sectores, el desarrollo de software es de los pocos con 
 Y ojo, ¡Que todo esto está muy bien! Pero ¿A qué precio?
 
 ## Necesitamos un ritmo sostenible
-Son muchas las horas que dedicamos a crecer profesionalmente en nuestro tiempo libre y que nos exponen a un ritmo de vida que no es sostenible.
+
+Hemos llegado a tal punto, que queremos aprender a [como organizar la semana para ser productivos](https://www.elrincondevictor.com/blog/6-sencillos-pasos-para-organizar-tu-semana) con el objetivo de tener el máximo de horas disponibles para dedicarlas a crecer profesionalmente.
 
 ¿Crees que puedes aguantar con este ritmo hasta el fin de tus días? ¿Serás feliz con tu vida a este ritmo? ¿No crees que habrías perdido otras muchas cosas?
 
