@@ -12,15 +12,19 @@ tags: [technical]
 isFeatured: true
 ---
 
-*El objetivo de este artículo es concienciar a la gente del mundo del desarrollo frontend que nos estamos autoexigiendo demasiado y que deberíamos adoptar otra mentalidad. Ser honestos y trabajar en equipo. Dejar de lado los prejuicios y entender, que está bien no saberlo todo. Todos vivimos en contextos y responsabilidades totalmente distintas.*
+*El objetivo de este artículo es concienciar a la gente del mundo del desarrollo frontend que nos estamos autoexigiendo demasiado intentando solucionar el problema de exceso de contenido y que deberíamos adoptar otra mentalidad. Ser honestos y trabajar en equipo. Dejar de lado los prejuicios y entender, que está bien no saberlo todo. Todos vivimos en contextos totalmente distintos.*
+
+<hr>
 
 Llevo casi 4 años en esta profesión y aunque no es mucho tiempo, ha sido suficiente para darme cuenta de varias cosas que me preocupan seriamente de nuestro sector y que nos incumben a todos.
 
 ## En desarrollo frontend hay demasiado que abarcar
 
-El primer problema que tenemos los frontend developers es que hay demasiado que abarcar. El aumento de responsabilidad que se está trasladando a nuestro rol y el ritmo frenético que tiene el ecosistema Javascript son los dos motivos principales.
+El primer problema que tenemos los desarrolladores frontend es que hay demasiado que abarcar. El aumento de responsabilidad que se está trasladando a nuestro rol y el ritmo frenético que tiene el ecosistema Javascript son los dos motivos principales.
 
-Pregunté a la comunidad acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y la siguiente lista es la que resultó:
+Tal es así, que ha surgido una especialización dentro de nuestro rol, como la de UX Engineer, que es una posición que está más enfocada a conocimientos de diseño, experiencia de usuario y sus implementaciones.
+
+¿Qué es ser un desarrollador frontend en 2019? Pregunté a la comunidad acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y resultó la siguiente lista:
 - Jerarquía de contenidos.
 - Html semántico.
 - SEO.
@@ -69,21 +73,23 @@ Y como podemos ver, tenemos un problema. Con tantas cosas "que debemos aprender"
 
 La rápida y constante evolución del desarrollo frontend es una arma de doble filo. Si bien es cierto que estamos contentos por el incremento de nuevas funcionalidades, herramientas y librerías que enriquecen el ecosistema, eso también significa que las hemos de entender, interiorizar y saber usar para poder estar en este sector.
 
-Aunque todas estas mejoras son algo bueno, estamos pasando por alto una parte muy negativa. La alta autoexigencia de querer saberlo todo, junto a la satisfacción instantánea la cual la sociedad nos está sometiendo, nos exponen fácilmente a:
+Aunque todas estas mejoras son algo bueno, estamos pasando por alto una parte muy negativa. La satisfacción instantánea la cual la sociedad nos está sometiendo junto a la sensación de obligatoriedad de estar "a la última" en nuestra profesión, hace que seamos muy críticos con nosotros mismos.
+
+Las personas que llevan más años en el sector se ven menos afectadas pero, los que acaban de empezar y tienen tanto que aprender... Están altamente expuestos a:
 - Estrés.
 - Ansiedad.
 - Falta de confianza en uno mismo (síndrome del impostor).
 - No valorar el proceso de aprendizaje.
 
-Es estresante ver cada dos por tres en Twitter o Linkedin de nuevas librerías, nuevas funcionalidades, conceptos nuevos, metodologías nuevas, nuevos nombres... Esto, envía un mensaje a nuestro subconsciente de: **¿Aún no lo conoces? ¡Ponte ya!** Y esto, es malo de narices porque aunque sea muy poco a poco, nos afecta e influye a nuestra felicidad y paz interior.
+Es estresante ver cada dos por tres en Twitter o Linkedin de nuevas librerías, nuevas funcionalidades, conceptos nuevos, metodologías nuevas, nuevos nombres... Esto, envía un mensaje a nuestro subconsciente de: **¿Aún no lo conoces? ¡Ponte ya!** Y esto, es malo de narices porque aunque sea muy poco a poco, afecta e influye a nuestra felicidad y paz interior.
 
 **Linkedin y Twitter, entre otras cosas, son redes sociales de postureo profesional. No todo el mundo se ha leído el artículo que está compartiendo. Así que no te castigues a ti mismo por no leerlo.**
 
-Pese a este ritmo frenético, somos muchos los que queremos aprender todo el contenido cuanto antes por distintos motivos. Entre ellos:
+Pese a que te guste o no, todos somos los que con más o menos ritmo hemos de ir aprendiendo todas las cosas que van saliendo principalmente por dos motivos:
 - Satisfacción propia
 - Optar a un mejor puesto laboral
 
-A diferencia de otros sectores, el desarrollo de software es de los pocos con muy alto porcentaje que nos dedicamos a esto lo hacemos por vocación. Esto significa que:
+Y a diferencia de otros sectores, el desarrollo de software es de los pocos con muy alto porcentaje que nos dedicamos a esto lo hacemos por vocación. Esto significa que:
 - Leemos
 - Estudiamos
 - Tenemos algún o varios proyectos personales
@@ -94,9 +100,11 @@ A diferencia de otros sectores, el desarrollo de software es de los pocos con mu
 Y ojo, ¡Que todo esto está muy bien! Pero ¿A qué precio?
 
 ## Necesitamos un ritmo sostenible
-Son muchas las horas que dedicamos a crecer profesionalmente en nuestro tiempo libre y que nos exponen a un ritmo de vida no sostenible a largo plazo. ¿Crees que puedes aguantar con este ritmo hasta el fin de tus días? ¿Serás feliz con tu vida a este ritmo? ¿No crees que habrías perdido otras muchas cosas?
+Son muchas las horas que dedicamos a crecer profesionalmente en nuestro tiempo libre y que nos exponen a un ritmo de vida que no es sostenible.
 
-Dedicamos muchas horas a nuestro hobbie y profesión pero olvidamos muchos otros aspectos como:
+¿Crees que puedes aguantar con este ritmo hasta el fin de tus días? ¿Serás feliz con tu vida a este ritmo? ¿No crees que habrías perdido otras muchas cosas?
+
+Como [mi amigo Ignacio comenta en su podcast](http://wecodesignpodcast.com/2019/04/04/autoexplotacion/) nos forzamos cada "X" tiempo a compartir conocimiento en las redes sociales o a estudiar, en vez de hacerlo cuando realmente nos apetece. Y desde mi punto de vista, estamos ignorando aspectos que también deberíamos atender:
 
 - Socializar más.
 - Descubrir nuevas experiencias como pintura, música, baile, jardinería...
@@ -111,7 +119,7 @@ Dedicamos muchas horas a nuestro hobbie y profesión pero olvidamos muchos otros
 
 Estas actividades nos aportan distintos tipos de excitación mental. Ayudan a conocernos mejor, probablemente a ampliar nuestra círculo de amistades y por ende, además de ayudarnos a desconectar, nos aportan felicidad.
 
-Si tuviéramos un ritmo de vida sostenible a largo plazo y una vida equilibrada, este ritmo tan frenético nos afectaría psicológicamente en menor medida. Ayudaría también, entender que cada uno de nosotros vive una vida distinta y que por tanto, tiene contextos y obligaciones distintas con todo lo que conlleva. Teniendo esto en cuenta, no podemos pretender aprender igual de rápido que otra persona que quizás dispone de 3 horas más que nosotros así que, aceptémoslo y vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar.
+Deberíamos entender que cada uno de nosotros vive una vida distinta y que por tanto, tiene contextos y obligaciones distintas. Eso significa que algunos tienen más tiempo que otras personas para sus actividades y que por eso, no debemos compararnos. Aceptémoslo y vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar.
 
 ## Síndrome del impostor
 *El síndrome del impostor es un fenómeno psicológico en el que la gente es incapaz de internalizar sus logros y sufre un miedo persistente de ser descubierto como un fraude.*
