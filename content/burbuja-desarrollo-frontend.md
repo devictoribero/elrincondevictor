@@ -99,15 +99,15 @@ Y a diferencia de otros sectores, el desarrollo de software es de los pocos con 
 - Miramos conferencias
 - Creamos contenido
 
-Y ojo, ¡Que todo esto está muy bien! Pero ¿A qué precio?
+Y ojo, ¡Que todo esto está muy bien! Pero ¿A qué precio ⚠️?
 
 ## Necesitamos un ritmo sostenible
 
-Hemos llegado a tal punto, que queremos aprender a [como organizar la semana para ser productivos](https://www.elrincondevictor.com/blog/6-sencillos-pasos-para-organizar-tu-semana) con el objetivo de tener el máximo de horas disponibles para dedicarlas a crecer profesionalmente.
+Hemos llegado a tal punto, que queremos aprender a [como organizar la semana para ser productivos](https://www.elrincondevictor.com/blog/6-sencillos-pasos-para-organizar-tu-semana) 🗓️ con el objetivo de tener el máximo de horas disponibles para dedicarlas a crecer profesionalmente 👨‍🎓.
 
-¿Crees que puedes aguantar con este ritmo hasta el fin de tus días? ¿Serás feliz con tu vida a este ritmo? ¿No crees que habrías perdido otras muchas cosas?
+¿Crees que puedes aguantar con este ritmo hasta el fin de tus días ☠️? ¿Serás feliz con tu vida a este ritmo 🤔? ¿No crees que habrías perdido otras muchas cosas 😔?
 
-Como [mi amigo Ignacio comenta en su podcast](http://wecodesignpodcast.com/2019/04/04/autoexplotacion/) nos forzamos cada "X" tiempo a compartir conocimiento en las redes sociales o a estudiar, en vez de hacerlo cuando realmente nos apetece. Y desde mi punto de vista, estamos ignorando aspectos que también deberíamos atender:
+Como [mi amigo Ignacio comenta en su podcast](http://wecodesignpodcast.com/2019/04/04/autoexplotacion/) 🎙️ nos forzamos cada "X" tiempo a compartir conocimiento en las redes sociales o a estudiar, en vez de hacerlo cuando realmente nos apetece. Y desde mi punto de vista, estamos ignorando aspectos que también deberíamos atender:
 
 - Socializar más.
 - Descubrir nuevas experiencias como pintura, música, baile, jardinería...
@@ -120,31 +120,31 @@ Como [mi amigo Ignacio comenta en su podcast](http://wecodesignpodcast.com/2019/
 - Inteligencia emocional.
 - Practicar actividad física.
 
-Estas actividades nos aportan distintos tipos de excitación mental. Ayudan a conocernos mejor, probablemente a ampliar nuestra círculo de amistades y por ende, además de ayudarnos a desconectar, nos aportan felicidad.
+Estas actividades nos aportan distintos tipos de excitación mental 🧠. Ayudan a conocernos mejor, probablemente a ampliar nuestra círculo de amistades y por ende, además de ayudarnos a desconectar, nos aportan felicidad 😄.
 
-Deberíamos entender que cada uno de nosotros vive una vida distinta y que por tanto, tiene diferentes contextos y obligaciones. Eso significa que algunos tienen más tiempo que otros para sus actividades y que por eso, no debemos compararnos. Vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar.
+Deberíamos entender que cada uno tiene su vida y que por tanto, tiene diferentes contextos y obligaciones. Eso significa que algunos tienen más tiempo que otros para sus actividades y que por eso, no debemos compararnos. Vivamos como a nosotros nos apetezca y no como la corriente nos quiere llevar 🌊.
 
 ## Síndrome del impostor
 *El síndrome del impostor es un fenómeno psicológico en el que la gente es incapaz de internalizar sus logros y sufre un miedo persistente de ser descubierto como un fraude.*
 
 ¿Crees que fulanito sabe 100 veces más que tu? ¿Que tu deber es también saberlo? ¿Que todos tus compañeros saben más? ¿Que no mereces estar ahí? Estos son pensamientos que en el mundo del desarrollo se dan mucho independientemente del tiempo que uno lleve trabajando, aunque es más común en la gente que lleva poco tiempo.
 
-El [síndrome del impostor](https://www.lambdatres.com/2018/01/sindrome-del-impostor-como-supera-trabajador/) es un problema real que hemos de combatir si nos queremos evitar problemas psicológicos mayores y precisamente, el panorama actual del desarrollo frontend no ayuda en absoluto, sino todo lo contrario.
+El [síndrome del impostor](https://www.lambdatres.com/2018/01/sindrome-del-impostor-como-supera-trabajador/) es un problema real que hemos de combatir si nos queremos evitar problemas psicológicos mayores y precisamente, el panorama actual del desarrollo frontend no ayuda en absoluto, sino todo lo contrario 🙎.
 
 El fuerte ritmo de recursos compartidos en la red crean una fuerte corriente que parece ser que todos hemos de seguir porque si no, nos quedamos fuera del panorama.
 
-Aunque tampoco es que las ofertas de trabajo con miles de requisitos ayuden. ¿Te ha pasado alguna vez que vas andando por el metro, y quieres andar más despacio pero hay tanta gente a nuestro alrededor andando mucho más rápido que es imposible ir al ritmo que queremos? Pues con esto pasa lo mismo.
+Aunque tampoco es que las ofertas de trabajo con miles de requisitos ayuden 🤷. ¿Te ha pasado alguna vez que vas andando por el metro, y quieres andar más despacio pero hay tanta gente a nuestro alrededor andando mucho más rápido que es imposible ir al ritmo que queremos? Pues con esto pasa lo mismo.
 
 
 ## Solución: Aplicar la Ley de Pareto
 
 *La ley pareto dice que el 20% de nuestro esfuerzo consigue un 80% del resultado. (los porcentajes varían según la actividad)*
 
-La gran cantidad de temario a aprender es el principal problema pero quizás otro, es que nadie nos ha enseñado a ser prácticos o sabemos como estudiamos mejor.
+La gran cantidad de temario a aprender y el poco foco que tenemos hoy en día son los problemas principales pero, quizás no estamos siento prácticos.
 
 La [ley de Pareto](https://economiatic.com/ley-de-pareto/) se basa en el pragmatismo en cualquier aspecto de la vida. ¿Para qué invertir un 80% de nuestras energías con tal de aprender el 20% restante de los conocimientos un tema?
 
-Si aplicamos la ley de Pareto a la lista que hemos mencionado al principio de este artículo, quedaría tal que así:
+Si aplicamos la ley de Pareto a la lista 📃 que hemos mencionado al principio de este artículo ⬆️, quedaría tal que así:
 - Html semántico.
 - Accesibilidad.
 - CSS.
@@ -162,7 +162,7 @@ Si aplicamos la ley de Pareto a la lista que hemos mencionado al principio de es
 - Comandos básicos de NPM.
 - Metodologías ágiles.
 
-Como podemos ver, la lista se ha reducido bastante. Siendo honesto, hay elementos en la lista que aunque aportan muchísimo, no deberían ser del interés de una persona que acaba de empezar en el sector, pues debería tener otros objetivos en mente. Para una persona que se quiere adentrar en el mundo del desarrollo, una lista válida podría ser:
+Como podemos ver, la lista se ha reducido bastante 👌. Siendo honesto, hay elementos en la lista que aunque aportan muchísimo, no deberían ser del interés de una persona que acaba de empezar en el sector, pues debería tener otros objetivos en mente. Por este motivo, vamos a reducir más la lista:
 
 - Html semántico.
 - CSS.
@@ -192,11 +192,11 @@ Y **solamente en caso de necesitarlo**, me adentraría en el mundo de <code>@sup
 
 
 ## Solución: Cambio de mentalidad
-Otra solución en la que creo firmemente para combatir tanto este ritmo frenético y al síndrome del impostor es un cambio de mentalidad tanto con nosotros mismos como con los demás.
+Otra solución en la que creo firmemente para combatir tanto este ritmo frenético y al síndrome del impostor es un cambio de mentalidad tanto con nosotros mismos, como con los demás.
 
 Algo que me gusta mucho de nuestro sector es que a diferencia de los otros, hay una mentalidad de compartir conocimiento pero esto no significa que no se pueda mejorar (y no hablo en las redes sociales, si no cara a cara).
 
-¿Como actuarías si Pepito que trabaja en tu equipo tiene que hacer unas animaciones con <code>css</code> para las nuevas páginas y tu sabes de esto? Te recomiendo que te sientes con el y adoptes el rol de mentor en esta tarea. Sentaros juntos. Quizás te dice que no es necesario, pero te tiene que dar igual porque lo va a agradecer. O quizás te llevas una sorpresa y el que aprende alguna cosa eres tú 😏.
+¿Como actuarías si Pepita 👧 que trabaja en tu equipo, tiene que hacer unas animaciones con <code>css</code> para las nuevas páginas y tu sabes bastante del tema? ¡Siéntate con ella y adopta el rol de mentor en esta tarea! Sentaros juntos. Quizás te dice que no es necesario porque o no te quiere molestar, o no quiere que la juzgues, pero insístele un poco más. Quizás te llevas una sorpresa y el que aprende alguna cosa eres tú 😏.
 
 Algunas cosas que podemos hacer para combatir este ritmo frenético y su vez, mejorar la comunidad son:
 - Tener personalidad y saber diferenciar entre: Qué debemos aprender, que quieren que aprendamos y que nos gustaría aprender.
