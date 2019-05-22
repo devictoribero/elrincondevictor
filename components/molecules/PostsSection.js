@@ -1,10 +1,10 @@
 import {PostPreview} from './PostPreview';
 
-export function PostsSection({title, posts}) {
+export function PostsSection({title, posts, className}) {
   return (
     <section>
       {title}
-      <div className="content">
+      <div className={`content ${className}`}>
         {posts.map(post => <PostPreview key={post.slug} {...post}/>)}
       </div>
 

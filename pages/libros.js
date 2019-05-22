@@ -14,7 +14,7 @@ export default function Page() {
             <li><a href="#technical">Libros de contenido técnico</a>👨‍💻</li>
             <li><a href="#productivity">Libros de productividad</a>🤓</li>
             <li><a href="#personal_development">Libros de desarrollo personal</a>🧘</li>
-            <li><a href="#finances">Libros de inversiones y finanzas</a>🤑</li>
+            <li><a href="#finances">Libros de inversiones</a>🤑</li>
             <li><a href="#entrepreneurship">Libros de emprendimiento</a>💼</li>
             <li><a href="#soft_skills">Libros de soft skills</a>❤️</li>
           </ol>
@@ -37,15 +37,15 @@ export default function Page() {
 
         h1 {
           font-family: var(--font-family-alter);
-          margin-bottom: 2.5rem;
+          margin: 0 0 2rem 0;
           font-size: 2.5rem;
-          line-height: 1.125;
+          line-height: 1.35;
           font-weight: bold;
         }
 
         p {
           display: block;
-          margin-bottom: 16px;
+          margin: 0.75rem 0;
           color: #1d1d1d;
           font-size: 18px;
           letter-spacing: 0.2px;

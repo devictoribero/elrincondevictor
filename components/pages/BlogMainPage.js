@@ -18,11 +18,10 @@ export function BlogMainPage({featured, randomPost}) {
       <Header randomPost={randomPost}/>
 
       <main className="container-wrapper">
-        <div className="container">
-          <PostsSection
-            title={<PostSectionTitle heading='h1'>Destacados</PostSectionTitle>}
-            posts={featured}/>  
-        </div>
+        <PostsSection
+          className="container"
+          title={<PostSectionTitle heading='h1'>Artículos</PostSectionTitle>}
+          posts={featured}/>  
       </main>   
 
       <style jsx>{``}</style>
@@ -53,18 +52,20 @@ function Header({randomPost}){
         }
 
         h1 {
-          margin: 0;
-          color: var(--grey-800);
-          line-height: 1.5;
           font-family: var(--font-family-alter);
-          margin-bottom: 2rem;
+          margin: 0 0 2rem 0;
+          font-size: 2.5rem;
+          line-height: 1.35;
+          font-weight: bold;
         }
 
         p {
-          margin: 1rem 0;
-          color: var(--grey-700);
-          font-size: 1.5rem;
-          line-height: 1.6;
+          display: block;
+          margin: 0.75rem 0;
+          color: #1d1d1d;
+          font-size: 18px;
+          letter-spacing: 0.2px;
+          line-height: 2;
         }
 
         a {
@@ -101,7 +102,7 @@ function Header({randomPost}){
           }
 
           h1 {
-            width: 500px;
+            width: 550px;
           }
 
           p {
