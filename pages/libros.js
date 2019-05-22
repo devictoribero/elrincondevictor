@@ -9,14 +9,14 @@ export default function Page() {
       <header className="container-wrapper">
         <div className="container">
           <h1>Los libros que te recomiendo</h1>
-          <p>Con el objetivo de que puedas ahorrar tiempo ⏳, te comparto los libros que me han parecido más interesantes.</p>
+          <p>Con el objetivo de que seas práctico y ahorres tiempo ⏳, te recomiendo estos libros que creo que todo el mundo debería leer.</p>
           <ol>
-            <li><a href="#books__technical">Libros de contenido técnico</a>👨‍💻</li>
-            <li><a href="#books__productivity">Libros de productividad</a>🤓</li>
-            <li><a href="#books__personal_development">Libros de desarrollo personal</a>🧘</li>
-            <li><a href="#books__finances">Libros de finanzas</a>🤑</li>
-            <li><a href="#books__entrepreneurship">Libros de emprendimiento</a>💼</li>
-            <li><a href="#books__soft_skills">Libros de soft skills</a>❤️</li>
+            <li><a href="#technical">Libros de contenido técnico</a>👨‍💻</li>
+            <li><a href="#productivity">Libros de productividad</a>🤓</li>
+            <li><a href="#personal_development">Libros de desarrollo personal</a>🧘</li>
+            <li><a href="#finances">Libros de finanzas</a>🤑</li>
+            <li><a href="#entrepreneurship">Libros de emprendimiento</a>💼</li>
+            <li><a href="#soft_skills">Libros de soft skills</a>❤️</li>
           </ol>
         </div>
       </header>

@@ -5,9 +5,7 @@ export function PostPreview({
 }) {
   return (
     <article>
-      <figure className='overlay'>
-        <img src={img_preview_src} alt="" role="presentation"/>
-      </figure>
+      <img src={img_preview_src} alt="" role="presentation"/>
 
       <div>
         <h2>
@@ -23,21 +21,14 @@ export function PostPreview({
       
 
       <style jsx>{`
-        figure {
-          position: relative;
-          margin: 0;
-        }
-
         img {
-          width: 100%;
-          border-radius: 5px;
+          display: none;
           position: relative;
+          width: 100px;
+          max-width: 100%;
+          height: 100px;
+          border-radius: 999px;
           object-fit: cover;
-          display: block;
-        }
-
-        div {
-          padding: 15px 0;
         }
 
         h2 {
@@ -45,6 +36,7 @@ export function PostPreview({
           color: var(--grey-900);
           font-size: 22px;
           font-weight: bold;
+          font-family: var(--font-family-alter);
         }
 
         h2 > a {
@@ -57,7 +49,7 @@ export function PostPreview({
 
         p {
           font-size: 18px;
-          margin: 8px 0 8px;
+          margin: 4px 0;
           line-height: 1.75;
           color: var(--grey-700);
         }
@@ -80,15 +72,18 @@ export function PostPreview({
         }
 
         @media screen and (min-width: 550px) {
+          article {
+            display: grid;
+            grid-template-columns: 100px auto;
+            grid-column-gap: 1rem;
+          }
+
           img {
-            height: 150px;
+            display: block;
           }
         }
 
         @media screen and (min-width: 767px) {
-          img {
-            height: 175px;
-          }
         }
       `}</style>
     </article>

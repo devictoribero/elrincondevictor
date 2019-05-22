@@ -11,8 +11,13 @@ export function PostsSection({title, posts}) {
       <style jsx>{`
         .content {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          grid-gap: 1.5rem;
+          grid-gap: 1.75rem;
+        }
+
+        @media screen and (min-width: 550px) {
+          .content {
+            grid-gap: 2rem;
+          }
         }
       `}</style>
     </section>

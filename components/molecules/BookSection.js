@@ -36,14 +36,7 @@ export function BookSection({id, title, books}) {
           margin-bottom: 2rem;
         }
 
-        header {
-          position: sticky;
-          top: 0;
-          padding: 15px 0;
-          margin-bottom: 1rem;
-          background: white;
-        }
-
+        header { margin-bottom: 1rem; }
         h2 { margin: 0; }
 
         h3 {
@@ -51,6 +44,7 @@ export function BookSection({id, title, books}) {
           font-weight: 500;
           margin: 0 0 0.5rem 0;
           letter-spacing: 0.5px;
+          line-height: 1.5;
         }
 
         h3 > a {
@@ -61,14 +55,14 @@ export function BookSection({id, title, books}) {
         img {
           float: left;
           height: 200px;
-          margin: 10px 15px 0 ;
+          margin: 10px 15px 0 0;
           border-radius: 3px;
         }
 
         p {
           line-height: 1.75;
-          font-size: 18px;
-          color: var(--grey-900);
+          font-size: 16px;
+          color: var(--grey-700);
         }
 
         .author {

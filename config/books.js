@@ -77,9 +77,8 @@ export const books = [
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        'Me encanta la manera práctica en la que este libro enseña a que no existen las prioridades sino la prioridad. Con la idea en mente que únicamente solo hay una cosa que es la más importante, nos enseña ejemplos, prácticas y ejercicios para que no perdamos el foco.',
+        'Un libro muy recomendable tanto para todos los que quieren ser productivos pero aún tienen caos en sus vidas como también para esa gente que ya es productiva dado que nombra distintas maneras de como reducir las prioridades a una, la que debemos hacer.'
       ]
     },
     author: {
@@ -97,9 +96,10 @@ export const books = [
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        'Warren Buffet y yo pensamos lo mismo: Sin duda el mejor en cuanto a inversiones que existe. Este libro nos explica desde la sensatez, la inversión a largo plazo con una meta muy clara: Un ingreso pasivo.',
+        '"The intelligent investor" diferencia entre especuladores e inversores y explica a través de muchísimos ejemplos y estudios, una estrategia clara: Buscar empresas infravaloradas por el mercado haciendo estudios fundamentales en lugar de basarse en las opiniones de terceras personas o las tendencias de mercados.',
+        'Lo recomiendo para toda persona que quiera empezar a invertir a largo plazo.'
+
       ]
     },
     author: {
@@ -115,11 +115,11 @@ export const books = [
     title: 'Soft Skills: The software developer\'s life manual',
     img_src: '/static/img/book-soft-skills.jpg',
     review: {
-      rate: 5,
+      rate: 4,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        '"Soft Skills" es un libro muy recomendado el cual habla de nuestra carrera profesional, marca personal, aprendizaje, productividad y finanzas entre otros muchos temas.',
+        'Una vez leído este libro, tendremos otra percepción de las entrevistas, como negociar salarios, que hacer con nuestro dinero o como vendernos a los compañeros, empresas y amigos.',
+        'Es un libro que nos hace cambiar la manera de ver las cosas.'
       ]
     },
     author: {
@@ -135,8 +135,9 @@ export const books = [
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe principios, patrones y prácticas para escribir código limpio (como nombrar las variables y funciones, cómo manejar errores, los mejores trucos para test unitarios). La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
+        'Simon Sinek, uno de los mejores líderes de hoy en día, nos acompaña a lo largo del libro en la búsqueda de "Nuestro por qué".',
+        '"Find your why" es un libro de auto-ayuda que nos propone ejercicios, quebraderos de cabeza y problemáticas para que nosotros mismos nos descubramos poco a poco.',
+        'Spoiler Alert: Para algunos ejercicios se necesita de un amigo o compañero que entienda la importancia de dar una opinión sincera.'
       ]
     },
     author: {
@@ -154,9 +155,9 @@ export const books = [
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        'Aunque creas que tienes el suficiente poder de la palabra o facilidad para tratar con la gente, deberías leerte este libro.',
+        '"Cómo ganar amigos e influir sobre las personas" se basa en la idea de que el éxito económico depende en un 15% del conocimiento profesional, y en un 85% de la capacidad para expresar ideas, asumir liderazgo y despertar el entusiasmo de los demás.',
+        'A base de ejemplos el autor muestra las técnicas fundamentales para gustar a los demás, comprender sus puntos de vista e imponer las propias ideas sin causar resentimiento.'
       ]
     },
     author: {
@@ -172,9 +173,8 @@ export const books = [
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        '"Inteligencia emocional" es un libro lento e intenso de leer no apto apra impacientes. Daniel Goleman revoluciona los tradicionales conceptos de inteligencia, afirmando que existe una que es mucho más efectiva.',
+        'Este libro nos intenta explicar la importancia de dotar de inteligencia a la emoción y de la importancia de ello. Con algunos ejemplos a lo largo del libro, nos escenifica situaciones en las cuales la inteligencia emocional nos puede ser de gran utilidad.'
       ]
     },
     author: {
@@ -190,9 +190,9 @@ export const books = [
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        'Ken Robinson en este libro afirma que habría que cambiar el modelo tradicional de educación y fomentar muchísimo más la creatividad.',
+        '"El elemento" va más allá y afirma que las asignaturas en los colegios no deberían enseñarse como entidades independientes sin relaciones entre ellas.',
+        'Por último, defiende la idea de que los planes de estudios deberían ser individualizados dado que cada uno tenemos aptitudes y requerimientos distintos como también ritmos distintos y lo único que hace el sistema actual es limitarnos.'
       ]
     },
     author: {
@@ -210,9 +210,9 @@ export const books = [
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        'El co-fundador de Pixar Ed Catmull relata de manera muy entretenida sus experiencias en Pixar sin caer en los típicos tópicos. Nos explica las diferentes estrategias siguieron para superar todos y cada uno de los problemas que querían impedir que Pixar fuera el gigante que es hoy en día.',
+        'Lo que más me gusta de este libro es la pasión con que Ed Catmull explica la importancia de una buena cultura de empresa.',
+        'El libro va más allá y desvela cómo Pixar mejora sus películas gracias a los "candor meeting", las cuales son reuniones que se basaban en feedback honesto.'
       ]
     },
     author: {
@@ -225,32 +225,15 @@ export const books = [
 
   /* OTHER */
   {
-    title: 'Sapiens: A Brief History of Humankind',
-    img_src: '/static/img/book-homo-sapiens.jpg',
-    review: {
-      rate: 5,
-      text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
-      ]
-    },
-    author: {
-      name: 'Yuval Noah Harari',
-      url: 'https://twitter.com/harari_yuval'
-    },
-    link: '/path/to/amazon',
-    genre: 'other'
-  },
-  {
     title: 'Homo Deus: A Brief History of Tomorrow',
     img_src: '/static/img/book-homo-deus.jpg',
     review: {
       rate: 5,
       text: [
-        'Uncle Bob nos cuenta que prácticas le han ayudado a los largo de los años para hacer un buen código mantenible.',
-        `El libro se divide en tres partes: La primera describe princinpios, patrones y prácticas para escribir código limpio. La segunda parte consiste en diferentes prácticas de mejorar un código complejo y la tercera, nos explica cuáles son los indicios o 'code smells' que nos dicen cuándo un código está mal`,
-        `Cubre los temas: Como y cuando escribir comentarios, como nombrar las variables y funciones,cómo manejar errores, los mejores trucos para test unitarios y 'code smells' entre otros.`
+        '"Homo Deus" narra un posible futuro para la especie humana en el que seremos pequeños dioses amortales.',
+        'Equipados con biotecnología, inteligencia articial y nanotecnología, seremos capaz de burlar la muerte. Solo habrá dos manera de no ser amortal: no tener dinero o morir en algún accidente.',
+        '¿Seremos capaces de mantenernos motivados para realizar objetivos en una sociedad donde el tiempo ya no tiene límite?'
+
       ]
     },
     author: {
