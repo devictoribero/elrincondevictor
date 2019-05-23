@@ -67,7 +67,7 @@ Y como podemos ver, tenemos un problema. Con tantas cosas "que debemos aprender"
 
 
 
-## Ritmo frenético en la profesión
+## Un ritmo frenético en la profesión
 
 *¿Cuántos de vosotros os habéis planteado saber casi todo de la lista anterior? ¿Y cuántos creéis que deberíais saberlo casi todo?*
 
@@ -107,7 +107,7 @@ Hemos llegado a tal punto, que queremos aprender a [como organizar la semana par
 
 ¿Crees que puedes aguantar con este ritmo hasta el fin de tus días ☠️? ¿Serás feliz con tu vida a este ritmo 🤔? ¿No crees que habrías perdido otras muchas cosas 😔?
 
-Como [mi amigo Ignacio comenta en su podcast](http://wecodesignpodcast.com/2019/04/04/autoexplotacion/) 🎙️ nos forzamos cada "X" tiempo a compartir conocimiento en las redes sociales o a estudiar, en vez de hacerlo cuando realmente nos apetece. Y desde mi punto de vista, estamos ignorando aspectos que también deberíamos atender:
+Entre muchas de las cosas que [mi amigo Ignacio comenta en su podcast](http://wecodesignpodcast.com/2019/04/04/autoexplotacion/) 🎙️, está el hecho de que nos forzamos cada "X" tiempo a compartir conocimiento en las redes sociales o a estudiar, en vez de hacerlo cuando realmente nos apetece. Y desde mi punto de vista, estamos ignorando aspectos que también deberíamos atender:
 
 - Socializar más.
 - Descubrir nuevas experiencias como pintura, música, baile, jardinería...
