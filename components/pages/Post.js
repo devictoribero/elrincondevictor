@@ -202,7 +202,7 @@ function PreviousNextArticles({previous, next}){
 function WhatIHaveLearnt({elements}) {
   const element = randomElement(elements)
   return(
-    <ComplementarySection title='¿Que he aprendido hoy?'>
+    <ComplementarySection title='¿Sabías que...?'>
       <ul className='complementaryBar' dangerouslySetInnerHTML={getThingsLearnt({element})}>
       </ul>
 

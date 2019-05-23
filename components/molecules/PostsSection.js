@@ -36,30 +36,14 @@ export function PostSectionTitle({heading, children}) {
 
       <style jsx>{`
         header {
-          margin: 0 0 16px 0;
+          margin: 0 0 0.5rem 0;
           color: var(--grey-900);
         }
 
         h1, h2, h3, h4, h5, h6 {
-          position: relative;
           margin: 0;
           font-variant: all-small-caps;
           font-weight: 600;
-        }
-
-        h1:after,
-        h2:after,
-        h3:after,
-        h4:after,
-        h5:after,
-        h6:after {
-          content: "";
-          position: absolute;
-          height: 2px;
-          width: 30px;
-          background: var(--grey-900);
-          top: 51%;
-          margin-left: 10px;
         }
 
         h1 { font-size: 23px; }
