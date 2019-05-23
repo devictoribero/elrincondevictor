@@ -12,19 +12,19 @@ tags: [technical]
 isFeatured: true
 ---
 
-*El objetivo de este artículo es concienciar a la gente de la alta auto-exigencia, del bombardeo de contenido y el ritmo insostenible que hay en la comunidad de desarrollo frontend. La urgencia de cambiar las cosas y adoptar una actitud "me-first" que garantize un bienestar personal.*
+*El objetivo de este artículo es concienciar a la gente del desarrollo frontend de la alta auto-exigencia, del bombardeo de contenido y el ritmo insostenible que hay nuestra comunidad. La urgencia de cambiar las cosas y adoptar una actitud "me-first" que garantize un bienestar personal.*
 
 <hr>
 
 Llevo casi 4 años en esta profesión y aunque no es mucho tiempo, ha sido suficiente para darme cuenta de varias cosas que me preocupan seriamente de nuestro sector y que nos incumben a todos.
 
-## En desarrollo frontend hay demasiado que abarcar
+## En el desarrollo frontend hay demasiado que abarcar
 
 El primer problema que tenemos los desarrolladores frontend 👨‍💻 es que hay demasiado que abarcar. El aumento de responsabilidad que se está trasladando a nuestro rol y el ritmo frenético que tiene el ecosistema Javascript son los dos motivos principales.
 
-Tal es así, que ya ha surgido una especialización dentro de nuestro rol nommbrada UX Engineer, que es una posición que está más enfocada a conocimientos de diseño, experiencia de usuario y sus implementaciones.
+Tal es así, que ya ha surgido una especialización dentro de nuestro rol nombrada UX Engineer, que es una posición que está más enfocada a conocimientos de diseño, experiencia de usuario y la implementación de éstos.
 
-¿Qué es ser un desarrollador frontend en 2019 🤔? Pregunté a la comunidad acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y resultó la siguiente lista 📃:
+¿Qué es ser un desarrollador frontend en 2019 🤔? [Pregunté a la comunidad](https://twitter.com/victorException/status/1113767944100753408) acerca de qué conocimientos creen que están relacionados con el desarrollo frontend y resultó la siguiente lista 📃:
 - Jerarquía de contenidos.
 - Html semántico.
 - SEO.
