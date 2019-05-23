@@ -5,7 +5,7 @@ title: La situación crítica del desarrollo frontend. Una burbuja que hemos de 
 slug: burbuja-desarrollo-frontend
 description: En el desarrollo frontend hay demasiado contenido que aprender, una alta autoexigencia y un ritmo insostenible. Es responsabilidad de todos que está situación crítica cambie ¡Descúbre como hacerlo!
 img_src: /static/img/burbuja-desarollo-frontend.jpg
-img_preview_src: /static/img/burbuja-desarollo-frontend.jpg
+img_preview_src: /static/img/burbuja-desarollo-frontend-preview.jpg
 createdAt: 2019-05-19
 updatedAt: null
 tags: [technical]
