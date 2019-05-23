@@ -11,7 +11,7 @@ export default function Page() {
           <h1>Los libros que te recomiendo</h1>
           <p>Con el objetivo de que seas práctico y ahorres tiempo ⏳, te recomiendo estos libros que creo que todo el mundo debería leer.</p>
           <ol>
-            <li><a href="#technical">Libros de contenido técnico</a>👨‍💻</li>
+            <li><a href="#technical" >Libros de contenido técnico</a>👨‍💻</li>
             <li><a href="#productivity">Libros de productividad</a>🤓</li>
             <li><a href="#personal_development">Libros de desarrollo personal</a>🧘</li>
             <li><a href="#finances">Libros de inversiones</a>🤑</li>

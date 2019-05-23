@@ -5,7 +5,7 @@ export function CustomPostLink({href, children}) {
     <a
       href={href}
       target={isExternal ? '_blank' : undefined}
-      rel={isExternal ? 'nofollow noopener noreferrer' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
     >
       {children}
     </a>

@@ -2,13 +2,13 @@ import PropTypes from 'prop-types'
 import {capitalize} from '../../helpers/functions'
 
 export function SharePostInSocial({social, textToShare}) {
-  if(!social || !textToShare) return null;
+  if (!social || !textToShare) return null;
 
-  if(social === 'twitter'){
+  if (social === 'twitter'){
     return(
       <a
         target='_blank'
-        rel="nofollow noopener noreferrer"
+        rel="noopener noreferrer"
         href={`https://twitter.com/intent/tweet?text=${textToShare}`}
         data-size="large">
         Compartir en {capitalize(social)}

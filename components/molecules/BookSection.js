@@ -10,9 +10,9 @@ export function BookSection({id, title, books}) {
 
       {books.map(book => (
         <article key={book.title}>
-          <h3><a href={book.link}>{book.title}</a></h3>
+          <h3><a href={book.link} rel="noopener noreferrer">{book.title}</a></h3>
           {/* Alternative text empty because it's not a semantic image */}
-          <a tabIndex='-1' href={book.link}><img src={book.img_src} alt=""/></a>
+          <a tabIndex='-1' href={book.link} rel="noopener noreferrer"><img src={book.img_src} alt=""/></a>
           {book.review.text.map(p => <p>{p}</p>)}
         </article>
       ))}  
