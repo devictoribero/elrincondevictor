@@ -1,7 +1,7 @@
 export const books = [
   /* TECHNICAL */
   {
-    title: 'Clean Code: A Handbook of Agile Software Craftsmanship',
+    title: 'Clean Code: A Handbook of Agile Craftsmanship',
     img_src: '/static/img/book-clean-code.jpg',
     review: {
       rate: 5,
