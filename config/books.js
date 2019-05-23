@@ -14,7 +14,10 @@ export const books = [
       name: 'Robert C. Martin',
       url: 'https://twitter.com/unclebobmartin'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2Qltatd',
+      es: 'https://amzn.to/2HwYd2l'
+    },
     genre: 'technical'
   },
   {
@@ -32,7 +35,10 @@ export const books = [
       name: 'Robert C. Martin',
       url: 'https://twitter.com/unclebobmartin'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2EsPZqb',
+      es: 'https://amzn.to/2HxFaF5'
+    },
     genre: 'technical'
   },
   {
@@ -49,7 +55,9 @@ export const books = [
       name: 'Michael Feathers',
       url: 'https://twitter.com/mfeathers'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2Hzge0d',
+    },
     genre: 'technical'
   },
   {
@@ -66,7 +74,9 @@ export const books = [
       name: 'Andrew Hunt',
       url: 'https://twitter.com/pragmaticandy'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2QgEnv6',
+    },
     genre: 'technical'
   },
 
@@ -85,7 +95,10 @@ export const books = [
       name: 'Gary Keller',
       url: 'https://twitter.com/garykeller'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2QjVa08',
+      es : 'https://amzn.to/2VZgxdu'
+    },
     genre: 'productivity'
   },
 
@@ -106,7 +119,10 @@ export const books = [
       name: 'Benjamin Graham',
       url: undefined
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2VVWiNS',
+      es : 'https://amzn.to/2VV8tKG'
+    },
     genre: 'finances'
   },
 
@@ -125,7 +141,10 @@ export const books = [
       name: 'Daniel Goleman',
       url: 'https://twitter.com/DanielGolemanEI'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2HvgME6',
+      es : 'https://amzn.to/2ErYthb'
+    },
     genre: 'soft_skills'
   },
   {
@@ -143,7 +162,9 @@ export const books = [
       name: 'John Sonmez',
       url: 'https://twitter.com/simpleprogrammr'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2HwtwKO',
+    },
     genre: 'soft_skills'
   },
   {
@@ -161,7 +182,10 @@ export const books = [
       name: 'Dale Carnegie',
       url: undefined
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2Hw8U5e',
+      es : 'https://amzn.to/2JyVh7F'
+    },
     genre: 'soft_skills'
   },
   
@@ -182,7 +206,10 @@ export const books = [
       name: 'Sir Ken Robinson',
       url: 'https://twitter.com/sirkenrobinson'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2JA79X2',
+      es : 'https://amzn.to/2HxJB2H'
+    },
     genre: 'personal_development'
   },
   {
@@ -200,7 +227,10 @@ export const books = [
       name: 'Simon Sinek',
       url: 'https://twitter.com/simonsinek'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2HwmZ2F',
+      es : 'https://amzn.to/2EqDifC'
+    },
     genre: 'personal_development'
   },
 
@@ -220,7 +250,10 @@ export const books = [
       name: 'Ed Catmull',
       url: 'https://twitter.com/edcatmull'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2Hw32sW',
+      es : 'https://amzn.to/2JCkI8u'
+    },
     genre: 'entrepreneurship'
   },
 
@@ -241,7 +274,10 @@ export const books = [
       name: 'Yuval Noah Harari',
       url: 'https://twitter.com/harari_yuval'
     },
-    link: '/path/to/amazon',
+    link: {
+      en: 'https://amzn.to/2VZjN8s',
+      es : 'https://amzn.to/2HxPaOX'
+    },
     genre: 'other'
   },
 ]

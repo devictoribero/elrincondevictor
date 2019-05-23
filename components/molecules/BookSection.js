@@ -8,12 +8,30 @@ export function BookSection({id, title, books}) {
         <h2>{title}</h2>  
       </header>
 
-      {books.map(book => (
-        <article key={book.title}>
-          <h3><a href={book.link} rel="noopener noreferrer">{book.title}</a></h3>
+      {books.map(({title, link, img_src, review}) => (
+        <article key={title}>
+          <h3><a href={link} rel="noopener noreferrer">{title}</a></h3>
           {/* Alternative text empty because it's not a semantic image */}
-          <a tabIndex='-1' href={book.link} rel="noopener noreferrer"><img src={book.img_src} alt=""/></a>
-          {book.review.text.map(p => <p>{p}</p>)}
+          <a tabIndex='-1' href={link} rel="noopener noreferrer"><img src={img_src} alt=""/></a>
+          {review.text.map((p, index) => <p key={index}>{p}</p>)}
+          {link && (
+            <ul>
+              {link.en && (
+                <li>
+                  <a aria-label={`Consigue el libro ${title} en inglés`} href={link.en} rel="noopener noreferrer nofollow">
+                    Consigue el libro en inglés
+                  </a>
+                </li>
+              )}
+              {link.es && (
+                <li>
+                  <a aria-label={`Consigue el libro ${title} en castellano`} href={link.es} rel="noopener noreferrer nofollow">
+                    Consigue el libro en castellano
+                  </a>
+                </li>
+              )}
+            </ul>
+          )}
         </article>
       ))}  
 
@@ -81,7 +99,44 @@ export function BookSection({id, title, books}) {
           border-radius: 999px;
           font-size: 12px;
         }
-       
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+        } 
+
+        li {
+          list-style: none;
+        }
+
+        li:not(:last-of-type) {
+          margin: 0 0 0.5rem 0;
+        }
+
+        ul a {
+          color: var(--primary-800);
+          text-decoration: none;
+          box-shadow: 0 1px 0 0 currentColor;
+        }
+
+        ul a:hover, ul a:active {
+          box-shadow: none;
+        }
+
+        @media screen and (min-width: 550px) {
+          ul {
+            flex-direction: row;
+          } 
+
+          li:not(:last-of-type) {
+            margin: 0 0.5rem 0 0;
+          }
+          li:not(:last-of-type):after {
+            content: ",";
+          }
+        }
+        
        `}</style>
     </section>
   )
@@ -94,7 +149,10 @@ BookSection.propTypes = {
         name: PropTypes.string.isRequired,
         url: PropTypes.string
       }),
-      link: PropTypes.string,
+      link: PropTypes.shape({
+        es: PropTypes.string,
+        en: PropTypes.string
+      }),
       genre: PropTypes.oneOf([
         'technical',
         'productivity',
@@ -106,15 +164,4 @@ BookSection.propTypes = {
       ])
     })
   )
-}
-
-function getGenreText(genre) {
-  if (genre === 'technical') return 'técnico'
-  if (genre === 'productivity') return 'productividad'
-  if (genre === 'personal_development') return 'desarrollo personal'
-  if (genre === 'finances') return 'finanzas'
-  if (genre === 'entrepreneurship') return 'emprendedoría'
-  if (genre === 'soft_skills') return 'soft skills'
-  
-  return undefined;
 }

@@ -33,7 +33,10 @@ BooksList.propTypes = {
         name: PropTypes.string.isRequired,
         url: PropTypes.string
       }),
-      link: PropTypes.string,
+      link: PropTypes.shape({
+        es: PropTypes.string,
+        en: PropTypes.string
+      }),
       genre: PropTypes.oneOf([
         'technical',
         'productivity',
