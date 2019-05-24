@@ -47,9 +47,9 @@ export function Post({
             )}
             complementary={(
               <aside>
+                <WhatIHaveLearnt elements={didYouKnow}/>
                 <RandomPost post={randomPost} />
                 {hasRelatedPosts && <RelatedPosts post={relatedPosts[0]}/>}
-                <WhatIHaveLearnt elements={didYouKnow}/>
               </aside>
             )}
           />
@@ -209,7 +209,7 @@ function WhatIHaveLearnt({elements}) {
           font-size: 16px;
         }
 
-        .complementaryBar li {
+        .complementaryBar p {
           list-style: none;
           line-height: 1.5;
           color: var(--grey-800);
@@ -227,10 +227,10 @@ function WhatIHaveLearnt({elements}) {
 }
 
 function getThingsLearnt({element}){
-  let __html;
+  let __html = '';
 
   element.data.map((el, i) => {
-    __html = `<li>${el}</li>`
+    __html += `<p>${el}</p>`
   })
 
   return {__html};
