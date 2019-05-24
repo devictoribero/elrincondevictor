@@ -18,10 +18,16 @@ export function MainNavigation() {
       <style jsx>{`
         .main-navigation__inner {
           display: flex;
-          justify-content: space-between;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
           min-height: 125px;
-          align-items: center;
           box-sizing: border-box;
+        }
+
+        .logo {
+          font-weight: bold;
+          padding: 1.25rem 0;
         }
 
         a {
@@ -53,6 +59,18 @@ export function MainNavigation() {
 
         a:not(.logo) {
           margin-right: 1.5rem;
+        }
+
+        @media screen and (min-width: 550px) {
+          .main-navigation__inner {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+          }         
+
+          .logo {
+            font-weight: 400;
+          }
         }
       `}</style>
     </nav>
