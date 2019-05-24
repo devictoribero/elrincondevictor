@@ -116,7 +116,6 @@ export function Article({data, content}) {
         }
 
         article code {
-          
           font-size: 16px;
         }
       `}</style>

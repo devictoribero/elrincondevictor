@@ -156,6 +156,7 @@ export default class MyApp extends App {
             border-radius: 3px;
             padding: 2px 4px;
             hyphens: auto;  
+            font-size: 16px;
           }
         `}</style>
       </Container>

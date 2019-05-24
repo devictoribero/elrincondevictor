@@ -13,22 +13,31 @@ export const didYouKnow = [
   },
   {
     id: 3,
-    data: ['Para contribuir a un <code>repositorio</code> cualquiera, una vez hemos hecho <code>fork</code>, <a href="https://help.github.com/en/articles/configuring-a-remote-for-a-fork">se ha de configurar un remote</a> que apunte al <code>upstream</code> del <code>repositorio</code> original.']
+    data: [
+      'Para contribuir a un proyecto "open-source" cualquiera, tenemos que hacer <code>fork</code> al proyecto y <a href="https://help.github.com/en/articles/configuring-a-remote-for-a-fork">configurar un remote</a> que apunte al <code>upstream</code> del <code>repositorio</code> original.',
+      'Una vez hecho esto, ya podemos contribuir 😜.'
+    ]
   },
   {
     id: 4,
-    data: ['Gracias a <a href="https://twitter.com/csswizardry/status/836960832789565440">este tweet de @csswizardry</a>, he aprendido como funcionan los atributos <code>sizes</code> and <code>srcset</code> para cargar imágenes de manera óptima.']
+    data: ['Podemos cargar imágenes de manera óptima dependiendo de la resolución de la pantalla gracias a los atributos <code>sizes</code> and <code>srcset</code>. <a href="https://twitter.com/csswizardry/status/836960832789565440">Harry Roberts nos explica cómo usarlos de manera práctica</a>.']
   },
   {
     id: 5,
-    data: ['La aplicación/servicio <a href="https://jfrog.com/artifactory/">Artifactory</a> es de una empresa llamada jfrog. Ésta, es la competencia de <code>npm</code>.']
+    data: ['Existen más opciones que <code>npm</code> para tener paquetes privados de Javascript. Su competencia, Jfrog ¡Tiene un producto llamado <a href="https://jfrog.com/artifactory/">Artifactory</a> que mola un montón!']
   },
   {
     id: 6,
-    data: ['Preocuparnos por la accesibilidad es importante. La extensión <a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en">Accessibility Insights for Web</a> ejecuta un test de la página donde nos encontremos y genera un reporte de todas las mejoras posibles.']
+    data: [
+      'Es importante que nuestras aplicaciones y servicios sean accesibles y usables por todo el mundo ♿.',
+      'Para poder saber si lo estamos logrando, hay una extensión llamada <a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en">Accessibility Insights for Web</a> 🔎 la cuál nos indica todos los aspectos que no se cumplen. ejecuta un test de la página donde nos encontremos y genera un reporte de todas las mejoras posibles 📃. Textos alternativos, contrastes de colores, atributos ARIA, etc...'
+    ]
   },
   {
     id: 7,
-    data: ['<a href="https://www.ticbeat.com/tecnologias/que-es-schemaorg/">Schema.org</a> es una manera de estructurar el contenido de la página para los <code>crawlers</code>. Lo más interesante es que beneficio al <code>SEO</code> de la página.']
+    data: [
+      '<a href="https://www.ticbeat.com/tecnologias/que-es-schemaorg/">Schema.org</a> es una manera de estructurar el contenido de la página para ayudar a los <code>crawlers</code> a recolectar información significativa del sitio.',
+      'Está claro que beneficia al <code>SEO</code> de la página 🤟.'
+    ]
   }
 ]
