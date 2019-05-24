@@ -152,7 +152,7 @@ Si aplicamos la ley de Pareto a la lista 📃 que hemos mencionado al principio 
 - Javascript.
 - ECMAScript y sus nuevas funcionalidades anuales.
 - Entender la asincronía.
-- React.
+- Un framework (React, Vue, Angular).
 - API Rest.
 - Principios SOLID aplicados a micro diseño.
 - Patrones de diseño.
@@ -169,7 +169,7 @@ Como podemos ver, la lista se ha reducido bastante 👌. Siendo honesto, hay ele
 - Javascript.
 - ECMAScript y sus nuevas funcionalidades anuales.
 - Entender la asincronía.
-- React.
+- Un framework (React, Vue, Angular).
 - API Rest.
 - Testing (unitario, integración, aceptación, etc...) tanto visual como de lógica.
 - Comandos básicos de NPM.
@@ -180,7 +180,7 @@ La Ley Pareto en este caso, no solo se puede aprender a alto nivel como acabamos
 Podemos decir que el 20% de los conocimientos que aportan un 80% de valor desde mi punto de vista serían:
 
 1. Conocer los selectores más usados.
-2. Entender que los selectores van de derecha a izquierda (realmente no es así, pero nuestro cerebro es como lo entiende).
+2. Entender que el navegador interpreta los estilos de derecha a izquierda.
 3. Especificidad.
 4. Flex y Grid.
 5. Mediaqueries (mobile-first)

@@ -11,6 +11,7 @@ export function MainNavigation() {
         <div>
           <Link href="/blog"><a>Blog</a></Link>
           <Link href="/libros"><a>Libros</a></Link>
+          <Link href="/aprende-algo-nuevo"><a>Aprende algo nuevo</a></Link>
         </div>
       </div>
 
@@ -50,8 +51,8 @@ export function MainNavigation() {
           background: var(--primary-300);
         }
 
-        a:not(.logo):last-of-type {
-          margin-left: 1rem;
+        a:not(.logo) {
+          margin-right: 1.5rem;
         }
       `}</style>
     </nav>

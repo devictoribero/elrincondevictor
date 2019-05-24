@@ -1,14 +1,14 @@
 import matter from 'gray-matter';
 import Error from './_error'
-import {randomElement} from '../helpers/random';
-import {Layout} from '../components/layout/Layout';
-import {BlogMainPage} from '../components/pages/BlogMainPage';
-import {Post} from '../components/pages/Post';
+import {getRandom} from '../helpers/random'
+import {Layout} from '../components/layout/Layout'
+import {BlogMainPage} from '../components/pages/BlogMainPage'
+import {Post} from '../components/pages/Post'
 
 export default function Blog({data, error}) {
   if (!data) return <Error statusCode={404} />
 
-  if(!data.isPostPage){
+  if (!data.isPostPage){
     return (
       <Layout>
         <BlogMainPage featured={data.featured} randomPost={data.randomPost}/>
@@ -16,7 +16,7 @@ export default function Blog({data, error}) {
     );
   }
 
-  if(data.isPostPage){
+  if (data.isPostPage){
     return (
       <Layout>
         <Post
@@ -41,10 +41,10 @@ Blog.getInitialProps = async ({query}) => {
     let data = {
       isPostPage: false,
       featured,
-      randomPost: randomElement(list)
+      randomPost: getRandom(list)
     }
     
-    if(slug) {
+    if (slug) {
       let currentPostIndex;
       list.map((post,i) => {
         if(post.slug === slug) {

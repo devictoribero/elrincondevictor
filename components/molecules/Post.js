@@ -116,10 +116,7 @@ export function Article({data, content}) {
         }
 
         article code {
-          background: linear-gradient(to right, var(--primary-000), var(--primary-100));
-          border-radius: 3px;
-          padding: 2px 4px;
-          hyphens: auto;
+          
           font-size: 16px;
         }
       `}</style>

@@ -151,18 +151,11 @@ export default class MyApp extends App {
             outline: 2px dashed;
           }
 
-          .overlay:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255,255,255,0.15);
-          }
-
-          .overlay.isPrimary:after {
-            background-image: linear-gradient(rgba(233,185,73,0.2 ),rgba(249,218,139,0.8));
+          code {
+            background: linear-gradient(to right, var(--primary-000), var(--primary-100));
+            border-radius: 3px;
+            padding: 2px 4px;
+            hyphens: auto;  
           }
         `}</style>
       </Container>

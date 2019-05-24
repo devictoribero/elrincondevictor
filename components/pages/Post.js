@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import {Fragment} from 'react';
-import {randomElement} from '../../helpers/random';
+import {getRandom} from '../../helpers/random'
 import {Article} from '../molecules/Post';
-import {PostLayout} from '../layout/PostLayout';
-import {PostPreview} from '../molecules/PostPreview';
-import {PostSectionTitle} from '../molecules/PostsSection';
-import {whatIhaveLearntToday} from '../../config/what-I-have-learnt-today';
+import {PostLayout} from '../layout/PostLayout'
+import {PostPreview} from '../molecules/PostPreview'
+import {PostSectionTitle} from '../molecules/PostsSection'
+import {didYouKnow} from '../../config/did-you-know'
 
 export function Post({
   previous,
@@ -49,7 +49,7 @@ export function Post({
               <aside>
                 <RandomPost post={randomPost} />
                 {hasRelatedPosts && <RelatedPosts post={relatedPosts[0]}/>}
-                <WhatIHaveLearnt elements={whatIhaveLearntToday}/>
+                <WhatIHaveLearnt elements={didYouKnow}/>
               </aside>
             )}
           />
@@ -200,7 +200,7 @@ function PreviousNextArticles({previous, next}){
 }
 
 function WhatIHaveLearnt({elements}) {
-  const element = randomElement(elements)
+  const element = getRandom(elements)
   return(
     <ComplementarySection title='¿Sabías que...?'>
       <ul className='complementaryBar' dangerouslySetInnerHTML={getThingsLearnt({element})}>
