@@ -158,6 +158,22 @@ export default class MyApp extends App {
             hyphens: auto;  
             font-size: 16px;
           }
+
+          a.link-like {
+            position: relative;
+            color: var(--primary-800);
+            cursor: pointer;
+            transition: color 0.25s ease;
+
+            box-shadow: 0 1px 0 0 currentColor;
+            text-decoration: none;
+          }
+  
+          a.link-like:hover, a.link-like:active {
+            color: var(--primary-900);
+            box-shadow: none;
+          }
+
         `}</style>
       </Container>
     );

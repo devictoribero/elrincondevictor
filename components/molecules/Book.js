@@ -94,16 +94,6 @@ export function Book({title, link, img_src, review}) {
           margin: 0 0 0.5rem 0;
         }
 
-        ul a {
-          color: var(--primary-800);
-          text-decoration: none;
-          box-shadow: 0 1px 0 0 currentColor;
-        }
-
-        ul a:hover, ul a:active {
-          box-shadow: none;
-        }
-
         @media screen and (min-width: 550px) {
           ul {
             flex-direction: row;
@@ -144,22 +134,14 @@ Book.propTypes = {
 function BookLink({title, language = 'english', url, children}) {
   return (
     <a
+      className="link-like"
       aria-label={`Consigue el libro ${title} en ${language}`}
       rel="noopener noreferrer nofollow"
       href={url}>
       {children}
 
       <style jsx>{`
-        a {
-          color: var(--primary-800);
-          text-decoration: none;
-          box-shadow: 0 1px 0 0 currentColor;
-        }
 
-        a:hover, ul a:active {
-          box-shadow: none;
-          color: var(--primary-900);
-        }
        `}</style>
     </a>
   )

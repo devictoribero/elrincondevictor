@@ -7,7 +7,7 @@ export function MainFooter() {
       {socials.map(({name, link}) => (
         <a
           key={name}
-          className='link social'
+          className='link-like link social'
           rel="nofollow noopener noreferrer"
           target='_blank'
           href={link}>
@@ -30,9 +30,6 @@ export function MainFooter() {
 
         .link.social {
           position: relative;
-          color: var(--primary-800);
-          text-decoration: none;
-          box-shadow: 0 1px 0 0 currentColor;
         }
 
         .link.social:not(:last-of-type) {

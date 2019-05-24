@@ -38,7 +38,7 @@ export function Article({data, content}) {
         }
 
         article h2 {
-          margin: 3rem 0 1.25rem;
+          margin: 3rem 0 1rem;
           font-family: var(--font-family-alter);
           font-weight: 900;
         }

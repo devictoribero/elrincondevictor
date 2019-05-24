@@ -10,12 +10,12 @@ export function PostPreview({
       <div>
         <h2>
           <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
-            <a>{title}</a>
+            <a className="title">{title}</a>
           </Link>
         </h2>
         <p>{description}</p>
         <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
-          <a className="readMore">Leer más</a>
+          <a className="readMore link-like">Leer más</a>
         </Link>
       </div>
       
@@ -55,17 +55,14 @@ export function PostPreview({
           color: var(--grey-700);
         }
 
-        a {
+        .title {
           transition: color 0.35 ease;
           text-decoration: none;
         }
 
-        a:hover, a:focus {
+        .title:hover,
+        .title:focus {
           text-decoration: underline;
-        }
-
-        .readMore {
-          color: var(--primary-900);
         }
 
         .readMore:after {
@@ -82,9 +79,6 @@ export function PostPreview({
           img {
             display: block;
           }
-        }
-
-        @media screen and (min-width: 767px) {
         }
       `}</style>
     </article>

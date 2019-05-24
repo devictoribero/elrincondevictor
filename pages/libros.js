@@ -11,12 +11,12 @@ export default function Page() {
           <h1>Los libros que te recomiendo</h1>
           <p>Con el objetivo de que seas práctico y ahorres tiempo ⏳, te recomiendo estos libros que creo que todo el mundo debería leer.</p>
           <ol>
-            <li><a href="#technical" >Libros de contenido técnico</a>👨‍💻</li>
-            <li><a href="#productivity">Libros de productividad</a>🤓</li>
-            <li><a href="#personal_development">Libros de desarrollo personal</a>🧘</li>
-            <li><a href="#finances">Libros de inversiones</a>🤑</li>
-            <li><a href="#entrepreneurship">Libros de emprendimiento</a>💼</li>
-            <li><a href="#soft_skills">Libros de soft skills</a>❤️</li>
+            <li><a className="link-like" href="#technical" >Libros de contenido técnico</a>👨‍💻</li>
+            <li><a className="link-like" href="#productivity">Libros de productividad</a>🤓</li>
+            <li><a className="link-like" href="#personal_development">Libros de desarrollo personal</a>🧘</li>
+            <li><a className="link-like" href="#finances">Libros de inversiones</a>🤑</li>
+            <li><a className="link-like" href="#entrepreneurship">Libros de emprendimiento</a>💼</li>
+            <li><a className="link-like" href="#soft_skills">Libros de soft skills</a>❤️</li>
           </ol>
         </div>
       </header>
@@ -69,20 +69,9 @@ export default function Page() {
         }
 
         a {
-          text-decoration: none;
-          color: var(--primary-700);
-          border-bottom: 1px solid var(--primary-700);
-          transition: color 0.25s ease, border 0.25s ease;
           margin-right: 5px;
           line-height: 1.5;
         }
-
-        a:hover,
-        a:active {
-          color: var(--primary-900);
-          border-bottom: 1px solid var(--primary-900);
-        }
-
 
         @media screen and (min-width: 768px) {
           header {

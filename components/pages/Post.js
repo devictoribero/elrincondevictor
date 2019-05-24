@@ -150,7 +150,7 @@ function PreviousNextArticles({previous, next}){
       {previous && (
         <li>
           <Link href={`/blog?slug=${previous.slug}`} as={`/blog/${previous.slug}`} prefetch>
-            <a className="left">← {previous.title}</a>
+            <a className="link-like">← {previous.title}</a>
           </Link>
         </li>
       )}
@@ -158,7 +158,7 @@ function PreviousNextArticles({previous, next}){
       {next && (
         <li>
           <Link href={`/blog?slug=${next.slug}`} as={`/blog/${next.slug}`} prefetch>
-            <a className="right">{next.title} →</a>
+            <a className="link-like">{next.title} →</a>
           </Link>
         </li>
       )}
@@ -177,17 +177,9 @@ function PreviousNextArticles({previous, next}){
         }
 
         a {
-          text-decoration: none;
-          cursor: pointer;
           transition: all 0.25s ease;
-          color: var(--primary-900);
           line-height: 1.5;
-          box-shadow: 0 1px 0 0 currentColor;
           font-size: 18px;
-        }
-
-        a:hover, a:active {
-          box-shadow: none;
         }
 
         span {
