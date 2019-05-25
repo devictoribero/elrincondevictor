@@ -5,12 +5,12 @@ import {Layout} from '../components/layout/Layout'
 import {BlogMainPage} from '../components/pages/BlogMainPage'
 import {Post} from '../components/pages/Post'
 
-export default function Blog({data, error}) {
+export default function Blog({pathname, data, error}) {
   if (!data) return <Error statusCode={404} />
 
   if (!data.isPostPage){
     return (
-      <Layout>
+      <Layout route={pathname}>
         <BlogMainPage featured={data.featured} randomPost={data.randomPost}/>
       </Layout>
     );
@@ -18,7 +18,7 @@ export default function Blog({data, error}) {
 
   if (data.isPostPage){
     return (
-      <Layout>
+      <Layout route={pathname}>
         <Post
           previous={data.previous}
           post={data.document}
@@ -33,7 +33,7 @@ export default function Blog({data, error}) {
 }
 
 
-Blog.getInitialProps = async ({query}) => {
+Blog.getInitialProps = async ({pathname, query}) => {
   const {slug} = query
 
   try {
@@ -73,10 +73,10 @@ Blog.getInitialProps = async ({query}) => {
       } catch(e) {console.error('we could not provide related posts')}
     }
     
-    return {data};
+    return {pathname, data};
 
   } catch (error) {
-    console.log(error)
+    console.error(error)
     return {error}
   }
 }

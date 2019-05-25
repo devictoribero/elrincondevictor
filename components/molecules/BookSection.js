@@ -11,6 +11,7 @@ export function BookSection({id, title, books}) {
 
       {books.map(({title, link, img_src, review}) => (
         <Book
+          key={title}
           title={title}
           link={link}
           img_src={img_src}

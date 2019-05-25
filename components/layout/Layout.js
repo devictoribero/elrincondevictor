@@ -1,11 +1,12 @@
-import {Fragment} from 'react';
-import {MainNavigation} from './MainNavigation';
-import {MainFooter} from './MainFooter';
+import {Fragment} from 'react'
+import {MainNavigation} from './MainNavigation'
+import {MainFooter} from './MainFooter'
 
-export function Layout({children}) {
+export function Layout({route, children}) {
+  console.log(route)
   return(
     <Fragment>
-      <MainNavigation/>
+      <MainNavigation route={route}/>
       {children}
       <MainFooter/>
     </Fragment>

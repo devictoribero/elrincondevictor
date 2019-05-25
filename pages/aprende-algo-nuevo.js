@@ -12,11 +12,11 @@ function useRandom(array = []) {
   return [random, generateRandom]
 }
 
-export default function Page({didYouKnow}) {
+export default function Page({pathname, didYouKnow}) {
   const [random, generateRandom] = useRandom(didYouKnow)
 
   return (
-    <Layout>
+    <Layout route={pathname}>
       <header className="container-wrapper">
         <div className="container">
           <h1>¿Sabías que...?</h1>
@@ -118,7 +118,7 @@ export default function Page({didYouKnow}) {
     </Layout>
   )
 }
-Page.getInitialProps = () => {
+Page.getInitialProps = props => {
   const {didYouKnow} = require(`../config/did-you-know.js`);
-  return { didYouKnow }
+  return { pathname: props.pathname, didYouKnow }
 }

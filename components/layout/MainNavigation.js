@@ -1,6 +1,8 @@
+import React from 'react'
 import Link from 'next/link'
+import routes from '../../config/routes'
 
-export function MainNavigation() {
+export function MainNavigation({route}) {
   return (
     <nav className="container-wrapper" aria-label="Navegador principal">
       <div className="container main-navigation__inner">
@@ -9,9 +11,21 @@ export function MainNavigation() {
         </Link>
 
         <div>
-          <Link href="/blog"><a>Blog</a></Link>
-          <Link href="/libros"><a>Libros</a></Link>
-          <Link href="/aprende-algo-nuevo"><a>Aprende algo nuevo</a></Link>
+          <Link href="/blog">
+            <a className={`${isRoute(route, routes['/blog'].page) ? 'selected' : ''}`}>
+            Blog
+            </a>
+          </Link>
+          <Link href="/libros">
+            <a className={`${isRoute(route, routes['/libros'].page) ? 'selected' : ''}`}>
+            Libros
+            </a>
+          </Link>
+          <Link href="/aprende-algo-nuevo">
+            <a className={`${isRoute(route, routes['/aprende-algo-nuevo'].page) ? 'selected' : ''}`}>
+              Aprende algo nuevo
+            </a>
+          </Link>
         </div>
       </div>
 
@@ -51,6 +65,11 @@ export function MainNavigation() {
           transform: skewX(150deg);
         }
 
+        a.selected:after {
+          width: 100%;
+          background: var(--primary-300);
+        }
+
         a:hover:after,
         a:focus:after {
           width: 100%;
@@ -75,4 +94,8 @@ export function MainNavigation() {
       `}</style>
     </nav>
   )
+}
+
+function isRoute(pathname, route) {
+  return pathname === route
 }

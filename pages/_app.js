@@ -1,10 +1,10 @@
-import App, { Container } from 'next/app';
-import React from 'react';
-import Head from 'next/head';
-import Router from 'next/router';
-import { DEFAULT_SEO } from '../config/seo';
-import { trackPageView } from '../helpers/trackPageView';
-import {palette, fonts} from '../config/theme';
+import App, { Container } from 'next/app'
+import React from 'react'
+import Head from 'next/head'
+import Router from 'next/router'
+import { DEFAULT_SEO } from '../config/seo'
+import { trackPageView } from '../helpers/trackPageView'
+import {palette, fonts} from '../config/theme'
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {

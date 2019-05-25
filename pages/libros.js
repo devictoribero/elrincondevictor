@@ -3,9 +3,9 @@ import {BooksList} from '../components/molecules/BooksList'
 import {books} from '../config/books'
 
 
-export default function Page() {
+export default function Libros({pathname}) {
   return (
-    <Layout>
+    <Layout route={pathname}>
       <header className="container-wrapper">
         <div className="container">
           <h1>Los libros que te recomiendo</h1>
@@ -90,4 +90,8 @@ export default function Page() {
       `}</style>
     </Layout>
   )
+}
+
+Libros.getInitialProps = props => {
+  return {pathname: props.pathname}
 }

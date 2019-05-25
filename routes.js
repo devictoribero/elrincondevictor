@@ -1,15 +1,9 @@
 const blogIndex = require('./content/index.json')
+const routesConfiguration = require('./config/routes.js')
+const staticRoutes = routesConfiguration
 
-const staticRoutes = {
-  '/': {page: '/'},
-  '/blog': {page: '/blog'},
-  '/libros': {page: '/libros'}
-}
-
-function withBlogRoutes(staticRoutes = {}) {
-  let routes = {
-    ...staticRoutes
-  }
+function withBlogRoutes() {
+  let routes = routesConfiguration
 
   blogIndex.list.forEach(post => {
     const file = `/blog/${post.slug}`
