@@ -19,7 +19,7 @@ export function PostLayout({main, complementary}) {
 
           @media screen and (min-width: 1400px) {
             .PostLayout {
-              grid-gap: 5rem;
+              grid-gap: 3rem;
             }
           }
         `}</style>

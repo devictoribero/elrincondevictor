@@ -133,7 +133,7 @@ function RandomPost({post}){
 function RelatedPosts({post}){
   return(
     <ComplementarySection title='Artículos relacionados'>
-      <PostPreview {...post}/>
+      <PostPreview hasImage={false} {...post}/>
 
       <style jsx>{`
         div {

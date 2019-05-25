@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 
 export function PostPreview({
-  title, description, img_preview_src, slug
+  title, description, img_preview_src, slug, hasImage = true, style
 }) {
   return (
-    <article>
-      <img src={img_preview_src} alt="" role="presentation"/>
+    <article style={style}>
+      {hasImage && <img src={img_preview_src} alt="" role="presentation"/>}
 
       <div>
         <h2>
@@ -21,6 +22,10 @@ export function PostPreview({
       
 
       <style jsx>{`
+        article:not(:last-of-type) {
+          border-bottom: 1px solid var(--grey-100);
+        }
+
         img {
           display: none;
           position: relative;
@@ -72,8 +77,12 @@ export function PostPreview({
         @media screen and (min-width: 550px) {
           article {
             display: grid;
-            grid-template-columns: 100px auto;
-            grid-column-gap: 1rem;
+            /*
+              Because the image is not always present so, in case it isn't
+              the text will be shown okay
+            */
+            grid-template-columns: ${hasImage ? '100px auto' : 'auto auto'};
+            grid-column-gap: 1.5rem;
           }
 
           img {
@@ -83,4 +92,11 @@ export function PostPreview({
       `}</style>
     </article>
   )
+}
+PostPreview.propTypes = {
+  title: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  img_preview_src: PropTypes.string.isRequired,
+  hasImage: PropTypes.bool
 }
