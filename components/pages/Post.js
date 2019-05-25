@@ -215,7 +215,7 @@ function WhatIHaveLearnt({elements}) {
           color: var(--grey-800);
           font-size: 18px;
           font-weight: 300;
-          margin-bottom: 16px;
+          margin: 0 0 16px 0;
         }
 
         .complementaryBar a {

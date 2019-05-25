@@ -5,7 +5,7 @@ export function PostsSection({title, posts, className}) {
     <section className={className}>
       {title}
         <div>
-          {posts.map(post => <PostPreview style={{padding: '30px 0'}} key={post.slug} {...post}/>)}  
+          {posts.map(post => <PostPreview style={{padding: '30px 0', borderBottom: '1px solid var(--grey-100)'}} key={post.slug} {...post}/>)}  
         </div>
       <style jsx>{`
         div {

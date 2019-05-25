@@ -29,7 +29,7 @@ export const didYouKnow = [
   {
     id: 6,
     data: [
-      'Es importante que nuestras aplicaciones y servicios sean accesibles y usables por todo el mundo ♿.',
+      'Es importante que nuestras aplicaciones sean accesibles y usables por todo el mundo ♿.',
       'Para poder saber si lo estamos logrando, hay una extensión llamada <a class="link-like" href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni?hl=en">Accessibility Insights for Web</a> 🔎 la cuál nos indica todos los aspectos que no se cumplen. ejecuta un test de la página donde nos encontremos y genera un reporte de todas las mejoras posibles 📃. Textos alternativos, contrastes de colores, atributos ARIA, etc...'
     ]
   },

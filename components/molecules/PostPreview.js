@@ -22,10 +22,6 @@ export function PostPreview({
       
 
       <style jsx>{`
-        article:not(:last-of-type) {
-          border-bottom: 1px solid var(--grey-100);
-        }
-
         img {
           display: none;
           position: relative;
