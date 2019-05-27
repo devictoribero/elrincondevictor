@@ -196,7 +196,7 @@ Otra solución en la que creo firmemente para combatir tanto este ritmo frenéti
 
 Algo que me gusta mucho de nuestro sector es que a diferencia de los otros, hay una mentalidad de compartir conocimiento pero esto no significa que no se pueda mejorar (y no hablo en las redes sociales, si no cara a cara).
 
-¿Como actuarías si Pepita 👧 que trabaja en tu equipo, tiene que hacer unas animaciones con <code>css</code> para las nuevas páginas y tu sabes bastante del tema? ¡Siéntate con ella y adopta el rol de mentor en esta tarea! Sentaros juntos. Quizás te dice que no es necesario porque o no te quiere molestar, o no quiere que la juzgues, pero insístele un poco más. Quizás te llevas una sorpresa y el que aprende alguna cosa eres tú 😏.
+¿Como actuarías si Pepito 👦 que trabaja en tu equipo, tiene que hacer unas animaciones con <code>css</code> para las nuevas páginas y tu sabes bastante del tema? ¡Siéntate con él y adopta el rol de mentor en esta tarea! Sentaros juntos. Quizás te dice que no es necesario porque o no te quiere molestar, o no quiere que la juzgues, pero insístele un poco más. Quizás te llevas una sorpresa y el que aprende alguna cosa eres tú 😏.
 
 Algunas cosas que podemos hacer para combatir este ritmo frenético y su vez, mejorar la comunidad son:
 - Tener personalidad y saber diferenciar entre: Qué debemos aprender, que quieren que aprendamos y que nos gustaría aprender.
