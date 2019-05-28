@@ -35,7 +35,11 @@ export default function Page({pathname, didYouKnow}) {
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          /*
+            MainNav height: 175px
+            Footer height: 75px
+          */
+          min-height: calc(100vh - (175px + 75px));
         }
 
         h1, p { margin: 0; max-width: 720px; }

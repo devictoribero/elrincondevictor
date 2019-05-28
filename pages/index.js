@@ -1,5 +1,4 @@
 import {Layout} from '../components/layout/Layout';
-import {socials} from '../config/social';
 
 export default function Page() {
   return (
