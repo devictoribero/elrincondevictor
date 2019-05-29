@@ -99,20 +99,23 @@ function RandomPost({post}){
           justify-content: center;
           align-items: center;
           padding: 10px 30px;
+          background-image: linear-gradient(to bottom right, var(--primary-100), var(--primary-300));
           border-radius: 3px;
-          color: var(--primary-600);
-          border-radius: 3px;
-          border: 3px solid var(--primary-600);
+
+          color: var(--grey-600);
           font-size: 18px;
-          font-weight: 700;
-          text-transform: uppercase;
+          font-weight: 500;
           text-decoration: none;
-          transition: background-color 0.4s ease;
+          transition: background-image 0.4s linear, box-shadow 0.15s ease, color 0.15s ease;
+          box-shadow: 0 5px 20px 0px rgba(1,1,1,0.15);
+          color: var(--primary-800);
         }
         
-        a:hover {
-          background-color: var(--primary-600);
-          color: white;
+        a:hover,
+        a:focus {
+          background-image: linear-gradient(to bottom right, var(--primary-200), var(--primary-400));
+          box-shadow: 0 7px 9px -1px rgba(1,1,1,0.15);
+          color: var(--primary-900);
         }
 
         span {
