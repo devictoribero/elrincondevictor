@@ -18,7 +18,7 @@ export function Post({
   
   let relatedPosts;
   let hasRelatedPosts = false;
-  if(related) {
+  if (related) {
     const {posts} = related;
     relatedPosts = posts;
     hasRelatedPosts = related && posts && posts.length > 0;
@@ -49,7 +49,7 @@ export function Post({
               <aside>
                 <WhatIHaveLearnt elements={didYouKnow}/>
                 <RandomPost post={randomPost} />
-                {hasRelatedPosts && <RelatedPosts post={relatedPosts[0]}/>}
+                {hasRelatedPosts && <RelatedPosts posts={relatedPosts}/>}
               </aside>
             )}
           />
@@ -130,10 +130,10 @@ function RandomPost({post}){
   )
 }
 
-function RelatedPosts({post}){
+function RelatedPosts({posts}){
   return(
     <ComplementarySection title='Artículos relacionados'>
-      <PostPreview hasImage={false} {...post}/>
+      {posts.map(post => <PostPreview key={post.slug} hasImage={false} {...post}/>)}
 
       <style jsx>{`
         div {
