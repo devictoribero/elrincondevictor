@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
 
-export function BlogMainPage({featured, randomPost}) {
+export function BlogMainPage({posts, randomPost}) {
   return (
     <div className="page">
       <Head>
@@ -21,7 +21,7 @@ export function BlogMainPage({featured, randomPost}) {
         <PostsSection
           className="container"
           title={<PostSectionTitle heading='h1'>Artículos</PostSectionTitle>}
-          posts={featured}/>  
+          posts={posts}/>  
       </main>   
 
       <style jsx>{``}</style>

@@ -11,7 +11,7 @@ export default function Blog({pathname, data, error}) {
   if (!data.isPostPage){
     return (
       <Layout route={pathname}>
-        <BlogMainPage featured={data.featured} randomPost={data.randomPost}/>
+        <BlogMainPage posts={data.list} randomPost={data.randomPost}/>
       </Layout>
     );
   }
@@ -37,10 +37,10 @@ Blog.getInitialProps = async ({pathname, query}) => {
   const {slug} = query
 
   try {
-    const {featured, list} = await require(`../content/index.json`);
+    const {list} = await require(`../content/index.json`);
     let data = {
       isPostPage: false,
-      featured,
+      list,
       randomPost: getRandom(list)
     }
     
@@ -70,6 +70,7 @@ Blog.getInitialProps = async ({pathname, query}) => {
             posts: relatedPosts,
           }
         }
+        console.log('asdasdadas')
       } catch(e) {console.error('we could not provide related posts')}
     }
     

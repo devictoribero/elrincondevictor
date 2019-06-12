@@ -9,7 +9,6 @@ img_preview_src: /static/img/pensando-en-voz-alta-preview.jpg
 createdAt: 2019-02-15
 updatedAt: null
 tags: [reflexiones]
-isFeatured: true
 ---
 
 Hola, me digo a mi mismo.
