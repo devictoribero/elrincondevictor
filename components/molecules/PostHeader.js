@@ -44,6 +44,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           display: block;
           width: 100%;
           border-radius: 3px;
+          object-fit: cover;
         }
 
         h1 {

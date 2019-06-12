@@ -82,4 +82,4 @@ Supongamos el hipotético caso que se tardara 1 segundo en pintar un `box-shadow
 
 
 
-**Namasté,** 🙏,
+**Namasté** 🙏,
