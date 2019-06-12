@@ -212,4 +212,4 @@ Algunas cosas que podemos hacer para combatir este ritmo frenético y su vez, me
 
 Para terminar, creo que deberíamos reflexionar sobre lo leído y empezar a practicar un ritmo de vida que nos aporte bienestar tanto en el ámbito personal como en el profesional, para así terminar con esta burbuja de presión a nosotros mismos y exceso de exigencias en las ofertas laborales. ¿Y tu, que piensas?
 
-**Namasté** 🙏
+**Namasté** 🙏,

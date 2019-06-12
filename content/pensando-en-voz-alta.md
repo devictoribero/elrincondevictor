@@ -63,4 +63,4 @@ Me acerco hacia donde están mis padres hablando de algo que no logro descifrar.
 
 **Y tú, ¿Qué piensas?**
 
-**Namasté** 🙏
+**Namasté** 🙏,

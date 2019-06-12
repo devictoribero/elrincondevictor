@@ -106,4 +106,4 @@ Ahora que ya sabemos en términos generales como afecta a nuestra paz interior e
 
 Con esto dicho, espero que seamos conscientes de la importancia de planificar el tiempo y las actividades con tal de tener orden, paz y tranquilidad en nuestra mente.
 
-**Namasté** 🙏
+**Namasté** 🙏,

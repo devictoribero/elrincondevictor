@@ -98,4 +98,4 @@ Organizo mi tiempo de tal manera que cada día tengo ratos libres para los impre
 
 Una vez terminada la planificación de la semana con estos 6 sencillos pasos dependerá de nosotros saber gestionar el tiempo disponible para tener vida social, conseguir nuestras metas, resolver los imprevistos y lograr paz mental.
 
-**Namasté** 🙏
+**Namasté** 🙏,

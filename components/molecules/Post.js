@@ -65,7 +65,7 @@ export function Article({data, content}) {
         }
 
         article > p:last-of-type {
-          margin-bottom: 2rem;
+          margin: 3rem 0 2rem 0;
         }
 
         article em {
