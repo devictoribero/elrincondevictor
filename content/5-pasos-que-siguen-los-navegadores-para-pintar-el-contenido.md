@@ -79,6 +79,9 @@ En esta fase el navegador convierte al árbol de representación o Render Tree e
 
 Supongamos el hipotético caso que se tardara 1 segundo en pintar un `box-shadow`. Si éste es combinado con una propiedad `border`, ésta, haría que tardase 1.5 segundos en vez de 1 segundo.
 
+<hr/>
+
+Para terminar, en caso de que quieras aprender más al respecto, te recomiendo leer [el artículo 🇬🇧 que me ha motivado](https://codeburst.io/how-browsers-work-6350a4234634) a explicar brevemente como funciona el renderizado en nuestros navegadores. Éste explica de manera extensa cada uno de los pasos que yo he explicado brevemente.
 
 
 
