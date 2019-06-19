@@ -33,7 +33,7 @@ Toda la información que el usuario ve a través de su pantalla y la manera en q
 
 El render tree es la combinación de dos árboles de nodos llamados DOM y CSSOM.
 
-**El DOM es el árbol de nodos que representa la jerarquía de contenidos** de la página o aplicación web. Podríamos decir que es la fuente de información proporcionada por el html, aunque no es exactamente lo mismo.
+**El DOM es el árbol de nodos que representa los contenidos** de la página o aplicación web. Estos contenidos están determinados por el HTML y, aunque se parezca bastante al DOM, no són lo mismo.
 
 Por otro lado, **el CSSOM es el árbol de nodos que indicará al navegador cómo** se debe pintar el DOM (el contenido que tenemos para pintar) dadas las distintas reglas que tengamos de CSS.
 
@@ -62,7 +62,7 @@ El CSSOM se genera a partir del fichero con extensión `.css` y sigue exactament
 3. Generar los nodos.
 4. Construir el árbol CSSOM.
 
-La construcción del DOM y del CSSOM se hacen de manera asíncrona/pararela. Aunque el proceso de generar el CSSOM no sea bloqueante para el DOM, si que lo es para renderizarlo.
+La construcción del DOM y del CSSOM se hacen de manera asíncrona/paralela. Eso significa que el proceso de generar el CSSOM no es bloqueante para poder generar el DOM pero tengo malas notícias, si que lo es para renderizarlo.
 
 En caso de que el navegador detecte un `<script>` no declarado como asíncrono en el  `<head>` de la página, éste será descargado pero no ejecutado hasta que el árbol CSSOM termine de ser construido y por tanto, si el Javascript no es ejecutado, la construcción del DOM queda bloqueada.
 
@@ -71,17 +71,19 @@ En caso de que el navegador detecte un `<script>` no declarado como asíncrono e
 
 ## Calcular el layout o disposición de los nodos
 
-La fase o paso de cálculo de la disposición de los nodos sirve para calcular que geometría tendrá cada uno de los nodos como también para saber su distribución en la pantalla respecto al orígen (el orígen es la coordenada(0, 0)).
+La fase o paso de cálculo de la disposición de los nodos sirve para calcular que geometría tendrá cada uno de los nodos como también para saber su distribución en la pantalla respecto al orígen.
 
 ## Pintar
 
-En esta fase el navegador convierte al árbol de representación o Render Tree en píxeles en la pantalla. Cabe decir que las distintas propiedades `CSS` cuestan más o menos de pintar dependiendo de como estén combinadas.
+En esta fase el navegador convierte al árbol de representación o Render Tree en píxeles en la pantalla. 
+
+Es curioso saber que las distintas propiedades de `CSS` cuestan más o menos de pintar dependiendo de como estén combinadas.
 
 Supongamos el hipotético caso que se tardara 1 segundo en pintar un `box-shadow`. Si éste es combinado con una propiedad `border`, ésta, haría que tardase 1.5 segundos en vez de 1 segundo.
 
 <hr/>
 
-Para terminar, en caso de que quieras aprender más al respecto, te recomiendo leer [el artículo 🇬🇧 que me ha motivado](https://codeburst.io/how-browsers-work-6350a4234634) a explicar brevemente como funciona el renderizado en nuestros navegadores. Éste explica de manera extensa cada uno de los pasos que yo he explicado brevemente.
+Para terminar, en caso de que quieras aprender más al respecto, te recomiendo leer [el artículo 🇬🇧 que me ha motivadoa explicar brevemente como funciona el renderizado en nuestros navegadores](https://codeburst.io/how-browsers-work-6350a4234634). Éste explica de manera extensa cada uno de los pasos que yo he explicado brevemente.
 
 
 
