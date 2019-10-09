@@ -68,6 +68,7 @@ Doesn't matter if just want to get a plant, you're new in the indoor plants hobb
 
 I like being one of the users of Chooseyourplant. It will allow me be user-centric and focus on real value for the community.
 
+<hr/>
 
 In case you liked the idea you can follow:
 - [My twitter account](https://twitter.com/devictoribero) because I talk about product increments
