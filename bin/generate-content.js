@@ -80,7 +80,11 @@ function getPostsArrayFromFileNames(postsFileName){
  * @returns {Boolean}
  */
 function orderByUpdatedDateDesc(postA, postB) {
-  return +new Date(postA.updatedDate) < +new Date(postB.updatedDate)
+  return +new Date(getPostDate(postA)) < +new Date(getPostDate(postB))
+}
+
+function getPostDate(post) {
+  return post.updatedDate ? post.updatedDate : post.createdAt 
 }
 
 function afterWriteFile(error, fileName){
