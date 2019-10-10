@@ -1,9 +1,15 @@
+import React, {Fragment} from 'react'
 import matter from 'gray-matter';
+import Head from 'next/head'
+import Seo from '../components/pages/Seo'
 import Error from './_error'
 import {getRandom} from '../helpers/random'
 import {Layout} from '../components/layout/Layout'
 import {BlogMainPage} from '../components/pages/BlogMainPage'
 import {Post} from '../components/pages/Post'
+
+
+const BASE_PATH = 'https://www.elrincondevictor.com'
 
 export default function Blog({pathname, data, error}) {
   if (!data) return <Error statusCode={404} />
@@ -18,14 +24,24 @@ export default function Blog({pathname, data, error}) {
 
   if (data.isPostPage){
     return (
-      <Layout route={pathname}>
-        <Post
-          previous={data.previous}
-          post={data.document}
-          next={data.next}
-          related={data.related}
-          randomPost={data.randomPost}/>
-      </Layout>
+      <Fragment>
+        <Seo
+          title={data.document.title}
+          description={data.document.description}
+          image={`${BASE_PATH}${data.document.author_img_src}`}
+          url={`${BASE_PATH}/BLOG/${data.document.slug}`}
+          locale={data.document.locale}
+        />
+
+        <Layout route={pathname}>
+          <Post
+            previous={data.previous}
+            post={data.document}
+            next={data.next}
+            related={data.related}
+            randomPost={data.randomPost}/>
+        </Layout>
+      </Fragment>
     );
   }
 

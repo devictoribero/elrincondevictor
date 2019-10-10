@@ -15,7 +15,7 @@ export const DEFAULT_SEO = {
     imageHeight: 240
   },
   twitter: {
-    handle: '@victorException',
+    handle: '@devictoribero',
     cardType: 'summary_large_image'
   }
 };
