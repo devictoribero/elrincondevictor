@@ -6,7 +6,7 @@ slug: chooseyourplant-houseplant-marketplace
 description: Chooseyourplant is a houseplant marketplace to discover plants that match your likes as no ones has never done. Its intention is to simplify the search of plants, cares and more!
 img_src: /static/img/chooseyourplant-houseplant-marketplace.png
 img_preview_src: /static/img/chooseyourplant-houseplant-marketplace-preview.png
-createdAt: 2019-10-09
+createdAt: 2019-10-11
 updatedAt: null
 tags: [products]
 ---
@@ -67,6 +67,10 @@ I have plenty of features in my mind such as:
 Doesn't matter if just want to get a plant, you're new in the indoor plants hobbie or you have a lot of experience, I'm sure you want to find plants that you like and you know you can take care of. Because of this, I believe that [Chooseyourplant](https://www.chooseyourplant.com) is for everyone.
 
 I like being one of the users of Chooseyourplant. It will allow me be user-centric and focus on real value for the community.
+
+##  When will it be ready?
+
+Chooseyourplant will be ready once I have the images provided by the community for the 65 plants I've collected data. I'm searching on Instagram people who is interested on sharing their images. I'll try to make it as soon as possible.
 
 <hr/>
 
