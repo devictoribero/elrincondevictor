@@ -20,7 +20,7 @@ export function BlogMainPage({posts, randomPost}) {
       <main className="container-wrapper">
         <PostsSection
           className="container"
-          title={<PostSectionTitle heading='h1'>Artículos</PostSectionTitle>}
+          title={<PostSectionTitle heading='h1'>Articles</PostSectionTitle>}
           posts={posts}/>  
       </main>   
 
@@ -35,11 +35,10 @@ function Header({randomPost}){
   return (
     <header role="banner" className="container-wrapper">
       <div className="container">
-        <h1>Comparto mi filosofía de vida en este, mi rincón.</h1>
-        <p>Soy desarrollador front-end 👨‍💻 y me gusta conectar con el alma de las personas ❤️.</p>
-        <p>Hago deporte 🏋️, amo el yoga 🧘, practico meditación 🙏, viajo siempre que puedo 🛫 y me cuestiono todo acerca de la vida.</p>
+        <h1>This is my corner, where I share my philosophy of life.</h1>
+        <p>I talk about a healthy lifestyle, products, some software development and entrepreneurship.</p>
         <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
-          <a><span>🎲</span>Leer algún artículo</a>
+          <a><span>🎲</span>Read a random article</a>
         </Link>
       </div>
 
@@ -63,7 +62,7 @@ function Header({randomPost}){
           display: block;
           margin: 0.75rem 0;
           color: #1d1d1d;
-          font-size: 18px;
+          font-size: 1.25rem;
           letter-spacing: 0.2px;
           line-height: 2;
         }

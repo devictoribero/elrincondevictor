@@ -11,7 +11,7 @@ export function SharePostInSocial({social, textToShare}) {
         rel="noopener noreferrer"
         href={`https://twitter.com/intent/tweet?text=${textToShare}`}
         data-size="large">
-        Compartir en {capitalize(social)}
+        Share in {capitalize(social)}
 
         <style jsx>{`
           a {

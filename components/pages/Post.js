@@ -88,7 +88,7 @@ function RandomPost({post}){
   const {slug} = post;
 
   return(
-      <ComplementarySection title='¿No sabes que leer?'>
+      <ComplementarySection title="You don't know what to read?">
         <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
           <a><span>🎲</span>Prueba suerte</a>
         </Link>
@@ -197,7 +197,7 @@ function PreviousNextArticles({previous, next}){
 function WhatIHaveLearnt({elements}) {
   const element = getRandom(elements)
   return(
-    <ComplementarySection title='¿Sabías que...?'>
+    <ComplementarySection title='Did you know ...?'>
       <ul className='complementaryBar' dangerouslySetInnerHTML={getThingsLearnt({element})}>
       </ul>
 

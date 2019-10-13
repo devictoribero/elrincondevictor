@@ -13,17 +13,17 @@ export function MainNavigation({route}) {
         <div>
           <Link href="/blog">
             <a className={`${isRoute(route, routes['/blog'].page) ? 'selected' : ''}`}>
-            Blog
+            blog
             </a>
           </Link>
           <Link href="/libros">
             <a className={`${isRoute(route, routes['/libros'].page) ? 'selected' : ''}`}>
-            Libros
+            books
             </a>
           </Link>
           <Link href="/aprende-algo-nuevo">
             <a className={`${isRoute(route, routes['/aprende-algo-nuevo'].page) ? 'selected' : ''}`}>
-              Aprende algo nuevo
+              learn new things
             </a>
           </Link>
         </div>
