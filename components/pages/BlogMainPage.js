@@ -1,22 +1,16 @@
-import Head from 'next/head';
 import Link from 'next/link';
+import Seo from '../pages/Seo'
 import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
 
 export function BlogMainPage({posts, randomPost}) {
   return (
     <div className="page">
-      <Head>
-        <title key="title">Elrincondevictor · Bienvenido a mi mente</title>
-        <meta
-          key="description"
-          name="description"
-          content="Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida saludable y equilibrada."
-        />
-        <link key="canonical" rel="canonical" href='https://www.elrincondevictor.com/blog'/>
-      </Head>
-
+      <Seo
+        title='Welcome to my corner · Elrincondevictor'
+        description='Productivity, thoughts, things I learn and do and a life style to have a healthy and balanced life.'
+        canonical='https://www.elrincondevictor.com/blog'
+      />
       <Header randomPost={randomPost}/>
-
       <main className="container-wrapper">
         <PostsSection
           className="container"
@@ -36,7 +30,7 @@ function Header({randomPost}){
     <header role="banner" className="container-wrapper">
       <div className="container">
         <h1>This is my corner, where I share my philosophy of life.</h1>
-        <p>I talk about a healthy lifestyle, products, some software development and entrepreneurship.</p>
+        <p>I talk about a healthy lifestyle, products, software development and entrepreneurship.</p>
         <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
           <a><span>🎲</span>Read a random article</a>
         </Link>

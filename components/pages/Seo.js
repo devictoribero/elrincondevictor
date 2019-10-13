@@ -8,6 +8,7 @@ const Seo = ({
   image = DEFAULT_SEO.openGraph.image,
   url = DEFAULT_SEO.openGraph.url,
   locale = DEFAULT_SEO.openGraph.locale,
+  canonical = DEFAULT_SEO.canonical
 }) => (
   <Head>
     <title key="title">{title}</title>
@@ -16,6 +17,7 @@ const Seo = ({
       name="description"
       content={description}
     />
+    <link key="canonical" rel="canonical" href={canonical}/>
     <meta
       key="twitter:card"
       name="twitter:card"

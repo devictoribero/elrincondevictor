@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react'
 import matter from 'gray-matter';
-import Head from 'next/head'
 import Seo from '../components/pages/Seo'
 import Error from './_error'
 import {getRandom} from '../helpers/random'

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Seo from '../pages/Seo';
 import {Fragment} from 'react';
 import {getRandom} from '../../helpers/random'
 import {Article} from '../molecules/Post';
@@ -26,15 +27,11 @@ export function Post({
 
   return (
     <div className='page'>
-      <Head>
-        <title key='title'>{`${data.title} | Elrincondevictor`}</title>
-        <meta
-          key='description'
-          name='description'
-          content='Productividad, reflexiones, cosas que aprendo y una filosofía de vida para tener una vida equilibrada.'
-        />
-        <link key="canonical" rel="canonical" href={`https://www.elrincondevictor.com/blog/${data.slug}`}/>
-      </Head>
+      <Seo
+        title={`${data.title} | Elrincondevictor`}
+        description={`${data.description}`}
+        canonical={`https://www.elrincondevictor.com/blog/${data.slug}`}
+      />
 
       <div className='container-wrapper'>
         <div className='container'>
