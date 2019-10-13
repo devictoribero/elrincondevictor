@@ -4,11 +4,14 @@ export function PostsSection({title, posts, className}) {
   return (
     <section className={className}>
       {title}
-        <div>
-          {posts.map(post => <PostPreview style={{padding: '30px 0', borderBottom: '1px solid var(--grey-100)'}} key={post.slug} {...post}/>)}  
-        </div>
+      <div>
+        {posts.map(post => (
+          <PostPreview key={post.slug} {...post}/>
+        ))}
+      </div>
       <style jsx>{`
         div {
+          display: grid;
           max-width: 800px;
         }
       `}</style>

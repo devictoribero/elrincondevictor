@@ -44,6 +44,19 @@ function Header({randomPost}){
           margin-bottom: 32px;
         }
 
+        header:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: var(--primary-000);
+          z-index: -1;
+          -webkit-clip-path: polygon(13% 8%, 87% 0, 76% 57%, 10% 71%);
+          clip-path: polygon(13% 8%, 87% 0, 76% 57%, 10% 71%);
+        }
+
         h1 {
           font-family: var(--font-family-alter);
           margin: 0 0 2rem 0;
@@ -97,8 +110,13 @@ function Header({randomPost}){
             padding-bottom: 50px;
           }
 
+          header::before {
+            -webkit-clip-path: polygon(10% 5%, 55% 19%, 54% 64%, 13% 73%);
+            clip-path: polygon(10% 5%, 55% 19%, 54% 64%, 13% 73%);
+          }
+
           h1 {
-            width: 550px;
+            width: 575px;
           }
 
           p {
