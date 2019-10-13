@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
     const { isProduction } = this.props;
 
     return (
-      <html lang="es">
+      <html lang="en">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -19,12 +19,12 @@ export default function Page({pathname, didYouKnow}) {
     <Layout route={pathname}>
       <header className="container-wrapper">
         <div className="container">
-          <h1>¿Sabías que...?</h1>
+          <h1>Did you know ...?</h1>
           {random.data.map((text, index) => (
             <p key={index} dangerouslySetInnerHTML={{__html: text}}></p>
           ))}
 
-          <button onClick={generateRandom}>A otra cosa mariposa 🦋</button>
+          <button onClick={generateRandom}>learn another thing</button>
         </div>
       </header>
 
@@ -35,10 +35,6 @@ export default function Page({pathname, didYouKnow}) {
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
-          /*
-            MainNav height: 175px
-            Footer height: 75px
-          */
           min-height: calc(100vh - (175px + 75px));
         }
 

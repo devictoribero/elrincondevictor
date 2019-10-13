@@ -5,9 +5,9 @@ export default function Page() {
     <Layout>
       <header className="container-wrapper">
         <div className="container">
-          <h1 lang="en">Senior<br/>human being<br/>at life.</h1>
-          <p>Soy desarrollador front-end 👨‍💻 y me gusta conectar con el alma de las personas ❤️.</p>
-          <p>Hago deporte 🏋️, amo el yoga 🧘, practico meditación 🙏, viajo siempre que puedo 🛫 y me cuestiono todo acerca de la vida.</p>
+          <h1>Senior<br/>human being<br/>at life.</h1>
+          <p>I'm a software engineer 👨‍💻 who likes to connect with other people's souls ❤️.</p>
+          <p>I do sport 🏋️, I love yoga 🧘, practice meditation 🙏, travel whenever I can 🛫 and I wonder about life.</p>
         </div>
       </header>
 
