@@ -33,13 +33,15 @@ function Header({randomPost}){
   const {slug} = randomPost;
 
   return (
-    <header role="banner" className="container-wrapper">
-      <div className="container">
-        <h1>This is my corner, where I share my philosophy of life.</h1>
-        <p>I talk about a healthy lifestyle, products, some software development and entrepreneurship.</p>
-        <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
-          <a><span>🎲</span>Read a random article</a>
-        </Link>
+    <header role="banner">
+      <div className="container-wrapper">
+        <div className="container">
+          <h1>This is my corner, where I share my philosophy of life.</h1>
+          <p>I talk about a healthy lifestyle, products, some software development and entrepreneurship.</p>
+          <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
+            <a><span>🎲</span>Read a random article</a>
+          </Link>
+        </div>
       </div>
 
       <style jsx>{`
@@ -48,6 +50,19 @@ function Header({randomPost}){
           padding-top: 25px;
           padding-bottom: 25px;
           margin-bottom: 32px;
+        }
+
+        header:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: var(--primary-000);
+          z-index: -1;
+          -webkit-clip-path: polygon(13% 8%, 87% 0, 76% 57%, 10% 71%);
+          clip-path: polygon(13% 8%, 87% 0, 76% 57%, 10% 71%);
         }
 
         h1 {
@@ -103,8 +118,13 @@ function Header({randomPost}){
             padding-bottom: 50px;
           }
 
+          header::before {
+            -webkit-clip-path: polygon(10% 5%, 55% 19%, 54% 64%, 13% 73%);
+            clip-path: polygon(10% 5%, 55% 19%, 54% 64%, 13% 73%);
+          }
+
           h1 {
-            width: 550px;
+            width: 575px;
           }
 
           p {
