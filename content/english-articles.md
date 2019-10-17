@@ -39,7 +39,7 @@ I encourage you to be fearless and write in English because the benefits are eno
 - Your segmentation or target of people you can reach is higher
 - You will augment your confidence
 
-Personally, I wanted to reach as many people as possible instead of go to the Spanish niche. So the only case I can imagine for writing in Spanish is if you want to go niche.
+Personally, I wanted to reach as many people as possible instead of going for the Spanish niche. So the only case I can imagine for writing in Spanish is if you want to go niche.
 
 
 
