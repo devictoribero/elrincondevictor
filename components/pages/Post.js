@@ -30,6 +30,7 @@ export function Post({
       <Seo
         title={`${data.title} | Elrincondevictor`}
         description={`${data.description}`}
+        image={data.img_preview_src}
         canonical={`https://www.elrincondevictor.com/blog/${data.slug}`}
       />
 
