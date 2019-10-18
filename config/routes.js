@@ -1,6 +1,6 @@
 module.exports = {
     '/': {page: '/'},
     '/blog': {page: '/blog'},
-    '/libros': {page: '/libros'},
+    '/books': {page: '/books'},
     '/aprende-algo-nuevo': {page: '/aprende-algo-nuevo'}
 }

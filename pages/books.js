@@ -8,15 +8,16 @@ export default function Libros({pathname}) {
     <Layout route={pathname}>
       <header className="container-wrapper">
         <div className="container">
-          <h1>Los libros que te recomiendo</h1>
-          <p>Con el objetivo de que seas práctico y ahorres tiempo ⏳, te recomiendo estos libros que creo que todo el mundo debería leer.</p>
+          <h1>The books I recommend you</h1>
+          <p></p>
+          <p>In order to be practical and save you time ⏳, I recommend you the most revelant books I've read.</p>
           <ol>
-            <li><a className="link-like" href="#technical" >Libros de contenido técnico</a>👨‍💻</li>
-            <li><a className="link-like" href="#productivity">Libros de productividad</a>🤓</li>
-            <li><a className="link-like" href="#personal_development">Libros de desarrollo personal</a>🧘</li>
-            <li><a className="link-like" href="#finances">Libros de inversiones</a>🤑</li>
-            <li><a className="link-like" href="#entrepreneurship">Libros de emprendimiento</a>💼</li>
-            <li><a className="link-like" href="#soft_skills">Libros de soft skills</a>❤️</li>
+            <li><a className="link-like" href="#technical">Technical books</a>👨‍💻</li>
+            <li><a className="link-like" href="#productivity">Books about productivity</a>🤓</li>
+            <li><a className="link-like" href="#personal_development">Personal development books</a>🧘</li>
+            <li><a className="link-like" href="#finances">Books about investments</a>🤑</li>
+            <li><a className="link-like" href="#entrepreneurship">Books about entrepreneurship</a>💼</li>
+            <li><a className="link-like" href="#soft_skills">Books about soft skills</a>❤️</li>
           </ol>
         </div>
       </header>

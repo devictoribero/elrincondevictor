@@ -14,27 +14,27 @@ export function BooksList({books}){
     <main className="container-wrapper">
       <BookSection
         id="technical"
-        title="👨‍💻 Libros para ser un buen ingeniero de software"
+        title="👨‍💻 Books to be a good software engineer"
         books={tech}/>
       <BookSection
         id="productivity"
-        title="🤓 Libros que te ayudarán a conseguir todos tus objetivos"
+        title="🤓 Books that will help you to achieve your goals"
         books={productivity}/>
       <BookSection
         id="personal_development"
-        title="❤️ Libros que contribuirán a descubrirte a ti mismo y tu pasión"
+        title="❤️ Books that will help you to know yourself better and find your passion"
         books={personalDevelopment}/>
       <BookSection
         id="soft_skills"
-        title="☯️ Libros para entender la importancia de las emociones"
+        title="☯️ Books to understand the importance of emotions"
         books={softSkills}/>
       <BookSection
         id="entrepreneurship"
-        title="💼 Libros para saber ejecutar tus proyectos"
+        title="💼 Books to know how to execute your projects"
         books={entrepreneurship}/>
       <BookSection
         id="finances"
-        title="🤑 Libros te enseñan como funciona el juego del dinero"
+        title="🤑 Books that teach you how the money game works"
         books={finances}/>
     </main>
   )

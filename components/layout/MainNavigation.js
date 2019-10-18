@@ -16,8 +16,8 @@ export function MainNavigation({route}) {
             blog
             </a>
           </Link>
-          <Link href="/libros">
-            <a className={`${isRoute(route, routes['/libros'].page) ? 'selected' : ''}`}>
+          <Link href="/books">
+            <a className={`${isRoute(route, routes['/books'].page) ? 'selected' : ''}`}>
             books
             </a>
           </Link>
