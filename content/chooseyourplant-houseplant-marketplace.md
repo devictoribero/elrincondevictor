@@ -13,7 +13,7 @@ tags: [products]
 
 How many hours have you been searching about how to take care of a plant? How many months you needed to discover that plant you loved? How did you find it? [Chooseyourplant](https://www.chooseyourplant.com) is a product I wish I had when I started in the houseplant hobbie a few months ago because it would saved me a lot of hours of researching on Google.
 
-After having houseplants as one of my hobbies for a few months, I've decided to buiold something I foundnoticed there's a huge market gap. There is no application for discovering plants. It means that every time you want to adquire a new plant, you have to look google for days, look for the trending plants on pinterest or other websites, and once you find a plant you like, research about how to take care of it.
+After having houseplants as one of my hobbies for a few months, I've decided to build something I found noticed there's a huge market gap. There is no application for discovering plants. It means that every time you want to acquire a new plant, you have to look google for days, look for the trending plants on Pinterest or other websites, and once you find a plant you like, research about how to take care of it.
 
 ## What is Chooseyourplant
 [Chooseyourplant](https://www.chooseyourplant.com) is a houseplant marketplace to discover and get your next houseplant in a few clicks. How cool would it be to say what the requirements are and what do you want your next house plant to look like? Now it is possible!
