@@ -38,7 +38,7 @@ export function PostSectionTitle({heading, children}) {
         h1, h2, h3, h4, h5, h6 {
           margin: 0;
           font-variant: all-small-caps;
-          font-weight: 600;
+          font-weight: 700;
         }
 
         h1 { font-size: 23px; }

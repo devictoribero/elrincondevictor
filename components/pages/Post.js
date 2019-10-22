@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Seo from '../pages/Seo';
-import {Fragment} from 'react';
 import {getRandom} from '../../helpers/random'
 import {Article} from '../molecules/Post';
 import {PostLayout} from '../layout/PostLayout'
@@ -38,10 +37,10 @@ export function Post({
         <div className='container'>
           <PostLayout
             main={(
-              <Fragment>
+              <>
                 <Article data={data} content={content}/>
                 <PreviousNextArticles previous={previous} next={next}/>
-              </Fragment>
+              </>
             )}
             complementary={(
               <aside>
@@ -88,7 +87,7 @@ function RandomPost({post}){
   return(
       <ComplementarySection title="You don't know what to read?">
         <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
-          <a><span>🎲</span>Prueba suerte</a>
+          <a><span>🎲</span>Read random</a>
         </Link>
 
       <style jsx>{`

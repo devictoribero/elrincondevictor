@@ -15,24 +15,24 @@ export function Article({data, content}) {
         author={{
           name: data.author_name,
           imgSrc: data.author_img_src
-        }}/>
-
+        }}
+      />
       <ReactMarkdown
         source={content}
         escapeHtml={false}
         renderers={{
           link: CustomPostLink,
           image: CustomPostImg,
-        }} />
-
+        }}
+      />
       <SharePostInSocial
         social='twitter'
-        textToShare={getSharePostText({title: data.title, slug: data.slug})}/>
-
+        textToShare={getSharePostText({title: data.title, slug: data.slug})}
+      />
       <style jsx global>{`
         article {
-          font-size: 18px;
-          color: var(--grey-900);
+          font-size: 1.25rem;
+          color: var(--grey-800);
           font-weight: 300;
           margin-bottom: 24px;
         }
@@ -41,6 +41,7 @@ export function Article({data, content}) {
           margin: 3rem 0 1rem;
           font-family: var(--font-family-alter);
           font-weight: 900;
+          line-height: 1.5;
         }
 
         article p,

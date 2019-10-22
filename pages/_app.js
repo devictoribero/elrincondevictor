@@ -24,7 +24,7 @@ export default class MyApp extends App {
             description = {DEFAULT_SEO.description}
             canonical = 'https://www.elrincondevictor.com'
           />
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans:400,600,700,800&display=swap" rel="stylesheet"></link>
         </Head>
         <Component {...pageProps} />
 
@@ -66,7 +66,7 @@ export default class MyApp extends App {
           }
 
           .container-wrapper {
-            padding: 0 25px;
+            padding: 0 1rem;
           }
 
           .container {

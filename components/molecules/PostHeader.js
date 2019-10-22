@@ -11,13 +11,17 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
       <figure>
         <img src={imgSrc} alt="" role="presentation"/>
       </figure>
-      <h1>{title}</h1>
 
-      <PublicationDetails
-        day={day}
-        month={month}
-        year={year}
-        author={author}/>
+      <div className='box'>
+        <PublicationDetails
+          day={day}
+          month={month}
+          year={year}
+          author={author}/>
+        <h1>{title}</h1>
+        
+      </div>
+      
 
       <style jsx>{`
         .PostHeader {
@@ -37,7 +41,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5) 69%, white)
+          background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5)  )
         }
 
         .PostHeader img {
@@ -47,14 +51,23 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           object-fit: cover;
         }
 
+        .box {
+          padding: 1.5rem;
+          margin: -3rem auto 0 auto;
+          border-radius: 20px;
+          width: 95%;
+          box-shadow: 0 5px 20px -2px rgba(1,1,1,0.1);
+          background-color: white;
+          box-sizing: border-box;
+        }
+
         h1 {
-          color: transparent;
-          -webkit-text-stroke: 1px var(--grey-600);
-          text-shadow: 2px 2px var(--primary-400);
-          font-size: 36px;
+          margin: 0.5rem 0 0;
+          color: var(--primary-500);
+          font-size: 1.5rem;
+          font-family: var(--font-family-alter);
           line-height: 1.5;
           letter-spacing: 0.5px;
-          margin: -3rem 0 0;
         }
 
         @media screen and (min-width: 768px) {
@@ -62,10 +75,11 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
             height: 300px;
           }
 
+          .box { padding: 2rem; }
+
           h1 {
-            text-shadow: 4px 3px var(--primary-400);
-            font-size: 50px;
-            line-height: 1.25;
+            font-size: 2rem;
+            line-height: 1.35;
           }
         }
       `}</style>
@@ -75,27 +89,24 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
 
 function PublicationDetails({day, month, year, author}) {
   return (
-    <span>
-      <img
-        src={author.imgSrc}
-        alt={`Fotografía de ${author.name}, el autor de este artículo.`}/>
-      {author.name},
+    <span className='wrapper'>
+        <a
+          className='link-like link social'
+          rel="nofollow noopener noreferrer"
+          target='_blank'
+          href='https://twitter.com/devictoribero'>
+          @devictoribero,
+        </a>
       <time>{day} {month} del {year}</time>.
 
       <style jsx>{`
-        span {
+        .wrapper {
           display: flex;
           align-items: center;
-          margin-top: 1rem;
           color: var(--grey-600);
-        }
-
-        img {
-          width: 30px;
-          height: 30px;
-          margin-right: 0.25rem;
-          border-radius: 100%;
-          border: 2px solid var(--primary-400);
+          font-size: 0.9rem;
+          font-weight: 500;
+          flex-wrap: wrap;
         }
 
         time {
