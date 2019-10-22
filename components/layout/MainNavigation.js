@@ -21,8 +21,8 @@ export function MainNavigation({route}) {
             books
             </a>
           </Link>
-          <Link href="/aprende-algo-nuevo">
-            <a className={`${isRoute(route, routes['/aprende-algo-nuevo'].page) ? 'selected' : ''}`}>
+          <Link href="/learn-new-things">
+            <a className={`${isRoute(route, routes['/learn-new-things'].page) ? 'selected' : ''}`}>
               learn new things
             </a>
           </Link>

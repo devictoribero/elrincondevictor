@@ -7,7 +7,7 @@ import {Article} from '../molecules/Post';
 import {PostLayout} from '../layout/PostLayout'
 import {PostPreview} from '../molecules/PostPreview'
 import {PostSectionTitle} from '../molecules/PostsSection'
-import {didYouKnow} from '../../config/did-you-know'
+import {didYouKnow} from '../../config/learn-new-things'
 
 export function Post({
   previous,

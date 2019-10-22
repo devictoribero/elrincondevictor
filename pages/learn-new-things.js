@@ -119,6 +119,6 @@ export default function Page({pathname, didYouKnow}) {
   )
 }
 Page.getInitialProps = props => {
-  const {didYouKnow} = require(`../config/did-you-know.js`);
+  const {didYouKnow} = require(`../config/learn-new-things.js`);
   return { pathname: props.pathname, didYouKnow }
 }
