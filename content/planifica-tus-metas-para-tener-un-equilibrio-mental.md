@@ -8,7 +8,7 @@ img_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg
 img_preview_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental-preview.jpg
 createdAt: 2019-02-27
 updatedAt: null
-tags: [productividad, paz interior]
+tags: [productivity, mental health]
 ---
 
 ## ¿Por qué deberías invertir en tu equilibrio mental? 

@@ -8,7 +8,7 @@ img_src: /static/img/burbuja-desarollo-frontend.jpg
 img_preview_src: /static/img/burbuja-desarollo-frontend-preview.jpg
 createdAt: 2019-05-19
 updatedAt: null
-tags: [technical]
+tags: [tech, thoughts]
 ---
 
 *El objetivo de este artículo es concienciar a la gente del desarrollo frontend de la alta auto-exigencia, del bombardeo de contenido y el ritmo insostenible que hay nuestra comunidad. La urgencia de cambiar las cosas y adoptar una actitud "me-first" que garantize un bienestar personal.*

@@ -8,7 +8,7 @@ img_src: /static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido
 img_preview_src: /static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-preview.jpg
 createdAt: 2019-06-19
 updatedAt: null
-tags: [technical]
+tags: [tech]
 ---
 
 *El objetivo de este artículo es explicar de manera sencilla los distintos pasos que siguen los navegadores para terminar pintando el contenido de la página a partir del html, css y Javascript.*

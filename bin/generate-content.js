@@ -15,7 +15,7 @@ console.log(allPosts)
 
 // Is mandatory that the index should be the first one
 // because is the one generates index.json and populates a global variable
-const content = ['index', 'productividad']
+const content = ['index', 'productivity']
 content.map(generateContent)
 
 function generateContent(fileName) {

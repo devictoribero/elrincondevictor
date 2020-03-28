@@ -8,7 +8,7 @@ img_src: /static/img/chooseyourplant-houseplant-marketplace.png
 img_preview_src: /static/img/chooseyourplant-houseplant-marketplace-preview.png
 createdAt: 2019-10-11
 updatedAt: null
-tags: [products]
+tags: [products, entrepreneurship]
 ---
 
 How many hours have you been searching about how to take care of a plant? How many months you needed to discover that plant you loved? How did you find it? [Chooseyourplant](https://www.chooseyourplant.com) is a product I wish I had when I started in the houseplant hobbie a few months ago because it would saved me a lot of hours of researching on Google.

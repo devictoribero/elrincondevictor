@@ -22,7 +22,6 @@ export default function Blog({pathname, data, error}) {
   }
 
   if (data.isPostPage){
-    console.log('asdasd')
     return (
       <Fragment>
         <Seo

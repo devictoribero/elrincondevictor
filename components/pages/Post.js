@@ -133,7 +133,7 @@ function RandomPost({post}){
 function RelatedPosts({posts}){
   return(
     <ComplementarySection title='Artículos relacionados'>
-      {posts.map(post => <PostPreview key={post.slug} hasImage={false} {...post}/>)}
+      {posts.map(post => <PostPreview key={post.slug} {...post}/>)}
 
       <style jsx>{`
         div {

@@ -17,8 +17,6 @@ export function BlogMainPage({posts, randomPost}) {
           title={<PostSectionTitle heading='h1'>Articles</PostSectionTitle>}
           posts={posts}/>  
       </main>   
-
-      <style jsx>{``}</style>
     </div>
   )
 }
