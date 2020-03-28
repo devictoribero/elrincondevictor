@@ -3,7 +3,7 @@ author_name: Victor Ribero
 author_img_src: /static/img/victor-ribero-avatar.jpg
 title: Improve your blog or community SEO and user experience by analyzing metrics
 slug: improve-your-community-or-blog-seo-and-ux-with-metrics
-description: I explain how I improved Chooseyourplant SEO and user experience by analyzing some metrics and how you can do the same for your blog or community.
+description: I explain how I improved ChooseYourPlant SEO and user experience by analyzing some metrics and how you can do the same for your blog or community.
 img_src: /static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png
 img_preview_src: /static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-preview.png
 createdAt: 2020-03-28
@@ -11,7 +11,7 @@ updatedAt: null
 tags: [products]
 ---
 
-If you have a blog or a community I guess you've asked yourself how possibly you can reach more people and get traction. Well, I'm going to explain to you what metrics I use to improve chooseyourplant, the worldwide community for houseplant lovers I'm building, and how these metrics can help you.
+If you have a blog or a community I guess you've asked yourself how possibly you can reach more people and get traction. Well, I'm going to explain to you what metrics I use to improve [ChooseYourPlant, the worldwide community for houseplant lovers](https://www.chooseyourplant.com) I'm building, and how these metrics can help you.
 
 You can reach more people by 2 different ways. Either you pay ads (I don't like this idea because it's not sustainable if you're not monetizing your site), or you expose yourself to people by ranking better than other sites on Google or other Search Engines. We'll talk about the second one which is good for long term and gives us information about how well we're doing.
 
@@ -23,11 +23,11 @@ As much as you know about your users the better, because it's going to help you 
 - Optimize money in case you run ads because you can target better.
 - Reduce time of development because you'll target specific resolutions and browsers.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png)
 
 
 ## Where are the users from?
-It will be easier for you to go niche and optimize resources, create more relevant content for your users, and save energy and time if you know where your users are from. To improve Chooseyourplant fast, it's important to know which are the hot areas around the world for many reasons:
+It will be easier for you to go niche and optimize resources, create more relevant content for your users, and save energy and time if you know where your users are from. To improve ChooseYourPlant fast, it's important to know which are the hot areas around the world for many reasons:
   
 1. I can modify the current content in order to optimize the SEO keywords for those regions.
 2. I will create specific content for those areas (plants are kinda international, but not all the plants are found around the world because of shipping policies). I won't waste time anymore creating content that is not revelant for these regions I identified as hot areas.
@@ -41,15 +41,15 @@ If you want to know where are your users from go to your Google Analytics accoun
 
 As you can see the people who come to my site are from the United States. This is useful in order to optimize our keywords because they use different words than the United Kingdom even though both speak English.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-3.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-3.png)
 
 Again, Knowing what states are the most common is good, but wouldn't it be good to know which are the most relevant cities so we can go more niche? Let's see.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-4.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-4.png)
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-5.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-5.png)
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-6.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-6.png)
 
 
 Now that I know from which cities are the people from, I can optimize how I spend my time because:
@@ -69,40 +69,44 @@ Understanding where my users are from is good but it's not enough. I must unders
 
 To see all these metrics in Google Analytics clicki the Audience tab > mobile Overview.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-7.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-7.png)
 
-The image above shows us that most Chooseyourplant users use mobile devices, so I should focus on improving my design and optimization for mobile devices rather than desktop computers. So from now on:
+The image above shows us that most ChooseYourPlant users use mobile devices, so I should focus on improving my design and optimization for mobile devices rather than desktop computers. So from now on:
 
 1. I will give more importance to user interfaces and user experiences for mobile devices than for desktop computers.
-2. Web performance is important (on a mobile screen not all content is visible at first, so you should not load this content).
+2. Web performance is important (on a mobile screen not all content is visible at first, so you shouldn't load this content).
 
-This improves the user experience and will save data for the user> faster uploads> easier to track> better ranking.
+This improves the user experience and will save data for the user > faster uploads > easier to track > better ranking.
 
 On the other hand, knowing what browser the people use, will help us to prioritize bugs, improve the QA and overall, will give us speed on the development process. You can see what browser your users are using on the Audience tab > Technology > Browser & OS.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-8.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-8.png)
 
-We'd thought that because most of users use Apple, they're using Safari, but as we can see, the majority of the suers of Chooseyourplant are using Chrome, although Safari is the second most used. when developing our site, you must prioritize Chrome > Safari. As you can see, I shouldn't invest time on fixing bugs on Firefox If I want to optimize my time because it represents a 3.9% of my users only.
+As you can see, the majority of the people that visit ChooseYourPlant are using Chrome, although Safari is the second most used. I must prioritize Chrome > Safari. I shouldn't invest time in fixing small-medium bugs on Firefox If I want to optimize my time because it represents only 3.9% of the users.
 
 
 ## What is the profile of the users
 
-Knowing how old are your users, and if they're male of female, will help you to optimize your SEO keywords, content and to know about their interest as well, because a users that is 25 years old won't search with the same criteria or words than a 65 years old. Discover how old are your users by going to the Audience tab > Demographics > Age
+You can optimize your keywords and content to have better SEO and rank better on search engines if you know the profile of the user who is visiting your site. How old are they? Are they male or female? This will help you because of a 25 years old person searches and consume information in a big different way than a 60years old. 
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-9.png)
+Discover how old are your users by going to the Audience tab > Demographics > Age
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-10.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-9.png)
+
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-10.png)
 
 # Results
-Since I profiled the people who use Chooseyourplant and I started to apply some of the actions, the organic growth and exposure in Google has growth significally as you can see:
+Since I profiled the people who use ChooseYourPlant and I started to apply some of the actions, the organic growth and exposure in Google have grown significantly as you can see:
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-11.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-11.png)
 
 # Conclusions
-After analyzing some metrics, I could profile better my users. In general, they majority of my users are 25-34 years old women from United States of America, in particular from Los Angeles, San Francisco, Portland and New York, that use chrome and Safari through on their phones. As commented at first, this help me to go niche because:
+After analyzing some data, now I know that the majority of my users are people 25-34 years old from the United States of America. In particular, they are from Los Angeles, San Francisco, Portland, New York, and Miami. They use chrome and Safari through their phones. 
+
+As commented at first, this helps me to go niche because:
 - I can create content that is relevant for those areas
 - I can expose my content with keywords according to their register and how they search
-- Add features that could interest them
-- Find shops near by them
-- Optimize my time of development to to mobile Chrome/Safari, the other can wait.
+- Add features that could interest this profile
+- Find shops nearby them
+- Optimize my time of development to mobile Chrome/Safari, the other can wait.
 - In case of running ads, I can optimize the money so much.
