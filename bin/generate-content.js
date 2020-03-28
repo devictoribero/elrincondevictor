@@ -10,6 +10,8 @@ const ENCODING = 'utf-8'
 const postsFileName = getPostsFileName(INPUT_PATH)
 const allPosts = getPostsArrayFromFileNames(postsFileName).sort(orderByUpdatedDateDesc)
 
+console.log(allPosts)
+
 
 // Is mandatory that the index should be the first one
 // because is the one generates index.json and populates a global variable
