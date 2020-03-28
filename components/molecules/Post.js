@@ -31,16 +31,17 @@ export function Article({data, content}) {
       />
       <style jsx global>{`
         article {
-          font-size: 1.25rem;
+          font-size: 1.1rem;
           color: var(--grey-800);
           font-weight: 300;
-          margin-bottom: 24px;
+          margin-bottom: 1.25rem;
         }
 
         article h2 {
           margin: 3rem 0 1rem;
           font-family: var(--font-family-alter);
           font-weight: 900;
+          font-size: 1.5rem;
           line-height: 1.5;
         }
 
@@ -60,7 +61,7 @@ export function Article({data, content}) {
         }
 
         article p {
-          line-height: 1.75;
+          line-height: 1.5;
           letter-spacing: 0.2px;
           margin-bottom: 0;
         }

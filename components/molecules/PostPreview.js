@@ -68,7 +68,7 @@ export function PostPreview({title, description, slug, tags= []}) {
           background-color: var(--primary-100);
           border-radius: 5px;
           color: var(--primary-800);
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           font-weight: 600;
           list-style: none;
           padding: 0.25rem 0.75rem;
