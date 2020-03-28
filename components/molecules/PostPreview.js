@@ -11,11 +11,8 @@ export function PostPreview({title, description, slug, tags= []}) {
           </Link>
         </h2>
         <p>{description}</p>
-        <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
-          <a className="readMore link-like">read more</a>
-        </Link>
       </div>
-      <ul className='tags'>
+      <ul>
         {tags.map(tagName => <li key={tagName}>{tagName}</li>)}
       </ul>
       
@@ -43,6 +40,8 @@ export function PostPreview({title, description, slug, tags= []}) {
           color: var(--grey-900);
         }
 
+        a:after {content: "→";}
+
         p {
           font-size: 1rem;
           margin: 0.5rem 0;
@@ -60,12 +59,19 @@ export function PostPreview({title, description, slug, tags= []}) {
           text-decoration: underline;
         }
 
-        ul {display: flex;}
-
-        li:not(:first-child) { margin-lefet: 0.5rem;}
-
-        .readMore:after {
-          content: "→";
+        ul {
+          display: flex;
+          padding: 0;
+        }
+        li:not(:first-child) { margin-left: 0.5rem;}
+        li {
+          background-color: var(--primary-100);
+          border-radius: 5px;
+          color: var(--primary-800);
+          font-size: 0.8rem;
+          font-weight: 600;
+          list-style: none;
+          padding: 0.25rem 0.75rem;
         }
 
         @media screen and (min-width: 768px) {
