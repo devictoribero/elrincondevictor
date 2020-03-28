@@ -15,7 +15,7 @@ If you have a blog or a community I guess you've asked yourself how possibly you
 
 You can reach more people by 2 different ways. Either you pay ads (I don't like this idea because it's not sustainable if you're not monetizing your site), or you expose yourself to people by ranking better than other sites on Google or other Search Engines. We'll talk about the second one which is good for long term and gives us information about how well we're doing.
 
-# Why is important to know better your users
+## Why is important to know better your users
 As much as you know about your users the better, because it's going to help you to:
 - Optimize SEO keywords.
 - Prioritize the type of content they like. It depends on their age, in what region they live, etc.
@@ -100,7 +100,7 @@ Since I profiled the people who use ChooseYourPlant and I started to apply some 
 
 ![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-11.png)
 
-# Conclusions
+## Conclusions
 After analyzing some data, now I know that the majority of my users are people 25-34 years old from the United States of America. In particular, they are from Los Angeles, San Francisco, Portland, New York, and Miami. They use chrome and Safari through their phones. 
 
 As commented at first, this helps me to go niche because:

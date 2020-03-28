@@ -42,7 +42,7 @@ export function Article({data, content}) {
           font-family: var(--font-family-alter);
           font-weight: 900;
           font-size: 1.5rem;
-          line-height: 1.5;
+          line-height: 1.25;
         }
 
         article p,
@@ -60,9 +60,13 @@ export function Article({data, content}) {
           margin: 0.5rem 0 0 0;
         }
 
+        article p, 
+        article li {
+          letter-spacing: 0.2px;
+        }
+
         article p {
           line-height: 1.5;
-          letter-spacing: 0.2px;
           margin-bottom: 0;
         }
 
@@ -81,13 +85,12 @@ export function Article({data, content}) {
 
         article ul,
         article ol {
-          margin: 0.5rem 0 2rem 0;
+          margin: 1.25rem 0 2rem 0;
           padding-left: 1.5rem;
         }
 
         article li {
-          line-height: 1.75;
-          letter-spacing: 0.2px;
+          line-height: 1.45;
           margin-bottom: 0.5rem;
         }
 
