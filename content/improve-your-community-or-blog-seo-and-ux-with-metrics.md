@@ -13,29 +13,29 @@ tags: [entrepreneurship, products, growth]
 
 If you have a blog or a community I guess you've asked yourself how possibly you can reach more people and get traction. Well, I'm going to explain to you what metrics I use to improve [ChooseYourPlant, the worldwide community for houseplant lovers](https://www.chooseyourplant.com) I'm building, and how these metrics can help you.
 
-You can reach more people by 2 different ways. Either you pay ads (I don't like this idea because it's not sustainable if you're not monetizing your site), or you expose yourself to people by ranking better than other sites on Google or other Search Engines. We'll talk about the second one which is good for long term and gives us information about how well we're doing.
+You can reach more people in 2 different ways. Either you pay ads (I don't like this idea because it's not sustainable if you're not monetizing your site), or you expose yourself to people by ranking better than other sites on Google or other Search Engines. We'll talk about the second one which is good for the long term and gives us information about how well we're doing.
 
 ## Why is important to know better your users
-As much as you know about your users the better, because it's going to help you to:
+As much as you know about your users the better because it's going to help you to:
 - Optimize SEO keywords.
 - Prioritize the type of content they like. It depends on their age, in what region they live, etc.
 - Optimize the user interface and user experience based on how they access information, context, device, browser, etc.
 - Optimize money in case you run ads because you can target better.
-- Reduce time of development because you'll target specific resolutions and browsers.
+- Reduce the time of development because you'll target specific resolutions and browsers.
 
-![Graphic that shows how much the traffic of ChooseYourPlant increased since 3 month ago when the site was published](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png)
+![Graphic that shows how much the traffic of ChooseYourPlant increased since 3 months ago when the site was published](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png)
 
 
 ## Where are the users from?
 It will be easier for you to go niche and optimize resources, create more relevant content for your users, and save energy and time if you know where your users are from. To improve ChooseYourPlant fast, it's important to know which are the hot areas around the world for many reasons:
   
 1. I can modify the current content in order to optimize the SEO keywords for those regions.
-2. I will create specific content for those areas (plants are kinda international, but not all the plants are found around the world because of shipping policies). I won't waste time anymore creating content that is not revelant for these regions I identified as hot areas.
-3. I can reach shops in these areas in order to get presence, discounts and/or sponsorships. This shops are the ones relevant to my users because of proximity.
+2. I will create specific content for those areas (plants are kinda international, but not all the plants are found around the world because of shipping policies). I won't waste time anymore creating content that is not relevant for these regions I identified as hot areas.
+3. I can reach shops in these areas in order to get presence, discounts and/or sponsorships. These shops are the ones relevant to my users because of proximity.
 
 
 
-If you want to know where are your users from go to your Google Analytics account > Audience > Geo > Location. You'll see a colored map with many intensities that represents the number of people who access your website:
+If you want to know where are your users from going to your Google Analytics account > Audience > Geo > Location. You'll see a colored map with many intensities that represents the number of people who access your website:
 
 ![World map colored with different intensities that represent the people that use ChooseYourPlant and USA is the most intense.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-2.png)
 
@@ -67,7 +67,7 @@ Understanding where my users are from is good but it's not enough. I must unders
 3. I can save time not prioritizing bugs or browser compatibilities for these browsers that are almost not used.
 4. Improve the user experience for their devices.
 
-To see all these metrics in Google Analytics clicki the Audience tab > mobile Overview.
+To see all these metrics in Google Analytics click the Audience tab > mobile Overview.
 
 ![Data table that shows the most used device by the ChooseYourPlant users. Mobile with a 61% is the most used and desktop is the second one with 36%.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-7.png)
 
@@ -91,7 +91,7 @@ You can optimize your keywords and content to have better SEO and rank better on
 
 Discover how old are your users by going to the Audience tab > Demographics > Age
 
-![Data table that shows the age ranges of the users of ChooseYourPlant. A 46% of the users are 25 to 34 years old and the 19% are 35 to 44 years old.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-9.png)
+![Data table that shows the age ranges of the users of ChooseYourPlant. 46% of the users are 25 to 34 years old and 19% are 35 to 44 years old.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-9.png)
 
 ![Data table that shows the percentage by gender. 52% are women and 47% are men.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-10.png)
 
@@ -109,4 +109,4 @@ As commented at first, this helps me to go niche because:
 - Add features that could interest this profile
 - Find shops nearby them
 - Optimize my time of development to mobile Chrome/Safari, the other can wait.
-- In case of running ads, I can optimize the money so much.
+- In the case of running ads, I can optimize the money so much.
