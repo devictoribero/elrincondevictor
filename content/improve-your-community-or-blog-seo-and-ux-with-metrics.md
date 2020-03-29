@@ -23,7 +23,7 @@ As much as you know about your users the better, because it's going to help you 
 - Optimize money in case you run ads because you can target better.
 - Reduce time of development because you'll target specific resolutions and browsers.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png)
+![Graphic that shows how much the traffic of ChooseYourPlant increased since 3 month ago when the site was published](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png)
 
 
 ## Where are the users from?
@@ -37,19 +37,19 @@ It will be easier for you to go niche and optimize resources, create more releva
 
 If you want to know where are your users from go to your Google Analytics account > Audience > Geo > Location. You'll see a colored map with many intensities that represents the number of people who access your website:
 
-![World map colored with different intensities that represent the people that use ChooseYourPlant and USA is the most intense](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-2.png)
+![World map colored with different intensities that represent the people that use ChooseYourPlant and USA is the most intense.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-2.png)
 
 As you can see the people who come to my site are from the United States. This is useful in order to optimize our keywords because they use different words than the United Kingdom even though both speak English.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-3.png)
+![US map colored with different intensities that represent the people that use ChooseYourPlant. California, Florida and New York are the most intense.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-3.png)
 
 Again, Knowing what states are the most common is good, but wouldn't it be good to know which are the most relevant cities so we can go more niche? Let's see.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-4.png)
+![Map that shows that the majority of the users that use ChooseYourPlant in California are from Los Angeles and San Francisco.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-4.png)
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-5.png)
+![Map that shows that the majority of the users that use ChooseYourPlant in New York are from New York city.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-5.png)
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-6.png)
+![Map that shows that the majority of the users that use ChooseYourPlant in Florida are from Miami.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-6.png)
 
 
 Now that I know from which cities are the people from, I can optimize how I spend my time because:
@@ -69,7 +69,7 @@ Understanding where my users are from is good but it's not enough. I must unders
 
 To see all these metrics in Google Analytics clicki the Audience tab > mobile Overview.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-7.png)
+![Data table that shows the most used device by the ChooseYourPlant users. Mobile with a 61% is the most used and desktop is the second one with 36%.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-7.png)
 
 The image above shows us that most ChooseYourPlant users use mobile devices, so I should focus on improving my design and optimization for mobile devices rather than desktop computers. So from now on:
 
@@ -80,7 +80,7 @@ This improves the user experience and will save data for the user > faster uploa
 
 On the other hand, knowing what browser the people use, will help us to prioritize bugs, improve the QA and overall, will give us speed on the development process. You can see what browser your users are using on the Audience tab > Technology > Browser & OS.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-8.png)
+![Data table that shows the most used browser by the ChooseYourPlant users. Chrome with a 53% is the most used and Safari is the second one with 30%.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-8.png)
 
 As you can see, the majority of the people that visit ChooseYourPlant are using Chrome, although Safari is the second most used. I must prioritize Chrome > Safari. I shouldn't invest time in fixing small-medium bugs on Firefox If I want to optimize my time because it represents only 3.9% of the users.
 
@@ -91,14 +91,14 @@ You can optimize your keywords and content to have better SEO and rank better on
 
 Discover how old are your users by going to the Audience tab > Demographics > Age
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-9.png)
+![Data table that shows the age ranges of the users of ChooseYourPlant. A 46% of the users are 25 to 34 years old and the 19% are 35 to 44 years old.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-9.png)
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-10.png)
+![Data table that shows the percentage by gender. 52% are women and 47% are men.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-10.png)
 
 # Results
 Since I profiled the people who use ChooseYourPlant and I started to apply some of the actions, the organic growth and exposure in Google have grown significantly as you can see:
 
-![Aspecto visual de la búsqueda de una planta en la aplicación ChooseYourPlant](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-11.png)
+![Graph showing how much Chooseyourplant is growing every day.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-11.png)
 
 ## Conclusions
 After analyzing some data, now I know that the majority of my users are people 25-34 years old from the United States of America. In particular, they are from Los Angeles, San Francisco, Portland, New York, and Miami. They use chrome and Safari through their phones. 
