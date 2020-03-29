@@ -15,7 +15,7 @@ If you have a blog or a community I guess you've asked yourself how possibly you
 
 You can reach more people in 2 different ways. Either you pay ads (I don't like this idea because it's not sustainable if you're not monetizing your site), or you expose yourself to people by ranking better than other sites on Google or other Search Engines. We'll talk about the second one which is good for the long term and gives us information about how well we're doing.
 
-## Why is important to know better your users
+## 🤔 Why is important to know better your users ?
 As much as you know about your users the better because it's going to help you to:
 - Optimize SEO keywords.
 - Prioritize the type of content they like. It depends on their age, in what region they live, etc.
@@ -26,7 +26,7 @@ As much as you know about your users the better because it's going to help you t
 ![Graphic that shows how much the traffic of ChooseYourPlant increased since 3 months ago when the site was published](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png)
 
 
-## Where are the users from?
+## 🌎 Where are the users from?
 It will be easier for you to go niche and optimize resources, create more relevant content for your users, and save energy and time if you know where your users are from. To improve ChooseYourPlant fast, it's important to know which are the hot areas around the world for many reasons:
   
 1. I can modify the current content in order to optimize the SEO keywords for those regions.
@@ -59,7 +59,7 @@ Now that I know from which cities are the people from, I can optimize how I spen
 3. I can focus on contacting shops that are nearby these users
 4. In case I wanted to pay ads, I can limit them to those cities so I would be optimizing money.
 
-## What do people use to access my site?
+## 📱 What do people use to access my site?
 Understanding where my users are from is good but it's not enough. I must understand what device, connection, and browser they're using while they are on my site so:
 
 1. I can Improve web performance for those devices and connections.
@@ -85,7 +85,7 @@ On the other hand, knowing what browser the people use, will help us to prioriti
 As you can see, the majority of the people that visit ChooseYourPlant are using Chrome, although Safari is the second most used. I must prioritize Chrome > Safari. I shouldn't invest time in fixing small-medium bugs on Firefox If I want to optimize my time because it represents only 3.9% of the users.
 
 
-## What is the profile of the users
+## 👧 What is the profile of the users
 
 You can optimize your keywords and content to have better SEO and rank better on search engines if you know the profile of the user who is visiting your site. How old are they? Are they male or female? This will help you because of a 25 years old person searches and consume information in a big different way than a 60years old. 
 
@@ -95,12 +95,12 @@ Discover how old are your users by going to the Audience tab > Demographics > Ag
 
 ![Data table that shows the percentage by gender. 52% are women and 47% are men.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-10.png)
 
-# Results
+# 💬 Results
 Since I profiled the people who use ChooseYourPlant and I started to apply some of the actions, the organic growth and exposure in Google have grown significantly as you can see:
 
 ![Graph showing how much Chooseyourplant is growing every day.](/static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-11.png)
 
-## Conclusions
+## 📑 Conclusions
 After analyzing some data, now I know that the majority of my users are people 25-34 years old from the United States of America. In particular, they are from Los Angeles, San Francisco, Portland, New York, and Miami. They use chrome and Safari through their phones. 
 
 As commented at first, this helps me to go niche because:
