@@ -110,3 +110,5 @@ As commented at first, this helps me to go niche because:
 - Find shops nearby them
 - Optimize my time of development to mobile Chrome/Safari, the other can wait.
 - In the case of running ads, I can optimize the money so much.
+
+**Namasté** 🙏,

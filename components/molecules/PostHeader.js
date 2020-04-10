@@ -24,17 +24,27 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
 
       <style jsx>{`
         header {
+          position: relative;
           min-height: 200px;
           display: flex;
           flex-direction: column;
           padding: 3rem 0;
           box-sizing: border-box;
+        }
+        header:after {
+          content: "";
           background-image: url(${imgSrc});
           background-size: cover;
-        }
-
-        h1 > span, time, a {
-          background-color: white;
+          background-color: var(--primary-700);
+          background-blend-mode: overlay;
+          border-radius: 20px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+          position: absolute;
+          opacity: 0.3;
+          z-index: -1;
         }
 
         h1 {
@@ -47,9 +57,23 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           display: inline-block;
         }
 
+        h1 span {
+          background-color: white;
+          padding: 0.15rem 0.75rem;
+          border-radius: 10px;
+        }
+
         .publication-details {
           color: var(--grey-800);
           font-size: 1rem;
+        }
+
+        .publication-details time,
+        .publication-details a {
+          background-color: white;
+          padding: 0.1rem 0.5rem;
+          border-radius: 3px;
+
         }
 
         @media screen and (min-width: 768px) {

@@ -4,14 +4,12 @@ import PropTypes from 'prop-types'
 export function PostPreview({title, description, slug, tags= []}) {
   return (
     <article>
-      <div>
         <h2>
           <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
             <a className="title">{title}</a>
           </Link>
         </h2>
         <p>{description}</p>
-      </div>
       <ul>
         {tags.map(tagName => <li key={tagName}>{tagName}</li>)}
       </ul>
@@ -22,7 +20,7 @@ export function PostPreview({title, description, slug, tags= []}) {
           border-radius: 20px;
           box-shadow: 0 13px 78px -11px rgba(50,50,93,.05), 0 8px 16px -3px rgba(0,0,0,.05), 0 0 5px -10px rgba(0,0,0,.05);
           display: flex;
-          flex-direction: column-reverse;
+          flex-direction: column;
           margin-bottom: 1rem;
           padding: 1.5rem 1.75rem;
         }
@@ -62,6 +60,7 @@ export function PostPreview({title, description, slug, tags= []}) {
         ul {
           display: flex;
           padding: 0;
+          margin: 0.5rem 0 0 0;
         }
         li:not(:first-child) { margin-left: 0.5rem;}
         li {

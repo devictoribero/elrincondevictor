@@ -31,7 +31,7 @@ export function Article({data, content}) {
       />
       <style jsx global>{`
         article {
-          font-size: 1.1rem;
+          font-size: 1.25rem;
           color: var(--grey-800);
           font-weight: 300;
           margin-bottom: 1.25rem;
@@ -39,9 +39,8 @@ export function Article({data, content}) {
 
         article h2 {
           margin: 3rem 0 1rem;
-          font-family: var(--font-family-alter);
-          font-weight: 900;
-          font-size: 1.5rem;
+          font-weight: 700;
+          font-size: 1.75rem;
           line-height: 1.25;
         }
 
@@ -62,12 +61,14 @@ export function Article({data, content}) {
 
         article p, 
         article li {
-          letter-spacing: 0.2px;
+          letter-spacing: 0.25px;
+          font-size: 21px;
+          line-height: 1.6;
+          color: var(--grey-800);
         }
 
         article p {
-          line-height: 1.5;
-          margin-bottom: 0;
+          margin: 1.5rem 0 0 0;
         }
 
         article > p:last-of-type {
@@ -118,6 +119,10 @@ export function Article({data, content}) {
           height: 2px;
           border: none;
           border-radius: 54px;
+        }
+
+        img > img + article h2 {
+          margin-top: 2rem;
         }
 
         article code {
