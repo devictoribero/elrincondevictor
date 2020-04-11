@@ -9,7 +9,6 @@ export function PostsSection({title, posts, className}) {
       </div>
       <style jsx>{`
         div {
-          display: grid;
           max-width: 800px;
         }
       `}</style>

@@ -51,7 +51,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
           margin: 0 0 0.5rem 0;
           color: var(--grey-900);
           font-size: 1.5rem;
-          font-family: var(--font-family-alter);
+          font-family: var(--ff-serif);
           line-height: 1.5;
           letter-spacing: 0.5px;
           display: inline-block;

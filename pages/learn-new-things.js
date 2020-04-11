@@ -41,7 +41,7 @@ export default function Page({pathname, didYouKnow}) {
         h1, p { margin: 0; max-width: 720px; }
 
         h1 {
-          font-family: var(--font-family-alter);
+          font-family: var(--ff-serif);
           margin: 0 0 2rem 0;
           font-size: 2.5rem;
           line-height: 1.35;

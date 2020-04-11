@@ -37,7 +37,7 @@ export default function Libros({pathname}) {
         h1, p { margin: 0; max-width: 720px; }
 
         h1 {
-          font-family: var(--font-family-alter);
+          font-family: var(--ff-serif);
           margin: 0 0 2rem 0;
           font-size: 2.5rem;
           line-height: 1.35;
@@ -62,7 +62,7 @@ export default function Libros({pathname}) {
           list-style-position: inside;
           color: var(--grey-700);
           font-size: 18px;
-          font-family: var(--font-family-alter);
+          font-family: var(--ff-serif);
         }
 
         li:not(:last-of-type) {

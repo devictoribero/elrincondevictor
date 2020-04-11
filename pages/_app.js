@@ -56,13 +56,13 @@ export default class MyApp extends App {
             --social-twitter: ${palette.social.twitter['default']};
             --social-twitter-dark: ${palette.social.twitter['dark']};
 
-            --font-family-main: ${fonts.main};
-            --font-family-alter: ${fonts.alter};
+            --ff-sans-serif: ${fonts.sansSerif};
+            --ff-serif: ${fonts.serif};
           }
 
           body {
             margin: 0 auto;
-            font-family: var(--font-family-main);
+            font-family: var(--ff-sans-serif);
           }
 
           .container-wrapper {

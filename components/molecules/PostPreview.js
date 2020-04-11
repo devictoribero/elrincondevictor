@@ -28,9 +28,9 @@ export function PostPreview({title, description, slug, tags= []}) {
         h2 {
           margin: 0;
           color: var(--grey-900);
-          font-size: 1.25rem;
+          font-size: 21px;
           font-weight: 900;
-          font-family: var(--font-family-main);
+          font-family: var(--ff-sans-serif);
         }
 
         h2 > a {
@@ -42,9 +42,10 @@ export function PostPreview({title, description, slug, tags= []}) {
 
         p {
           font-size: 18px;
+          font-family: var(--ff-serif);
           font-weight: 400;
           margin: 0.5rem 0;
-          line-height: 1.6;
+          line-height: 1.5;
           color: var(--grey-700);
         }
 
@@ -73,6 +74,13 @@ export function PostPreview({title, description, slug, tags= []}) {
           padding: 0.25rem 0.75rem;
           text-transform: capitalize;
           border-radius: 999px;
+          min-width: 35px;
+          text-align: center;
+          font-weight: bold;
+        }
+        li:before {
+          content: '#';
+          font-weight: bold;
         }
 
         @media screen and (min-width: 768px) {
