@@ -44,11 +44,6 @@ export function Article({data, content}) {
           line-height: 1.25;
         }
 
-        article p,
-        article li {
-          hyphens: auto;
-        }
-
         article p > img {
           max-width: 100%;
           display: block;
@@ -62,13 +57,15 @@ export function Article({data, content}) {
         article p, 
         article li {
           letter-spacing: 0.25px;
-          font-size: 21px;
-          line-height: 1.6;
+          line-height: 1.75;
           color: var(--grey-800);
+          hyphens: auto;
+          font-size: 18px;
+          font-weight: 400;
         }
 
-        article p {
-          margin: 1.5rem 0 0 0;
+        article p + p {
+          margin: 1.75rem 0 0 0;
         }
 
         article > p:last-of-type {

@@ -30,7 +30,7 @@ export function PostPreview({title, description, slug, tags= []}) {
           color: var(--grey-900);
           font-size: 1.25rem;
           font-weight: 900;
-          font-family: var(--font-family-alter);
+          font-family: var(--font-family-main);
         }
 
         h2 > a {
@@ -41,10 +41,11 @@ export function PostPreview({title, description, slug, tags= []}) {
         a:after {content: "→";}
 
         p {
-          font-size: 1rem;
+          font-size: 18px;
+          font-weight: 400;
           margin: 0.5rem 0;
           line-height: 1.6;
-          color: var(--grey-800);
+          color: var(--grey-700);
         }
 
         .title {
@@ -67,10 +68,11 @@ export function PostPreview({title, description, slug, tags= []}) {
           background-color: var(--primary-100);
           border-radius: 5px;
           color: var(--primary-800);
-          font-size: 0.75rem;
-          font-weight: 600;
+          font-size: 14px;
           list-style: none;
           padding: 0.25rem 0.75rem;
+          text-transform: capitalize;
+          border-radius: 999px;
         }
 
         @media screen and (min-width: 768px) {

@@ -9,11 +9,19 @@ export function PostLayout({main, complementary}) {
             margin-bottom: 75px;
           }
 
-          @media screen and (min-width: 1024px) {
+          @media screen and (min-width: 768px) {
+            main {
+              max-width: 700px;
+              margin-right: auto;
+              margin-left: auto;
+            }
+          }
+
+          @media screen and (min-width: 1200px) {
             .PostLayout {
               display: grid;
-              grid-template-columns: 2fr 1fr;
-              grid-gap: 2rem;
+              grid-template-columns: 700px minmax(200px, 1fr);
+              grid-gap: 75px;
             }
           }
 
