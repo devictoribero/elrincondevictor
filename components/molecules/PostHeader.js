@@ -1,7 +1,6 @@
 import {months} from '../../helpers/months';
 
 export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
-  console.log(createdAt)
   const publicationDate = new Date(createdAt);
   const day = publicationDate.getDate();
   const month = months[publicationDate.getMonth()];
@@ -9,8 +8,9 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
 
   return (
     <header>
-      <h1><span>{title}</span></h1>
-      <span className='publication-details'>
+      <h1>{title}</h1>
+      <span>
+        By
         <a
           className='link-like link social'
           rel="nofollow noopener noreferrer"
@@ -25,57 +25,80 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
       <style jsx>{`
         header {
           position: relative;
-          min-height: 200px;
-          display: flex;
-          flex-direction: column;
-          padding: 3rem 0;
-          box-sizing: border-box;
-        }
-        header:after {
-          content: "";
-          background-image: url(${imgSrc});
-          background-size: cover;
-          background-color: var(--primary-800);
-          background-blend-mode: overlay;
-          border-radius: 20px;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          top: 0;
-          position: absolute;
-          opacity: 0.2;
-          z-index: -1;
+          padding: 2rem 1rem;
         }
 
         h1 {
           margin: 0 0 0.5rem 0;
           color: var(--grey-900);
-          font-size: 1.5rem;
+          font-size: 36px;
           font-family: var(--ff-serif);
-          line-height: 1.5;
-          letter-spacing: 0.5px;
+          line-height: 1.15;
           display: inline-block;
         }
 
-        h1,
-        .publication-details {
-          background-color: white;
-          padding: 0.25rem 0.5rem;
-         }
+        a {
+          margin-left: 0.25rem;
+        }
 
-        .publication-details {
-          color: var(--grey-800);
+        span {
+          color: var(--grey-900);
           font-size: 1rem;
+          font-weight: 400;
+        }
+
+        time {
+          margin-left: 0.25rem;
         }
 
         @media screen and (min-width: 768px) {
           header {
-            min-height: 300px;
+            padding: 3rem;
+            text-align: center;
+          }
+
+          header:before,
+          header:after {
+            position: absolute;
+            content: "";
+            z-index: -1;
+            border-radius: 20px;
+          }
+
+          header:before {
+            top: 0;
+            bottom: -1rem;
+            left: -1.5rem;
+            right: -1.5rem;
+            background-color: #fff4e5;
+          }
+
+          header:after {
+            height: 75px;
+            background: white;
+            left: -1rem;
+            right: -1rem;
+            bottom: -50px;
           }
 
           h1 {
-            font-size: 2rem;
-            line-height: 1.35;
+            font-size: 52px;
+          }
+        }
+
+        @media screen and (min-width: 1024px) {
+          header:before {
+            left: -100px;
+            right: -100px;
+            bottom: -75px;
+          }
+  
+          header:after {
+            height: 200px;
+            background: white;
+            left: -50px;
+            right: -50px;
+            bottom: -190px;
           }
         }
       `}</style>

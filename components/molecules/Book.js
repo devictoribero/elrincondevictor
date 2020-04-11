@@ -41,7 +41,6 @@ export function Book({title, link, img_src, review}) {
           font-size: 1.25rem;
           font-weight: 500;
           margin: 0;
-          letter-spacing: 0.5px;
           line-height: 1.5;
         }
 

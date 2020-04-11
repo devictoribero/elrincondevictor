@@ -23,10 +23,9 @@ export default function Page() {
         h1, p { margin: 0; }
 
         h1 {
+          font-family: var(--ff-serif);
+          color: var(--grey-900);
           margin-bottom: 24px;
-          -webkit-text-stroke: 1px var(--grey-700);
-          color: transparent;
-          text-shadow: 4px 4px #ffed5e;
           font-size: 60px;
           line-height: 1.125;
           font-weight: bold;
@@ -49,8 +48,7 @@ export default function Page() {
           h1 {
             margin-bottom: 36px;
             width: 600px;
-            text-shadow: 5px 4px #ffed5e;
-          font-size: 75px;
+            font-size: 75px;
           }
 
           p {

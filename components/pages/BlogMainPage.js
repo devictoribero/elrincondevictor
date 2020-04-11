@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Seo from '../pages/Seo'
 import {PostsSection, PostSectionTitle} from '../molecules/PostsSection';
 
@@ -42,7 +41,7 @@ function Header({randomPost}){
         h1 {
           font-family: var(--ff-serif);
           margin: 0 0 1rem 0;
-          font-size: 2.5rem;
+          font-size: 42px;
           line-height: 1.15;
           font-weight: 900;
         }
@@ -50,9 +49,8 @@ function Header({randomPost}){
         p {
           display: block;
           margin: 0.75rem 0;
-          color: #1d1d1d;
-          font-size: 1.25rem;
-          letter-spacing: 0.2px;
+          color: var(--grey-900);
+          font-size: 21px;
           line-height: 1.5;
         }
 

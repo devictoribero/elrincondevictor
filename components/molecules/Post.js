@@ -56,9 +56,8 @@ export function Article({data, content}) {
 
         article p, 
         article li {
-          letter-spacing: 0.25px;
           line-height: 1.75;
-          color: var(--grey-800);
+          color: var(--grey-900);
           hyphens: auto;
           font-size: 18px;
           font-weight: 400;

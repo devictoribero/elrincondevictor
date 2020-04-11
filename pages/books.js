@@ -49,7 +49,6 @@ export default function Libros({pathname}) {
           margin: 0.75rem 0;
           color: #1d1d1d;
           font-size: 18px;
-          letter-spacing: 0.2px;
           line-height: 2;
         }
 
