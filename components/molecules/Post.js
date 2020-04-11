@@ -40,8 +40,8 @@ export function Article({data, content}) {
         article h2 {
           margin: 3rem 0 1rem;
           font-weight: 700;
-          font-size: 1.75rem;
-          line-height: 1.25;
+          font-size: 32px;
+          line-height: 1.15;
         }
 
         article p > img {
