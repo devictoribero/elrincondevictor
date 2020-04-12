@@ -63,8 +63,8 @@ export function PostPreview({title, description, slug, tags= []}) {
           display: flex;
           padding: 0;
           margin: 0.5rem 0 0 0;
+          flex-wrap: wrap;
         }
-        li:not(:first-child) { margin-left: 0.5rem;}
         li {
           background-color: var(--primary-100);
           border-radius: 5px;
@@ -77,6 +77,7 @@ export function PostPreview({title, description, slug, tags= []}) {
           min-width: 35px;
           text-align: center;
           font-weight: bold;
+          margin: 0.2rem;
         }
         li:before {
           content: '#';
