@@ -32,7 +32,7 @@ export function Article({data, content}) {
       <style jsx global>{`
         article {
           font-size: 1.25rem;
-          color: var(--grey-800);
+          color: var(--grey-900);
           font-weight: 300;
           margin-bottom: 1.25rem;
         }
@@ -41,7 +41,7 @@ export function Article({data, content}) {
           margin: 3rem 0 1rem;
           font-weight: 700;
           font-size: 32px;
-          line-height: 1.15;
+          line-height: 1.25;
         }
 
         article p > img {
@@ -57,7 +57,6 @@ export function Article({data, content}) {
         article p, 
         article li {
           line-height: 1.75;
-          color: var(--grey-900);
           hyphens: auto;
           font-size: 18px;
           font-weight: 400;
@@ -69,10 +68,6 @@ export function Article({data, content}) {
 
         article > p:last-of-type {
           margin: 3rem 0 2rem 0;
-        }
-
-        article em {
-          color: var(--grey-700);
         }
 
         article strong {
@@ -87,7 +82,7 @@ export function Article({data, content}) {
         }
 
         article li {
-          line-height: 1.45;
+          line-height: 1.25;
           margin-bottom: 0.5rem;
         }
 
@@ -95,18 +90,19 @@ export function Article({data, content}) {
           color: var(--primary-800);
         }
 
-        article blockquote {
-          background: linear-gradient(to bottom right, var(--primary-100), var(--primary-000));
-          border-radius: 5px;
-          margin: 0;
-        }
-
         article blockquote > p {
-          color: var(--primary-900);
-          line-height: 2;
+          color: black;
+          font-size: 27px;
           position: relative;
           margin: 3rem 0;
           padding: 1.5rem 2rem;
+          font-family: var(--ff-serif);
+          font-weight: bold;
+        }
+
+        article blockquote > p:before,
+        article blockquote > p:after {
+          content: '"';
         }
 
         article hr {
@@ -123,6 +119,13 @@ export function Article({data, content}) {
 
         article code {
           font-size: 16px;
+        }
+
+        @media screen and (min-width: 768px) {
+          article blockquote:before {
+            left: -100px;
+            right: -100px;
+          }
         }
       `}</style>
     </article>
