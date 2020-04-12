@@ -4,7 +4,7 @@ import routes from '../../config/routes'
 
 export function MainNavigation({route}) {
   return (
-    <nav className="container-wrapper" aria-label="Navegador principal">
+    <nav aria-label="Navegador principal">
       <div className="container main-navigation__inner">
         <Link href="/">
           <a className="logo">Elrincondevictor</a>
@@ -30,18 +30,27 @@ export function MainNavigation({route}) {
       </div>
 
       <style jsx>{`
+        nav {
+          padding: 1rem;
+          background: red;
+          margin-bottom: 2rem;
+          position: sticky;
+          top: 0;
+          z-index: 1;
+          background-color: rgba(255,255,255,0.9);
+        }
         .main-navigation__inner {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           justify-content: flex-start;
-          min-height: 125px;
           box-sizing: border-box;
         }
 
         .logo {
+          color: var(--grey-900);
           font-weight: bold;
-          padding: 1.25rem 0;
+          padding: 0.5rem 0;
         }
 
         a {
@@ -50,31 +59,13 @@ export function MainNavigation({route}) {
           padding: 0.5rem 0;
           font-size: 1rem;
           font-weight: 900;
-          color: var(--grey-800);
+          color: var(--grey-500);
         }
 
-        a:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: -0.1rem;
-          width: 0;
-          height: 5px;
-          z-index: -1;
-          transition: width 0.35s ease;
-          transform: skewX(150deg);
-        }
-
-        a.selected:after {
-          width: 100%;
-          background: var(--primary-300);
-        }
-
-        a:hover:after,
-        a:focus:after {
-          width: 100%;
-          background: var(--primary-300);
+        a.selected,
+        a:hover,
+        a:focus {
+          color: black;
         }
 
         a:not(.logo) {
