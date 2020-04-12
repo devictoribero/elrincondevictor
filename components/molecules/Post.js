@@ -48,6 +48,7 @@ export function Article({data, content}) {
           max-width: 100%;
           display: block;
           margin: 0 auto;
+          border-radius: 20px;
         }
 
         article > h2 + p {
