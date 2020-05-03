@@ -44,6 +44,11 @@ export function Article({data, content}) {
           line-height: 1.25;
         }
 
+        article h3,
+        article h4 {
+          margin-top: 3rem;
+        }
+
         article p > img {
           max-width: 100%;
           display: block;
