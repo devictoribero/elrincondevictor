@@ -10,7 +10,7 @@ export function PostLayout({main, complementary}) {
           }
 
           @media screen and (min-width: 768px) {
-            main {
+            div {
               max-width: 700px;
               margin-right: auto;
               margin-left: auto;
