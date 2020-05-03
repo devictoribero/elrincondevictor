@@ -4,12 +4,33 @@ export function PostsSection({title, posts, className}) {
   return (
     <section className={className}>
       {title}
-      <div>
-        {posts.map(post => <PostPreview key={post.slug} {...post}/>)}
-      </div>
+      <ul>
+        {posts.map(post => (
+          <li key={post.slug}>
+            <PostPreview {...post}/>
+          </li>
+        ))}
+      </ul>
       <style jsx>{`
         div {
-          max-width: 800px;
+          max-width: 700px;
+        }
+        
+        ul {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 2rem;
+          padding: 0;
+          margin: 0;
+        }
+
+        li {
+          list-style: none;
+        }
+
+        @media screen and (min-width: 768px) {
+          ul {
+          }
         }
       `}</style>
     </section>

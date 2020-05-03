@@ -15,7 +15,17 @@ export function BlogMainPage({posts, randomPost}) {
           className="container"
           title={<PostSectionTitle heading='h1'>Articles</PostSectionTitle>}
           posts={posts}/>  
-      </main>   
+      </main>
+
+      <style jsx>{`
+        @media screen and (min-width: 768px) {
+          main {
+            max-width: 700px;
+            margin-right: auto;
+            margin-left: auto;
+          }
+        }
+      `}</style>
     </div>
   )
 }
@@ -26,7 +36,7 @@ function Header({randomPost}){
   return (
     <header role="banner" className="container-wrapper">
       <div className="container">
-        <h1>This is my corner, where I share my philosophy of life.</h1>
+        <h1>This is my corner, where I share my philosophy of life and curiosities.</h1>
         <p>I talk about a healthy lifestyle, products, software development and entrepreneurship.</p>
       </div>
 
@@ -39,8 +49,7 @@ function Header({randomPost}){
         }
 
         h1 {
-          font-family: var(--ff-serif);
-          margin: 0 0 1rem 0;
+          margin: 0 auto 1rem auto;
           font-size: 42px;
           line-height: 1.15;
           font-weight: 900;
@@ -48,10 +57,10 @@ function Header({randomPost}){
 
         p {
           display: block;
-          margin: 0.75rem 0;
+          margin: 0.75rem auto;
           color: var(--grey-900);
           font-size: 21px;
-          line-height: 1.5;
+          line-height: 1.75;
         }
 
         @media screen and (min-width: 768px) {
@@ -62,11 +71,11 @@ function Header({randomPost}){
 
 
           h1 {
-            width: 575px;
+            width: 700px;
           }
 
           p {
-            width: 600px;
+            width: 700px;
           }
         }
       `}</style>

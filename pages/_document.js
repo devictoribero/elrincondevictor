@@ -18,11 +18,8 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
-            rel="preload"
-            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600"
-            as="font"
-            type="font/woff2"
-            crossOrigin="true"/>
+            href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@700;900&display=swap"
+            rel="stylesheet"/>
         </Head>
         <body>
           <Main />

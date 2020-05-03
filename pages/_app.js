@@ -62,6 +62,9 @@ export default class MyApp extends App {
 
           body {
             margin: 0 auto;
+            font-family: var(--ff-serif);
+          }
+          h1,h2,h3,h4,h5,h6,h7 {
             font-family: var(--ff-sans-serif);
           }
 

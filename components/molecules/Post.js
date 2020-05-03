@@ -35,6 +35,11 @@ export function Article({data, content}) {
           color: var(--grey-900);
           font-weight: 300;
           margin-bottom: 1.25rem;
+          font-family: var(--ff-serif);
+        }
+
+        article h1, h2,h3,h4,h5,h6 {
+          font-family: var(--ff-sans-serif);
         }
 
         article h2 {

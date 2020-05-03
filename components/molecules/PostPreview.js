@@ -18,76 +18,58 @@ export function PostPreview({title, description, slug, tags= []}) {
         article {
           background-color: white;
           border-radius: 20px;
-          box-shadow: 0 13px 78px -11px rgba(50,50,93,.05), 0 8px 16px -3px rgba(0,0,0,.05), 0 0 5px -10px rgba(0,0,0,.05);
           display: flex;
           flex-direction: column;
-          margin-bottom: 1rem;
-          padding: 1.5rem 1.75rem;
+          height: 100%;
+          box-sizing: border-box;
         }
 
         h2 {
           margin: 0;
           color: var(--grey-900);
           font-size: 21px;
-          font-weight: 900;
-          font-family: var(--ff-sans-serif);
-        }
-
-        h2 > a {
+          font-weight: 700;
           line-height: 1.4;
-          color: var(--grey-900);
         }
-
-        a:after {content: "→";}
 
         p {
-          font-size: 18px;
-          font-family: var(--ff-serif);
+          font-size: 16px;
           font-weight: 400;
-          margin: 0.5rem 0;
-          line-height: 1.5;
-          color: var(--grey-700);
+          margin: 0.75rem 0;
+          line-height: 1.6;
+          color: var(--grey-800);
         }
 
         .title {
+          color: var(--primary-900);
           transition: color 0.35 ease;
-          text-decoration: none;
         }
-
+        
         .title:hover,
         .title:focus {
-          text-decoration: underline;
+          text-decoration: none;
         }
 
         ul {
           display: flex;
           padding: 0;
-          margin: 0.5rem 0 0 0;
+          margin: 0;
           flex-wrap: wrap;
         }
         li {
-          background-color: var(--primary-100);
-          border-radius: 5px;
-          color: var(--primary-800);
+          color: var(--grey-900);
           font-size: 14px;
           list-style: none;
-          padding: 0.25rem 0.75rem;
           text-transform: capitalize;
-          border-radius: 999px;
           min-width: 35px;
-          text-align: center;
-          font-weight: bold;
-          margin: 0.2rem;
+          font-weight: 600;
+          margin-right: 0.5rem;
+          margin-bottom: 0.25rem;
+
         }
         li:before {
           content: '#';
           font-weight: bold;
-        }
-
-        @media screen and (min-width: 768px) {
-          article {
-            padding: 2rem;
-          }
         }
       `}</style>
     </article>
