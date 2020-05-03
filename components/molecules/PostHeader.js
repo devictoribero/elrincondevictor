@@ -24,8 +24,7 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
 
       <style jsx>{`
         header {
-          position: relative;
-          padding: 2rem 1rem;
+          padding: 2rem 0;
         }
 
         h1 {
@@ -53,52 +52,12 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
 
         @media screen and (min-width: 768px) {
           header {
-            padding: 3rem;
+            padding: 3rem 0;
             text-align: center;
-          }
-
-          header:before,
-          header:after {
-            position: absolute;
-            content: "";
-            z-index: -1;
-            border-radius: 20px;
-          }
-
-          header:before {
-            top: 0;
-            bottom: -1rem;
-            left: -1.5rem;
-            right: -1.5rem;
-            background-color: #fff4e5;
-          }
-
-          header:after {
-            height: 75px;
-            background: white;
-            left: -1rem;
-            right: -1rem;
-            bottom: -50px;
           }
 
           h1 {
             font-size: 52px;
-          }
-        }
-
-        @media screen and (min-width: 1024px) {
-          header:before {
-            left: -100px;
-            right: -100px;
-            bottom: -75px;
-          }
-  
-          header:after {
-            height: 200px;
-            background: white;
-            left: -50px;
-            right: -50px;
-            bottom: -190px;
           }
         }
       `}</style>

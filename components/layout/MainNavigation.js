@@ -58,7 +58,6 @@ export function MainNavigation({route}) {
           position: relative;
           padding: 0.5rem 0;
           font-size: 1rem;
-          font-weight: 900;
           color: var(--grey-500);
         }
 
