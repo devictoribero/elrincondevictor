@@ -3,8 +3,8 @@ author_name: Victor Ribero
 author_img_src: /static/img/victor-ribero-avatar.jpg
 title: Learn how to target keywords with Ahrefs
 slug: learn-how-to-target-keywords-with-ahrefs
-description: Identify with Ahrefs what keywords work better for you by examples
-createdAt: 2020-05-03
+description: Identify with Ahrefs what keywords work better for you by real world examples
+createdAt: 2020-05-14
 updatedAt: null
 tags: [entrepreneurship, products, growth, seo]
 ---
@@ -61,7 +61,7 @@ At first, I was going to use pet-friendly plants, because it sounds cute, "cool"
 
 At the top of the page, you can see many links. Keywords Explorer is a tool that allows you to research by many keywords (separate them by commas) at the same time which is good if you want to compare different keywords that are related or you want to compare them.
 
- ![A list of keywords with some metrics calculated for each one. Monthly volume, clicks, keyword difficulty, conversion, etc.](/static/img/learn-how-to-target-keywords-with-ahrefs-1.png)
+ ![The home page of the Ahrefs' Keywords Searcher tool which allows you to choose what keywords you want to compare, in what countries and for what countries](/static/img/learn-how-to-target-keywords-with-ahrefs-1.png)
 
 As you can see in the image below, sometimes you will see that some keywords have no results. I've deduced that either is because they don't have enough traffic, or because no one searched for them on the platform before.
 
@@ -79,7 +79,7 @@ For each keyword you can see many metrics:
 6. Return rate
 
 
-![Message saying: "We couldn’t find data for keyword in our database. Most likely this is an unpopular keyword with low search volume." missing keyword: ](/static/img/learn-how-to-target-keywords-with-ahrefs-3.png)
+![A list of keywords with some metrics calculated for each one. Monthly volume, clicks, keyword difficulty, conversion, etc.](/static/img/learn-how-to-target-keywords-with-ahrefs-3.png)
 
 But I found the most relevant the following:
 
