@@ -45,6 +45,11 @@ export function PostPreview({title, description, slug, tags= []}) {
           color: var(--primary-900);
           transition: color 0.35 ease;
           font-family: var(--ff-sans-serif);
+          text-decoration: none;
+          border-bottom: 1px dashed currentColor;
+        }
+        .title:hover {
+          border-bottom: transparent;
         }
         
         .title:hover,
