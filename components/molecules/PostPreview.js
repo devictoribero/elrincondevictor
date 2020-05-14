@@ -28,8 +28,9 @@ export function PostPreview({title, description, slug, tags= []}) {
           margin: 0;
           color: var(--grey-900);
           font-size: 21px;
-          font-weight: 900;
+          font-weight: 700;
           line-height: 1.4;
+          letter-spacing: -1px;
         }
 
         p {
