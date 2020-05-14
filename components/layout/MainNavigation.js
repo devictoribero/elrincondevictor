@@ -16,16 +16,6 @@ export function MainNavigation({route}) {
               blog
             </a>
           </Link>
-          <Link href="/books">
-            <a className={`${isRoute(route, routes['/books'].page) ? 'selected' : ''}`}>
-              books
-            </a>
-          </Link>
-          <Link href="/learn-new-things">
-            <a className={`${isRoute(route, routes['/learn-new-things'].page) ? 'selected' : ''}`}>
-              learn new things
-            </a>
-          </Link>
         </div>
       </div>
 
@@ -41,10 +31,8 @@ export function MainNavigation({route}) {
         }
         .main-navigation__inner {
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          box-sizing: border-box;
+          justify-content: space-between;
+          align-items: center;
         }
 
         .logo {
@@ -59,6 +47,7 @@ export function MainNavigation({route}) {
           padding: 0.5rem 0;
           font-size: 1rem;
           color: var(--grey-500);
+          font-family: var(--ff-sans-serif);
         }
 
         a.selected,

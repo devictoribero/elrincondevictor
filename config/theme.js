@@ -32,6 +32,6 @@ export const palette = {
 };
 
 export const fonts = {
-  sansSerif: '"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+  sansSerif: '"Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
   serif: '"Merriweather", serif'
 }

@@ -17,9 +17,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@700;900&display=swap"
-            rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <Main />

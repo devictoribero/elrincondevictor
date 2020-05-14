@@ -38,8 +38,12 @@ export function Article({data, content}) {
           font-family: var(--ff-serif);
         }
 
-        article h1, h2,h3,h4,h5,h6 {
+        article h1, h2, h3, h4, h5, h6 {
           font-family: var(--ff-sans-serif);
+        }
+        
+        article h1 {
+          line-height: 1.25;
         }
 
         article h2 {
@@ -78,7 +82,7 @@ export function Article({data, content}) {
         }
 
         article > p:last-of-type {
-          margin: 3rem 0 2rem 0;
+          margin-bottom: 2rem;
         }
 
         article strong {
@@ -93,8 +97,8 @@ export function Article({data, content}) {
         }
 
         article li {
-          line-height: 1.25;
-          margin-bottom: 0.5rem;
+          line-height: 1.5;
+          margin-bottom: 0.75rem;
         }
 
         article a {

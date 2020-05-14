@@ -28,7 +28,7 @@ export function PostPreview({title, description, slug, tags= []}) {
           margin: 0;
           color: var(--grey-900);
           font-size: 21px;
-          font-weight: 700;
+          font-weight: 900;
           line-height: 1.4;
         }
 
@@ -43,6 +43,7 @@ export function PostPreview({title, description, slug, tags= []}) {
         .title {
           color: var(--primary-900);
           transition: color 0.35 ease;
+          font-family: var(--ff-sans-serif);
         }
         
         .title:hover,

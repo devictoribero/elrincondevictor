@@ -47,12 +47,11 @@ export default function Page() {
         @media screen and (min-width: 768px) {
           h1 {
             margin-bottom: 36px;
-            width: 600px;
             font-size: 75px;
           }
 
           p {
-            font-size: 21px;
+            font-size: 18px;
             width: 600px;
           }
         }
