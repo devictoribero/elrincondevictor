@@ -8,7 +8,8 @@
     "generate": "node ./bin/generate-content.js",
     "build": "npm run generate && next build",
     "export": "next export -o dist",
-    "deploy": "npm run build && npm run export"
+    "deploy": "npm run build && npm run export",
+    "puppeteer": "node ./bin/create-screenshots.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "gray-matter": "^4.0.2",
     "next": "^8.0.3",
     "prop-types": "^15.7.2",
+    "puppeteer": "^1.7.0",
     "raw-loader": "^2.0.0",
     "react": "*",
     "react-dom": "*",
