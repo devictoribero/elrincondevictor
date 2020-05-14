@@ -39,11 +39,13 @@ export function Article({data, content}) {
         }
 
         article h1, h2, h3, h4, h5, h6 {
-          font-family: var(--ff-sans-serif);
+          font-family: var(--ff-sans-serif) !important;
+          letter-spacing: -1px;
         }
         
         article h1 {
           line-height: 1.25;
+          letter-spacing: -1.75px;
         }
 
         article h2 {

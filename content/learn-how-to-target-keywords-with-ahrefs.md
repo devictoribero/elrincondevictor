@@ -111,4 +111,3 @@ Another benefit of choosing these keywords is that they cover 2 searches which a
 ## conclusion
 
 I like using Ahrefs when it comes to knowing exactly how much volume a keyword has, compare some keywords, or know the click ratio they have. On the other hand, Ahrefs is my preferred option when it comes to long-tail keywords because Google Trends is not good in these cases.
-
