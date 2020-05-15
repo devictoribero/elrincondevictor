@@ -42,7 +42,6 @@ export default function Page({pathname, article}) {
           font-size: 1.25rem;
           color: var(--c-grey-900);
           font-weight: 300;
-          margin-bottom: 1.25rem;
           font-family: var(--ff-serif);
         }
 
