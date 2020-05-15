@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const articles = require('../content/index.json');
 
 const articlesSlug = articles.list.map(article => article.slug);
-const getUrlBySlug = slug => `https://www.elrincondevictor.com/blog/${slug}`;
+const getUrlBySlug = slug => `https://elrincondevictor.com/blog/${slug}`;
 
 let mapFromUrlToImageName = {};
 articlesSlug.map(slug => {
