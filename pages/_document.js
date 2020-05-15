@@ -1,5 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document"
-import Seo from '../components/pages/Seo'
+import Seo from '../components/layout/Seo'
 
 export default class MyDocument extends Document {
   render() {
@@ -19,7 +19,11 @@ export default class MyDocument extends Document {
             rel="stylesheet" />
         </Head>
         <body>
-          <Main />
+          <div className='container-wrapper'>
+            <div className='container'>
+              <Main />
+            </div>
+          </div>
           <NextScript />
         </body>
       </html>

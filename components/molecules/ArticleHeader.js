@@ -1,7 +1,7 @@
 import {months} from '../../helpers/months';
 
-export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
-  const publicationDate = new Date(createdAt);
+export function ArticleHeader({title, date}) {
+  const publicationDate = new Date(date);
   const day = publicationDate.getDate();
   const month = months[publicationDate.getMonth()];
   const year = publicationDate.getFullYear();

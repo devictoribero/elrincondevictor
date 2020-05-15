@@ -1,8 +1,8 @@
 import {PostPreview} from './PostPreview';
 
-export function ArticlesSection({title, articles, className}) {
+export function ArticlesSection({title, articles}) {
   return (
-    <section className={className}>
+    <section>
       {title}
       <ul>
         {articles.map(post => (
@@ -12,10 +12,6 @@ export function ArticlesSection({title, articles, className}) {
         ))}
       </ul>
       <style jsx>{`
-        div {
-          max-width: 700px;
-        }
-        
         ul {
           display: grid;
           grid-template-columns: 1fr;
@@ -26,11 +22,6 @@ export function ArticlesSection({title, articles, className}) {
 
         li {
           list-style: none;
-        }
-
-        @media screen and (min-width: 768px) {
-          ul {
-          }
         }
       `}</style>
     </section>

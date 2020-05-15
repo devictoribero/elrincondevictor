@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import routes from '../../config/routes'
 
-export function MainNavigation({route}) {
+export function Navigation({route}) {
   return (
     <nav aria-label="Navegador principal">
-      <div className="container main-navigation__inner">
+      <div className="main-navigation__inner">
         <Link href="/">
           <a className="logo">Elrincondevictor</a>
         </Link>
@@ -21,7 +21,10 @@ export function MainNavigation({route}) {
 
       <style jsx>{`
         nav {
-          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 100px;
           background: red;
           margin-bottom: 2rem;
           position: sticky;

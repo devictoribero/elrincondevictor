@@ -3,9 +3,8 @@ import ReactMarkdown from 'react-markdown'
 import matter from 'gray-matter'
 import Error from '../_error'
 import {Layout} from '../../components/layout/Layout'
-import Seo from '../../components/pages/Seo'
-import {PostLayout} from '../../components/layout/PostLayout'
-import {PostHeader} from '../../components/molecules/PostHeader'
+import Seo from '../../components/layout/Seo'
+import {ArticleHeader} from '../../components/molecules/ArticleHeader'
 import {CustomPostLink, CustomPostImg} from '../../helpers/renders'
 
 Page.getInitialProps = async ({pathname, query}) => {
@@ -15,32 +14,29 @@ Page.getInitialProps = async ({pathname, query}) => {
 
   return {pathname, article: article, relatedArticles: relatedArticles}
 }
+
+
 export default function Page({pathname, article}) {
   if (!article) return <Error statusCode={404} />
 
   const {data, content} = article
-
-  const _article = (
-    <article>
-      <PostHeader
-        title={data.title}
-        imgSrc={data.img_src}
-        createdAt={data.createdAt}
-        authorName={data.author_name}
-        authorImgSrc={data.author_img_src}
-        author={{
-          name: data.author_name,
-          imgSrc: data.author_img_src
-        }}
-      />
-      <ReactMarkdown
-        source={content}
-        escapeHtml={false}
-        renderers={{
-          link: CustomPostLink,
-          image: CustomPostImg,
-        }}
-      />
+  return (
+    <Layout route={pathname}>
+      <Seo
+        title={`${article.data.title} | Elrincondevictor`}
+        description={`${article.data.description}`}
+        image={`/static/img/social-media/${article.data.slug}.png`}
+        canonical={`https://www.elrincondevictor.com/blog/${article.data.slug}`}/>
+      <main>
+        <article>
+          <ArticleHeader title={data.title} date={data.createdAt} />
+          <ReactMarkdown
+            source={content}
+            escapeHtml={false}
+            renderers={{ link: CustomPostLink, image: CustomPostImg }}
+          />
+        </article>
+      </main>
       <style jsx global>{`
         article {
           font-size: 1.25rem;
@@ -157,21 +153,6 @@ export default function Page({pathname, article}) {
           }
         }
       `}</style>
-    </article>
-  )
-  
-  return (
-    <Layout route={pathname}>
-      <Seo
-        title={`${article.data.title} | Elrincondevictor`}
-        description={`${article.data.description}`}
-        image={`/static/img/social-media/${article.data.slug}.png`}
-        canonical={`https://www.elrincondevictor.com/blog/${article.data.slug}`}/>
-      <div className='container-wrapper'>
-        <div className='container'>
-          <PostLayout main={_article} />
-        </div>
-      </div>
     </Layout>
   )
 }

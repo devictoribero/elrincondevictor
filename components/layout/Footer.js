@@ -1,6 +1,6 @@
 import {socials} from '../../config/social'
 
-export function MainFooter() {
+export function Footer() {
   return (
     <footer className="container-wrapper main-footer">
     <div className="container">

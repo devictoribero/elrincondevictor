@@ -1,13 +1,13 @@
 import {Fragment} from 'react'
-import {MainNavigation} from './MainNavigation'
-import {MainFooter} from './MainFooter'
+import {Navigation} from './Navigation'
+import {Footer} from './Footer'
 
 export function Layout({route, children}) {
   return(
     <Fragment>
-      <MainNavigation route={route}/>
+      <Navigation route={route}/>
       {children}
-      <MainFooter/>
+      <Footer/>
     </Fragment>
   )
 }
