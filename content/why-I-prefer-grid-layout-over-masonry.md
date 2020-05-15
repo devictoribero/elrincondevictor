@@ -1,10 +1,10 @@
 ---
 author_name: Victor Ribero
-author_img_src: /static/img/victor-ribero-avatar.jpg
+author_img_src: /public/img/victor-ribero-avatar.jpg
 title: Why I prefer grid layout over masonry
 slug: why-I-prefer-grid-layout-over-masonry
 description: Learn why it's better to use grid layout over masonry for better user experience, performance and conversions.
-img_src: /static/img/why-I-prefer-grid-layout-over-masonry-1.png
+img_src: /public/img/why-I-prefer-grid-layout-over-masonry-1.png
 date: 2020-04-10
 tags: [entrepreneurship, products, user experience]
 ---
@@ -13,7 +13,7 @@ If you have built or you're currently building a product, I'm sure you have a "l
 
 At first, I chose a masonry layout because I thought it was beautiful as you can see in the image below 👇.
 
-![A lot of plants of ChooseYourPlant shown using the masonry style](/static/img/why-I-prefer-grid-layout-over-masonry-1.png)
+![A lot of plants of ChooseYourPlant shown using the masonry style](/public/img/why-I-prefer-grid-layout-over-masonry-1.png)
 
 But was is the best option for my product? Not really. I'll tell you why I finally chose grid layout over masonry:
 
@@ -25,7 +25,7 @@ When a people visit your application, they will look at the top-left corner, and
 
 In my honest opinion masonry makes the content more difficult to be analyzed by people from America and Europe. We can increase the easiness of this by using a grid layout because the user can follow this reading pattern easily.
 
-![A grid layout with 2 arrows pointing from top-to-bottom and left-to-right showing our process pattern](/static/img/why-I-prefer-grid-layout-over-masonry-2.png)
+![A grid layout with 2 arrows pointing from top-to-bottom and left-to-right showing our process pattern](/public/img/why-I-prefer-grid-layout-over-masonry-2.png)
 
 ## Grid design has less cognitive load which means better user experience
 
@@ -41,7 +41,7 @@ I have more control over the elements in the list with a grid layout. This is a 
 2. For tablet resolutions, I show the ads in the same rows but of the third column.
 2. For desktop resolutions, I show the ads in the first, third and fifth rows of the fifth column.
 
-![image with sponsors](/static/img/why-I-prefer-grid-layout-over-masonry-3.png)
+![image with sponsors](/public/img/why-I-prefer-grid-layout-over-masonry-3.png)
 
 ## Grid layout has better web performance and no visual bugs for me
 
@@ -53,7 +53,7 @@ What the hell does this mean 🤯? Re-flow is the proccess every browser do to r
 
 These 2 process (re-flow and re-paint) are expensive and should be optimized whenever possible because if not, we could start seeing some delay in our web application or website.
 
-![Showing how some images were moving between columns when fetching the images after scrolling](/static/img/why-I-prefer-grid-layout-over-masonry-4.gif)
+![Showing how some images were moving between columns when fetching the images after scrolling](/public/img/why-I-prefer-grid-layout-over-masonry-4.gif)
 
 
 ## Grid layout allows me to optimize content for SEO
@@ -62,7 +62,7 @@ It is not something new that the content that is closest to the bottom of the pa
 
 With a grid layout I can easily place the sponsors or advertisements at the end of the list, and place them whenever I want with just CSS. This is relly good because I want to place my most valuable content for the users at the top of hte page, and advertisements are not.
 
-![HTML code showing the advertisement nodes are at the end of the results list](/static/img/why-I-prefer-grid-layout-over-masonry-5.png)
+![HTML code showing the advertisement nodes are at the end of the results list](/public/img/why-I-prefer-grid-layout-over-masonry-5.png)
 
 ## Conclusion
 

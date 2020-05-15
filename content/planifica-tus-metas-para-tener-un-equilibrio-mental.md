@@ -1,11 +1,11 @@
 ---
 author_name: Victor Ribero
-author_img_src: /static/img/victor-ribero-avatar.jpg
+author_img_src: /public/img/victor-ribero-avatar.jpg
 title: 4 tipos de tareas que hemos de planificar para un equilibrio mental
 slug: planifica-tus-metas-para-tener-un-equilibrio-mental
 description: Aprende cuánto afecta a tu equilibrio mental y estado de ánimo una mala preparación de las distintas tareas de nuestra vida.
-img_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg
-img_preview_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental-preview.jpg
+img_src: /public/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg
+img_preview_src: /public/img/planifica-tus-metas-para-tener-un-equilibrio-mental-preview.jpg
 date: 2019-02-27
 tags: [productivity, mental health]
 ---

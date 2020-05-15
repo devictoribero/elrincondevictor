@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
 						rel="preload"
-						href="/static/css/index.css"
+						href="/public/css/index.css"
 						rel="stylesheet"
 					/>
           <link

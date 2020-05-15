@@ -25,7 +25,7 @@ export default function Page({pathname, article}) {
       <SeoMetaInfo
         title={`${article.data.title} | Elrincondevictor`}
         description={`${article.data.description}`}
-        image={`https://elrincondevictor.com/static/img/social-media/${article.data.slug}.png`}
+        image={`https://elrincondevictor.com/public/img/social-media/${article.data.slug}.png`}
         canonical={`https://www.elrincondevictor.com/blog/${article.data.slug}`}/>
       <main>
         <article>
@@ -84,6 +84,7 @@ export default function Page({pathname, article}) {
           hyphens: auto;
           font-size: 18px;
           font-weight: 400;
+          letter-spacing: 0.5px;
         }
 
         article p + p {

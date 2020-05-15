@@ -1,11 +1,11 @@
 ---
 author_name: Victor Ribero
-author_img_src: /static/img/victor-ribero-avatar.jpg
+author_img_src: /public/img/victor-ribero-avatar.jpg
 title: Why I will start writing articles in English
 slug: english-articles
 description: I point out the regrets for not writing in English sooner, why that's the right thing to do for most of cases and why you should do it too.
-img_src: /static/img/english-articles.png
-img_preview_src: /static/img/english-articles-preview.png
+img_src: /public/img/english-articles.png
+img_preview_src: /public/img/english-articles-preview.png
 date: 2019-10-17
 tags: [thoughts]
 ---
