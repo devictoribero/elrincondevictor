@@ -1,6 +1,6 @@
 import {PostPreview} from './PostPreview';
 
-export function ArticlesSection({title, articles}) {
+export function ArticlesList({title, articles}) {
   return (
     <section>
       {title}
@@ -28,15 +28,10 @@ export function ArticlesSection({title, articles}) {
   )
 }
 
-export function ArticlesSectionTitle({heading, children}) {
+export function ArticlesListTitle({children}) {
   return (
     <header>
-      {heading === 'h1' && <h1>{children}</h1>}
-      {heading === 'h2' && <h2>{children}</h2>}
-      {heading === 'h3' && <h3>{children}</h3>}
-      {heading === 'h4' && <h4>{children}</h4>}
-      {heading === 'h5' && <h5>{children}</h5>}
-      {heading === 'h6' && <h6>{children}</h6>}      
+      <h1>{children}</h1>
 
       <style jsx>{`
         header {
@@ -44,15 +39,12 @@ export function ArticlesSectionTitle({heading, children}) {
           color: var(--grey-900);
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1 {
           margin: 0;
           font-variant: all-small-caps;
           font-weight: 700;
+          font-size: 23px;
         }
-
-        h1 { font-size: 23px; }
-        h2 { font-size: 18px; }
-        h3 { font-size: 16px; }
       `}</style>
     </header>
   )

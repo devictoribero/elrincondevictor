@@ -3,9 +3,9 @@ import Error from '../_error'
 import Seo from '../../components/layout/Seo'
 import {Layout} from '../../components/layout/Layout'
 import {
-  ArticlesSection,
-  ArticlesSectionTitle
-} from '../../components/molecules/ArticlesSection'
+  ArticlesList,
+  ArticlesListTitle
+} from '../../components/molecules/ArticlesList'
 
 
 export default function Blog({pathname, articles}) {
@@ -22,8 +22,8 @@ export default function Blog({pathname, articles}) {
         title='This is my corner, where I share my philosophy of life and curiosities.'
         subtitle='I talk about a healthy lifestyle, products, software development and entrepreneurship.'/>
       <main>
-        <ArticlesSection
-          title={<ArticlesSectionTitle heading='h1'>Articles</ArticlesSectionTitle>}
+        <ArticlesList
+          title={<ArticlesListTitle>Articles</ArticlesListTitle>}
           articles={articles}/>  
       </main>
     </Layout>
