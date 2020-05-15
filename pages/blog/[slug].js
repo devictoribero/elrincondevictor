@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import matter from 'gray-matter'
 import Error from '../_error'
 import {Layout} from '../../components/layout/Layout'
-import Seo from '../../components/layout/Seo'
+import {SeoMetaInfo} from '../../components/layout/SeoMetaInfo'
 import {ArticleHeader} from '../../components/molecules/ArticleHeader'
 import {CustomPostLink, CustomPostImg} from '../../helpers/renders'
 
@@ -22,7 +22,7 @@ export default function Page({pathname, article}) {
   const {data, content} = article
   return (
     <Layout route={pathname}>
-      <Seo
+      <SeoMetaInfo
         title={`${article.data.title} | Elrincondevictor`}
         description={`${article.data.description}`}
         image={`https://elrincondevictor.com/static/img/social-media/${article.data.slug}.png`}

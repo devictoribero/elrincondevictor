@@ -1,10 +1,10 @@
 import {Layout} from '../components/layout/Layout'
-import {Seo} from '../components/layout/Seo'
+import {SeoMetaInfo} from '../components/layout/SeoMetaInfo'
 
 export default function Page() {
   return (
     <Layout>
-      <Seo />
+      <SeoMetaInfo />
       <header>
         <h1>Hello,<br/>I'm Victor Ribero.</h1>
         <p>I'm a software engineer 👨‍💻 who likes to connect with other people's souls ❤️ and nature. This is why I'm building <a href='https://www.chooseyourplant.com'>a worldwide community for houseplant lovers</a>.</p>

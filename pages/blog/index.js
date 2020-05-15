@@ -1,6 +1,6 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Error from '../_error'
-import Seo from '../../components/layout/Seo'
+import {SeoMetaInfo} from '../../components/layout/SeoMetaInfo'
 import {Layout} from '../../components/layout/Layout'
 import {
   ArticlesList,
@@ -13,7 +13,7 @@ export default function Blog({pathname, articles}) {
 
   return (
     <Layout route={pathname}>
-      <Seo
+      <SeoMetaInfo
         title='Welcome to my corner · Elrincondevictor'
         description='Productivity, thoughts, things I learn and do and a life style to have a healthy and balanced life.'
         canonical='https://www.elrincondevictor.com/blog'
