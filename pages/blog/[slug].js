@@ -40,7 +40,7 @@ export default function Page({pathname, article}) {
       <style jsx global>{`
         article {
           font-size: 1.25rem;
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           font-weight: 300;
           margin-bottom: 1.25rem;
           font-family: var(--ff-serif);
@@ -112,7 +112,7 @@ export default function Page({pathname, article}) {
         }
 
         article a {
-          color: var(--primary-800);
+          color: var(--c-primary-800);
         }
 
         article blockquote > p {
@@ -131,7 +131,7 @@ export default function Page({pathname, article}) {
         }
 
         article hr {
-          background: linear-gradient(to right,var(--primary-000),var(--primary-100));
+          background: linear-gradient(to right,var(--c-primary-000),var(--c-primary-100));
           margin: 3rem 0;
           height: 2px;
           border: none;

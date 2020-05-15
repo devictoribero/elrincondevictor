@@ -60,7 +60,7 @@ function Header({title, subtitle}) {
         p {
           display: block;
           margin: 0.75rem auto;
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           font-size: 21px;
           line-height: 1.75;
         }

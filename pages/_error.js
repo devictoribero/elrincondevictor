@@ -4,21 +4,15 @@ import Link from 'next/link'
 import {Layout} from '../components/layout/Layout'
 
 const Error = () => {
-  const link = (
-    <Link href='/blog'>
-      <a>relax by reading any of the articles I wrote 📝.</a>
-    </Link>
-  )
-
   return (
     <Layout>
-      <div className='container-wrapper'>
-        <div className='container'>
-          <p>
-            I'm sorry for the inconvenience, but at this moment this part of the web is not available. 
-          </p>
-          <p className='bold'>Grab a coffe ☕, a tea 🍵, or whatever you like 🍺 and {link}</p>
-        </div>
+      <div>
+        <p>
+          I'm sorry for the inconvenience, but at this moment this part of the web is not available. 
+        </p>
+        <p className='bold'>
+          Grab a coffe ☕, a tea 🍵, or whatever you like 🍺 and <Link href='/blog'><a>relax by reading any of the articles I wrote 📝.</a></Link>
+        </p>
       </div>
       <style jsx>{`
         div.container {
@@ -27,13 +21,12 @@ const Error = () => {
         }
 
         p {
-          max-width: 700px;
           font-size: 21px;
           line-height: 1.5;
         }
 
         a {
-          color: var(--primary-500);
+          color: var(--c-primary-500);
         }
 
         .bold {font-weight: 700;}

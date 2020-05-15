@@ -36,7 +36,7 @@ export function ArticlesListTitle({children}) {
       <style jsx>{`
         header {
           margin: 0 0 0.5rem 0;
-          color: var(--grey-900);
+          color: var(--c-grey-900);
         }
 
         h1 {

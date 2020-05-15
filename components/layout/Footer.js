@@ -24,7 +24,7 @@ export function Footer() {
           min-height: 75px;
           align-items: center;
           align-content: center;
-          color: var(--grey-600);
+          color: var(--c-grey-600);
           flex-wrap: wrap;
         }
 
@@ -43,12 +43,12 @@ export function Footer() {
           right: -10px;
           height: 3px;
           width: 3px;
-          background: var(--grey-900);
+          background: var(--c-grey-900);
           border-radius: 999px;
         }
 
         .link.social:visited {
-          color: var(--primary-900);
+          color: var(--c-primary-900);
         }
       `}</style>
     </footer>

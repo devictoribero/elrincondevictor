@@ -26,7 +26,7 @@ export function PostPreview({title, description, slug, tags= []}) {
 
         h2 {
           margin: 0;
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           font-size: 21px;
           font-weight: 700;
           line-height: 1.4;
@@ -38,11 +38,11 @@ export function PostPreview({title, description, slug, tags= []}) {
           font-weight: 400;
           margin: 0.75rem 0;
           line-height: 1.6;
-          color: var(--grey-800);
+          color: var(--c-grey-800);
         }
 
         .title {
-          color: var(--primary-900);
+          color: var(--c-primary-900);
           transition: color 0.35 ease;
           font-family: var(--ff-sans-serif);
           text-decoration: none;
@@ -64,7 +64,7 @@ export function PostPreview({title, description, slug, tags= []}) {
           flex-wrap: wrap;
         }
         li {
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           font-size: 14px;
           list-style: none;
           text-transform: capitalize;

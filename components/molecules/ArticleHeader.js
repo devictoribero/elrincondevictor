@@ -29,7 +29,7 @@ export function ArticleHeader({title, date}) {
 
         h1 {
           margin: 0 0 0.5rem 0;
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           font-size: 36px;
           font-family: var(--ff-serif);
           line-height: 1.15;
@@ -41,7 +41,7 @@ export function ArticleHeader({title, date}) {
         }
 
         span {
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           font-size: 1rem;
           font-weight: 400;
         }

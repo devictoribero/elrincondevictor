@@ -22,7 +22,7 @@ export default function Page() {
 
         h1 {
           font-family: var(--ff-serif);
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           margin-bottom: 24px;
           font-size: 60px;
           line-height: 1.125;
@@ -32,14 +32,14 @@ export default function Page() {
         p {
           display: block;
           margin-bottom: 16px;
-          color: var(--grey-900);
+          color: var(--c-grey-900);
           font-size: 18px;
           line-height: 1.75;
         }
 
 
         a {
-          color: var(--primary-900);
+          color: var(--c-primary-900);
         }
 
         @media screen and (min-width: 768px) {

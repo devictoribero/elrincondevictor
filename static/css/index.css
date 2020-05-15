@@ -1,28 +1,25 @@
 :root {
-  --grey-900: hsl(42, 15%, 13%);
-  --grey-800: hsl(40, 13%, 23%);
-  --grey-700: hsl(37, 11%, 28%);
-  --grey-600: hsl(41, 9%, 35%);
-  --grey-500: hsl(41, 8%, 48%);
-  --grey-400: hsl(41, 8%, 61%);
-  --grey-300: hsl(39, 11%, 69%);
-  --grey-200: hsl(40, 15%, 80%);
-  --grey-100: hsl(43, 13%, 90%);
-  --grey-000: hsl(40, 23%, 97%);
+  --c-grey-900: hsl(42, 15%, 13%);
+  --c-grey-800: hsl(40, 13%, 23%);
+  --c-grey-700: hsl(37, 11%, 28%);
+  --c-grey-600: hsl(41, 9%, 35%);
+  --c-grey-500: hsl(41, 8%, 48%);
+  --c-grey-400: hsl(41, 8%, 61%);
+  --c-grey-300: hsl(39, 11%, 69%);
+  --c-grey-200: hsl(40, 15%, 80%);
+  --c-grey-100: hsl(43, 13%, 90%);
+  --c-grey-000: hsl(40, 23%, 97%);
 
-  --primary-900: hsl(15, 86%, 30%);
-  --primary-800: hsl(22, 82%, 39%);
-  --primary-700: hsl(29, 80%, 44%);
-  --primary-600: hsl(36, 77%, 49%);
-  --primary-500: hsl(42, 87%, 55%);
-  --primary-400: hsl(44, 92%, 63%);
-  --primary-300: hsl(48, 94%, 68%);
-  --primary-200: hsl(48, 95%, 76%);
-  --primary-100: hsl(48, 100%, 88%);
-  --primary-000: hsl(49, 100%, 96%);
-
-  --social-twitter: #1b95e0;
-  --social-twitter-dark: #006dbf;
+  --c-primary-900: hsl(15, 86%, 30%);
+  --c-primary-800: hsl(22, 82%, 39%);
+  --c-primary-700: hsl(29, 80%, 44%);
+  --c-primary-600: hsl(36, 77%, 49%);
+  --c-primary-500: hsl(42, 87%, 55%);
+  --c-primary-400: hsl(44, 92%, 63%);
+  --c-primary-300: hsl(48, 94%, 68%);
+  --c-primary-200: hsl(48, 95%, 76%);
+  --c-primary-100: hsl(48, 100%, 88%);
+  --c-primary-000: hsl(49, 100%, 96%);
 
   --ff-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -62,11 +59,15 @@ h7 {
 }
 
 *:focus {
-  outline: 2px dashed;
+  outline: 1px dashed;
 }
 
 code {
-  background: linear-gradient(to right, var(--primary-000), var(--primary-100));
+  background: linear-gradient(
+    to right,
+    var(--c-primary-000),
+    var(--c-primary-100)
+  );
   border-radius: 3px;
   padding: 2px 4px;
   hyphens: auto;
@@ -75,7 +76,7 @@ code {
 
 a.link-like {
   position: relative;
-  color: var(--primary-800);
+  color: var(--c-primary-800);
   cursor: pointer;
   transition: color 0.25s ease;
 
@@ -85,7 +86,7 @@ a.link-like {
 
 a.link-like:hover,
 a.link-like:active {
-  color: var(--primary-900);
+  color: var(--c-primary-900);
   box-shadow: none;
 }
 
