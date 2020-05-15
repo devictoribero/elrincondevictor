@@ -19,7 +19,8 @@ module.exports = {
 	exportPathMap: async function(defaultPathMap) {
 		// we remove this because the defaultPathMap has it, and we don't want to export it
 		// becase we'll generate the export for each plant dynamically
-		delete defaultPathMap["/[slug]"]
+		delete defaultPathMap["/blog/[slug]"]
+		
     
 		let routes = {
 			// we spread defaultPathMap because it contains:
@@ -39,8 +40,10 @@ module.exports = {
 async function getArticleUrls() {
 	let routes = []
 	articles.list.forEach(article => {
+		if (!article) { return }
+
 		const {slug: articleSlug} = article
-		const articlePath = `/${articleSlug}`
+		const articlePath = `/blog/${articleSlug}`
 		routes[articlePath] = { page: "/blog/[slug]", query: { slug : articleSlug}}
 	})
 
