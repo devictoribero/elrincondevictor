@@ -53,11 +53,10 @@ export function PostHeader({title, author, createdAt, updatedAt, imgSrc}) {
         @media screen and (min-width: 768px) {
           header {
             padding: 3rem 0;
-            text-align: center;
           }
 
           h1 {
-            font-size: 52px;
+            font-size: 47px;
           }
         }
       `}</style>
