@@ -11,8 +11,6 @@ export default function Page() {
 
       <style jsx>{`
         header {
-          min-height: calc(100vh - 250px);
-          box-sizing: border-box;
           display: flex;
           flex-direction: column;
           justify-content: center;
