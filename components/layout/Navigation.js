@@ -14,7 +14,8 @@ export function Navigation() {
           justify-content: space-between;
           align-items: center;
           min-height: 75px;
-          margin: 0.5rem 0;
+          margin-top: 25px;
+          margin-bottom: 50px;
           position: sticky;
           top: 0;
           z-index: 1;
@@ -32,6 +33,12 @@ export function Navigation() {
         a:hover,
         a:focus {
           color: black;
+        }
+
+        @media screen and (min-width: 768px) {
+          nav {
+            margin-bottom 100px;
+          }
         }
       `}</style>
     </nav>

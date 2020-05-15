@@ -1,4 +1,4 @@
-import {PostPreview} from './PostPreview';
+import {ArticlePreview} from './ArticlePreview';
 
 export function ArticlesList({title, articles}) {
   return (
@@ -7,7 +7,7 @@ export function ArticlesList({title, articles}) {
       <ul>
         {articles.map(post => (
           <li key={post.slug}>
-            <PostPreview {...post}/>
+            <ArticlePreview {...post}/>
           </li>
         ))}
       </ul>

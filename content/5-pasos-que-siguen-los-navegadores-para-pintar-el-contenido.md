@@ -6,8 +6,7 @@ slug: 5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido
 description: Todas páginas web están formadas por html, css y Javascript pero, ¿Sabes como el navegador trata cada uno de ellos y que pasos sigue para saber que contenido renderizar?
 img_src: /static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido.jpg
 img_preview_src: /static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-preview.jpg
-createdAt: 2019-06-19
-updatedAt: null
+date: 2019-06-19
 tags: [tech]
 ---
 

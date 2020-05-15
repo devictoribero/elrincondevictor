@@ -29,7 +29,7 @@ export default function Page({pathname, article}) {
         canonical={`https://www.elrincondevictor.com/blog/${article.data.slug}`}/>
       <main>
         <article>
-          <ArticleHeader title={data.title} date={data.createdAt} />
+          <ArticleHeader title={data.title} date={data.date} />
           <ReactMarkdown
             source={content}
             escapeHtml={false}

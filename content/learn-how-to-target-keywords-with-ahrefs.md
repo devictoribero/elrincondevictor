@@ -4,8 +4,7 @@ author_img_src: /static/img/victor-ribero-avatar.jpg
 title: Learn how to target keywords with Ahrefs
 slug: learn-how-to-target-keywords-with-ahrefs
 description: Identify with Ahrefs what keywords work better for you by real world examples
-createdAt: 2020-05-14
-updatedAt: null
+date: 2020-05-14
 tags: [entrepreneurship, products, growth, seo]
 ---
 

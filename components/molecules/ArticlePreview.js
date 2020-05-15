@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-export function PostPreview({title, description, slug, tags= []}) {
+export function ArticlePreview({title, description, slug, tags= []}) {
   return (
     <article>
         <h2>
@@ -64,25 +64,24 @@ export function PostPreview({title, description, slug, tags= []}) {
           flex-wrap: wrap;
         }
         li {
-          color: var(--c-grey-900);
+          padding: 0.15rem 0.35rem;
+          background-color: var(--c-grey-000);
+          border-radius: 5px;
+          color: var(--c-grey-600);
           font-size: 14px;
           list-style: none;
-          text-transform: capitalize;
           min-width: 35px;
           font-weight: 600;
           margin-right: 0.5rem;
           margin-bottom: 0.25rem;
-
-        }
-        li:before {
-          content: '#';
-          font-weight: bold;
+          font-family: var(--ff-sans-serif);
+          text-align: center;
         }
       `}</style>
     </article>
   )
 }
-PostPreview.propTypes = {
+ArticlePreview.propTypes = {
   title: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

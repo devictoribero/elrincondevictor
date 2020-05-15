@@ -7,8 +7,8 @@ const INPUT_PATH = resolve(CONTENT_DIR)
 const OUTPUT_PATH = resolve(CONTENT_DIR)
 const ENCODING = 'utf-8'
 
-const postsFileName = getPostsFileName(INPUT_PATH)
-const allPosts = getPostsArrayFromFileNames(postsFileName).sort(orderByUpdatedDateDesc)
+const postsFileName = getArticlesFileName(INPUT_PATH)
+const allPosts = getArticlesArrayFromFileNames(postsFileName).sort(orderByDate)
 
 console.log(allPosts)
 
@@ -52,18 +52,16 @@ function getContentByFileName(fileName){
  * @returns {String}
  */
 function getIndex(postsFileName) {
-  let allPosts  = getPostsArrayFromFileNames(postsFileName).sort(orderByUpdatedDateDesc)
-  let featured = allPosts.filter(isFeatured).sort(orderByUpdatedDateDesc)
+  let allPosts  = getArticlesArrayFromFileNames(postsFileName).sort(orderByDate)
 
   const fileContent = {
-    featured: featured,
     list: allPosts,
   }
 
   return fileContent;
 }
 
-function getPostsArrayFromFileNames(postsFileName){
+function getArticlesArrayFromFileNames(postsFileName){
   let posts = []
 
   for (var i = 0, length = postsFileName.length; i < length; i++) {
@@ -81,12 +79,12 @@ function getPostsArrayFromFileNames(postsFileName){
  * @param {Object} postB
  * @returns {Boolean}
  */
-function orderByUpdatedDateDesc(postA, postB) {
+function orderByDate(postA, postB) {
   return +new Date(getPostDate(postA)) < +new Date(getPostDate(postB))
 }
 
 function getPostDate(post) {
-  return post.updatedDate ? post.updatedDate : post.createdAt 
+  return post.updatedDate ? post.updatedDate : post.date 
 }
 
 function afterWriteFile(error, fileName){
@@ -99,10 +97,6 @@ function getProductivity() {
   return { posts: productivityPosts }
 }
 
-function isFeatured(post) {
-  return post.isFeatured
-}
-
 function hasTag(post, tagName) {
   return (post.tags.filter(tag =>  tag === tagName)).length > 0
 }
@@ -112,7 +106,7 @@ function hasTag(post, tagName) {
  * @param {String} dir
  * @returns {Array}
  */
-function getPostsFileName(directory) {
+function getArticlesFileName(directory) {
   try {
     const files = fs.readdirSync(directory);
     const mdFiles = files.filter(file => file.split('.')[1] === 'md');

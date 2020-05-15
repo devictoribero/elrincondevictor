@@ -6,8 +6,7 @@ slug: chooseyourplant-houseplant-marketplace
 description: Chooseyourplant is a houseplant marketplace to discover plants that match your likes as no ones has never done. Its intention is to simplify the search of plants, cares and more!
 img_src: /static/img/chooseyourplant-houseplant-marketplace.png
 img_preview_src: /static/img/chooseyourplant-houseplant-marketplace-preview.png
-createdAt: 2019-10-11
-updatedAt: null
+date: 2019-10-11
 tags: [products, entrepreneurship]
 ---
 

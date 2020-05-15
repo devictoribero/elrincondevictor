@@ -6,8 +6,7 @@ slug: improve-your-community-or-blog-seo-and-ux-with-metrics
 description: I explain how I improved ChooseYourPlant SEO and user experience by analyzing some metrics and how you can do the same for your blog or community.
 img_src: /static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png
 img_preview_src: /static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-preview.png
-createdAt: 2020-03-28
-updatedAt: null
+date: 2020-03-28
 tags: [entrepreneurship, products, growth]
 ---
 

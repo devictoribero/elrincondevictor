@@ -24,7 +24,7 @@ export function ArticleHeader({title, date}) {
 
       <style jsx>{`
         header {
-          padding: 2rem 0;
+          margin-bottom: 50px;
         }
 
         h1 {
@@ -52,7 +52,7 @@ export function ArticleHeader({title, date}) {
 
         @media screen and (min-width: 768px) {
           header {
-            padding: 3rem 0;
+            margin-bottom: 75px;
           }
 
           h1 {

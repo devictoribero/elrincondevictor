@@ -5,8 +5,7 @@ title: Why I prefer grid layout over masonry
 slug: why-I-prefer-grid-layout-over-masonry
 description: Learn why it's better to use grid layout over masonry for better user experience, performance and conversions.
 img_src: /static/img/why-I-prefer-grid-layout-over-masonry-1.png
-createdAt: 2020-04-10
-updatedAt: null
+date: 2020-04-10
 tags: [entrepreneurship, products, user experience]
 ---
 

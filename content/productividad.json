@@ -1,1 +1,28 @@
-{"posts":[{"author_name":"Victor Ribero","author_img_src":"/static/img/victor-ribero-avatar.jpg","title":"6 sencillos pasos para organizar tu semana","slug":"6-sencillos-pasos-para-organizar-tu-semana","description":"¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana","img_src":"/static/img/6-sencillos-pasos-para-organizar-tu-semana.jpg","img_preview_src":"/static/img/6-sencillos-pasos-para-organizar-tu-semana-preview.jpg","createdAt":"2019-03-13T00:00:00.000Z","updatedAt":null,"tags":["productividad"]},{"author_name":"Victor Ribero","author_img_src":"/static/img/victor-ribero-avatar.jpg","title":"4 tipos de tareas que hemos de planificar para un equilibrio mental","slug":"planifica-tus-metas-para-tener-un-equilibrio-mental","description":"Aprende cuánto afecta a tu equilibrio mental y estado de ánimo una mala preparación de las distintas tareas de nuestra vida.","img_src":"/static/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg","img_preview_src":"/static/img/planifica-tus-metas-para-tener-un-equilibrio-mental-preview.jpg","createdAt":"2019-02-27T00:00:00.000Z","updatedAt":null,"tags":["productividad","paz interior"]}]}
+{
+  "posts": [
+    {
+      "author_name": "Victor Ribero",
+      "author_img_src": "/static/img/victor-ribero-avatar.jpg",
+      "title": "6 sencillos pasos para organizar tu semana",
+      "slug": "6-sencillos-pasos-para-organizar-tu-semana",
+      "description": "¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana",
+      "img_src": "/static/img/6-sencillos-pasos-para-organizar-tu-semana.jpg",
+      "img_preview_src": "/static/img/6-sencillos-pasos-para-organizar-tu-semana-preview.jpg",
+      "date": "2019-03-13T00:00:00.000Z",
+      "updatedAt": null,
+      "tags": ["productividad"]
+    },
+    {
+      "author_name": "Victor Ribero",
+      "author_img_src": "/static/img/victor-ribero-avatar.jpg",
+      "title": "4 tipos de tareas que hemos de planificar para un equilibrio mental",
+      "slug": "planifica-tus-metas-para-tener-un-equilibrio-mental",
+      "description": "Aprende cuánto afecta a tu equilibrio mental y estado de ánimo una mala preparación de las distintas tareas de nuestra vida.",
+      "img_src": "/static/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg",
+      "img_preview_src": "/static/img/planifica-tus-metas-para-tener-un-equilibrio-mental-preview.jpg",
+      "date": "2019-02-27T00:00:00.000Z",
+      "updatedAt": null,
+      "tags": ["productividad", "paz interior"]
+    }
+  ]
+}

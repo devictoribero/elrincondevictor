@@ -4,8 +4,7 @@ author_img_src: /static/img/victor-ribero-avatar.jpg
 title: Learn how to target keywords with Google Trends
 slug: learn-how-to-target-keywords-with-google-trends
 description: Identify what keywords would work better for you and learn how to segment your users with Google Trends by examples
-createdAt: 2020-05-03
-updatedAt: null
+date: 2020-05-03
 tags: [entrepreneurship, products, growth, seo]
 ---
 
