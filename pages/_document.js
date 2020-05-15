@@ -1,62 +1,28 @@
-import Document, { Head, Main, NextScript } from "next/document";
-import { Fragment } from 'react';
-import { person } from '../config/schema.org';
+import Document, { Head, Main, NextScript } from "next/document"
+import Seo from '../components/pages/Seo'
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const isProduction = process.env.NODE_ENV === 'production';
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps, isProduction };
-  }
-
   render() {
-    const { isProduction } = this.props;
-
     return (
       <html lang="en">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet"/>
+          <Seo />
+          <link
+						rel="preload"
+						href="/static/css/index.css"
+						rel="stylesheet"
+					/>
+          <link
+            href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans:400,600,700,800&display=swap"
+            rel="stylesheet" />
         </Head>
         <body>
           <Main />
           <NextScript />
-
-          {/* We only want to add the scripts if in production */}
-          {isProduction && (
-            <Fragment>
-              <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-135694564-1"
-              />
-              {/* We call the function above to inject the contents of the script tag */}
-              <script dangerouslySetInnerHTML={this.setGoogleTags()} />
-            </Fragment>
-          )}
-          <script type='application/ld+json' dangerouslySetInnerHTML={this.setSchema()} />
         </body>
       </html>
-    );
-  }
-
-  // Function will be called below to inject
-  // script contents onto page
-  setGoogleTags() {
-    return {
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-135694564-1');
-      `
-    };
-  }
-  
-  // Sets schema for personal information schema.org
-  setSchema() {
-    return {
-      __html: JSON.stringify(person)
-    }
+    )
   }
 }

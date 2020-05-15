@@ -1,10 +1,26 @@
+import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import {PostHeader} from './PostHeader'
-import {CustomPostLink, CustomPostImg} from '../../helpers/renders';
-import {SharePostInSocial} from '../atoms/SharePostInSocial';
+import matter from 'gray-matter'
+import Error from '../_error'
+import {Layout} from '../../components/layout/Layout'
+import Seo from '../../components/pages/Seo'
+import {PostLayout} from '../../components/layout/PostLayout'
+import {PostHeader} from '../../components/molecules/PostHeader'
+import {CustomPostLink, CustomPostImg} from '../../helpers/renders'
 
-export function Article({data, content}) {
-  return (
+Page.getInitialProps = async ({pathname, query}) => {
+  const {slug} = query
+  const article = await getPost({slug})
+  const relatedArticles = await getRelatedArticlesTo({article})
+
+  return {pathname, article: article, relatedArticles: relatedArticles}
+}
+export default function Page({pathname, article}) {
+  if (!article) return <Error statusCode={404} />
+
+  const {data, content} = article
+
+  const _article = (
     <article>
       <PostHeader
         title={data.title}
@@ -143,13 +159,39 @@ export function Article({data, content}) {
       `}</style>
     </article>
   )
+  
+  return (
+    <Layout route={pathname}>
+      <Seo
+        title={`${article.data.title} | Elrincondevictor`}
+        description={`${article.data.description}`}
+        image={`/static/img/social-media/${article.data.slug}.png`}
+        canonical={`https://www.elrincondevictor.com/blog/${article.data.slug}`}/>
+      <div className='container-wrapper'>
+        <div className='container'>
+          <PostLayout main={_article} />
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
-function getSharePostText({title, slug}) {
-  return `Acabo de leer el artículo '${title}' de @victorException ¡Y os lo recomiendo, es la caña! `
-    +`Link del artículo👉: ${getPostUrl({slug})}`;
+// get a blog info and parse it
+async function getPost({slug}) { 
+  const contentModule = await require(`../../content/${slug}.md`)
+  return matter(contentModule.default)
 }
 
-function getPostUrl({slug}) {
-  return `https://www.elrincondevictor.com/blog/${slug}`;
+async function getRelatedArticlesTo({article}) {
+  const {list: articlesList} = await require(`../../content/index.json`);
+  
+  let similarArticles = []
+  article.data.tags.forEach(tag => {
+    articlesList.filter(article => {
+      article.tags.includes(tag) && similarArticles.push(article)
+    })
+  })
+
+  // this makes sure there are not items repeated
+  return [...new Set(similarArticles)]
 }

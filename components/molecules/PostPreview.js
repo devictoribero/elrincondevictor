@@ -5,7 +5,7 @@ export function PostPreview({title, description, slug, tags= []}) {
   return (
     <article>
         <h2>
-          <Link href={`/blog?slug=${slug}`} as={`/blog/${slug}`} prefetch>
+          <Link href='/blog/[slug]' as={`/blog/${slug}`}>
             <a className="title">{title}</a>
           </Link>
         </h2>

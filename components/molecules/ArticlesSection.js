@@ -1,11 +1,11 @@
 import {PostPreview} from './PostPreview';
 
-export function PostsSection({title, posts, className}) {
+export function ArticlesSection({title, articles, className}) {
   return (
     <section className={className}>
       {title}
       <ul>
-        {posts.map(post => (
+        {articles.map(post => (
           <li key={post.slug}>
             <PostPreview {...post}/>
           </li>
@@ -37,7 +37,7 @@ export function PostsSection({title, posts, className}) {
   )
 }
 
-export function PostSectionTitle({heading, children}) {
+export function ArticlesSectionTitle({heading, children}) {
   return (
     <header>
       {heading === 'h1' && <h1>{children}</h1>}

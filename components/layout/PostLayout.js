@@ -2,7 +2,10 @@ export function PostLayout({main, complementary}) {
   return(
     <div className='PostLayout'>
       <main>{main}</main>   
-      <div>{complementary}</div>
+      {complementary && (
+        <div>{complementary}</div>
+      )}
+      
 
       <style jsx>{`
           main {
@@ -11,7 +14,7 @@ export function PostLayout({main, complementary}) {
 
           @media screen and (min-width: 768px) {
             div {
-              max-width: 700px;
+              max-width: 800px;
               margin-right: auto;
               margin-left: auto;
             }
