@@ -34,6 +34,7 @@ export function ArticleHeader({title, date}) {
           font-family: var(--ff-serif);
           line-height: 1.15;
           display: inline-block;
+          font-weight: 900;
         }
 
         a {
