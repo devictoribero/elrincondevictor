@@ -7,65 +7,22 @@ const INPUT_PATH = resolve(CONTENT_DIR)
 const OUTPUT_PATH = resolve(CONTENT_DIR)
 const ENCODING = 'utf-8'
 
-const postsFileName = getArticlesFileName(INPUT_PATH)
-const allPosts = getArticlesArrayFromFileNames(postsFileName).sort(orderByDate)
+const articlesFileName = getArticlesFileNames(INPUT_PATH)
+const allPosts = getArticlesByFilesNames(articlesFileName).sort(sortByDate)
+const indexContent = JSON.stringify({list: allPosts})
 
-console.log(allPosts)
+fs.writeFile(
+  `${OUTPUT_PATH}/index.json`,
+  indexContent,
+  ENCODING,
+  afterWriteFile
+)
 
-
-// Is mandatory that the index should be the first one
-// because is the one generates index.json and populates a global variable
-const content = ['index', 'productivity']
-content.map(generateContent)
-
-function generateContent(fileName) {
-  fs.writeFile(
-    `${OUTPUT_PATH}/${fileName}.json`,
-    getContentByFileName(fileName),
-    ENCODING,
-    error => afterWriteFile(error, fileName)
-  )
-}
-
-function getContentByFileName(fileName){
-  let fileContent;
-
-  switch(fileName) {
-    case 'index':
-      fileContent = getIndex(postsFileName)
-      break;
-    case 'productividad':
-      fileContent = getProductivity();
-      break;
-    default:
-      fileContent = {};
-      break;
-  }
-
-  return JSON.stringify(fileContent)
-}
-
-/**
- * Get an array of files and return the index content
- * @param {String} dir
- * @param {Array} postsFileName
- * @returns {String}
- */
-function getIndex(postsFileName) {
-  let allPosts  = getArticlesArrayFromFileNames(postsFileName).sort(orderByDate)
-
-  const fileContent = {
-    list: allPosts,
-  }
-
-  return fileContent;
-}
-
-function getArticlesArrayFromFileNames(postsFileName){
+function getArticlesByFilesNames(articlesFileNames){
   let posts = []
 
-  for (var i = 0, length = postsFileName.length; i < length; i++) {
-    const file = fs.readFileSync(`${INPUT_PATH}/${postsFileName[i]}`, ENCODING)
+  for (var i = 0, length = articlesFileNames.length; i < length; i++) {
+    const file = fs.readFileSync(`${INPUT_PATH}/${articlesFileNames[i]}`, ENCODING)
     const content = matter(file)
     posts.push(content.data)
   }
@@ -79,26 +36,18 @@ function getArticlesArrayFromFileNames(postsFileName){
  * @param {Object} postB
  * @returns {Boolean}
  */
-function orderByDate(postA, postB) {
-  return +new Date(getPostDate(postA)) < +new Date(getPostDate(postB))
+function sortByDate(postA, postB) {
+  const dateA = new Date(`${postA.date}`)
+  const dateB = new Date(`${postB.date}`)
+
+  if (dateA > dateB) {return -1}
+  if (dateA < dateB) {return 1}
+  return 0
 }
 
-function getPostDate(post) {
-  return post.updatedDate ? post.updatedDate : post.date 
-}
-
-function afterWriteFile(error, fileName){
+function afterWriteFile(error){
   if (error) throw error
-  console.log(`✅ The ${fileName}.json was succesfully created!`)
-}
-
-function getProductivity() {
-  const productivityPosts = allPosts.filter(post => hasTag(post, 'productividad'))
-  return { posts: productivityPosts }
-}
-
-function hasTag(post, tagName) {
-  return (post.tags.filter(tag =>  tag === tagName)).length > 0
+  console.log(`✅ The index.json was succesfully created!`)
 }
 
 /**
@@ -106,7 +55,7 @@ function hasTag(post, tagName) {
  * @param {String} dir
  * @returns {Array}
  */
-function getArticlesFileName(directory) {
+function getArticlesFileNames(directory) {
   try {
     const files = fs.readdirSync(directory);
     const mdFiles = files.filter(file => file.split('.')[1] === 'md');
