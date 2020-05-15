@@ -45,9 +45,14 @@ export default function Page({pathname, article}) {
           font-family: var(--ff-serif);
         }
 
-        article h1, h2, h3, h4, h5, h6 {
+        article h1,
+        article h2,
+        article h3,
+        article h4,
+        article h5,
+        article h6 {
           font-family: var(--ff-sans-serif) !important;
-          letter-spacing: -1px;
+          letter-spacing: -0.5px;
         }
         
         article h1 {
@@ -56,7 +61,7 @@ export default function Page({pathname, article}) {
         }
 
         article h2 {
-          margin: 3rem 0 1rem;
+          margin: 3rem 0 2rem;
           font-weight: 700;
           font-size: 32px;
           line-height: 1.25;
@@ -80,11 +85,12 @@ export default function Page({pathname, article}) {
 
         article p, 
         article li {
+          color: var(--c-grey-800);
           line-height: 1.75;
           hyphens: auto;
           font-size: 18px;
           font-weight: 400;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.5px !important;
         }
 
         article p + p {
