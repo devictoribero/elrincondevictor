@@ -19,7 +19,7 @@ const SeoMetaInfo = ({
 		<meta name='robots' content='index, follow' />
 		<meta name='author' content='Victor Ribero Guasch'/>
 
-		<meta property='og:site_name' content='chooseyourplant' />
+		<meta property='og:site_name' content='devictoribero' />
 		<meta property="og:locale" content="en_EN"/>
 		<meta property='og:type' content='website' />
 		<meta property='og:url' content={canonical} />
@@ -28,11 +28,11 @@ const SeoMetaInfo = ({
 		<meta property='og:image' content={image}/>
 
 		<meta name="twitter:card" content="summary_large_image"/>
-		<meta name='twitter:site' content='@chooseyourplant'/>
-		<meta name='twitter:creator' content='@chooseyourplant'/>
+		<meta name='twitter:site' content='@devictoribero'/>
+		<meta name='twitter:creator' content='@devictoribero'/>
 		<meta name='twitter:title' content={title} />
 		<meta name='twitter:description' content={description}/>
-		<meta name='twitter:domain' content='chooseyourplant.com' />
+		<meta name='twitter:domain' content='devictoribero.com' />
 		<meta name="twitter:image" content={image}/>
 	</Head>
 )
