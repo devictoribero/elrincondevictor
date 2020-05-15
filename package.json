@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "generate": "node ./bin/generate-content.js",
-    "build": "npm run generate && next build",
+    "generate:content": "node ./bin/generate-content.js",
+    "generate:media": "node ./bin/create-screenshots.js",
+    "build": "npm run generate:content && next build",
     "export": "next export -o dist",
-    "deploy": "npm run build && npm run export",
-    "puppeteer": "node ./bin/create-screenshots.js"
+    "deploy": "npm run build && npm run export"
   },
   "repository": {
     "type": "git",
