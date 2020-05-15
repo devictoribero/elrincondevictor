@@ -1,74 +1,40 @@
-import React from 'react'
-import Head from 'next/head'
-import { DEFAULT_SEO } from '../../config/seo'
+import React from "react"
+import Head from "next/head"
+import {
+	DEFAULT_TITLE,
+	DEFAULT_DESCRIPTION,
+	DEFAULT_CANONICAL,
+	DEFAULT_IMAGE,
+} from '../../config/seo'
 
-const Seo = ({
-  title = DEFAULT_SEO.title,
-  description = DEFAULT_SEO.description,
-  image = DEFAULT_SEO.openGraph.image,
-  url = DEFAULT_SEO.openGraph.url,
-  locale = DEFAULT_SEO.openGraph.locale,
-  canonical = DEFAULT_SEO.canonical
+const SeoMetaInfo = ({
+	title = DEFAULT_TITLE,
+	description = DEFAULT_DESCRIPTION,
+	canonical = DEFAULT_CANONICAL,
+	image = DEFAULT_IMAGE
 }) => (
-  <Head>
-    <title key="title">{title}</title>
-    <meta
-      key="description"
-      name="description"
-      content={description}
-    />
-    <link key="canonical" rel="canonical" href={canonical}/>
-    <meta
-      key="twitter:card"
-      name="twitter:card"
-      content={DEFAULT_SEO.twitter.cardType}
-    />
-    <meta
-      key="twitter:site"
-      name="twitter:site"
-      content={DEFAULT_SEO.twitter.handle}
-    />
-    <meta
-      key="og:url"
-      property="og:url"
-      content={url}
-    />
-    <meta
-      key="og:type"
-      property="og:type"
-      content={DEFAULT_SEO.openGraph.type}
-    />
-    <meta
-      key="og:title"
-      property="og:title"
-      content={title}
-    />
-    <meta
-      key="og:description"
-      property="og:description"
-      content={description}
-    />
-    <meta
-      key="og:image"
-      property="og:image"
-      content={image}
-    />
-    <meta
-      key="og:image:width"
-      property="og:image:width"
-      content={DEFAULT_SEO.openGraph.imageWidth}
-    />
-    <meta
-      key="og:image:height"
-      property="og:image:height"
-      content={DEFAULT_SEO.openGraph.imageHeight}
-    />
-    <meta
-      key="og:locale"
-      property="og:locale"
-      content={locale}
-    />
-  </Head>
-)
+	<Head>
+		<title>{title}</title>
+		<meta name='description' content={description}/>
+		<meta name='canonical' content={canonical}/>
+		<meta name='robots' content='index, follow' />
+		<meta name='author' content='Victor Ribero Guasch'/>
 
-export default Seo
+		<meta property='og:site_name' content='chooseyourplant' />
+		<meta property="og:locale" content="en_EN"/>
+		<meta property='og:type' content='website' />
+		<meta property='og:url' content={canonical} />
+		<meta property='og:title' content={title}/>
+		<meta property='og:description' content={description}/>
+		<meta property='og:image' content={image}/>
+
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name='twitter:site' content='@chooseyourplant'/>
+		<meta name='twitter:creator' content='@chooseyourplant'/>
+		<meta name='twitter:title' content={title} />
+		<meta name='twitter:description' content={description}/>
+		<meta name='twitter:domain' content='chooseyourplant.com' />
+		<meta name="twitter:image" content={image}/>
+	</Head>
+)
+export default SeoMetaInfo
