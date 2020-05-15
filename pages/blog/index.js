@@ -19,7 +19,7 @@ export default function Blog({pathname, articles}) {
         canonical='https://www.elrincondevictor.com/blog'
       />
       <Header
-        title='This is my corner, where I share my philosophy of life and curiosities.'
+        title='This is my corner, where I share my experiences and curiosities.'
         subtitle='I talk about a healthy lifestyle, products, software development and entrepreneurship.'/>
       <main>
         <ArticlesList
@@ -44,9 +44,6 @@ function Header({title, subtitle}) {
 
       <style jsx>{`
         header {
-          position: relative;
-          padding-top: 25px;
-          padding-bottom: 25px;
           margin-bottom: 32px;
         }
 
@@ -67,8 +64,7 @@ function Header({title, subtitle}) {
 
         @media screen and (min-width: 768px) {
           header {
-            padding-top: 50px;
-            padding-bottom: 50px;
+            margin-bottom: 50px;
           }
         }
       `}</style>
