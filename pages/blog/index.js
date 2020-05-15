@@ -18,7 +18,6 @@ export default function Blog({pathname, articles}) {
         description='Productivity, thoughts, things I learn and do and a life style to have a healthy and balanced life.'
         canonical='https://www.elrincondevictor.com/blog'
       />
-      <img src='/public/img/social-media/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido.png'/>
       <Header
         title='This is my corner, where I share my experiences and curiosities.'
         subtitle='I talk about a healthy lifestyle, products, software development and entrepreneurship.'/>
