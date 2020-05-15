@@ -25,7 +25,7 @@ export default function Page({pathname, article}) {
       <Seo
         title={`${article.data.title} | Elrincondevictor`}
         description={`${article.data.description}`}
-        image={`/static/img/social-media/${article.data.slug}.png`}
+        image={`https://elrincondevictor.com/static/img/social-media/${article.data.slug}.png`}
         canonical={`https://www.elrincondevictor.com/blog/${article.data.slug}`}/>
       <main>
         <article>
