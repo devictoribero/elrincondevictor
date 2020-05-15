@@ -1,5 +1,4 @@
 import Document, { Head, Main, NextScript } from "next/document"
-import Seo from '../components/layout/Seo'
 
 export default class MyDocument extends Document {
   render() {
