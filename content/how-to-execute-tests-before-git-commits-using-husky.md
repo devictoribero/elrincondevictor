@@ -1,7 +1,7 @@
 ---
 author_name: Victor Ribero
 author_img_src: /public/img/victor-ribero-avatar.jpg
-title: How to execute tests before git commits using Husky
+title: How to use Husky to execute pre-commit and pre-push hooks
 slug: how-to-execute-tests-before-git-commits-using-husky
 description: 🤓 Learn how to execute your tests magically before any git commit.
 img_src: /public/img/how-to-execute-tests-before-git-commits-using-husky.png
@@ -10,47 +10,53 @@ date: 2020-08-03
 tags: [tech]
 ---
 
-Some people have difficulties remembering that they have to execute the tests before commiting any changes. This is important in order to avoid pushing to the repository something that breaks our build.
+Not everyone remembers to execute the tests, the linter or the prettier before commiting changes.
 
-Building a [worldwide community for houseplant lovers](https://chooseyourplant.com?ref=devictoribero) I've noticed that I had a lot of tests but I didn't include them in any pipeline. What's the problem you might question yourself? I noticed right away that I was not executing them. It happened to me that after X days I saw some were broken, and this is not good 👎.
+In the ideal world we should automate this by creating pre-commit and pre-push git hooks, so we don't push code that breaks or is not compliant into the remote repository.
 
-Executing some logic before a commits it's important because it prevents from uploading code we don't want in the remote repository. Why? Because it could not respect some formatting or keywords standards. Some people uses [git hooks](https://www.atlassian.com/git/tutorials/git-hooks) locally to prettify and format the code along with a linter.
+Building a [worldwide community for houseplant lovers](https://chooseyourplant.com?ref=devictoribero) I've noticed that I had a lot of tests but I didn't include them in any pipeline or git hook. What's the problem you might question yourself? After some days, I stopped executing them, so they were not up-to-date. And this is not good 👎.
+
+To automate a pre-commit git hook is good choice that reduces cognitive load whenn coding which means less stress and more focus. Some people uses [git hooks](https://www.atlassian.com/git/tutorials/git-hooks) locally to prettify and format the code along with a linter.
 
 If you are using git as version control, you might know that it has some native hooks that are hidden inside the .git folder. You can check it by running `ls .git/hooks/` in the root of your project. If you do so, you'll see some `.sample` files.
 
-## How can we use git hooks easily?
+## How to use git hooks?
 
-The best and easy way to use git hooks locally, it's by using a library well-known called [husky](https://github.com/typicode/husky). This allows us to handle git hooks super easy!
+The best and easiest way to use git hooks locally in a Node enviromennt, it's by using a library well-known called [husky](https://github.com/typicode/husky). It handles git hooks for us with a small configuration!
 
-## How to use Husky to execute logic before commit?
+## How create a pre-commit or pre-push with Husky?
 
 The usage of Husky it's pretty straight forward. We only need to install the package and add some configuration to the package.json. **Nothing else!**
 
+### Requirements
+
+`Husky` package installed, Node version `>=10` and Git version `>= 2.13.0`.
+
+
 ### How to install Husky
 
-It's important to instal Husky only in `dev` environments because it's not a production requirement. You can install Husky by executing the following line of code:
+It's important to install `Husky` only for `dev` environments because it's not a production requirement. You can install it by executing the following line of code:
 
-```
-npm run install husky --save-dev
-```
+`npm run install husky --save-dev`
 
-### Add the Husky configuration in package.json
+### Add the required configuration in package.json
 
-In the root of your project you'll have a package.json. Open it and ass a Husky configuration in the root of the JSON.
+In the root of your project you'll have a package.json. Open it and add a `Husky` configuration in the root of the JSON.
 
-I found interesting to add tests on my `pre-commit` and `pre-push`, so every time I try to execute `git commit` or `git push` the tests are executed. But feel free to add as many things as you want like linting, formatting, etc. Like the code below 👇:
+In this project I only added the execution of the test in the `pre-commit` and `pre-push` git hook, but you can add your linting rules, formatting, or whatever you like. Now, every time I try to execute `git commit` or `git push` the tests are executed. Example below 👇:
 
 ```JSON
 // package.json
 {
-  // here goes more config
+  ...
   "husky": {
     "hooks": {
       "pre-commit": "npm test",
       "pre-push": "npm test",
       "...": "..."
     }
-  }
+  },
+  ...
 }
 ```
 
@@ -59,4 +65,12 @@ I found interesting to add tests on my `pre-commit` and `pre-push`, so every tim
 Now you're ready to use them! Try it out by commiting something running:
 
 `git commit -m "Finally I'm executing tests on each commit"`
+
+### What problems you can encounter
+
+I've found that some people (me included) have problems after installing `Husky` which means that git hooks won't work. To solve it, you just need to remove the git folder by running:
+
+`rm -rf .git/hooks/`
+
+Afer that, uninstall and reinstall `Husky` and it would work. [As you can see in this thread](https://github.com/typicode/husky/issues/445), lots of people have the same issue. Someho
 
