@@ -1,27 +1,34 @@
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-export function ArticlePreview({title, description, slug, tags= []}) {
+export function ArticlePreview({title, description, img_preview_src, slug, tags= []}) {
+  console.log(img_preview_src)
   return (
     <article>
+      <img src={img_preview_src}/>
+      <div>
         <h2>
           <Link href='/blog/[slug]' as={`/blog/${slug}`}>
             <a className="title">{title}</a>
           </Link>
         </h2>
         <p>{description}</p>
-      <ul>
-        {tags.map(tagName => <li key={tagName}>{tagName}</li>)}
-      </ul>
+        <ul>{tags.map(tagName => <li key={tagName}>{tagName}</li>)}</ul>
+      </div>
       
       <style jsx>{`
         article {
           background-color: white;
           border-radius: 20px;
-          display: flex;
-          flex-direction: column;
           height: 100%;
           box-sizing: border-box;
+          box-shadow: 0 10px 30px -10px rgba(1,1,1, 0.1);
+        }
+        
+        div {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
         }
 
         h2 {

@@ -1,6 +1,6 @@
 ---
 author_name: Victor Ribero
-author_img_src: /public/img/victor-ribero-avatar.jpg
+author_img_src: /static/img/victor-ribero-avatar.jpg
 title: Learn how to target keywords with Google Trends
 slug: learn-how-to-target-keywords-with-google-trends
 description: Identify what keywords would work better for you and learn how to segment your users with Google Trends by examples
@@ -40,7 +40,7 @@ People who have pets and want to make sure the plant they are looking for is not
 
 Thanks to this quick research we identified how readers look for information. In order to create content relevant to them and improve your SEO with the right keywords, we must use the *[safe plants for cats](https://www.chooseyourplant.com/plants/plants-safe-for-cats-and-for-dogs)*, or the *[safe plants for dogs](https://www.chooseyourplant.com/plants/plants-safe-for-cats-and-for-dogs)* terms instead of *pet-friendly plants* which was the one I thought that would be the most used.
 
-![A graphic that compares the number of people who search by "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The search term "plants safe for cats" is the obvious winner](/public/img/learn-how-to-target-keywords-with-google-trends-1.png)
+![A graphic that compares the number of people who search by "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The search term "plants safe for cats" is the obvious winner](/static/img/learn-how-to-target-keywords-with-google-trends-1.png)
 
 ### Compare keywords by region and cities to go more niche
 
@@ -51,12 +51,12 @@ Sometimes it may happen that for example that people that live in the United Sta
 As you can see in the image below, I'm focusing on California because is where the users of the [green community](https://www.chooseyourplant.com/) I'm building are from.
 
 <!-- image that shows the volume of searches by California -->
-![A graphic that compares the number of people in California who search by "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The search term "plants safe for cats" is the obvious winner](/public/img/learn-how-to-target-keywords-with-google-trends-2.png)
+![A graphic that compares the number of people in California who search by "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The search term "plants safe for cats" is the obvious winner](/static/img/learn-how-to-target-keywords-with-google-trends-2.png)
 
 Google Trends allows you to compare keywords at the city level too. You'll see data only if the keywords have traffic in that city because some cities Google might not have data.
 
 <!-- image that shows the volume of searches by Los Angeles -->
-![A graphic that compares the number of people in Los angeles, California who search by "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The search term "plants safe for cats" is the obvious winner](/public/img/learn-how-to-target-keywords-with-google-trends-3.png)
+![A graphic that compares the number of people in Los angeles, California who search by "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The search term "plants safe for cats" is the obvious winner](/static/img/learn-how-to-target-keywords-with-google-trends-3.png)
 
 
 ### Locate the usage of keywords with the map graphic
@@ -67,7 +67,7 @@ As you can see in the image below, most of the users look for *plants safe for c
 
 
 <!-- image that shows the volume of searches in United States MAP -->
-![A map of the United States divided by states showing which keyword is the most used of "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The East Coast, West Coast, and the north-east area are the regions with more people using the search term "plants safe for cats"](/public/img/learn-how-to-target-keywords-with-google-trends-4.png)
+![A map of the United States divided by states showing which keyword is the most used of "non-toxic plants", "pet-friendly plants", "plants safe for pets", "plants safe for cats", and "plants safe for dogs". The East Coast, West Coast, and the north-east area are the regions with more people using the search term "plants safe for cats"](/static/img/learn-how-to-target-keywords-with-google-trends-4.png)
 
 ## Conclusions
 

@@ -21,10 +21,12 @@ export default function Blog({pathname, articles}) {
       <Header
         title='This is my corner, where I share my experiences and curiosities.'
         subtitle='I talk about a healthy lifestyle, products, software development and entrepreneurship.'/>
-      <main>
-        <ArticlesList
-          title={<ArticlesListTitle>Articles</ArticlesListTitle>}
-          articles={articles}/>  
+      <main className='container-wrapper'>
+        <div className='container'>
+          <ArticlesList
+            title={<ArticlesListTitle>Articles</ArticlesListTitle>}
+            articles={articles}/>  
+        </div>
       </main>
     </Layout>
   )
@@ -39,12 +41,24 @@ Blog.getInitialProps = async ({pathname, query}) => {
 function Header({title, subtitle}) {
   return (
     <header role="banner">
-      <h1>{title}</h1>
-      <p>{subtitle}</p>
+      <div className='container-wrapper'>
+        <div className='container'>
+          <h1>{title}</h1>
+          <p>{subtitle}</p>
+        </div>
+      </div>
 
       <style jsx>{`
         header {
           margin-bottom: 32px;
+          margin-bottom: 50px;
+          min-height: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background-color: #f7f7f7;
         }
 
         h1 {

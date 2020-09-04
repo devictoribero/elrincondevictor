@@ -21,10 +21,11 @@
   --c-primary-100: hsl(48, 100%, 88%);
   --c-primary-000: hsl(49, 100%, 96%);
 
-  --ff-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  --ff-serif: "Merriweather", serif;
+  /* font-family: 'Karla', sans-serif;
+  font-family: 'Ubuntu', sans-serif; */
+  --ff-sans-serif: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --ff-serif: "Karla", serif;
 }
 
 body {
@@ -41,15 +42,11 @@ h7 {
   font-family: var(--ff-sans-serif);
 }
 
-.container-wrapper {
-  padding: 0 1rem;
-}
-
 .container {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,16 +55,18 @@ h7 {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
 *:focus {
   outline: 1px dashed;
 }
 
 code {
-  background: linear-gradient(
-    to right,
-    var(--c-primary-000),
-    var(--c-primary-100)
-  );
+  background: linear-gradient(to right, var(--c-primary-000), var(--c-primary-100));
   border-radius: 3px;
   padding: 2px 4px;
   hyphens: auto;
@@ -76,18 +75,14 @@ code {
 
 a.link-like {
   position: relative;
-  color: var(--c-primary-800);
+  color: rgb(64, 36, 212);
   cursor: pointer;
   transition: color 0.25s ease;
-
-  box-shadow: 0 1px 0 0 currentColor;
-  text-decoration: none;
 }
 
 a.link-like:hover,
 a.link-like:active {
-  color: var(--c-primary-900);
-  box-shadow: none;
+  color: rgb(42, 21, 152);
 }
 
 @font-face {

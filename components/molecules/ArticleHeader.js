@@ -8,23 +8,33 @@ export function ArticleHeader({title, date}) {
 
   return (
     <header>
-      <h1>{title}</h1>
-      <span>
-        By
-        <a
-          className='link-like link social'
-          rel="nofollow noopener noreferrer"
-          target='_blank'
-          href='https://twitter.com/devictoribero'>
-          @devictoribero,
-        </a>
-        <time>{day}th {month} {year}</time>.
-      </span>
-      
+      <div className='container-wrapper'>
+        <div className='container'>
+          <h1>{title}</h1>
+          <span>
+            By
+            <a
+              className='link-like link social'
+              rel="nofollow noopener noreferrer"
+              target='_blank'
+              href='https://twitter.com/devictoribero'>
+              @devictoribero,
+            </a>
+            <time>{day}th {month} {year}</time>.
+          </span>
+        </div>
+      </div>
 
       <style jsx>{`
         header {
           margin-bottom: 50px;
+          min-height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background-color: #f7f7f7;
         }
 
         h1 {

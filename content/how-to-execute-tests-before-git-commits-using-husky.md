@@ -1,11 +1,11 @@
 ---
 author_name: Victor Ribero
-author_img_src: /public/img/victor-ribero-avatar.jpg
-title: How to use Husky to execute pre-commit and pre-push hooks
-slug: how-to-execute-tests-before-git-commits-using-husky
+author_img_src: /static/img/victor-ribero-avatar.jpg
+title: How to use Husky to create pre-commit and pre-push hooks
+slug: how-to-use-husky-to-create-pre-commit-and-pre-push-hooks
 description: 🤓 Learn how to execute your tests magically before any git commit.
-img_src: /public/img/how-to-execute-tests-before-git-commits-using-husky.png
-img_preview_src: /public/img/how-to-execute-tests-before-git-commits-using-husky-preview.png
+img_src: /static/img/how-to-execute-tests-before-git-commits-using-husky.png
+img_preview_src: /static/img/how-to-execute-tests-before-git-commits-using-husky-preview.png
 date: 2020-08-03
 tags: [tech]
 ---
@@ -60,11 +60,16 @@ In this project I only added the execution of the test in the `pre-commit` and `
 }
 ```
 
-### And now what?
+### How to use the pre-commit or pre-push git hook?
 
-Now you're ready to use them! Try it out by commiting something running:
+You don't need to do anything special apart from create a commit! Try it out by running:
 
 `git commit -m "Finally I'm executing tests on each commit"`
+
+<img
+  width='100%'
+  src='/static/static/img/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks.gif'
+  style='margin-top: 10px'/>
 
 ### What problems you can encounter
 
@@ -72,5 +77,5 @@ I've found that some people (me included) have problems after installing `Husky`
 
 `rm -rf .git/hooks/`
 
-Afer that, uninstall and reinstall `Husky` and it would work. [As you can see in this thread](https://github.com/typicode/husky/issues/445), lots of people have the same issue. Someho
+Afer that, uninstall and reinstall `Husky` and it would work. [As you can see in this thread](https://github.com/typicode/husky/issues/445), lots of people have the same issue.
 

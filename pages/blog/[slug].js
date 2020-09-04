@@ -30,11 +30,15 @@ export default function Page({pathname, article}) {
       <main>
         <article>
           <ArticleHeader title={data.title} date={data.date} />
-          <ReactMarkdown
-            source={content}
-            escapeHtml={false}
-            renderers={{ link: CustomPostLink, image: CustomPostImg }}
-          />
+          <div className='container-wrapper'>
+            <div className='container'>
+              <ReactMarkdown
+                source={content}
+                escapeHtml={false}
+                renderers={{ link: CustomPostLink, image: CustomPostImg }}
+              />
+            </div>
+          </div>
         </article>
       </main>
       <style jsx global>{`

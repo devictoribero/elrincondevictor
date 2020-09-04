@@ -1,11 +1,11 @@
 ---
 author_name: Victor Ribero
-author_img_src: /public/img/victor-ribero-avatar.jpg
+author_img_src: /static/img/victor-ribero-avatar.jpg
 title: 6 sencillos pasos para organizar tu semana
 slug: 6-sencillos-pasos-para-organizar-tu-semana
 description: ¿Eres de los que te falta tiempo para conseguir tus objetivos u objetivos? ¡Ahora ya no! Con estos 6 pasos sencillos consigue el tiempo que necesitas durante la semana
-img_src: /public/img/6-sencillos-pasos-para-organizar-tu-semana.jpg
-img_preview_src: /public/img/6-sencillos-pasos-para-organizar-tu-semana-preview.jpg
+img_src: /static/img/6-sencillos-pasos-para-organizar-tu-semana.jpg
+img_preview_src: /static/img/6-sencillos-pasos-para-organizar-tu-semana-preview.jpg
 date: 2019-03-13
 tags: [productivity]
 ---
@@ -40,7 +40,7 @@ A continuación, vamos a hacer un ejercicio práctico con el que veremos como ap
 ## 1- Asignar las horas de trabajo
 Dependiendo del sector en el que trabajes y de lo permisible que sea tu empresa, podrás tener más o menos flexibilidad a la hora de decidir tu horario laboral. En caso de que tu empresa no te de facilidades para poder elegir un horario, no tendrás que dedicar mucho tiempo a este paso porque el horario será el que ellos te impongan.
 
-![Calendario semanal con las horas de trabajo indicadas](/public/img/6-sencillos-pasos-para-organizar-tu-semana-1.png)
+![Calendario semanal con las horas de trabajo indicadas](/static/img/6-sencillos-pasos-para-organizar-tu-semana-1.png)
 
 ## 2- Pensar en el número de horas que queremos dormir
 
@@ -48,7 +48,7 @@ Una vez realizado el paso anterior, sabrás a que hora tienes que empezar a trab
 
 Dependiendo de cual sea tu rutina y cuanto ejercicio mental y físico hagas a lo largo del día, necesitarás más o menos horas de descanso. En mi caso, con 7 horas y media tengo más que suficiente.
 
-![Calendario semanal con las horas planificadas hasta ahora y las horas de descanso](/public/img/6-sencillos-pasos-para-organizar-tu-semana-2.png)
+![Calendario semanal con las horas planificadas hasta ahora y las horas de descanso](/static/img/6-sencillos-pasos-para-organizar-tu-semana-2.png)
 
 ## 3- Diseñar una rutina matutina
 
@@ -60,30 +60,30 @@ Yo no tengo en cuenta el desayuno porque hago [ayuno intermitente](https://www.d
 
 > Dado el conocido [‘efecto compuesto’](https://www.elclubdeinversion.com/el-efecto-compuesto/), 30 minutos es tiempo suficiente para ver a largo plazo una diferencia abismal en una actividad como es en este caso, la lectura.
 
-![Calendario semanal con las horas planificadas hasta ahora y la rutina matutina](/public/img/6-sencillos-pasos-para-organizar-tu-semana-3.png)
+![Calendario semanal con las horas planificadas hasta ahora y la rutina matutina](/static/img/6-sencillos-pasos-para-organizar-tu-semana-3.png)
 
 ## 4- Decidir un ritual nocturno
 
 Muchos somos los que pensamos que un día empieza mejor o peor dependiendo de lo que hayamos hecho antes de irnos a dormir. Por ese motivo, a mí me gusta decirle a mi cuerpo y a mi mente con actos, que la hora de irse a dormir se acerca. Leer durante 30 minutos y hacer unos pocos estiramientos en la misma cama, me ayuda a entrar en un estado de relajación que me facilitará dormir.
 
-![Calendario semanal con las horas planificadas hasta ahora y la rutina de antes de ir a dormir](/public/img/6-sencillos-pasos-para-organizar-tu-semana-4.png)
+![Calendario semanal con las horas planificadas hasta ahora y la rutina de antes de ir a dormir](/static/img/6-sencillos-pasos-para-organizar-tu-semana-4.png)
 
 Si viviéramos en un mundo ideal, éste sería todo el tiempo del que disponemos durante los días laborables:
 
-![Calendario semanal con las horas planificadas hasta ahora con las horas que tenemos al día para hacer algo](/public/img/6-sencillos-pasos-para-organizar-tu-semana-5.png)
+![Calendario semanal con las horas planificadas hasta ahora con las horas que tenemos al día para hacer algo](/static/img/6-sencillos-pasos-para-organizar-tu-semana-5.png)
 
 Pero lamentablemente todos tenemos asuntos que no podemos evitar: las tareas del hogar, recoger los niños al colegio, etc. Así pues, el siguiente paso es distribuir las obligaciones que se repiten una semana tras otra.
 
 ## 5- Organizar nuestras obligaciones
 Cuando vuelvo del trabajo me gusta revisar los correos electrónicos pues estoy suscrito a muchas ‘newsletter’ que me informan de economía, empresas y artículos técnicos de los cuales siempre aprendo algo.
 
-![Calendario semanal con las horas planificadas hasta ahora y las cosas que hemos de hacer si o si](/public/img/6-sencillos-pasos-para-organizar-tu-semana-6.png)
+![Calendario semanal con las horas planificadas hasta ahora y las cosas que hemos de hacer si o si](/static/img/6-sencillos-pasos-para-organizar-tu-semana-6.png)
 
 ## 6- Comprometernos a tener actividad física
 
 Son innumerables los beneficios que nos da el practicar deporte y es por eso que todos deberíamos hacerlo. Uno de los muchos beneficios es que nos ayuda a eliminar una cantidad de estrés inimaginable y a su vez nos ayuda a no pensar en el trabajo. Por ello, vamos a darle tiempo en nuestra semana justo después de organizar nuestras obligaciones pues no daremos pie a que haya excusas del tipo: No tengo tiempo.
 
-![Calendario semanal con las horas planificadas hasta ahora y la actividad física](/public/img/6-sencillos-pasos-para-organizar-tu-semana-7.png)
+![Calendario semanal con las horas planificadas hasta ahora y la actividad física](/static/img/6-sencillos-pasos-para-organizar-tu-semana-7.png)
 
 Como podéis ver, me gusta alternar el tipo de actividad física para estimular al cuerpo y a la mente de maneras distintas y por eso, me gustaría probar todos los tipos de yoga pues cada uno tiene sus ventajas. ¡Es todo un vicio!
 
@@ -93,7 +93,7 @@ Ahora que sabes cuanto tiempo disponible tienes cada semana, primero deberás pl
 
 Organizo mi tiempo de tal manera que cada día tengo ratos libres para los imprevistos o la vida social que no había planeado.
 
-![Planificación semanal. Incluye horas de trabajo, descanso, obligaciones, actividad física y distribución del tiempo libre](/public/img/6-sencillos-pasos-para-organizar-tu-semana-8.png)
+![Planificación semanal. Incluye horas de trabajo, descanso, obligaciones, actividad física y distribución del tiempo libre](/static/img/6-sencillos-pasos-para-organizar-tu-semana-8.png)
 
 Una vez terminada la planificación de la semana con estos 6 sencillos pasos dependerá de nosotros saber gestionar el tiempo disponible para tener vida social, conseguir nuestras metas, resolver los imprevistos y lograr paz mental.
 

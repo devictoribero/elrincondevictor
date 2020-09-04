@@ -2,7 +2,7 @@ export const books = [
   /* TECHNICAL */
   {
     title: 'Clean Code: A Handbook of Agile Craftsmanship',
-    img_src: '/public/img/book-clean-code.jpg',
+    img_src: '/static/img/book-clean-code.jpg',
     review: {
       rate: 5,
       text: [
@@ -22,7 +22,7 @@ export const books = [
   },
   {
     title: 'Clean Architecture: A Craftsman\'s Guide to Software Structure and Design',
-    img_src: '/public/img/book-clean-architecture.jpg',
+    img_src: '/static/img/book-clean-architecture.jpg',
     review: {
       rate: 5,
       text: [
@@ -43,7 +43,7 @@ export const books = [
   },
   {
     title: 'Working Effectively with Legacy Code',
-    img_src: '/public/img/book-working-effectively-with-legacy-code.jpg',
+    img_src: '/static/img/book-working-effectively-with-legacy-code.jpg',
     review: {
       rate: 5,
       text: [
@@ -62,7 +62,7 @@ export const books = [
   },
   {
     title: 'The Pragmatic Programmer',
-    img_src: '/public/img/book-the-pragmatic-programmer.jpeg',
+    img_src: '/static/img/book-the-pragmatic-programmer.jpeg',
     review: {
       rate: 5,
       text: [
@@ -83,7 +83,7 @@ export const books = [
   /* PRODUCTIVITY */
   {
     title: 'The One Thing: The Surprisingly Simple Truth Behind Extraordinary Results',
-    img_src: '/public/img/book-the-one-thing.jpg',
+    img_src: '/static/img/book-the-one-thing.jpg',
     review: {
       rate: 5,
       text: [
@@ -105,7 +105,7 @@ export const books = [
   /* FINANCIAL INTELLIGENCE */
   {
     title: 'The intelligent investor',
-    img_src: '/public/img/book-the-intelligent-investor.jpg',
+    img_src: '/static/img/book-the-intelligent-investor.jpg',
     review: {
       rate: 5,
       text: [
@@ -129,7 +129,7 @@ export const books = [
   /* SOFT SKILLS */
   {
     title: 'Inteligencia emocional',
-    img_src: '/public/img/book-inteligencia-emocional.jpg',
+    img_src: '/static/img/book-inteligencia-emocional.jpg',
     review: {
       rate: 5,
       text: [
@@ -149,7 +149,7 @@ export const books = [
   },
   {
     title: 'Soft Skills: The software developer\'s life manual',
-    img_src: '/public/img/book-soft-skills.jpg',
+    img_src: '/static/img/book-soft-skills.jpg',
     review: {
       rate: 4,
       text: [
@@ -169,7 +169,7 @@ export const books = [
   },
   {
     title: 'Cómo ganar amigos e influir sobre las personas',
-    img_src: '/public/img/book-como-ganar-amigos.jpg',
+    img_src: '/static/img/book-como-ganar-amigos.jpg',
     review: {
       rate: 5,
       text: [
@@ -193,7 +193,7 @@ export const books = [
   /* DESARROLLO PERSONAL */
   {
     title: 'El elemento: Descubrir tu pasión lo cambia todo',
-    img_src: '/public/img/book-el-elemento.jpg',
+    img_src: '/static/img/book-el-elemento.jpg',
     review: {
       rate: 5,
       text: [
@@ -214,7 +214,7 @@ export const books = [
   },
   {
     title: 'Find Your Why',
-    img_src: '/public/img/book-find-your-why.jpg',
+    img_src: '/static/img/book-find-your-why.jpg',
     review: {
       rate: 5,
       text: [
@@ -237,7 +237,7 @@ export const books = [
   /* EMPRENDIMIENTO */
   {
     title: 'Creativity, Inc',
-    img_src: '/public/img/book-creativity-inc.jpg',
+    img_src: '/static/img/book-creativity-inc.jpg',
     review: {
       rate: 5,
       text: [
@@ -260,7 +260,7 @@ export const books = [
   /* OTHER */
   {
     title: 'Homo Deus: A Brief History of Tomorrow',
-    img_src: '/public/img/book-homo-deus.jpg',
+    img_src: '/static/img/book-homo-deus.jpg',
     review: {
       rate: 5,
       text: [

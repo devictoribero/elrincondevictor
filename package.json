@@ -30,6 +30,7 @@
     "raw-loader": "^2.0.0",
     "react": "*",
     "react-dom": "*",
+    "react-icons": "^3.11.0",
     "react-markdown": "^4.0.6"
   }
 }
