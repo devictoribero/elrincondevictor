@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "npm run generate:content && next",
     "generate:content": "node ./bin/generate-content.js",
     "generate:media": "node ./bin/generate-media-images.js",
     "build": "npm run generate:content && next build",
@@ -30,6 +30,7 @@
     "raw-loader": "^2.0.0",
     "react": "*",
     "react-dom": "*",
+    "react-icons": "^3.11.0",
     "react-markdown": "^4.0.6"
   }
 }

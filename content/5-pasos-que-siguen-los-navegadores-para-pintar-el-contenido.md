@@ -1,11 +1,11 @@
 ---
 author_name: Victor Ribero
-author_img_src: /public/img/victor-ribero-avatar.jpg
+author_img_src: /static/img/victor-ribero-avatar.jpg
 title: 5 pasos que siguen los navegadores para pintar el contenido
 slug: 5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido
 description: Todas páginas web están formadas por html, css y Javascript pero, ¿Sabes como el navegador trata cada uno de ellos y que pasos sigue para saber que contenido renderizar?
-img_src: /public/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido.jpg
-img_preview_src: /public/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-preview.jpg
+img_src: /static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido.jpg
+img_preview_src: /static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-preview.jpg
 date: 2019-06-19
 tags: [tech]
 ---
@@ -20,7 +20,7 @@ Todas páginas web están formadas por html, css y Javascript e independienement
 4. Calcular la disposición o layout de todos los nodos.
 5. Pintar los nodos del Render Tree.
 
-![Los distintos pasos de como el navegador renderiza el contenido siguiendo los pasos recién nombrados](/public/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-1.png)
+![Los distintos pasos de como el navegador renderiza el contenido siguiendo los pasos recién nombrados](/static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-1.png)
 
 Aunque el navegador sigue ese orden lógico para saber qué y cómo renderizar, voy a explicarlo en un orden distinto que creo que para mi, es más natural.
 
@@ -50,7 +50,7 @@ El DOM se genera a partir del fichero con extensión `.html` y sigue distintos p
 
 En caso de que el navegador detecte un `<script>` no declarado como asíncrono en el `<head>` de la página, la creación del DOM será bloqueada hasta que el Javascript sea descargado y ejecutado. **Por eso es importante declarar los scripts como asíncronos**.
 
-![Evolución temporal del proceso de generación del DOM bloqueado por un script no asíncrono](/public/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-2.png)
+![Evolución temporal del proceso de generación del DOM bloqueado por un script no asíncrono](/static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-2.png)
 
 ## ¿Cómo se genera el árbol CSSOM?
 
@@ -65,7 +65,7 @@ La construcción del DOM y del CSSOM se hacen de manera asíncrona/paralela. Eso
 
 En caso de que el navegador detecte un `<script>` no declarado como asíncrono en el  `<head>` de la página, éste será descargado pero no ejecutado hasta que el árbol CSSOM termine de ser construido y por tanto, si el Javascript no es ejecutado, la construcción del DOM queda bloqueada.
 
-![Evolución temporal del proceso de generación del DOM y CSSOM bloqueado por un script no asíncrono. La ejecución del script se pospone hasta que termine el CSSOM y la construcción del DOM hasta que se ejecute el Javascript](/public/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-3.png)
+![Evolución temporal del proceso de generación del DOM y CSSOM bloqueado por un script no asíncrono. La ejecución del script se pospone hasta que termine el CSSOM y la construcción del DOM hasta que se ejecute el Javascript](/static/img/5-pasos-que-siguen-los-navegadores-para-pintar-el-contenido-3.png)
 
 
 ## Calcular el layout o disposición de los nodos

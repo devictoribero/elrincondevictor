@@ -21,13 +21,15 @@
   --c-primary-100: hsl(48, 100%, 88%);
   --c-primary-000: hsl(49, 100%, 96%);
 
-  --ff-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  --ff-serif: "Merriweather", serif;
+  /* font-family: 'Karla', sans-serif;
+  font-family: 'Ubuntu', sans-serif; */
+  --ff-sans-serif: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --ff-serif: "Karla", serif;
 }
 
 body {
+  padding-bottom: 10rem;
   margin: 0 auto;
   font-family: var(--ff-serif);
 }
@@ -41,15 +43,19 @@ h7 {
   font-family: var(--ff-sans-serif);
 }
 
-.container-wrapper {
-  padding: 0 1rem;
+ul.reset {
+  margin: 0;
+  padding: 0;
+}
+ul.reset li {
+  list-style: none;
 }
 
 .container {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,36 +64,40 @@ h7 {
   }
 }
 
-*:focus {
-  outline: 1px dashed;
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
 }
 
 code {
-  background: linear-gradient(
-    to right,
-    var(--c-primary-000),
-    var(--c-primary-100)
-  );
+  background: linear-gradient(to right, var(--c-primary-000), var(--c-primary-100));
   border-radius: 3px;
   padding: 2px 4px;
   hyphens: auto;
   font-size: 16px;
 }
 
-a.link-like {
+.link {
+  color: rgb(64, 36, 212);
   position: relative;
-  color: var(--c-primary-800);
-  cursor: pointer;
-  transition: color 0.25s ease;
-
-  box-shadow: 0 1px 0 0 currentColor;
   text-decoration: none;
 }
 
-a.link-like:hover,
-a.link-like:active {
-  color: var(--c-primary-900);
-  box-shadow: none;
+.link:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  transition: width 0.15s ease-in;
+}
+
+.link:hover:after {
+  width: 0;
 }
 
 @font-face {

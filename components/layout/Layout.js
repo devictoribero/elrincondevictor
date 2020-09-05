@@ -1,13 +1,10 @@
-import {Fragment} from 'react'
-import {Navigation} from './Navigation'
-import {Footer} from './Footer'
+import {TopBar} from './TopBar'
 
 export function Layout({route, children}) {
-  return(
-    <Fragment>
-      <Navigation route={route}/>
+  return (
+    <>
+      <TopBar route={route}/>
       {children}
-      <Footer/>
-    </Fragment>
+    </>
   )
 }

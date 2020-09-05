@@ -12,16 +12,10 @@ export default class MyDocument extends Document {
 						href="/static/css/index.css"
 						rel="stylesheet"
 					/>
-          <link
-            href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Open+Sans:400,600,700,800&display=swap"
-            rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"/> 
         </Head>
         <body>
-          <div className='container-wrapper'>
-            <div className='container'>
-              <Main />
-            </div>
-          </div>
+          <Main />
           <NextScript />
         </body>
       </html>

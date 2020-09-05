@@ -1,13 +1,14 @@
 ---
 author_name: Victor Ribero
-author_img_src: /public/img/victor-ribero-avatar.jpg
+author_img_src: /static/img/victor-ribero-avatar.jpg
 title: Chooseyourplant is a houseplant marketplace to discover and find your next plant.
 slug: chooseyourplant-houseplant-marketplace
 description: Chooseyourplant is a houseplant marketplace to discover plants that match your likes as no ones has never done. Its intention is to simplify the search of plants, cares and more!
-img_src: /public/img/chooseyourplant-houseplant-marketplace.png
-img_preview_src: /public/img/chooseyourplant-houseplant-marketplace-preview.png
+img_src: /static/img/chooseyourplant-houseplant-marketplace.png
+img_preview_src: /static/img/chooseyourplant-houseplant-marketplace-preview.png
 date: 2019-10-11
 tags: [products, entrepreneurship]
+isFeatured: true
 ---
 
 How many hours have you been searching about how to take care of a plant? How many months you needed to discover that plant you loved? How did you find it? [Chooseyourplant](https://www.chooseyourplant.com) is a product I wish I had when I started in the houseplant hobbie a few months ago because it would saved me a lot of hours of researching on Google.
@@ -36,7 +37,7 @@ s
 - Links to buy.
 - The possibility to add the plants to 'My wishlist'.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/public/img/chooseyourplant-houseplant-marketplace-1.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/chooseyourplant-houseplant-marketplace-1.png)
 
 The plant profile page the following content:
 - Scientific name.
@@ -49,7 +50,7 @@ The plant profile page the following content:
 - Tips.
 - Similar plants.
 
-![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/public/img/chooseyourplant-houseplant-marketplace-2.png)
+![Aspecto visual de la búsqueda de una planta en la aplicación Chooseyourplant](/static/img/chooseyourplant-houseplant-marketplace-2.png)
 
 
 I have plenty of features in my mind such as:
