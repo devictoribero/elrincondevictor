@@ -7,7 +7,7 @@ description: Learn why it's better to use grid layout over masonry for better us
 img_src: /static/img/why-I-prefer-grid-layout-over-masonry-1.png
 img_src_preview: /static/img/why-I-prefer-grid-layout-over-masonry-preview.gif
 date: 2020-04-10
-tags: [entrepreneurship, products, user experience]
+tags: [entrepreneurship, products, ux]
 ---
 
 If you have built or you're currently building a product, I'm sure you have a "list page" where there are a lot of elements. Have you ever wondered what design works best for your site? Because I'm constantly asking this to my self so I can improve the user experience and conversion for [the worldwide community for houseplant lovers](https://www.chooseyourplant.com) I'm building 👨‍💻.

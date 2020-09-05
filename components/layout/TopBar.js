@@ -10,12 +10,25 @@ export function TopBar() {
         <Logo />
         <nav aria-label="Navegador principal">
           <Link href="/blog"><a>blog</a></Link>
-          <Link href="/blog"><a>about</a></Link>
-          <Link href="/blog"><a>contact</a></Link>
           <div className='nav-social'>
-            <a href="https://twitter.com/devictoribero"><FiTwitter size={20}/></a>
-            <a href="https://www.linkedin.com/in/devictoribero/"><FiLinkedin size={20}/></a>
-            <a href="https://github.com/devictoribero"><FiGithub size={20}/></a>
+            <a
+              href="https://twitter.com/devictoribero"
+              target='_blank'
+              rel='noopener nofollow'>
+              <FiTwitter size={20}/>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/devictoribero"
+              target='_blank'
+              rel='noopener nofollow'>
+              <FiLinkedin size={20}/>
+            </a>
+            <a
+              href="https://github.com/devictoribero"
+              target='_blank'
+              rel='noopener nofollow'>
+              <FiGithub size={20}/>
+            </a>
           </div>
         </nav>
       </div>
@@ -26,23 +39,28 @@ export function TopBar() {
 
         .container {
           display: flex;
+          flex-direction: column;
           min-height: 100px;
           padding-top: 0.5rem;
           padding-top: 0.5rem;
           box-sizing: border-box;
           flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-start;
         }
 
-        .container,
-        nav,
+        
+        nav {
+          align-items: stretch;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+
         .nav-social {
           display: flex;
           align-items: center;
-        }
-
-        nav {
-          display: flex;
-          align-items: stretch;
+          margin-left: 2rem;
         }
 
         a {
@@ -55,8 +73,7 @@ export function TopBar() {
           border-radius: 5px;
           transition: background-color 0.25 ease;
           display: flex;
-          align-items: center;
-          margin-right: 1rem;
+          margin-right: 0.5rem;
         }
 
         a:after { 
@@ -74,13 +91,19 @@ export function TopBar() {
           width: 100%;
         }
 
-        .nav-social {
-          margin-left: 2rem;
-        }
-
         @media screen and (min-width: 550px) {
           .container {
+            flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+          }
+
+          nav {
+            width: auto;
+          }
+
+          a {
+            margin-right: 1rem;
           }
         }
       `}</style>

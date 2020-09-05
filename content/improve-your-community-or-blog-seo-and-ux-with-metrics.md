@@ -1,13 +1,14 @@
 ---
 author_name: Victor Ribero
 author_img_src: /static/img/victor-ribero-avatar.jpg
-title: Improve your blog or community SEO and user experience by analyzing metrics
+title: How to improve the SEO and user experience of your website by analyzing metrics
 slug: improve-your-community-or-blog-seo-and-ux-with-metrics
-description: I explain how I improved ChooseYourPlant SEO and user experience by analyzing some metrics and how you can do the same for your blog or community.
+description: I explain how I improved the SEO and user experience of ChooseYourPlant by analyzing some metrics and how you can do the same for your blog or community.
 img_src: /static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-1.png
 img_preview_src: /static/img/improve-your-community-or-blog-seo-and-ux-with-metrics-preview.png
 date: 2020-03-28
 tags: [entrepreneurship, products, growth]
+isFeatured: true
 ---
 
 If you have a blog or a community I guess you've asked yourself how possibly you can reach more people and get traction. Well, I'm going to explain to you what metrics I use to improve [ChooseYourPlant, the worldwide community for houseplant lovers](https://www.chooseyourplant.com) I'm building, and how these metrics can help you.

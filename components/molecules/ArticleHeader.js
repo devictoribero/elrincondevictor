@@ -1,50 +1,67 @@
-import {months} from '../../helpers/months';
+import {months} from '../../helpers/months'
+import {Title, titleSizes, titleTags} from '../Atom/Title'
 
-export function ArticleHeader({title, date}) {
+export function ArticleHeader({tags, title, date}) {
   const publicationDate = new Date(date);
   const day = publicationDate.getDate();
   const month = months[publicationDate.getMonth()];
   const year = publicationDate.getFullYear();
 
   return (
-    <header>
-      <div className='container-wrapper'>
-        <div className='container'>
-          <h1>{title}</h1>
-          <span>
-            By
-            <a
-              className='link-like link social'
-              rel="nofollow noopener noreferrer"
-              target='_blank'
-              href='https://twitter.com/devictoribero'>
-              @devictoribero,
-            </a>
-            <time>{day}th {month} {year}</time>.
-          </span>
-        </div>
+    <section>
+      <div className='container'>
+        <ul>
+          {tags.map(tag => <li>{tag}</li>)}
+        </ul>
+        <Title
+          align='center'
+          size={titleSizes.giant}
+          as={titleTags.h1}
+          spacelessTop>
+          {title}
+        </Title>
+        <span>
+          By
+          <a
+            className='link'
+            rel="nofollow noopener noreferrer"
+            target='_blank'
+            href='https://twitter.com/devictoribero'>
+            @devictoribero,
+          </a>
+          <time>{day}th {month} {year}</time>.
+        </span>
       </div>
 
       <style jsx>{`
-        header {
-          margin-bottom: 50px;
-          min-height: 400px;
+        section {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           text-align: center;
-          background-color: #f7f7f7;
+          
         }
 
-        h1 {
-          margin: 0 0 0.5rem 0;
-          color: var(--c-grey-900);
-          font-size: 36px;
-          font-family: var(--ff-serif);
-          line-height: 1.15;
-          display: inline-block;
-          font-weight: 900;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 0;
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+
+        li {
+          padding: 0 0.5rem;
+          border-radius: 3px;
+          background-color: rgb(240, 238, 255);
+          color: rgb(64, 36, 212);
+          margin-right: 1rem;
+          font-variant: all-petite-caps;
+          list-style: none;
+          white-space: nowrap;
+          font-size: 1rem;
         }
 
         a {
@@ -55,22 +72,26 @@ export function ArticleHeader({title, date}) {
           color: var(--c-grey-900);
           font-size: 1rem;
           font-weight: 400;
+          margin-top: 2rem;
+          display: block;
         }
 
         time {
           margin-left: 0.25rem;
         }
 
-        @media screen and (min-width: 768px) {
-          header {
-            margin-bottom: 75px;
-          }
+        img {
+          max-width: 100%;
+          margin-top: 2rem;
+          border-radius: 10px;
+        }
 
-          h1 {
-            font-size: 47px;
+        @media screen and (min-width: 768px) {
+          section {
+            min-height: 350px;
           }
         }
       `}</style>
-    </header>
+    </section>
   )
 }

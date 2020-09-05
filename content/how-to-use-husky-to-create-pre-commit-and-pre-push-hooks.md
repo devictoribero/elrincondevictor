@@ -3,11 +3,12 @@ author_name: Victor Ribero
 author_img_src: /static/img/victor-ribero-avatar.jpg
 title: How to use Husky to create pre-commit and pre-push hooks
 slug: how-to-use-husky-to-create-pre-commit-and-pre-push-hooks
-description: 🤓 Learn how to execute your tests magically before any git commit.
+description: Learn how to execute your tests, linting, formating or whatever you want before any git commit with git hooks and Husky.
 img_src: /static/img/how-to-execute-tests-before-git-commits-using-husky.png
 img_preview_src: /static/img/how-to-execute-tests-before-git-commits-using-husky-preview.png
 date: 2020-08-03
 tags: [tech]
+isFeatured: true
 ---
 
 Not everyone remembers to execute the tests, the linter or the prettier before commiting changes.

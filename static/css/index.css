@@ -29,6 +29,7 @@
 }
 
 body {
+  padding-bottom: 10rem;
   margin: 0 auto;
   font-family: var(--ff-serif);
 }
@@ -40,6 +41,14 @@ h5,
 h6,
 h7 {
   font-family: var(--ff-sans-serif);
+}
+
+ul.reset {
+  margin: 0;
+  padding: 0;
+}
+ul.reset li {
+  list-style: none;
 }
 
 .container {
@@ -61,10 +70,6 @@ h7 {
   }
 }
 
-*:focus {
-  outline: 1px dashed;
-}
-
 code {
   background: linear-gradient(to right, var(--c-primary-000), var(--c-primary-100));
   border-radius: 3px;
@@ -73,16 +78,26 @@ code {
   font-size: 16px;
 }
 
-a.link-like {
-  position: relative;
+.link {
   color: rgb(64, 36, 212);
-  cursor: pointer;
-  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
 }
 
-a.link-like:hover,
-a.link-like:active {
-  color: rgb(42, 21, 152);
+.link:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  transition: width 0.15s ease-in;
+}
+
+.link:hover:after {
+  width: 0;
 }
 
 @font-face {

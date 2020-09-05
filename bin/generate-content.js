@@ -10,12 +10,21 @@ const ENCODING = 'utf-8'
 const articlesFileName = getArticlesFileNames(INPUT_PATH)
 const allPosts = getArticlesByFilesNames(articlesFileName).sort(sortByDate)
 const indexContent = JSON.stringify({list: allPosts})
+const featuredBlogPosts = allPosts.filter(blogPost => blogPost.isFeatured)
+const featuredContent = JSON.stringify({list: featuredBlogPosts})
 
 fs.writeFile(
   `${OUTPUT_PATH}/index.json`,
   indexContent,
   ENCODING,
-  afterWriteFile
+  error => afterWriteFile(error, 'index.json')
+)
+
+fs.writeFile(
+  `${OUTPUT_PATH}/featured-blog-posts.json`,
+  featuredContent,
+  ENCODING,
+  error => afterWriteFile(error, 'featured-blog-posts.json')
 )
 
 function getArticlesByFilesNames(articlesFileNames){
@@ -45,9 +54,9 @@ function sortByDate(postA, postB) {
   return 0
 }
 
-function afterWriteFile(error){
+function afterWriteFile(error, fileName){
   if (error) throw error
-  console.log(`✅ The index.json was succesfully created!`)
+  console.log(`✅ The ${fileName} was succesfully created!`)
 }
 
 /**

@@ -7,7 +7,7 @@ description: Aprende cuánto afecta a tu equilibrio mental y estado de ánimo un
 img_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental.jpg
 img_preview_src: /static/img/planifica-tus-metas-para-tener-un-equilibrio-mental-preview.jpg
 date: 2019-02-27
-tags: [productivity, mental health]
+tags: [productivity]
 ---
 
 ## ¿Por qué deberías invertir en tu equilibrio mental? 

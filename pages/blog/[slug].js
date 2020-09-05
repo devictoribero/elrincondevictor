@@ -29,7 +29,11 @@ export default function Page({pathname, article}) {
         canonical={`https://www.elrincondevictor.com/blog/${article.data.slug}`}/>
       <main>
         <article>
-          <ArticleHeader title={data.title} date={data.date} />
+          <ArticleHeader
+            tags={data.tags}
+            title={data.title}
+            date={data.date}
+            imageSrc={data.img_src} />
           <div className='container-wrapper'>
             <div className='container'>
               <ReactMarkdown

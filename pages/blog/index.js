@@ -1,15 +1,29 @@
-import React from 'react'
+import {useState} from 'react'
 import Error from '../_error'
 import {SeoMetaInfo} from '../../components/layout/SeoMetaInfo'
 import {Layout} from '../../components/layout/Layout'
-import {
-  ArticlesList,
-  ArticlesListTitle
-} from '../../components/molecules/ArticlesList'
+import {Title, titleSizes, titleTags} from '../../components/Atom/Title'
+import {Subtitle} from '../../components/Atom/Typography/Subtitle'
+import {ArticlesCardList} from '../../components/molecules/ArticlesCardList'
+import {ButtonCheckbox} from '../../components/Atom/ButtonCheckbox'
 
-
+const TAGS = {
+  ALL: 'all',
+  TECH: 'tech',
+  PRODUCTIVITY: 'productivity',
+  TOUGHTS: 'thoughts',
+  SEO: 'seo',
+  UIUX: 'ui/ux',
+  PRODUCTS: 'products',
+  ENTREPRENEURSHIP: 'entrepreneurship',
+}
 export default function Blog({pathname, articles}) {
   if (!articles) return <Error statusCode={404} />
+
+  const [tagSelected, setTagSelected] = useState()
+  const articlesToShow = tagSelected
+    ? articles.filter(article => article.tags.includes(setTagSelected))
+    : articles
 
   return (
     <Layout route={pathname}>
@@ -21,12 +35,21 @@ export default function Blog({pathname, articles}) {
       <Header
         title='This is my corner, where I share my experiences and curiosities.'
         subtitle='I talk about a healthy lifestyle, products, software development and entrepreneurship.'/>
-      <main className='container-wrapper'>
-        <div className='container'>
-          <ArticlesList
-            title={<ArticlesListTitle>Articles</ArticlesListTitle>}
-            articles={articles}/>  
+      <main className='container'>
+        <Title size={titleSizes.l} as={titleTags.h2} spacelessTop>
+          Articles
+        </Title>
+        <div>
+          {Object.values(TAGS).map(tag => {
+            <ButtonCheckbox
+              name='tag-all'
+              isActive={tagSelected === tag}
+              onClick={() => setTagSelected(tag)}>
+              {tag}
+            </ButtonCheckbox>
+          })}
         </div>
+        <ArticlesCardList blogPosts={articlesToShow} />
       </main>
     </Layout>
   )
@@ -43,8 +66,10 @@ function Header({title, subtitle}) {
     <header role="banner">
       <div className='container-wrapper'>
         <div className='container'>
-          <h1>{title}</h1>
-          <p>{subtitle}</p>
+        <Title size={titleSizes.giant} as={titleTags.h1} spacelessTop>
+          {title}
+        </Title>
+        <Subtitle>{subtitle}.</Subtitle>
         </div>
       </div>
 
@@ -59,21 +84,6 @@ function Header({title, subtitle}) {
           align-items: center;
           text-align: center;
           background-color: #f7f7f7;
-        }
-
-        h1 {
-          margin: 0 auto 1rem auto;
-          font-size: 42px;
-          line-height: 1.15;
-          font-weight: 900;
-        }
-
-        p {
-          display: block;
-          margin: 0.75rem auto;
-          color: var(--c-grey-900);
-          font-size: 21px;
-          line-height: 1.75;
         }
 
         @media screen and (min-width: 768px) {

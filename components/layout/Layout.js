@@ -1,7 +1,7 @@
 import {TopBar} from './TopBar'
 
 export function Layout({route, children}) {
-  return(
+  return (
     <>
       <TopBar route={route}/>
       {children}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "npm run generate:content && next",
     "generate:content": "node ./bin/generate-content.js",
     "generate:media": "node ./bin/generate-media-images.js",
     "build": "npm run generate:content && next build",
