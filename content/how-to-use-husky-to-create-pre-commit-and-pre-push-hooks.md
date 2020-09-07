@@ -69,9 +69,9 @@ You don't need to do anything special apart from create a commit! Try it out by 
 
 ### What problems you can encounter
 
-I've found that some people (me included) have problems after installing `Husky` which means that git hooks won't work. To solve it, you just need to remove the git folder by running:
+[As you can see in this thread](https://github.com/typicode/husky/issues/445) some people (me included) can't make hooks work after installing `Husky`. To solve it, you just need to remove the git folder by running:
 
 `rm -rf .git/hooks/`
 
-Afer that, uninstall and reinstall `Husky` and it would work. [As you can see in this thread](https://github.com/typicode/husky/issues/445), lots of people have the same issue.
+Afer that, uninstall and reinstall `Husky` and it will would work.
 
