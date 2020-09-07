@@ -3,7 +3,7 @@ export function CustomPostLink({href, children}) {
   
   return (
     <a
-      className="link-like"
+      className="link"
       href={href}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}

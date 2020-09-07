@@ -69,7 +69,6 @@ export function Title ({
 					font-size: 1.75rem;
 					margin-bottom: 2rem;
 					margin-top: 2.5rem;
-					letter-spacing: 0;
 				}
 				
 				.is--m {
@@ -77,7 +76,6 @@ export function Title ({
 					font-weight: 600;
 					margin-bottom: 0.75rem;
 					margin-top: 1.5rem;
-					letter-spacing: 0;
 				}
 
 				@media screen and (min-width: 768px) {

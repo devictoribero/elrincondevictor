@@ -40,7 +40,7 @@ export function ArticleHeader({tags, title, date}) {
           justify-content: center;
           align-items: center;
           text-align: center;
-          
+          margin-bottom: 3rem;
         }
 
         ul {

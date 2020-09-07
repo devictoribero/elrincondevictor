@@ -1,10 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export function Paragraph({
+export function Blockquote({
 	align = "left",
-	spacelessTop = false,
-	spacelessBottom = false,
 	size = "medium",
 	children,
 	...rest
@@ -12,40 +10,45 @@ export function Paragraph({
 	const classes = [
 		`is-aligned--${align}`,
 		`is--${size}`,
-		spacelessTop ? "is--spaceless-top" : "",
-		spacelessBottom ? "is--spaceless-bottom" : "",
 	].join(" ")
   
 	return (
-		<>
+		<blockquote>
 			<p className={classes} {...rest}>{children}</p>
 			<style jsx>{`
+				blockquote,
 				p {
-					color: #313842;
-					font-size: 1.125rem;
-					line-height: 1.5;
-					letter-spacing: 0;
+					margin: 0;
 				}
 
-				.is--spaceless-top {margin-top: 0 !important;}
-				.is--spaceless-bottom {margin-bottom: 0 !important;}
+				p {
+					text-align: left;
+					font-size: 1.25rem;
+					font-weight: 500;
+					margin-bottom: 1.5rem;
+					margin-top: 1.5rem;
+					line-height: 1.35;
+					letter-spacing: 0.25px;
+					font-style: italic;
+				}
+
+				p:before, p:after {content: '"';}
+
 				.is-aligned--left {text-align: left;}
-				.is-aligned--center {text-align: center;}
+      	.is-aligned--center {text-align: center;}
 
 				@media screen and (min-width: 768px) {
 					p {
-						font-size: 1.25rem;
+						font-size: 1.5rem;
 					}
 				}
     `}</style>
-		</>
+		</blockquote>
 	)
 }
 
-Paragraph.propTypes = {
+Blockquote.propTypes = {
 	align: PropTypes.oneOf(["left", "center", "right", "justify"]),
 	size: PropTypes.oneOf(["small", "medium", "large"]),
-	spacelessTop: PropTypes.bool,
-	spacelessBottom: PropTypes.bool,
 	children: PropTypes.any.isRequired
 }

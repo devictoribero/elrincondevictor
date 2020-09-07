@@ -11,13 +11,11 @@ tags: [tech]
 isFeatured: true
 ---
 
-Not everyone remembers to execute the tests, the linter or the prettier before commiting changes.
-
-In the ideal world we should automate this by creating pre-commit and pre-push git hooks, so we don't push code that breaks or is not compliant into the remote repository.
+Not everyone remembers to execute the tests, the linter or the prettier before commiting changes. That's why automation always comes to rescue.
 
 Building a [worldwide community for houseplant lovers](https://chooseyourplant.com?ref=devictoribero) I've noticed that I had a lot of tests but I didn't include them in any pipeline or git hook. What's the problem you might question yourself? After some days, I stopped executing them, so they were not up-to-date. And this is not good 👎.
 
-To automate a pre-commit git hook is good choice that reduces cognitive load whenn coding which means less stress and more focus. Some people uses [git hooks](https://www.atlassian.com/git/tutorials/git-hooks) locally to prettify and format the code along with a linter.
+To automate a pre-commit git hook is a good choice that reduces cognitive load when coding which means less stress and more focus. Some people uses [git hooks](https://www.atlassian.com/git/tutorials/git-hooks) locally to prettify the code and/or run the linter.
 
 If you are using git as version control, you might know that it has some native hooks that are hidden inside the .git folder. You can check it by running `ls .git/hooks/` in the root of your project. If you do so, you'll see some `.sample` files.
 
@@ -67,10 +65,7 @@ You don't need to do anything special apart from create a commit! Try it out by 
 
 `git commit -m "Finally I'm executing tests on each commit"`
 
-<img
-  width='100%'
-  src='/static/static/img/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks.gif'
-  style='margin-top: 10px'/>
+![A computer terminal showing the execution of test before commiting changes](/static/img/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks.gif)
 
 ### What problems you can encounter
 

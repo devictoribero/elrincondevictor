@@ -6,6 +6,10 @@ import {Layout} from '../../components/layout/Layout'
 import {SeoMetaInfo} from '../../components/layout/SeoMetaInfo'
 import {ArticleHeader} from '../../components/molecules/ArticleHeader'
 import {CustomPostLink, CustomPostImg} from '../../helpers/renders'
+import {Paragraph} from '../../components/Atom/Typography/Paragraph'
+import {List} from '../../components/Atom/List'
+import {ListItem} from '../../components/Atom/ListItem'
+import {Blockquote} from '../../components/Atom/blockquote'
 
 Page.getInitialProps = async ({pathname, query}) => {
   const {slug} = query
@@ -34,14 +38,19 @@ export default function Page({pathname, article}) {
             title={data.title}
             date={data.date}
             imageSrc={data.img_src} />
-          <div className='container-wrapper'>
-            <div className='container'>
+            <div className='container container--boxed'>
               <ReactMarkdown
                 source={content}
                 escapeHtml={false}
-                renderers={{ link: CustomPostLink, image: CustomPostImg }}
+                renderers={{
+                  link: CustomPostLink,
+                  image: CustomPostImg,
+                  paragraph: Paragraph,
+                  list: List,
+                  listItem: ListItem,
+                  blockquote: Blockquote
+                }}
               />
-            </div>
           </div>
         </article>
       </main>
@@ -87,65 +96,13 @@ export default function Page({pathname, article}) {
           border-radius: 20px;
         }
 
-        article > h2 + p {
-          margin: 0.5rem 0 0 0;
-        }
-
-        article p, 
-        article li {
-          color: var(--c-grey-800);
-          line-height: 1.75;
-          hyphens: auto;
-          font-size: 18px;
-          font-weight: 400;
-          letter-spacing: 0.5px !important;
-        }
-
-        article p + p {
-          margin: 1.75rem 0 0 0;
-        }
-
-        article > p:last-of-type {
-          margin-bottom: 2rem;
-        }
-
         article strong {
           color: black;
           font-weight: 500;
         }
 
-        article ul,
-        article ol {
-          margin: 1.25rem 0 2rem 0;
-          padding-left: 1.5rem;
-        }
-
-        article li {
-          line-height: 1.5;
-          margin-bottom: 0.75rem;
-        }
-
-        article a {
-          color: var(--c-primary-800);
-        }
-
-        article blockquote > p {
-          color: black;
-          font-size: 27px;
-          position: relative;
-          margin: 3rem 0;
-          padding: 1.5rem 2rem;
-          font-family: var(--ff-serif);
-          font-weight: bold;
-        }
-
-        article blockquote > p:before,
-        article blockquote > p:after {
-          content: '"';
-        }
-
         article hr {
-          background: linear-gradient(to right,var(--c-primary-000),var(--c-primary-100));
+          background-color: rgb(232, 229, 248);
           margin: 3rem 0;
           height: 2px;
           border: none;
@@ -154,17 +111,6 @@ export default function Page({pathname, article}) {
 
         img > img + article h2 {
           margin-top: 2rem;
-        }
-
-        article code {
-          font-size: 16px;
-        }
-
-        @media screen and (min-width: 768px) {
-          article blockquote:before {
-            left: -100px;
-            right: -100px;
-          }
         }
       `}</style>
     </Layout>
