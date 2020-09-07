@@ -30,12 +30,6 @@ export function ProjectsList() {
         </Card>
       </li>
 
-      <li>
-        <Card title='Cross Platform Feed' link={{isComingSoon: true}}>
-          <Paragraph spacelessTop>Create custom private lists of many social media platforms and accounts. Be in control of what you consume.</Paragraph>
-        </Card>
-      </li>
-
       <style jsx>{`
         li {
           max-width: 600px;
