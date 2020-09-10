@@ -9,7 +9,7 @@ import {CustomPostLink, CustomPostImg} from '../../helpers/renders'
 import {Paragraph} from '../../components/Atom/Typography/Paragraph'
 import {List} from '../../components/Atom/List'
 import {ListItem} from '../../components/Atom/ListItem'
-import {Blockquote} from '../../components/Atom/blockquote'
+import {Blockquote} from '../../components/Atom/Blockquote'
 
 Page.getInitialProps = async ({pathname, query}) => {
   const {slug} = query
