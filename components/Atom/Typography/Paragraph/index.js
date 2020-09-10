@@ -24,7 +24,7 @@ export function Paragraph({
 					color: #313842;
 					font-size: 1.125rem;
 					line-height: 1.5;
-					letter-spacing: 0;
+					letter-spacing: -0.25px;
 				}
 
 				.is--spaceless-top {margin-top: 0 !important;}
