@@ -18,6 +18,7 @@ export function Subtitle({
 					line-height: 1.5;
 					margin-top: 0;
 					margin-bottom: 1rem;
+					letter-spacing: -0.25px;
 				}
 
 				.is-aligned--left {text-align: left;}
