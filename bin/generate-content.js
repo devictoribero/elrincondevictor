@@ -33,7 +33,9 @@ function getArticlesByFilesNames(articlesFileNames){
   for (var i = 0, length = articlesFileNames.length; i < length; i++) {
     const file = fs.readFileSync(`${INPUT_PATH}/${articlesFileNames[i]}`, ENCODING)
     const content = matter(file)
-    posts.push(content.data)
+    if (!content.data.unpublished) {
+      posts.push(content.data)
+    }
   }
 
   return posts;

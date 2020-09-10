@@ -6,6 +6,7 @@ slug: how-to-add-leaflet-map-to-nextjs-app
 description: Learn easily how to add a beautiful map to your react application step by step
 date: 2020-05-14
 tags: [technical, javascript]
+unpublished: true
 ---
 
 If you're building a product or a service and you need to show some locations, you might consider using a map instead of a boring list. I prefer the map UI over the list because:
