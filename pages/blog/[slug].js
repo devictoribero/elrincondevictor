@@ -92,8 +92,8 @@ export default function Page({pathname, article}) {
         article p > img {
           max-width: 100%;
           display: block;
-          margin: 0 auto;
-          border-radius: 20px;
+          margin: 3rem auto;
+          border-radius: 10px;
         }
 
         article strong {

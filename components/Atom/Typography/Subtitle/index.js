@@ -13,7 +13,6 @@ export function Subtitle({
 			<p className={classes} {...rest}>{children}</p>
 			<style jsx>{`
 				p {
-					letter-spacing: 0.25px;
 					color: var(--c-grey-900);
 					font-size: 1.125rem;
 					line-height: 1.5;
