@@ -31,7 +31,7 @@ The usage of Husky it's pretty straight forward. We only need to install the pac
 It's important to instal Husky only in `dev` environments because it's not a production requirement. You can install Husky by executing the following line of code:
 
 ```
-npm run install husky --save-dev
+npm install husky --save-dev
 ```
 
 ### Add the Husky configuration in package.json
