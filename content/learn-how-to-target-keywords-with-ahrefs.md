@@ -1,6 +1,6 @@
 ---
 author_name: Victor Ribero
-author_img_src: /static/img/victor-ribero-avatar.jpg
+author_img_src: /img/victor-ribero-avatar.jpg
 title: Learn how to target keywords with Ahrefs
 slug: learn-how-to-target-keywords-with-ahrefs
 description: Identify with Ahrefs what keywords work better for you by real world examples
@@ -28,7 +28,7 @@ To do that, you might need to [identify what type of people is visiting your web
 
 There are many SEO tools in the market to know about how much traffic per month a certain search term has, keywords planners and suggestions, conversions, etc.
 
-### What tools I use to improve my SEO 
+### What tools I use to improve my SEO
 
 To understand my audience and improve my SEO I use [Google Trends](https://trends.google.com/trends) to see how much traffic short search terms get monthly (single words or two-words-searches), [Ahrefs](https://ahrefs.com/) to know how much traffic per month a long search term gets (known as long-tail keywords) and the conversion of these.
 
@@ -60,11 +60,11 @@ At first, I was going to use pet-friendly plants, because it sounds cute, "cool"
 
 At the top of the page, you can see many links. Keywords Explorer is a tool that allows you to research by many keywords (separate them by commas) at the same time which is good if you want to compare different keywords that are related or you want to compare them.
 
- ![The home page of the Ahrefs' Keywords Searcher tool which allows you to choose what keywords you want to compare, in what countries and for what countries](/static/img/learn-how-to-target-keywords-with-ahrefs-1.png)
+ ![The home page of the Ahrefs' Keywords Searcher tool which allows you to choose what keywords you want to compare, in what countries and for what countries](/img/blog/learn-how-to-target-keywords-with-ahrefs/learn-how-to-target-keywords-with-ahrefs-1.png)
 
 As you can see in the image below, sometimes you will see that some keywords have no results. I've deduced that either is because they don't have enough traffic, or because no one searched for them on the platform before.
 
-![Message saying: "We couldn’t find data for keyword in our database. Most likely this is an unpopular keyword with low search volume." missing keyword: ](/static/img/learn-how-to-target-keywords-with-ahrefs-2.png)
+![Message saying: "We couldn’t find data for keyword in our database. Most likely this is an unpopular keyword with low search volume." missing keyword: ](/img/blog/learn-how-to-target-keywords-with-ahrefs/learn-how-to-target-keywords-with-ahrefs-2.png)
 
 ### What metrics you can see from each keyword
 
@@ -78,7 +78,7 @@ For each keyword you can see many metrics:
 6. Return rate
 
 
-![A list of keywords with some metrics calculated for each one. Monthly volume, clicks, keyword difficulty, conversion, etc.](/static/img/learn-how-to-target-keywords-with-ahrefs-3.png)
+![A list of keywords with some metrics calculated for each one. Monthly volume, clicks, keyword difficulty, conversion, etc.](/img/blog/learn-how-to-target-keywords-with-ahrefs/learn-how-to-target-keywords-with-ahrefs-3.png)
 
 But I found the most relevant the following:
 
@@ -107,6 +107,6 @@ I chose *safe plants for cats* because it has a higher volume with a similar *ke
 
 Another benefit of choosing these keywords is that they cover 2 searches which are 2 potential niches. On the other hand, the keywords *pet friendly plants*, *non toxic plants*, or *plants safe for pets* only cover one search.
 
-## conclusion
+## Conclusion
 
 I like using Ahrefs when it comes to knowing exactly how much volume a keyword has, compare some keywords, or know the click ratio they have. On the other hand, Ahrefs is my preferred option when it comes to long-tail keywords because Google Trends is not good in these cases.

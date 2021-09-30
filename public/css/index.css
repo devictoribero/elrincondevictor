@@ -1,0 +1,122 @@
+:root {
+  --c-grey-900: hsl(42, 15%, 13%);
+  --c-grey-800: hsl(40, 13%, 23%);
+  --c-grey-700: hsl(37, 11%, 28%);
+  --c-grey-600: hsl(41, 9%, 35%);
+  --c-grey-500: hsl(41, 8%, 48%);
+  --c-grey-400: hsl(41, 8%, 61%);
+  --c-grey-300: hsl(39, 11%, 69%);
+  --c-grey-200: hsl(40, 15%, 80%);
+  --c-grey-100: hsl(43, 13%, 90%);
+  --c-grey-000: hsl(40, 23%, 97%);
+
+  --c-primary-900: hsl(15, 86%, 30%);
+  --c-primary-800: hsl(22, 82%, 39%);
+  --c-primary-700: hsl(29, 80%, 44%);
+  --c-primary-600: hsl(36, 77%, 49%);
+  --c-primary-500: hsl(42, 87%, 55%);
+  --c-primary-400: hsl(44, 92%, 63%);
+  --c-primary-300: hsl(48, 94%, 68%);
+  --c-primary-200: hsl(48, 95%, 76%);
+  --c-primary-100: hsl(48, 100%, 88%);
+  --c-primary-000: hsl(49, 100%, 96%);
+
+  /* font-family: 'Karla', sans-serif;
+  font-family: 'Ubuntu', sans-serif; */
+  --ff-sans-serif: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  --ff-serif: "Karla", serif;
+}
+
+body {
+  padding-bottom: 10rem;
+  margin: 0 auto;
+  font-family: var(--ff-serif);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  font-family: var(--ff-sans-serif);
+}
+
+ul.reset {
+  margin: 0;
+  padding: 0;
+}
+ul.reset li {
+  list-style: none;
+}
+
+.container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+  .container.container--boxed {
+    max-width: 800px;
+  }
+}
+
+code {
+  border-radius: 3px;
+  padding: 2px 4px;
+  hyphens: auto;
+  font-size: 16px;
+
+  background-color: rgb(247, 238, 255);
+  color: rgb(190, 36, 212);
+}
+
+.link {
+  color: rgb(64, 36, 212);
+  position: relative;
+  text-decoration: none;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  transition: width 0.15s ease-in;
+}
+
+.link:hover:after {
+  width: 0;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/public/fonts/lato-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/public/fonts/lato-bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,7 +1,7 @@
-import {months} from '../../helpers/months'
-import {Title, titleSizes, titleTags} from '../Atom/Title'
+import { months } from "../../helpers/months";
+import { Title, titleSizes, titleTags } from "../Atom/Title";
 
-export function ArticleHeader({tags, title, date}) {
+export function ArticleHeader({ tags, title, date, imageSrc }) {
   const publicationDate = new Date(date);
   const day = publicationDate.getDate();
   const month = months[publicationDate.getMonth()];
@@ -9,29 +9,42 @@ export function ArticleHeader({tags, title, date}) {
 
   return (
     <section>
-      <div className='container'>
+      <div className="container">
         <ul>
-          {tags.map(tag => <li>{tag}</li>)}
+          {tags.map((tag) => (
+            <li>{tag}</li>
+          ))}
         </ul>
         <Title
-          align='center'
+          align="center"
           size={titleSizes.giant}
           as={titleTags.h1}
-          spacelessTop>
+          spacelessTop
+        >
           {title}
         </Title>
         <span>
           By
           <a
-            className='link'
+            className="link"
             rel="nofollow noopener noreferrer"
-            target='_blank'
-            href='https://twitter.com/devictoribero'>
+            target="_blank"
+            href="https://twitter.com/devictoribero"
+          >
             @devictoribero,
           </a>
-          <time>{day}th {month} {year}</time>.
+          <time>
+            {day}th {month} {year}
+          </time>
+          .
         </span>
       </div>
+
+      {imageSrc && (
+        <picture>
+          <img src={imageSrc} />
+        </picture>
+      )}
 
       <style jsx>{`
         section {
@@ -80,10 +93,23 @@ export function ArticleHeader({tags, title, date}) {
           margin-left: 0.25rem;
         }
 
+        // Hero image wrapper
+        picture {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          width: 100%;
+          max-width: 1400px;
+        }
+
+        // Hero image
         img {
-          max-width: 100%;
-          margin-top: 2rem;
+          aspect-ratio: 16/9;
           border-radius: 10px;
+          margin-top: 2rem;
+          width: 100%;
+          max-width: 100%;
+          object-fit: cover;
+          object-position: top;
         }
 
         @media screen and (min-width: 768px) {
@@ -93,5 +119,5 @@ export function ArticleHeader({tags, title, date}) {
         }
       `}</style>
     </section>
-  )
+  );
 }

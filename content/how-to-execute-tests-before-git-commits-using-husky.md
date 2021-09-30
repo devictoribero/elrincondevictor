@@ -4,8 +4,6 @@ author_img_src: /public/img/victor-ribero-avatar.jpg
 title: How to execute tests before git commits using Husky
 slug: how-to-execute-tests-before-git-commits-using-husky
 description: 🤓 Learn how to execute your tests magically before any git commit.
-img_src: /public/img/how-to-execute-tests-before-git-commits-using-husky.png
-img_preview_src: /public/img/how-to-execute-tests-before-git-commits-using-husky-preview.png
 date: 2020-08-03
 tags: [tech]
 ---
@@ -56,7 +54,7 @@ I found interesting to add tests on my `pre-commit` and `pre-push`, so every tim
 
 ### And now what?
 
-Now you're ready to use them! Try it out by commiting something running:
+Now you're ready to use them! Try it out by committing something running:
 
 `git commit -m "Finally I'm executing tests on each commit"`
 

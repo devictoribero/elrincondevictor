@@ -1,11 +1,9 @@
 ---
 author_name: Victor Ribero
-author_img_src: /static/img/victor-ribero-avatar.jpg
+author_img_src: /img/victor-ribero-avatar.jpg
 title: How to use Husky to create pre-commit and pre-push hooks
 slug: how-to-use-husky-to-create-pre-commit-and-pre-push-hooks
-description: Learn how to execute Husky to prevennt git push and git commit to execute your tests, linting, formating or whatever you want.
-img_src: /static/img/how-to-execute-tests-before-git-commits-using-husky.png
-img_preview_src: /static/img/how-to-execute-tests-before-git-commits-using-husky-preview.png
+description: Learn how to execute Husky to prevent git push and git commit to execute your tests, linting, formatting or whatever you want.
 date: 2020-09-07
 tags: [tech]
 isFeatured: true
@@ -44,7 +42,7 @@ In the root of your project, you'll have a package.json. Open it and add a `Husk
 
 In this project, I only added the execution of the test in the `pre-commit` and `pre-push` git hook, but you can add your linting rules, formatting, or whatever you like. Now, every time I try to execute `git commit` or `git push` the tests are executed. Example below 👇:
 
-![A computer terminal showing the execution of test before committing changes](/static/img/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks-1.png)
+![A computer terminal showing the execution of test before committing changes](/img/blog/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks-1.png)
 
 ### How to use the pre-commit or pre-push git hook?
 
@@ -52,7 +50,7 @@ You don't need to do anything special apart from create a commit! Try it out by 
 
 `git commit -m "Finally I'm executing tests on each commit"`
 
-![A computer terminal showing the execution of test before committing changes](/static/img/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks-2.gif)
+![A computer terminal showing the execution of test before committing changes](/img/blog/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks/how-to-use-husky-to-create-pre-commit-and-pre-push-hooks-2.gif)
 
 ### What problems you can encounter
 
