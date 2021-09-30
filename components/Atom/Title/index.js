@@ -63,11 +63,11 @@ export function Title({
         }
 
         .is--giant {
-          font-size: 2rem;
-          line-height: 1.25;
+          font-size: 1.75rem;
+          line-height: 1.15;
           margin-top: 2.25rem;
           margin-bottom: 1.5rem;
-          letter-spacing: -3px;
+          letter-spacing: -2px;
         }
 
         .is--l {
@@ -100,7 +100,7 @@ export function Title({
 
         @media screen and (min-width: 1024px) {
           .is--giant {
-            font-size: 3.5rem;
+            font-size: 3rem;
           }
         }
 
