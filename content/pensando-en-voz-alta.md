@@ -8,6 +8,7 @@ img_src: /img/blog/pensando-en-voz-alta/dark-person-silhouette.jpg
 img_preview_src: /img/blog/pensando-en-voz-alta/dark-person-silhouette-preview.jpg
 date: 2019-02-15
 tags: [thoughts]
+isPublished: true
 ---
 
 Hola, me digo a mi mismo.

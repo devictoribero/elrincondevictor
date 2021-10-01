@@ -6,6 +6,7 @@ slug: how-to-execute-tests-before-git-commits-using-husky
 description: 🤓 Learn how to execute your tests magically before any git commit.
 date: 2020-08-03
 tags: [tech]
+isPublished: true
 ---
 
 Some people have difficulties remembering that they have to execute the tests before commiting any changes. This is important in order to avoid pushing to the repository something that breaks our build.

@@ -9,6 +9,7 @@ img_preview_src: /img/blog/improve-your-community-or-blog-seo-and-ux-with-metric
 date: 2020-03-28
 tags: [entrepreneurship, products, growth]
 isFeatured: true
+isPublished: true
 ---
 
 If you have a blog or a community I guess you've asked yourself how possibly you can reach more people and get traction. Well, I'm going to explain to you what metrics I use to improve [ChooseYourPlant, the worldwide community for houseplant lovers](https://www.chooseyourplant.com) I'm building, and how these metrics can help you.

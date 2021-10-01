@@ -8,7 +8,7 @@ img_src: /img/blog/how-to-use-tab-groups-in-chrome/how-to-use-tab-groups-in-chro
 img_preview_src: /img/blog/how-to-use-tab-groups-in-chrome/how-to-use-tab-groups-in-chrome-preview.jpg
 date: 2021-09-25
 tags: [tech, productivity]
-unpublished: false
+isPublished: true
 ---
 There are 2 kinds of people.
 

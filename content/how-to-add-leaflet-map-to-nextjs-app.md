@@ -6,7 +6,7 @@ slug: how-to-add-leaflet-map-to-nextjs-app
 description: Learn easily how to add a beautiful map to your react application step by step
 date: 2020-05-14
 tags: [technical, javascript]
-unpublished: true
+isPublished: false
 ---
 
 If you're building a product or a service and you need to show some locations, you might consider using a map instead of a boring list. I prefer the map UI over the list because:
@@ -109,7 +109,7 @@ To include ¡a marker, we need to pass to the component the coordinates of the p
 
 // image of how to use the Marker
 
-We can also show information when clicking on this marker using the `Popup` component as a children of the `Marker`. 
+We can also show information when clicking on this marker using the `Popup` component as a children of the `Marker`.
 
 // image usage of the popup
 

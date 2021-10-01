@@ -7,6 +7,7 @@ description: Learn how to execute Husky to prevent git push and git commit to ex
 date: 2020-09-07
 tags: [tech]
 isFeatured: true
+isPublished: true
 ---
 
 Not everyone remembers to execute the tests, the linter, or the prettier before committing changes, and even if we do, it's exhausting to do it manually every time. That's why automation always comes to rescue.

@@ -11,20 +11,12 @@ import { List } from "../../components/Atom/List";
 import { ListItem } from "../../components/Atom/ListItem";
 import { Blockquote } from "../../components/Atom/Blockquote";
 
-Page.getInitialProps = async ({ pathname, query }) => {
-  const { slug } = query;
-  const article = await getPost({ slug });
-  const relatedArticles = await getRelatedArticlesTo({ article });
-
-  return { pathname, article: article, relatedArticles: relatedArticles };
-};
-
-export default function Page({ pathname, article }) {
+export default function Page({ article }) {
   if (!article) return <Error statusCode={404} />;
 
   const { data, content } = article;
   return (
-    <Layout route={pathname}>
+    <Layout>
       <SeoMetaInfo
         title={`${article.data.title} | Elrincondevictor`}
         description={`${article.data.description}`}
@@ -123,10 +115,50 @@ export default function Page({ pathname, article }) {
   );
 }
 
+export async function getStaticPaths() {
+  const articlesJSON = require("../../content/index.json").list;
+  const articles = Object.values(articlesJSON);
+  console.log(articles);
+  const articlesPublished = articles.filter((article) => article.isPublished);
+  const articlesSlugs = articlesPublished.map((article) => article.slug);
+
+  const routingPaths = articlesSlugs.filter(Boolean).map((slug) => {
+    return { params: { slug } };
+  });
+
+  return {
+    paths: routingPaths,
+    fallback: true,
+  };
+}
+
+export async function getStaticProps(context) {
+  const { params } = context;
+  const { slug } = params;
+  const article = await getPost({ slug });
+  const relatedArticles = await getRelatedArticlesTo({ article });
+
+  return {
+    props: {
+      article: article,
+      relatedArticles: relatedArticles,
+    },
+  };
+}
+
 // get a blog info and parse it
 async function getPost({ slug }) {
   const contentModule = await require(`../../content/${slug}.md`);
-  return matter(contentModule.default);
+  const articleParsed = matter(contentModule.default);
+
+  return {
+    content: articleParsed.content,
+    data: {
+      ...articleParsed.data,
+      // Logic to avoid NextJS serialization error
+      date: articleParsed.data.date ? `${articleParsed.data.date}` : null,
+    },
+  };
 }
 
 async function getRelatedArticlesTo({ article }) {

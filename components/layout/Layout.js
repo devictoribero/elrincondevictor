@@ -1,10 +1,10 @@
-import {TopBar} from './TopBar'
+import { TopBar } from "./TopBar";
 
-export function Layout({route, children}) {
+export function Layout({ children }) {
   return (
     <>
-      <TopBar route={route}/>
+      <TopBar />
       {children}
     </>
-  )
+  );
 }

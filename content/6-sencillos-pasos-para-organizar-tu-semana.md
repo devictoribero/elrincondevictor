@@ -8,6 +8,7 @@ img_src: /img/blog/6-sencillos-pasos-para-organizar-tu-semana/6-sencillos-pasos-
 img_preview_src: /img/blog/6-sencillos-pasos-para-organizar-tu-semana/6-sencillos-pasos-para-organizar-tu-semana-preview.jpg
 date: 2019-03-13
 tags: [productivity]
+isPublished: true
 ---
 
 Desde siempre, cómo gestionar nuestro tiempo ha sido una tarea pendiente por falta de motivación, vagancia, conformismo, inexistencia de metas y pensar que disponemos de una infinidad de tiempo.

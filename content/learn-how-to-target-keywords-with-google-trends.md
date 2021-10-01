@@ -7,6 +7,7 @@ description: Identify what keywords would work better for you and learn how to s
 date: 2020-05-03
 tags: [entrepreneurship, products, growth, seo]
 isFeatured: true
+isPublished: true
 ---
 
 I'm sure you want to have thousands of visits to your blog or products website, but are you targeting the right people and keywords?
