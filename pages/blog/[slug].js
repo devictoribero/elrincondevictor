@@ -118,7 +118,6 @@ export default function Page({ article }) {
 export async function getStaticPaths() {
   const articlesJSON = require("../../content/index.json").list;
   const articles = Object.values(articlesJSON);
-  console.log(articles);
   const articlesPublished = articles.filter((article) => article.isPublished);
   const articlesSlugs = articlesPublished.map((article) => article.slug);
 

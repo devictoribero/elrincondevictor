@@ -32,9 +32,11 @@ function getArticlesByFilesNames(articlesFileNames) {
       `${INPUT_PATH}/${articlesFileNames[i]}`,
       ENCODING
     );
+
     const content = matter(file);
-    if (!content.data.unpublished) {
-      posts.push(content.data);
+    const { data } = content;
+    if (!data.isPublished) {
+      posts.push(data);
     }
   }
 
@@ -43,9 +45,6 @@ function getArticlesByFilesNames(articlesFileNames) {
 
 /**
  * Order by newer updated posts
- * @param {Object} postA
- * @param {Object} postB
- * @returns {Boolean}
  */
 function sortByDate(postA, postB) {
   const dateA = new Date(`${postA.date}`);
