@@ -17,7 +17,7 @@ const TAGS = {
   PRODUCTS: "products",
   ENTREPRENEURSHIP: "entrepreneurship",
 };
-export default function Blog({ pathname, articles }) {
+export default function Blog({ articles }) {
   if (!articles) return <Error statusCode={404} />;
 
   const [tagSelected, setTagSelected] = useState();
@@ -57,10 +57,11 @@ export default function Blog({ pathname, articles }) {
   );
 }
 
-Blog.getInitialProps = async ({ pathname, query }) => {
+export async function getStaticProps() {
   const { list } = await require(`../../content/index.json`);
-  return { pathname, articles: list };
-};
+  console.log(list);
+  return { props: { articles: list } };
+}
 
 function Header({ title, subtitle }) {
   return (

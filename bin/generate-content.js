@@ -35,7 +35,7 @@ function getArticlesByFilesNames(articlesFileNames) {
 
     const content = matter(file);
     const { data } = content;
-    if (!data.isPublished) {
+    if (data.isPublished) {
       posts.push(data);
     }
   }
